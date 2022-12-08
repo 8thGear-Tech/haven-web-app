@@ -1,11 +1,6 @@
 // Awelewa
 // ReadMore
 
-// Ope
-// GetAFacilitator
-// LearnMore
-// JoinOurTeam
-
 // import Button from "react-bootstrap/Button";
 
 export const GetAFacilitatorBtn = () => {
@@ -24,6 +19,16 @@ export const LearnMoreBtn = () => {
       <a href="" target="_blank">
         {" "}
         <button className="LearnMoreBtn">LEARN MORE</button>
+      </a>
+    </>
+  );
+};
+export const JoinOurTeamBtn = () => {
+  return (
+    <>
+      <a href="" target="_blank">
+        {" "}
+        <button className="JoinOurTeamBtn">JOIN OUR TEAM</button>
       </a>
     </>
   );
