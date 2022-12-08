@@ -1,0 +1,22 @@
+{
+  "whyTrustUsInfo": [
+    {
+      "id": 1,
+      "icon": "../../assets/images/team/madamwunmi.png",
+      "titleText": "Security",
+      "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit eu erat duis quam."
+    },
+    {
+      "id": 2,
+      "icon": "../../assets/images/team/madamwunmi.png",
+      "titleText": "Reliability",
+      "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit eu erat duis quam."
+    },
+    {
+      "id": 3,
+      "icon": "../../assets/images/team/madamwunmi.png",
+      "titleText": "Professionality",
+      "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit eu erat duis quam."
+    }
+  ]
+}
