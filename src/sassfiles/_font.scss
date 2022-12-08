@@ -1,3 +1,4 @@
+@use "./colors" as *;
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
@@ -20,11 +21,14 @@ h4 {
   font-size: 1.3rem;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
+  color: $sectextcolor;
 }
 
 h5 {
   font-weight: 300;
+  font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
+  color: $sectextcolor;
 }
 
 p {
