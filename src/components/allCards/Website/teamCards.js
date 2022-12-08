@@ -1,6 +1,3 @@
-// new
-// TeamCard
-// TeamPopUpCard
 //external import
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -9,6 +6,7 @@ import Row from "react-bootstrap/Row";
 
 //internal import
 import teamInfo from "../../../data/allCards/team.json";
+import { MemberOneViewBioBtn } from "../../Buttons/website/teamModalBtn";
 
 //images
 // import madamwunmi from "../../../assets/images/team/madamwunmi.png";
@@ -64,3 +62,58 @@ export const Team = () => {
     </>
   );
 };
+
+export const TeamPopUpCard = (props) => {
+  const { id, image, name, position, text, link } = props;
+  return (
+    <>
+      <MemberOneViewBioBtn />
+      <div
+        className="modal fade"
+        id={id}
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="d-flex justify-content-between mx-4 my-2">
+              {/* <img src={logo} width={40} id="staticBackdropLabel" /> */}
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div className="cards" key={id}>
+              <img src={image} className="w-25 mb-4" alt="..." />
+              <h4>{name}</h4>
+              <h6 className="">{position}</h6>{" "}
+              <a href={link}>
+                {/* <div className="">
+                  {" "}
+                  <LinkedInIcon />
+                </div> */}
+              </a>
+              <div className="card-body">
+                <p className="card-text ">{text}</p>
+              </div>
+              {/* <img src={linkedin} className="mb-4" width={25} /> */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+// export const TeamPopUp = () => {
+//   return (
+//     <>
+
+//     </>
+//   )
+// }

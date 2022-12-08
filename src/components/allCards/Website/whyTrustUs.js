@@ -7,15 +7,11 @@ import Row from "react-bootstrap/Row";
 //internal import
 import whyTrustUsInfo from "../../../data/allCards/whyTrustUs.json";
 
-//images
-
-//Icons
-
 export const WhyTrustUsCard = (props) => {
   const { icon, titleText, paragraphText } = props;
   return (
     <>
-      <div style={{ width: "18rem" }} className="my-5">
+      <div style={{ width: "18rem" }} className="">
         <Card.Img variant="top" src={icon} className="" />
         <Card.Body className="text-center">
           <h4 className="mt-3">{titleText}</h4>
@@ -28,11 +24,12 @@ export const WhyTrustUsCard = (props) => {
 export const WhyTrustUs = () => {
   return (
     <>
-      <div className="container-fluid p-5 mt-5">
+      <div className="container-fluid px-5 pt-5 mt-5">
+        <h3 className="text-center">WHY TRUST US</h3>
         <Row
           xs={1}
           md={2}
-          className="g-0 justify-content-center justify-content-evenly mt-5"
+          className="g-0 justify-content-center justify-content-evenly"
         >
           {whyTrustUsInfo.whyTrustUsInfo.map((info) => {
             return (

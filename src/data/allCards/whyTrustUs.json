@@ -2,19 +2,19 @@
   "whyTrustUsInfo": [
     {
       "id": 1,
-      "icon": "../../assets/images/team/madamwunmi.png",
+      "icon": "../../assets/icons/whytrustus/reliability.png",
       "titleText": "Security",
       "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit eu erat duis quam."
     },
     {
       "id": 2,
-      "icon": "../../assets/images/team/madamwunmi.png",
+      "icon": "../../assets/icons/whytrustus/security.png",
       "titleText": "Reliability",
       "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit eu erat duis quam."
     },
     {
       "id": 3,
-      "icon": "../../assets/images/team/madamwunmi.png",
+      "icon": "../../assets/icons/whytrustus/professionality.png",
       "titleText": "Professionality",
       "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit eu erat duis quam."
     }
