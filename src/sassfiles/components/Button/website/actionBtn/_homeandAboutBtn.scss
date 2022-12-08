@@ -1,7 +1,7 @@
 @use "../../../../colors" as *;
 @use "../../../../font" as *;
 
-@mixin GetAFacilitatorBtn {
+@mixin BtnStyle {
   background-color: $buttoncolor;
   color: $tertextcolor;
   font-size: 15px;
@@ -13,8 +13,11 @@
   font-weight: 600;
   border: none;
 }
-
 .GetAFacilitatorBtn {
-  @include GetAFacilitatorBtn;
+  @include BtnStyle;
   width: 10.5rem;
+}
+.LearnMoreBtn {
+  @include BtnStyle;
+  width: 8rem;
 }

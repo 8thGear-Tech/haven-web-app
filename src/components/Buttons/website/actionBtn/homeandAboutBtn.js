@@ -18,3 +18,13 @@ export const GetAFacilitatorBtn = () => {
     </>
   );
 };
+export const LearnMoreBtn = () => {
+  return (
+    <>
+      <a href="" target="_blank">
+        {" "}
+        <button className="LearnMoreBtn">LEARN MORE</button>
+      </a>
+    </>
+  );
+};
