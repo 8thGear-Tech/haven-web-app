@@ -1,0 +1,12 @@
+.galleryBg {
+  background: url(/src/assets/images/hero/gallerybg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galleryCard {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 10rem;
+}

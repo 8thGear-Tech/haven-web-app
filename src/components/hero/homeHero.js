@@ -1,0 +1,80 @@
+//internal import
+
+//buttons
+
+//images
+import homehero from "../../assets/images/hero/homehero.png";
+
+//icons
+
+export const HomeHero = () => {
+  return (
+    <>
+      <div className="container-fluid homeHeroBg d-flex align-items-center d-none d-lg-block d-md-block d-sm-none d-xs-none">
+        {/* <div className="px-3 container-fluid pt-3 pb-4"> */}
+        {/* <div className="row"> */}
+        {/* <div className=""> */}
+        <h2 className="col-lg-7 col-md-6 ms-5 d-flex align-items-center">
+          Exciting Young Champs Towards Technology, Arts And Foreign Languages
+        </h2>
+        {/* <h3 className="col-lg-7 col-md-6 d-xs-block d-sm-block d-md-block d-lg-none">
+                {" "}
+                Exciting Young Champs Towards Technology, Arts And Foreign
+                Languages
+              </h3> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* </div> */}
+      </div>
+      <div className="container-fluid homeHeroMobileBg d-flex align-items-center d-xs-block d-sm-block d-md-none d-lg-none">
+        <div className="px-3 container-fluid d-flex pt-3">
+          <div className="row ">
+            <div className="">
+              <h2 className="col-lg-7 col-md-6 d-none d-lg-block d-md-none d-sm-none d-xs-none ms-5">
+                Exciting Young Champs Towards Technology, Arts And Foreign
+                Languages
+              </h2>
+              <h3 className="col-lg-7 col-md-6 d-xs-block d-sm-block d-md-block d-lg-none">
+                {" "}
+                Exciting Young Champs Towards Technology, Arts And Foreign
+                Languages
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      ;
+    </>
+  );
+};
+// export const HomeHero = () => {
+//   return (
+//     <>
+//       <div className="px-3">
+//         {" "}
+//         <div className="px-4 container-fluid underconstructionPageBg pb-4">
+//           <div className="row align-items-center justify-content-center mt-3">
+//             <div className="col-lg-5 col-md-12 col-sm-12 ">
+//               <h1 className="headerFontColor d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
+//                 Exciting Young Champs Towards Technology, Arts And Foreign
+//                 Languages
+//               </h1>
+//               <h2 className="headerFontColor d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+//                 Exciting Young Champs Towards Technology, Arts And Foreign
+//                 Languages
+//               </h2>
+//             </div>
+//             <div className="col-lg-7 col-md-12 col-sm-10 mb-5">
+//               <img
+//                 src={homehero}
+//                 className="mx-lg-auto img-fluid "
+//                 alt=""
+//                 loading=""
+//               />
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
