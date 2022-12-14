@@ -82,7 +82,163 @@ export const GuestNavbar = () => {
     </>
   );
 };
+export const AdminSideNav = () => {
+  return (
+    <>
+      {" "}
+      <Navbar bg="light" expand="md" className="navbarBg navbar-light">
+        <Container fluid>
+          {" "}
+          <img
+            alt=""
+            src={havenlogo}
+            style={{ maxWidth: "6rem", maxHeight: "6rem" }}
+            className="d-inline-block align-top ms-3"
+          />{" "}
+          <Navbar.Toggle
+            aria-controls="navbarScroll"
+            className="navbar-toggler btn"
+          />{" "}
+          <Navbar.Collapse
+            id="navbarScroll"
+            className="justifyNavItemsEnd my-4 "
+          >
+            <Nav className="justify-content-end" navbarScroll>
+              <Nav.Link href="#action1" className="navTextColor mx-3">
+                HOME
+              </Nav.Link>
+              <NavDropdown
+                title="ABOUT US"
+                id="navbarScrollingDropdown"
+                className="navTextColor mx-3"
+              >
+                <NavDropdown.Item href="#action3" className="navTextColor">
+                  ABOUT HAVEN
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action4" className="navTextColor">
+                  GALLERY
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5" className="navTextColor">
+                  BLOG
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown
+                title="SERVICES"
+                id="navbarScrollingDropdown"
+                className="navTextColor mx-3 "
+              >
+                <NavDropdown.Item href="#action3" className="navTextColor">
+                  FIND SUBJECT
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action4" className="navTextColor">
+                  BECOME AN INSTRUCTOR
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5" className="navTextColor">
+                  PRODUCT
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5" className="navTextColor">
+                  OTHER SERVICES
+                </NavDropdown.Item>
+              </NavDropdown>
+              <div className="mx-3">
+                <RegisterNowBtn />
+              </div>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>{" "}
+    </>
+  );
+};
 
+export const AdminSideNavv = () => {
+  return (
+    <>
+      <Navbar bg="light" expand="md" className="navbarBg navbar-light">
+        {/* <Container fluid> */}
+        {/* <div className="col-3"> */}
+        <Navbar.Toggle
+          aria-controls="navbarScroll"
+          className="navbar-toggler btn"
+        />{" "}
+        <Navbar.Collapse id="navbarScroll" className="justifyNavItemsEnd my-4 ">
+          <Nav className="justify-content-end displayFlex" navbarScroll>
+            {" "}
+            <img
+              alt=""
+              src={havenlogo}
+              style={{ maxWidth: "6rem", maxHeight: "6rem" }}
+              className="d-inline-block align-top ms-3"
+            />{" "}
+            {/* <Nav className=""> */}
+            <Nav.Link href="#action1" className="navTextColor mx-3">
+              Dashboard
+            </Nav.Link>
+            <Nav.Link href="#action1" className="navTextColor mx-3">
+              Calendar
+            </Nav.Link>
+            <Nav.Link href="#action1" className="navTextColor mx-3">
+              Instructors
+            </Nav.Link>
+            <NavDropdown
+              title="Champs"
+              id="navbarScrollingDropdown"
+              className="navTextColor mx-3"
+            >
+              <NavDropdown.Item href="#action3" className="navTextColor">
+                Instructors
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action4" className="navTextColor">
+                Instructors
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5" className="navTextColor">
+                Instructors
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
+              title=" Instructors"
+              id="navbarScrollingDropdown"
+              className="navTextColor mx-3"
+            >
+              <NavDropdown.Item href="#action3" className="navTextColor">
+                Instructors
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action4" className="navTextColor">
+                Instructors
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5" className="navTextColor">
+                Instructors
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#action1" className="navTextColor mx-3">
+              Profile
+            </Nav.Link>
+            <Nav.Link href="#action1" className="navTextColor mx-3">
+              Reported Issues
+            </Nav.Link>
+            <Nav.Link href="#action1" className="navTextColor mx-3">
+              Ratings
+            </Nav.Link>
+            <Nav.Link href="#action1" className="navTextColor mx-3">
+              Logout
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        {/* </div>
+        </Container> */}
+      </Navbar>{" "}
+    </>
+  );
+};
 // export const NavbarSection = () => {
 //   return (
 //     <div className="navbar navbar-expand-lg navbar-light bg-light py-0">
