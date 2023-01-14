@@ -54,6 +54,47 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+.homeHeroBgg::before {
+  content: "";
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.homeHeroBg {
+  background: url(/src/assets/images/hero/homehero.png);
+  background-size: cover;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 80vh;
+  width: 100%;
+}
+
+.homeHeroBg h2 {
+  line-height: 45px;
+}
+
+.homeHeroBg h3 {
+  line-height: 35px;
+}
+
+.dd {
+  display: flex;
+  align-items: center !important;
+}
+
+@media only screen and (max-width: 990px) {
+  .homeHeroBg {
+    height: 22.5rem;
+  }
+}
 .NextBtn {
   background-color: #75117a;
   color: #ffffff;

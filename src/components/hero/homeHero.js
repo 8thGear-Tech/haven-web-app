@@ -4,17 +4,18 @@
 
 //images
 import homehero from "../../assets/images/hero/homehero.png";
+import homeheromobilee from "../../assets/images/hero/homeheromobilee.png";
 
 //icons
 
 export const HomeHero = () => {
   return (
     <>
-      <div className="container-fluid homeHeroBg d-flex align-items-center d-none d-lg-block d-md-block d-sm-none d-xs-none">
-        {/* <div className="px-3 container-fluid pt-3 pb-4"> */}
+      <div className="container-fluid homeHeroBg d-flex  align-items-center d-none d-xs-none d-sm-none d-md-block d-lg-block">
+        {/* <div className="px-3 container-fluid homeHeroBgg pt-3 pb-4"> */}
         {/* <div className="row"> */}
         {/* <div className=""> */}
-        <h2 className="col-lg-7 col-md-6 ms-5 d-flex align-items-center">
+        <h2 className="col-lg-6 col-md-5 ms-5 d-flex align-items-center ">
           Exciting Young Champs Towards Technology, Arts And Foreign Languages
         </h2>
         {/* <h3 className="col-lg-7 col-md-6 d-xs-block d-sm-block d-md-block d-lg-none">
@@ -26,24 +27,21 @@ export const HomeHero = () => {
         {/* </div> */}
         {/* </div> */}
       </div>
-      <div className="container-fluid homeHeroMobileBg d-flex align-items-center d-xs-block d-sm-block d-md-none d-lg-none">
-        <div className="px-3 container-fluid d-flex pt-3">
-          <div className="row ">
-            <div className="">
-              <h2 className="col-lg-7 col-md-6 d-none d-lg-block d-md-none d-sm-none d-xs-none ms-5">
-                Exciting Young Champs Towards Technology, Arts And Foreign
-                Languages
-              </h2>
-              <h3 className="col-lg-7 col-md-6 d-xs-block d-sm-block d-md-block d-lg-none">
-                {" "}
-                Exciting Young Champs Towards Technology, Arts And Foreign
-                Languages
-              </h3>
-            </div>
+      <div className="container-fluid  homeHeroMobileBg d-flex align-items-center py-4">
+        {/* <div className="px-3 container-fluid  d-flex pt-3"> */}
+        <div className="row d-flex justify-content-center g-0">
+          <div className="col-sm-12 d-xs-block d-sm-block d-md-none d-lg-none text-center">
+            <img src={homeheromobilee} class="img-fluid" />
+          </div>
+          <div className="">
+            <h4 className="col-sm-10 d-xs-block d-sm-block d-md-none d-lg-none mx-auto">
+              Exciting Young Champs Towards Technology, Arts And Foreign
+              Languages
+            </h4>
           </div>
         </div>
+        {/* </div> */}
       </div>
-      ;
     </>
   );
 };

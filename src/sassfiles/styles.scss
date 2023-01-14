@@ -1,5 +1,6 @@
 @use "./reset";
 @use "./font" as *;
+@use "./components/hero/homeHero";
 @use "./components/Button/website/actionBtn/schoolBtn";
 @use "./components/allCards/website/teamCards";
 @use "./components/Navbar/guestNavbar";

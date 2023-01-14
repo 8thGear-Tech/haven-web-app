@@ -1,3 +1,16 @@
+.homeHeroBgg::before {
+  content: "";
+  position: absolute;
+  // background-color: #2e3133;
+  height: 70vh;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  // opacity: 0.2;
+}
+
 .homeHeroBg {
   background: url(/src/assets/images/hero/homehero.png);
   background-size: cover;
@@ -9,22 +22,26 @@
   height: 80vh;
   width: 100%;
 }
-.homeHeroBg {
-  background: url(/src/assets/images/hero/homeheromobile.png);
-  background-size: cover;
-  position: relative;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  height: 80vh;
-  width: 100%;
-}
+// .homeHeroBg {
+//   background: url(/src/assets/images/hero/homeheromobile.png);
+//   background-size: cover;
+//   position: relative;
+//   top: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   left: 0px;
+//   height: 80vh;
+//   width: 100%;
+// }
 .homeHeroBg h2 {
   line-height: 45px;
 }
 .homeHeroBg h3 {
   line-height: 35px;
+}
+.dd {
+  display: flex;
+  align-items: center !important;
 }
 
 //responsiveness

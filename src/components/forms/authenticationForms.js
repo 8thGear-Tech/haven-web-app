@@ -1,3 +1,124 @@
+// // createAccountForm
+// // loginForm
+// // forgetPasswordForm
+// //external import
+// import { useState } from "react";
+// import Card from "react-bootstrap/Card";
+
+// import Container from "react-bootstrap/Container";
+// import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
+
+// //images
+// import havenlogo from "../../assets/icons/havenlogo.png";
+// import havenfavico from "../../assets/icons/havenfavico.png";
+// import createaccountimg from "../../assets/images/createaccountimg.png";
+
+// export const CreateAccountForm = () => {
+//   const [firstName, setFirstName] = useState("");
+//   const [lastName, setLastName] = useState("");
+//   const [password, setPassword] = useState("");
+//   const [confirmPassword, setConfirmPassword] = useState("");
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     // console.log("hello world");
+//     console.log(firstName, lastName, password, confirmPassword);
+//   };
+//   return (
+//     <>
+//       <Container fluid>
+//         <div className="row d-flex align-items-center">
+//           <div
+//             className="col-lg-6 col-md-4 col-sm-12 createAccountBgOne d-flex justify-content-center"
+//             style={{ height: "660px" }}
+//           >
+//             <div style={{ width: "18rem" }}>
+//               <Card.Img
+//                 variant="top"
+//                 src={havenfavico}
+//                 maxwidth="10%"
+//                 maxheight="10%"
+//               />
+//               <Card.Img variant="top" src={createaccountimg} className="" />
+//               <Card.Body className="text-center">
+//                 <Card.Title>
+//                   <b>Welcome To Haven</b>
+//                 </Card.Title>
+//                 <div className="my-4">
+//                   {" "}
+//                   <Button variant="primary">Go somewhere</Button>
+//                 </div>
+//               </Card.Body>
+//             </div>
+//           </div>
+//           <div
+//             className="col-lg-6 col-md-8 col-sm-12 createAccountBgTwo d-flex align-items-center justify-content-center"
+//             style={{ height: "660px" }}
+//           >
+//             <Form onSubmit={handleSubmit}>
+//               <h3 className="text-center my-4">CREATE ACCOUNT </h3>
+//               <Form.Group
+//                 className="mb-3 formFieldWidth"
+//                 // controlId="formBasicFirstName"
+//                 id="firstName"
+//                 onChange={(e) => setFirstName(e.target.value)}
+//               >
+//                 <Form.Control
+//                   type="name"
+//                   placeholder="First Name"
+//                   value={firstName}
+//                 />
+//               </Form.Group>
+//               {/* <Form.Group
+//                 className="mb-3 formFieldWidth"
+//                 // controlId="formBasicLastName"
+//                 id="lastName"
+//                 onChange={(e) => setLastName(e.target.value)}
+//               >
+//                 <Form.Control
+//                   type="name"
+//                   placeholder="Last Name"
+//                   value={lastName}
+//                 />
+//               </Form.Group>
+//               <Form.Group
+//                 className="mb-3 formFieldWidth"
+//                 // controlId="formBasicPassword"
+//                 id="password"
+//                 onChange={(e) => setPassword(e.target.value)}
+//               >
+//                 <Form.Control
+//                   type="password"
+//                   placeholder="Password"
+//                   value={password}
+//                 />
+//               </Form.Group>
+//               <Form.Group
+//                 className="mb-3 formFieldWidth"
+//                 // controlId="formBasicConfirmPassword"
+//                 id="confirmPassword"
+//                 onChange={(e) => setConfirmPassword(e.target.value)}
+//               >
+//                 <Form.Control
+//                   type="password"
+//                   placeholder="Confirm Password"
+//                   value={confirmPassword}
+//                 />
+//               </Form.Group> */}
+//               <div className="text-center">
+//                 <Button variant="primary" type="submit">
+//                   Create Account
+//                 </Button>
+//               </div>
+//             </Form>
+//           </div>
+//         </div>
+//       </Container>
+//     </>
+//   );
+// };
+
 // createAccountForm
 // loginForm
 // forgetPasswordForm
