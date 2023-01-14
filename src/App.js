@@ -1,17 +1,11 @@
 import * as React from "react";
 // import { Component } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { MaterialsandActivitiesCard } from "../src/components/allCards/Dashboard/activitiesCards";
+//pages
+import Home from "./pages/websitePages/home";
 
-//external import
+import { CreateAccountForm } from "./components/forms/authenticationForms";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>{/* <Route path="/" element={<RegisterNowBtn />} /> */}</Routes>
-      <MaterialsandActivitiesCard />
-    </BrowserRouter>
-  );
+  return <BrowserRouter></BrowserRouter>;
 }
-
-export default App;

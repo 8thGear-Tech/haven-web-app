@@ -1,0 +1,64 @@
+{
+  "teamInfo": [
+    {
+      "id": 1,
+      "image": "../../assets/images/team/madamwunmi.png",
+      "name": "Omowunmi Obidairo",
+      "role": "Founder/CEO"
+    },
+    {
+      "id": 2,
+      "image": "../../assets/images/team/omotola.png",
+      "name": "Adaramaja Omotola",
+      "role": "Chief Operating Officer"
+    },
+    {
+      "id": 3,
+      "image": "../../assets/images/team/oluwafemi.png",
+      "name": "Owoyele Oluwafemi",
+      "role": "Tech Lead"
+    },
+    {
+      "id": 4,
+      "image": "../../assets/images/team/samuel.png",
+      "name": "Samuel Afolayan",
+      "role": "Creative Lead"
+    },
+    {
+      "id": 5,
+      "image": "../../assets/images/team/olamide.png",
+      "name": "Olamide Ogunbanjo",
+      "role": "Language Lead "
+    }
+  ],
+  "teamPopUp": [
+    {
+      "id": 1,
+      "name": "../../assets/images/team/madamwunmi.png",
+      "position": "Omowunmi Obidairo",
+      "text": "Founder/CEO",
+      "link": "Founder/CEO"
+    },
+    {
+      "id": 2,
+      "name": "../../assets/images/team/madamwunmi.png",
+      "position": "Omowunmi Obidairo",
+      "text": "Founder/CEO",
+      "link": "Founder/CEO"
+    },
+    {
+      "id": 3,
+      "name": "../../assets/images/team/madamwunmi.png",
+      "position": "Omowunmi Obidairo",
+      "text": "Founder/CEO",
+      "link": "Founder/CEO"
+    },
+    {
+      "id": 4,
+      "name": "../../assets/images/team/madamwunmi.png",
+      "position": "Omowunmi Obidairo",
+      "text": "Founder/CEO",
+      "link": "Founder/CEO"
+    }
+  ]
+}
