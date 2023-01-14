@@ -21,7 +21,7 @@ import Card from "react-bootstrap/Card";
 export function MaterialsandActivitiesCard() {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src="haven.png" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
