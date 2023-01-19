@@ -18,7 +18,7 @@ export const TeamCard = (props) => {
   const { image, name, role, bio } = props;
   return (
     <>
-      <div style={{ width: "18rem" }} className="my-5">
+      <div style={{ width: "18rem" }} className="my-3 mx-auto">
         <Card.Img variant="top" src={image} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
@@ -44,11 +44,7 @@ export const Team = () => {
       <div className="container-fluid p-5 mt-5">
         {" "}
         <h3 className="text-center">OUR TEAM</h3>
-        <Row
-          xs={1}
-          md={2}
-          className="g-0 justify-content-center justify-content-evenly mt-5"
-        >
+        <Row xs={1} md={2} className="g-0 justify-content-center mt-2">
           {teamInfo.teamInfo.map((info) => {
             return (
               <Col

@@ -260,4 +260,26 @@ p {
   font-weight: 300;
   color: #75117a !important;
 }
+
+.aboutHeroBg {
+  background: conic-gradient(from 180deg at 50% 50%, rgba(209, 93, 219, 0.14) -60.79deg, rgba(28, 150, 233, 0.06) 89.87deg, rgba(209, 93, 219, 0.14) 299.21deg, rgba(28, 150, 233, 0.06) 449.87deg);
+  border-radius: 0px 0px 200px 0px;
+}
+
+.bgColor {
+  background: conic-gradient(from 180deg at 50% 50%, rgba(28, 150, 233, 0.7) -25.05deg, rgba(208, 93, 219, 0.7) 37.8deg, rgba(28, 150, 233, 0.7) 334.95deg, rgba(208, 93, 219, 0.7) 397.8deg);
+}
+
+.galleryBg {
+  background: url(/src/assets/images/hero/gallerybg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galleryCard {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 10rem;
+}
 /*# sourceMappingURL=styles.css.map */

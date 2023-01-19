@@ -7,6 +7,7 @@ import About from "./pages/websitePages/about";
 import AfterSchool from "./pages/websitePages/otherActivities/afterSchool";
 import CreativeSummer from "./pages/websitePages/otherActivities/creativeSummer";
 import WeekendActivities from "./pages/websitePages/otherActivities/weekendActivities";
+import Gallery from "./pages/websitePages/gallery";
 
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="afterSchool" element={<AfterSchool />} />
         <Route path="creativeSummer" element={<CreativeSummer />} />
         <Route path="weekendActivities" element={<WeekendActivities />} />
+        <Route path="gallery" element={<Gallery />} />
         {/* <Route path="/" element={<CreateAccountForm />} /> */}
       </Routes>
     </BrowserRouter>

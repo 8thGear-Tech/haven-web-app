@@ -31,7 +31,7 @@ const ActivitiesSectionOne = () => {
           <Col className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 align-items-stretch">
             <Card.Img variant="top" src={taekwondo} className="" />
             <Card.Body className="">
-              <h3 className="mt-3">Taekwondo</h3>
+              <h3 className="mt-3">Taekwondo Club</h3>
               <Card.Text className="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.{" "}
@@ -41,7 +41,7 @@ const ActivitiesSectionOne = () => {
           <Col className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 align-items-stretch">
             <Card.Img variant="top" src={taekwondo} className="" />
             <Card.Body className="">
-              <h3 className="mt-3">Taekwondo</h3>
+              <h3 className="mt-3">Tech Club</h3>
               <Card.Text className="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.{" "}
@@ -51,7 +51,17 @@ const ActivitiesSectionOne = () => {
           <Col className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 align-items-stretch">
             <Card.Img variant="top" src={taekwondo} className="" />
             <Card.Body className="">
-              <h3 className="mt-3">Taekwondo</h3>
+              <h3 className="mt-3">Creative Arts Club</h3>
+              <Card.Text className="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.{" "}
+              </Card.Text>
+            </Card.Body>
+          </Col>
+          <Col className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 align-items-stretch">
+            <Card.Img variant="top" src={taekwondo} className="" />
+            <Card.Body className="">
+              <h3 className="mt-3">Music Club</h3>
               <Card.Text className="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.{" "}

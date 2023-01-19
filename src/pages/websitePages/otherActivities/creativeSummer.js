@@ -27,25 +27,20 @@ const ActivitiesSectionOne = () => {
               <div className="row d-lg-flex d-md-flex ">
                 <div className="col-lg-4 col-md-6 d-flex py-2">
                   <VerifiedUserOutlinedIcon />
-                  <p className="ms-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate
-                  </p>
+                  <p className="ms-3">Haven Summer for Children aged 4 to 12</p>
                 </div>
                 <div className="col-lg-4 col-md-6 d-flex py-2">
                   <VerifiedUserOutlinedIcon />
 
                   <p className="ms-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate
+                    Haven Summer for Teenagers aged 13 to 16
                   </p>
                 </div>
                 <div className="col-lg-4 col-md-6 d-flex  py-2">
                   <VerifiedUserOutlinedIcon />
 
                   <p className="ms-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate
+                    Partner Schools Summer powered by Haven
                   </p>
                 </div>
                 <div className="col-lg-4 col-md-6 d-flex  py-2">
@@ -86,13 +81,9 @@ const ActivitiesSectionTwo = () => {
       <div className="container-fluid p-5">
         <div className="">
           {" "}
-          <h3 className="text-center">HAVEN SUMMER</h3>
+          {/* <h3 className="text-center">HAVEN SUMMER</h3> */}
           <p className="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-            lobortis.
+            Highlight of Haven Summer 2022 held at 8thGear hub, Magodo, Lagos
           </p>
         </div>
         <div className="responsive-iframe d-flex justify-content-center mt-5">

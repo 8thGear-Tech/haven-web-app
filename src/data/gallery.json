@@ -1,0 +1,136 @@
+{
+  "techgallery": [
+    {
+      "id": 1,
+      "img": "../../assets/images/gallery/tech1.jpg"
+    },
+    {
+      "id": 2,
+      "img": "../../assets/images/gallery/tech2.jpg"
+    },
+    {
+      "id": 3,
+      "img": "../../assets/images/gallery/tech3.jpg"
+    },
+    {
+      "id": 4,
+      "img": "../../assets/images/gallery/tech4.jpg"
+    },
+    {
+      "id": 5,
+      "img": "../../assets/images/gallery/tech5.jpg"
+    },
+    {
+      "id": 6,
+      "img": "../../assets/images/gallery/tech6.jpg"
+    },
+    {
+      "id": 7,
+      "img": "../../assets/images/gallery/tech7.jpg"
+    },
+    {
+      "id": 8,
+      "img": "../../assets/images/gallery/tech8.jpg"
+    },
+    {
+      "id": 9,
+      "img": "../../assets/images/gallery/tech9.jpg"
+    },
+    {
+      "id": 10,
+      "img": "../../assets/images/gallery/tech10.jpg"
+    },
+    {
+      "id": 11,
+      "img": "../../assets/images/gallery/tech11.jpg"
+    },
+    {
+      "id": 12,
+      "img": "../../assets/images/gallery/tech12.jpg"
+    }
+  ],
+  "languagegallery": [
+    {
+      "id": 1,
+      "img": "../../assets/images/gallery/french1.jpg"
+    },
+    {
+      "id": 2,
+      "img": "../../assets/images/gallery/french2.jpg"
+    },
+    {
+      "id": 3,
+      "img": "../../assets/images/gallery/french3.jpg"
+    },
+    {
+      "id": 4,
+      "img": "../../assets/images/gallery/french4.jpg"
+    },
+    {
+      "id": 5,
+      "img": "../../assets/images/gallery/french5.jpg"
+    }
+  ],
+  "artsgallery": [
+    {
+      "id": 1,
+      "img": "../../assets/images/gallery/art1.png"
+    },
+    {
+      "id": 2,
+      "img": "../../assets/images/gallery/art2.png"
+    },
+    {
+      "id": 3,
+      "img": "../../assets/images/gallery/art3.png"
+    },
+    {
+      "id": 4,
+      "img": "../../assets/images/gallery/art4.png"
+    },
+    {
+      "id": 5,
+      "img": "../../assets/images/gallery/art5.png"
+    },
+    {
+      "id": 6,
+      "img": "../../assets/images/gallery/art6.png"
+    },
+    {
+      "id": 7,
+      "img": "../../assets/images/gallery/art7.jpg"
+    },
+    {
+      "id": 8,
+      "img": "../../assets/images/gallery/art8.jpg"
+    },
+    {
+      "id": 9,
+      "img": "../../assets/images/gallery/art9.jpg"
+    },
+    {
+      "id": 10,
+      "img": "../../assets/images/gallery/art10.jpg"
+    },
+    {
+      "id": 11,
+      "img": "../../assets/images/gallery/art11.jpg"
+    },
+    {
+      "id": 12,
+      "img": "../../assets/images/gallery/art12.jpg"
+    },
+    {
+      "id": 13,
+      "img": "../../assets/images/gallery/art13.jpg"
+    },
+    {
+      "id": 14,
+      "img": "../../assets/images/gallery/art14.jpg"
+    },
+    {
+      "id": 15,
+      "img": "../../assets/images/gallery/art15.jpg"
+    }
+  ]
+}

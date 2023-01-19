@@ -22,8 +22,8 @@ export const WeekendActivitiesHero = () => {
                 HAVEN WEEKEND ACTIVITIES
               </h3>
               <p className="d-flex">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet.
+                Haven weekend activities holds every Saturday at 8thGear hub,
+                Magodo Lagos.
               </p>
               <div className="">
                 {" "}
@@ -58,8 +58,8 @@ export const CreativeSummerHero = () => {
                 HAVEN SUMMER
               </h3>
               <p className="d-flex">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet.
+                Haven summer activities holds every August. We also facilitate
+                summer activities in partner schools
               </p>
               <div className="">
                 {" "}
@@ -100,11 +100,8 @@ export const AfterSchoolHero = () => {
               AFTER SCHOOL ACTIVITIES
             </h3>
             <p className="d-flex text-center mx-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-              lobortis.
+              Activities include Tech and Music every School days for Champs of
+              ages 4 to 16
             </p>
             <div className="text-center">
               {" "}

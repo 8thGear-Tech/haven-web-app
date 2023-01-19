@@ -34,7 +34,7 @@ export const GuestNavbar = () => {
               <Nav.Link href="/" className="navTextColor mx-3">
                 HOME
               </Nav.Link>
-              <Nav.Link href="/" className="navTextColor mx-3">
+              <Nav.Link href="/about" className="navTextColor mx-3">
                 ABOUT
               </Nav.Link>
               {/* <NavDropdown

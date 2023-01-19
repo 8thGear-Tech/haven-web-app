@@ -5,8 +5,8 @@ export const AboutHero = () => {
   return (
     <>
       {/* <div className="px-3"> */}
-      <div className="px-4 container-fluid pb-4 aboutHeroBg pt-5">
-        <div className="row align-items-center justify-content-center mt-3">
+      <div className="px-4 container-fluid aboutHeroBg py-5">
+        <div className="row align-items-center justify-content-center">
           <div className="col-lg-6 col-md-12 col-sm-12 ">
             <h2 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
               WHO WE ARE
@@ -21,7 +21,7 @@ export const AboutHero = () => {
               Teenagers (ages 13-16)
             </p>
           </div>
-          <div className="col-lg-5 col-md-12 col-sm-10 mb-5">
+          <div className="col-lg-5 col-md-12 col-sm-10 mb-5 pb-3">
             <img
               src={aboutheroimage}
               className="mx-lg-auto img-fluid"

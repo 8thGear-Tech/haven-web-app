@@ -88,13 +88,13 @@ const OurActivities = () => {
               <Card.Body className="text-center">
                 <h3 className="mt-3">OUR ACTIVITIES</h3>
                 {/* <p className="text-decoration-underline fontSize">
-                  School Facilitations
+                  School Facilitation
                 </p>
                 <Card.Text className="text-decoration-underline fontSize">
                   Haven Summer
                 </Card.Text>
                 <Card.Text className="text-decoration-underline fontSize">
-                  Haven Weekend Activities
+                  Haven Weekend Club
                 </Card.Text>
                 <Card.Text className="text-decoration-underline fontSize">
                   Haven Products

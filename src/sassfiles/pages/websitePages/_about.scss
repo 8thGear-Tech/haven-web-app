@@ -1,0 +1,11 @@
+@use "../../components/hero/aboutHero";
+
+.bgColor {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(28, 150, 233, 0.7) -25.05deg,
+    rgba(208, 93, 219, 0.7) 37.8deg,
+    rgba(28, 150, 233, 0.7) 334.95deg,
+    rgba(208, 93, 219, 0.7) 397.8deg
+  );
+}
