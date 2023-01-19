@@ -42,6 +42,8 @@ export const Team = () => {
   return (
     <>
       <div className="container-fluid p-5 mt-5">
+        {" "}
+        <h3 className="text-center">OUR TEAM</h3>
         <Row
           xs={1}
           md={2}

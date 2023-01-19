@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
   color: #75117a;
@@ -54,19 +54,63 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+.GetAFacilitatorBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  width: 10.5rem;
+}
+
+.LearnMoreBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  width: 8rem;
+}
+
+.JoinOurTeamBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  width: 9.2rem;
+}
+
 .homeHeroBgg::before {
   content: "";
   position: absolute;
-  height: 70vh;
+  background-color: #2e3133;
+  height: 80vh;
   width: 100%;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+  opacity: 0;
 }
 
 .homeHeroBg {
-  background: url(/src/assets/images/hero/homehero.png);
+  background: url(/src/assets/images/hero/homeheronew.png);
   background-size: cover;
   position: relative;
   top: 0px;
@@ -78,10 +122,12 @@ p {
 }
 
 .homeHeroBg h2 {
+  position: relative;
   line-height: 45px;
 }
 
 .homeHeroBg h3 {
+  position: relative;
   line-height: 35px;
 }
 
@@ -207,5 +253,11 @@ p {
 
 .createAccountBgTwo {
   background: rgba(255, 231, 255, 0.3);
+}
+
+.fontStyle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #75117a !important;
 }
 /*# sourceMappingURL=styles.css.map */

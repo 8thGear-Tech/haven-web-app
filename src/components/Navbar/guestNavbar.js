@@ -31,15 +31,18 @@ export const GuestNavbar = () => {
             className="justifyNavItemsEnd my-4 "
           >
             <Nav className="justify-content-end" navbarScroll>
-              <Nav.Link href="#action1" className="navTextColor mx-3">
+              <Nav.Link href="/" className="navTextColor mx-3">
                 HOME
               </Nav.Link>
-              <NavDropdown
+              <Nav.Link href="/" className="navTextColor mx-3">
+                ABOUT
+              </Nav.Link>
+              {/* <NavDropdown
                 title="ABOUT US"
                 id="navbarScrollingDropdown"
                 className="navTextColor mx-3"
               >
-                <NavDropdown.Item href="#action3" className="navTextColor">
+                <NavDropdown.Item href="/about" className="navTextColor">
                   ABOUT HAVEN
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -50,8 +53,32 @@ export const GuestNavbar = () => {
                 <NavDropdown.Item href="#action5" className="navTextColor">
                   BLOG
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
               <NavDropdown
+                title="SERVICES"
+                id="navbarScrollingDropdown"
+                className="navTextColor mx-3 "
+              >
+                <NavDropdown.Item href="/afterSchool" className="navTextColor">
+                  AFTER SCHOOL
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item
+                  href="/creativeSummer"
+                  className="navTextColor"
+                >
+                  CREATIVE SUMMER
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item
+                  href="/weekendActivities"
+                  className="navTextColor"
+                >
+                  WEEKEND ACTIVITIES
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+              </NavDropdown>
+              {/* <NavDropdown
                 title="SERVICES"
                 id="navbarScrollingDropdown"
                 className="navTextColor mx-3 "
@@ -71,7 +98,7 @@ export const GuestNavbar = () => {
                 <NavDropdown.Item href="#action5" className="navTextColor">
                   OTHER SERVICES
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
               <div className="mx-3">
                 <RegisterNowBtn />
               </div>
