@@ -1,0 +1,19 @@
+{
+  "blogCarddata": [
+    {
+      "id": "1",
+      "image": "Basic",
+      "text": " Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": "2",
+      "image": "Pro",
+      "text": " Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": "3",
+      "image": "Premium",
+      "text": " Some quick example text to build on the card title and make up the bulk of the card's content."
+    }
+  ]
+}

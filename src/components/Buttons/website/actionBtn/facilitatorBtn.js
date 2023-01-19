@@ -21,6 +21,7 @@ import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
 import UploadIcon from "@mui/icons-material/Upload";
 import CameraRollIcon from "@mui/icons-material/CameraRoll";
 
+
 export const BackToActivity = () => {
   return (
     <>
@@ -87,8 +88,7 @@ export const StartUpload = () => {
     <>
       <a href="" target="_blank">
         <Button variant="outline-light" className="StartUpload">
-          <CameraRollIcon />
-          START UPLOAD
+          <CameraRollIcon /> START UPLOAD
         </Button>
       </a>
     </>
@@ -115,6 +115,7 @@ export const Done = () => {
           DONE
         </Button>
       </a>
+    
     </>
   );
 };

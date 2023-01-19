@@ -94,7 +94,7 @@ p {
   font-style: bold;
   font-weight: 600;
   color: #ffffff;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 .undo {
@@ -107,7 +107,7 @@ p {
   font-weight: 600;
   color: #ffffff;
   border-color: #75117a;
-  border-radius: 2px;
+  border-radius: 10px;
   word-spacing: 2px;
 }
 
@@ -126,7 +126,7 @@ p {
   font-weight: 600;
   color: #ffffff;
   border-color: #75117a;
-  border-radius: 2px;
+  border-radius: 10px;
   word-spacing: 2px;
 }
 
@@ -145,7 +145,7 @@ p {
   font-weight: 600;
   color: #ffffff;
   border-color: #75117a;
-  border-radius: 2px;
+  border-radius: 10px;
   word-spacing: 2px;
 }
 
@@ -164,7 +164,7 @@ p {
   font-weight: 600;
   color: #ffffff;
   border-color: #75117a;
-  border-radius: 2px;
+  border-radius: 10px;
   word-spacing: 2px;
 }
 
@@ -183,7 +183,7 @@ p {
   font-weight: 600;
   color: #ffffff;
   border-color: #75117a;
-  border-radius: 2px;
+  border-radius: 10px;
   word-spacing: 2px;
 }
 
@@ -201,7 +201,7 @@ p {
   font-weight: 800;
   color: #75117a;
   border-color: #75117a;
-  border-radius: 2px;
+  border-radius: 10px;
   word-spacing: 2px;
 }
 
@@ -220,11 +220,53 @@ p {
   font-weight: 600;
   color: #ffffff;
   border-color: #75117a;
-  border-radius: 2px;
+  border-radius: 10px;
   word-spacing: 2px;
 }
 
 .Done:hover {
   background-color: #75117a;
   color: #ffffff;
+}
+
+.Cardpic {
+  border-radius: 25rem;
+  height: 10rem;
+}
+
+.paymentpackage {
+  border: 2px solid;
+  border-radius: 50px;
+  box-shadow: 5px;
+  border-color: #1ebeb8;
+  color: #75117a;
+}
+
+.CardWork {
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.Cardpicture {
+  border-top-left-radius: 47px;
+  border-top-right-radius: 47px;
+  border-bottom-color: #1ebeb8;
+}
+
+.blogImage {
+  border-radius: 50px;
+}
+
+.blogcard {
+  height: auto;
+  border-style: hidden;
+  color: #75117a;
+}
+
+.Gallerypics {
+  border-radius: 50px;
+}
+
+.Gallerycard {
+  border-radius: 50px;
 }/*# sourceMappingURL=styles.css.map */
