@@ -26,6 +26,11 @@ export const Footer = () => {
                       Become a facilitator
                     </a>
                   </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 footerParagraph">
+                      Become a facilitator
+                    </a>
+                  </li>
                   {/* <li class="nav-item mb-2">
                     <a href="#" class="nav-link p-0 text-muted">
                       Get to know us
