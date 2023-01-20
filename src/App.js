@@ -5,7 +5,7 @@ import { Buttons } from "../src/pages/websitePages/allActivities/allActivities";
 import ProfileReadMoreCard from "../src/components/allCards/Dashboard/profileCards";
 import { PaymentPackaggee } from "../src/components/allCards/Website/paymentPackage";
 import { BloggCcard } from "../src/components/allCards/Website/blogCard";
-import GalleryCard from "../src/components/allCards/Website/galleryCard";
+import { GallleryCardImage } from "../src/components/allCards/Website/galleryCard";
 //external import
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         {" "}
-        <Route path="/" element={<GalleryCard />} />{" "}
+        <Route path="/" element={<GallleryCardImage />} />{" "}
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,16 @@
+{
+  "gallerydata": [
+    {
+      "id": "1",
+      "image": "../passport.jpg"
+    },
+    {
+      "id": "2",
+      "image": "../passport.jpg"
+    },
+    {
+      "id": "3",
+      "image": "../passport.jpg"
+    }
+  ]
+}
