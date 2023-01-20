@@ -1,30 +1,38 @@
+@use "./colors" as *;
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--white);
   font-family: "Raleway", sans-serif;
+  color: $sectextcolor;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
+  color: $sectextcolor;
 }
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 900;
   font-family: "Raleway", sans-serif;
+  color: $sectextcolor;
 }
 h4 {
   font-size: 1.3rem;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
+  color: $sectextcolor;
+  color: $sectextcolor;
 }
 
 h5 {
   font-weight: 300;
+  font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
+  color: $sectextcolor;
 }
 
 p {

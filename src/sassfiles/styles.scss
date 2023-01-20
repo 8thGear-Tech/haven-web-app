@@ -5,3 +5,8 @@
 @use "./components/allCards/website/paymentPackage" as *;
 @use "./components/allCards/website/blogCard" as *;
 @use "./components//allCards/website/galleryCard" as *;
+@use "./components/hero/homeHero";
+@use "./components/Button/website/actionBtn/schoolBtn";
+@use "./components/allCards/website/teamCards";
+@use "./components/Navbar/guestNavbar";
+@use "./components/forms/authenticationForm";

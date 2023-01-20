@@ -41,10 +41,16 @@ export const SubmitBtn = () => {
 export const RegisterNowBtn = () => {
   return (
     <>
-      <a href="" target="_blank">
-        {" "}
+      <a
+        target="_blank"
+        href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NGppOHBxa2dodGs4a2U4NTNvMWNzMTYxYWEgZDYxNDExMjFiODM1M2Q4NmJhNWVmOTlhNmY4MjdhZTY5OWRkZTVhODM2Y2RkZDg4ZGQ0ODJlODg4YTUyMmMyY0Bn&amp;tmsrc=d6141121b8353d86ba5ef99a6f827ae699dde5a836cddd88dd482e888a522c2c%40group.calendar.google.com"
+      >
         <button className="RegisterNowBtn">REGISTER NOW</button>
       </a>
+      {/* <a href="" target="_blank">
+        {" "}
+        <button className="RegisterNowBtn">REGISTER NOW</button>
+      </a> */}
     </>
   );
 };
