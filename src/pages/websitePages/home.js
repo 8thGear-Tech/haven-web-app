@@ -1,6 +1,7 @@
 //internal import
 import { GuestNavbar } from "../../components/Navbar/guestNavbar";
 import { HomeHero } from "../../components/hero/homeHero";
+import { HomeMobileHero } from "../../components/hero/homeHero";
 import { WhyTrustUsCard } from "../../components/allCards/Website/whyTrustUs";
 import whyTrustUsInfo from "../../data/allCards/whyTrustUs.json";
 
@@ -23,6 +24,7 @@ const Home = () => {
     <>
       <GuestNavbar />
       <HomeHero />
+      <HomeMobileHero />
       <WhyTrustUs />
       <OurActivities />
     </>

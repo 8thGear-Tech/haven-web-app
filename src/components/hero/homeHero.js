@@ -14,10 +14,10 @@ export const HomeHero = () => {
   return (
     <>
       <div className="container-fluid homeHeroBg d-flex align-items-center">
-        <div className="px-3 container-fluid homeHeroBgg d-flex pb-4">
+        <div className="container homeHeroBgg d-flex align-items-center">
           <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-12 ">
-              <h2 className="d-none d-lg-block d-md-none d-sm-none d-xs-none ms-5 heroTextColor">
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <h2 className="d-none d-lg-block d-md-none d-sm-none d-xs-none heroTextColor">
                 Exciting Young Champs Towards Technology, Arts And Foreign
                 Languages
               </h2>
@@ -26,7 +26,7 @@ export const HomeHero = () => {
                 Exciting Young Champs Towards Technology, Arts And Foreign
                 Languages
               </h3>{" "}
-              <div className="ms-5">
+              <div className="">
                 {" "}
                 <GetAFacilitatorBtn />
               </div>
@@ -34,14 +34,20 @@ export const HomeHero = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid  homeHeroMobileBg d-flex align-items-center py-4">
+    </>
+  );
+};
+export const HomeMobileHero = () => {
+  return (
+    <>
+      <div className="container-fluid  homeHeroMobileBg d-flex align-items-center py-4 d-xs-block d-sm-block d-md-block d-lg-none">
         {/* <div className="px-3 container-fluid  d-flex pt-3"> */}
         <div className="row d-flex justify-content-center g-0">
-          <div className="col-sm-12 d-xs-block d-sm-block d-md-block d-lg-none text-center">
+          <div className="col-sm-12  text-center">
             <img src={homeheromobilee} class="img-fluid" />
           </div>
           <div className="">
-            <h4 className="col-sm-10 d-xs-block d-sm-block d-md-block d-lg-none mx-auto">
+            <h4 className="col-sm-10 mx-auto">
               Exciting Young Champs Towards Technology, Arts And Foreign
               Languages
             </h4>
@@ -52,6 +58,7 @@ export const HomeHero = () => {
     </>
   );
 };
+
 export const HomeHer = () => {
   return (
     <>

@@ -1,0 +1,19 @@
+{
+  "paymentpackagedata": [
+    {
+      "id": "1",
+      "title": "Basic",
+      "text": " Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": "2",
+      "title": "Pro",
+      "text": " Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": "3",
+      "title": "Premium",
+      "text": " Some quick example text to build on the card title and make up the bulk of the card's content."
+    }
+  ]
+}
