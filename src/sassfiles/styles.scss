@@ -11,6 +11,9 @@
 @use "./pages/websitePages/about";
 @use "./pages/websitePages/gallery";
 
+//component
+@use "./components/footer" as *;
+
 // @use "./components//Button/website/actionBtn/facilitatorBtn" as *;
 // @use "./components/allCards/dashboard/profileCards" as *;
 // @use "./components/allCards/website/paymentPackage" as *;

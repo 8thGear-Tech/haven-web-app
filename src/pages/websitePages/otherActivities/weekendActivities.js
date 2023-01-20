@@ -86,7 +86,7 @@ const ActivitiesSectionTwo = () => {
           </p>
           <div className="row align-items-center justify-content-center mt-5">
             {" "}
-            <div className="col-lg-5 col-md-12 col-sm-10 mb-5">
+            <div className="col-lg-5 col-md-6 col-sm-12 mb-5">
               <img
                 src={weekendactivities}
                 className="mx-lg-auto img-fluid"
@@ -94,13 +94,13 @@ const ActivitiesSectionTwo = () => {
                 loading=""
               />
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 ">
-              <h2 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
-                Lorem ipsum dolor sit amet consectetur
-              </h2>
-              <h3 className="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+            <div className="col-lg-6 col-md-6 col-sm-12 ">
+              <h3 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
                 Lorem ipsum dolor sit amet consectetur
               </h3>
+              <h4 className="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+                Lorem ipsum dolor sit amet consectetur
+              </h4>
               <p className="d-flex">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.

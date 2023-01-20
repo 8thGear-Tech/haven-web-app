@@ -18,10 +18,10 @@ const CreativeSummer = () => {
 const ActivitiesSectionOne = () => {
   return (
     <>
-      <div className="container-fluid p-5">
+      <div className="container-fluid px-5 py-3">
         <div className="">
           {" "}
-          <h3 className="text-center pb-4">HAVEN SUMMER</h3>
+          <h3 className="text-center pb-1">HAVEN SUMMER</h3>
           <div className="card-group">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto">
               <div className="row d-lg-flex d-md-flex ">
@@ -78,15 +78,15 @@ const ActivitiesSectionOne = () => {
 const ActivitiesSectionTwo = () => {
   return (
     <>
-      <div className="container-fluid p-5">
+      <div className="container-fluid px-5 py-4">
         <div className="">
           {" "}
           {/* <h3 className="text-center">HAVEN SUMMER</h3> */}
-          <p className="text-center">
+          <h4 className="text-center">
             Highlight of Haven Summer 2022 held at 8thGear hub, Magodo, Lagos
-          </p>
+          </h4>
         </div>
-        <div className="responsive-iframe d-flex justify-content-center mt-5">
+        <div className="responsive-iframe d-flex justify-content-center mt-4">
           <iframe
             src={"https://www.youtube.com/embed/CZMm9epJviQ"}
             width="600"

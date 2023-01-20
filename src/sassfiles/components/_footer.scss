@@ -1,0 +1,27 @@
+@use "../colors" as *;
+
+.footerOneBgColor {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(223, 234, 239, 0.49) 66.15%,
+    rgba(255, 255, 255, 0.515625) 99.99%,
+    #ffffff 100%
+  );
+  //   border-radius: 40px 40px 0px 0px;
+}
+.footerTwoBgColor {
+  background: linear-gradient(180deg, #75117a 0%, #d15ddb 100%);
+  //   border-radius: 40px 40px 0px 0px;
+  //   left: -6px;
+  //   top: 2725.265625px;
+  //   border-radius: 0px;
+}
+
+.footerParagraph {
+  font-size: 1rem;
+  font-weight: 300;
+  color: $sectextcolor;
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
+}

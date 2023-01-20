@@ -9,21 +9,28 @@ import CreativeSummer from "./pages/websitePages/otherActivities/creativeSummer"
 import WeekendActivities from "./pages/websitePages/otherActivities/weekendActivities";
 import Gallery from "./pages/websitePages/gallery";
 
+import { Footer } from "./components/footer";
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="afterSchool" element={<AfterSchool />} />
-        <Route path="creativeSummer" element={<CreativeSummer />} />
-        <Route path="weekendActivities" element={<WeekendActivities />} />
-        <Route path="gallery" element={<Gallery />} />
-        {/* <Route path="/" element={<CreateAccountForm />} /> */}
-      </Routes>
-    </BrowserRouter>
+    <div>
+      {" "}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="afterSchool" element={<AfterSchool />} />
+          <Route path="creativeSummer" element={<CreativeSummer />} />
+          <Route path="weekendActivities" element={<WeekendActivities />} />
+          <Route path="gallery" element={<Gallery />} />
+          {/* <Route path="/" element={<CreateAccountForm />} /> */}
+        </Routes>
+      </BrowserRouter>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 }
 

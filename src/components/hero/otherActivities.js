@@ -12,9 +12,9 @@ export const WeekendActivitiesHero = () => {
   return (
     <>
       <div className="px-3">
-        <div className="px-4 container-fluid pb-4">
+        <div className="px-4 container-fluid py-5">
           <div className="row align-items-center justify-content-center mt-3">
-            <div className="col-lg-6 col-md-12 col-sm-12 ">
+            <div className="col-lg-6 col-md-6 col-sm-12 ">
               <h2 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
                 HAVEN WEEKEND ACTIVITIES
               </h2>
@@ -30,7 +30,7 @@ export const WeekendActivitiesHero = () => {
                 <RegisterNowBtn />
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 col-sm-10 mb-5">
+            <div className="col-lg-5 col-md-6 col-sm-10 mb-5">
               <img
                 src={weekendactivities}
                 className="mx-lg-auto img-fluid"
@@ -48,9 +48,9 @@ export const CreativeSummerHero = () => {
   return (
     <>
       <div className="px-3">
-        <div className="px-4 container-fluid pb-4">
-          <div className="row align-items-center justify-content-center mt-3">
-            <div className="col-lg-6 col-md-12 col-sm-12 ">
+        <div className="px-4 container-fluid py-5">
+          <div className="row align-items-center justify-content-center">
+            <div className="col-lg-6 col-md-6 col-sm-12 ">
               <h2 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
                 HAVEN SUMMER
               </h2>
@@ -66,7 +66,7 @@ export const CreativeSummerHero = () => {
                 <RegisterNowBtn />
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 col-sm-10 mb-5">
+            <div className="col-lg-5 col-md-6 col-sm-10 mt-3">
               <img
                 src={creativesummer}
                 className="mx-lg-auto img-fluid"
