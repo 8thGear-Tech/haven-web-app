@@ -15,12 +15,12 @@ export const GalleryCard = (props) => {
 export const GallleryCardImage = () => {
   return (
     <>
-      <div className="container">
-        <div className="row text-center justify-content-around ">
+      <div className="container-fluid">
+        <div className="row justify-content-center mx-5">
           {GalleryPictures.gallerydata.map((Gallery) => {
             return (
               <>
-                <div className="col-lg-3 col-md-5 col-sm-12" key={Gallery.id}>
+                <div className="col-lg-4 col-md-6 col-sm-12" key={Gallery.id}>
                   <GalleryCard {...Gallery} />
                 </div>
               </>

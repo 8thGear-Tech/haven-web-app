@@ -18,7 +18,7 @@ function App() {
       <Routes>
         {" "}
         {/* <Route path="/" element={<GallleryCardImage />} />{" "} */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<PaymentPackaggee />} />
         {/* <Route path="/" element={<CreateAccountForm />} /> */}
       </Routes>
     </BrowserRouter>
