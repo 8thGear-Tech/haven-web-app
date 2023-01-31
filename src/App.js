@@ -8,9 +8,10 @@ import AfterSchool from "./pages/websitePages/otherActivities/afterSchool";
 import CreativeSummer from "./pages/websitePages/otherActivities/creativeSummer";
 import WeekendActivities from "./pages/websitePages/otherActivities/weekendActivities";
 import Gallery from "./pages/websitePages/gallery";
+import Blog from "./pages/websitePages/blog/blogPage";
+import BlogReadMore from "./pages/websitePages/blog/blogReadMorePage";
 
 import { Footer } from "./components/footer";
-import { CreateAccountForm } from "./components/forms/authenticationForms";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <Route path="creativeSummer" element={<CreativeSummer />} />
           <Route path="weekendActivities" element={<WeekendActivities />} />
           <Route path="gallery" element={<Gallery />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blogReadMore" element={<BlogReadMore />} />
           {/* <Route path="/" element={<CreateAccountForm />} /> */}
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,47 @@
+{
+  "activitiesData": [
+    {
+      "id": 1,
+      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
+      "title": "Tech",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+
+    {
+      "id": 2,
+      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
+      "title": "Art",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+
+    {
+      "id": 3,
+      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
+      "title": "Languages",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    }
+  ],
+
+  "performanceData": [
+    {
+      "id": 1,
+      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
+      "title": "Tech",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+
+    {
+      "id": 2,
+      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
+      "title": "Art",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+
+    {
+      "id": 3,
+      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
+      "title": "Languages",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    }
+  ]
+}

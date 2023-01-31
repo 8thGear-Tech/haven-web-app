@@ -1,0 +1,46 @@
+{
+  "resourceData": [
+    {
+      "id": 1,
+      "image": "../assets/images/materials.png",
+      "title": "Materials",
+      "text": "12"
+    },
+
+    {
+      "id": 2,
+      "image": "../assets/images/assignments.png",
+      "title": "Assignments",
+      "text": "5"
+    },
+
+    {
+      "id": 3,
+      "image": "../assets/images/virtualclass.png",
+      "title": "Virtual Class",
+      "text": "View"
+    }
+  ],
+  "infoData": [
+    {
+      "id": 1,
+      "subtitle": "New School",
+      "title": "245",
+      "text": "50% increase in 25 days"
+    },
+
+    {
+      "id": 2,
+      "subtitle": "Total Activities",
+      "title": "280",
+      "text": "76% increase in 20 days"
+    },
+
+    {
+      "id": 3,
+      "subtitle": "Total Schools",
+      "title": "3280",
+      "text": "80% increase in 20 days"
+    }
+  ]
+}

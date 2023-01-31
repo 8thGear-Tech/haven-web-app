@@ -45,12 +45,12 @@ export const BlogHero = () => {
             >
               Attend a Summer Camp
             </h3>
-            <h4
+            <h5
               className="lh-5 d-xs-block d-sm-block d-md-block d-lg-none"
               style={{ color: "#2B0947" }}
             >
               Attend a Summer Camp
-            </h4>
+            </h5>
             <p className="d-flex ">
               Summer Camps draw children together and help build team spirit.
               Kids not only make new friends but also learn to cooperate and
