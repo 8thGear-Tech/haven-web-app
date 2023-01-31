@@ -8,7 +8,7 @@ export const GetAFacilitatorBtn = () => {
     <>
       <a href="" target="_blank">
         {" "}
-        <button className="GetAFacilitatorBtn">GET A FACILITATOR</button>
+        <button className="GetAFacilitatorBtn">GET AN INSTRUCTOR</button>
       </a>
     </>
   );
