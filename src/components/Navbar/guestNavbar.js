@@ -34,10 +34,10 @@ export const GuestNavbar = () => {
               <Nav.Link href="/" className="navTextColor mx-3">
                 HOME
               </Nav.Link>
-              <Nav.Link href="/about" className="navTextColor mx-3">
+              {/* <Nav.Link href="/about" className="navTextColor mx-3">
                 ABOUT
-              </Nav.Link>
-              {/* <NavDropdown
+              </Nav.Link> */}
+              <NavDropdown
                 title="ABOUT US"
                 id="navbarScrollingDropdown"
                 className="navTextColor mx-3"
@@ -46,15 +46,15 @@ export const GuestNavbar = () => {
                   ABOUT HAVEN
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action4" className="navTextColor">
+                <NavDropdown.Item href="/gallery" className="navTextColor">
                   GALLERY
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5" className="navTextColor">
+                <NavDropdown.Item href="/blog" className="navTextColor">
                   BLOG
                 </NavDropdown.Item>
-              </NavDropdown> */}
-              <NavDropdown
+              </NavDropdown>
+              {/* <NavDropdown
                 title="SERVICES"
                 id="navbarScrollingDropdown"
                 className="navTextColor mx-3 "
@@ -77,8 +77,8 @@ export const GuestNavbar = () => {
                   WEEKEND ACTIVITIES
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-              </NavDropdown>
-              {/* <NavDropdown
+              </NavDropdown> */}
+              <NavDropdown
                 title="SERVICES"
                 id="navbarScrollingDropdown"
                 className="navTextColor mx-3 "
@@ -95,10 +95,10 @@ export const GuestNavbar = () => {
                   PRODUCT
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5" className="navTextColor">
+                <NavDropdown.Item href="/afterSchool" className="navTextColor">
                   OTHER SERVICES
                 </NavDropdown.Item>
-              </NavDropdown> */}
+              </NavDropdown>
               <div className="mx-3">
                 <RegisterNowBtn />
               </div>
