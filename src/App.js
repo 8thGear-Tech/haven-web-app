@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Buttons } from "../src/pages/websitePages/allActivities/allActivities";
 import ProfileReadMoreCard from "../src/components/allCards/Dashboard/profileCards";
 import { PaymentPackaggee } from "../src/components/allCards/Website/paymentPackage";
-// import { BloggCcard } from "../src/components/allCards/Website/blogCard";
+import { BloggCcard } from "../src/components/allCards/Website/blogCard";
 import { GallleryCardImage } from "../src/components/allCards/Website/galleryCard";
 //external import
 //pages
@@ -18,8 +18,9 @@ function App() {
       <Routes>
         {" "}
         {/* <Route path="/" element={<GallleryCardImage />} />{" "} */}
-        <Route path="/" element={<PaymentPackaggee />} />
-        {/* <Route path="/" element={<CreateAccountForm />} /> */}
+        {/* <Route path="/" element={<PaymentPackaggee />} /> */}
+        {/* <Route path="/" element={<BloggCcard />} /> */}
+        <Route path="/" element={<BloggCcard />} />
       </Routes>
     </BrowserRouter>
   );
