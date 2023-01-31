@@ -161,7 +161,13 @@ p {
 }
 
 .createAccountBgOne {
-  background: conic-gradient(from 180deg at 50% 50%, rgba(209, 93, 219, 0.14) -60.79deg, rgba(28, 150, 233, 0.06) 89.87deg, rgba(209, 93, 219, 0.14) 299.21deg, rgba(28, 150, 233, 0.06) 449.87deg);
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(209, 93, 219, 0.14) -60.79deg,
+    rgba(28, 150, 233, 0.06) 89.87deg,
+    rgba(209, 93, 219, 0.14) 299.21deg,
+    rgba(28, 150, 233, 0.06) 449.87deg
+  );
 }
 
 .createAccountBgTwo {
@@ -261,12 +267,24 @@ p {
 }
 
 .aboutHeroBg {
-  background: conic-gradient(from 180deg at 50% 50%, rgba(209, 93, 219, 0.14) -60.79deg, rgba(28, 150, 233, 0.06) 89.87deg, rgba(209, 93, 219, 0.14) 299.21deg, rgba(28, 150, 233, 0.06) 449.87deg);
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(209, 93, 219, 0.14) -60.79deg,
+    rgba(28, 150, 233, 0.06) 89.87deg,
+    rgba(209, 93, 219, 0.14) 299.21deg,
+    rgba(28, 150, 233, 0.06) 449.87deg
+  );
   border-radius: 0px 0px 200px 0px;
 }
 
 .bgColor {
-  background: conic-gradient(from 180deg at 50% 50%, rgba(28, 150, 233, 0.7) -25.05deg, rgba(208, 93, 219, 0.7) 37.8deg, rgba(28, 150, 233, 0.7) 334.95deg, rgba(208, 93, 219, 0.7) 397.8deg);
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(28, 150, 233, 0.7) -25.05deg,
+    rgba(208, 93, 219, 0.7) 37.8deg,
+    rgba(28, 150, 233, 0.7) 334.95deg,
+    rgba(208, 93, 219, 0.7) 397.8deg
+  );
 }
 
 .galleryBg {
@@ -283,7 +301,13 @@ p {
 }
 
 .footerOneBgColor {
-  background: linear-gradient(180deg, #ffffff 0%, rgba(223, 234, 239, 0.49) 66.15%, rgba(255, 255, 255, 0.515625) 99.99%, #ffffff 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(223, 234, 239, 0.49) 66.15%,
+    rgba(255, 255, 255, 0.515625) 99.99%,
+    #ffffff 100%
+  );
 }
 
 .footerTwoBgColor {

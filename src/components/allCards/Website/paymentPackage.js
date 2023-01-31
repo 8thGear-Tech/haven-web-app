@@ -22,7 +22,7 @@ export const PaymentpackageCard = (props) => {
   );
 };
 
-export const PaymentPackaggee = () => {
+export const PaymentPackage = () => {
   return (
     <>
       <div className="container">
