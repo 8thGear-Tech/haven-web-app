@@ -16,7 +16,10 @@ const AboutChampsForm = () => {
                 <h5> What’s your goal about your champ?</h5>
               </Form.Label>
               {/* <Form.Control type="email" placeholder="Enter email" /> */}
-              <Form.Select aria-label="Default select example">
+              <Form.Select
+                aria-label="Default select example"
+                className="schoolPlaceHolderBorder"
+              >
                 <option>Open this select menu</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -29,7 +32,10 @@ const AboutChampsForm = () => {
                 <h5>What’s your activity?</h5>
               </Form.Label>
               {/* <Form.Control type="password" placeholder="Password" /> */}
-              <Form.Select aria-label="Default select example">
+              <Form.Select
+                aria-label="Default select example"
+                className="schoolPlaceHolderBorder"
+              >
                 <option>Open this select menu</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>

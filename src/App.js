@@ -11,10 +11,16 @@ import Gallery from "./pages/websitePages/gallery";
 import Blog from "./pages/websitePages/blog/blogPage";
 import BlogReadMore from "./pages/websitePages/blog/blogReadMorePage";
 
+//payment packages
+import PaymentPackages from "./pages/websitePages/paymentPackages/paymentPackages";
+import BasicPackage from "./pages/websitePages/paymentPackages/basicPackage";
+
 //authentication pages
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 import ChampsNeeds from "./pages/websitePages/authenticationPages/school/champsNeeds";
 import SchoolLocation from "./pages/websitePages/authenticationPages/school/schoolLocation";
+import SchoolInformation from "./pages/websitePages/authenticationPages/school/schoolInformation";
+import ActivitySchedule from "./pages/websitePages/authenticationPages/school/activitySchedule";
 
 import { Footer } from "./components/footer";
 
@@ -33,9 +39,16 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path=" " element={<BlogReadMore />} />
 
+          {/* payment packages */}
+          <Route path="PaymentPackages" element={<PaymentPackages />} />
+          <Route path="BasicPackage" element={<BasicPackage />} />
+
           {/* authentication pages */}
           <Route path="ChampsNeeds" element={<ChampsNeeds />} />
+
           <Route path="SchoolLocation" element={<SchoolLocation />} />
+          <Route path="SchoolInformation" element={<SchoolInformation />} />
+          <Route path="ActivitySchedule" element={<ActivitySchedule />} />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />

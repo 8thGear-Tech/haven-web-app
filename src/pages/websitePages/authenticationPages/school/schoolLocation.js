@@ -4,26 +4,26 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import { GuestNavbar } from "../../../../components/Navbar/guestNavbar";
-// import AboutChampsForm from "../../../../components/forms/website/schools/aboutChampsForm";
+import SchoolLocationForm from "../../../../components/forms/website/schools/schoolLocationForm";
 
 const SchoolLocation = () => {
   return (
     <>
       <GuestNavbar />
-      {/* <ChampsNeed /> */}
+      <SchoolLocationSection />
     </>
   );
 };
 
-const ChampsNeed = () => {
+const SchoolLocationSection = () => {
   return (
     <>
       <Container className="mt-5 px-4">
         <Row>
           {" "}
-          <h3>Tell us about your champs need</h3>
-          <p>What’s your goal and what subjects do your champ need help in?</p>
-          {/* <AboutChampsForm /> */}
+          <h3>Where is your school located?</h3>
+          <p>This helps us get the best instructor close to you.</p>
+          <SchoolLocationForm />
         </Row>
       </Container>
     </>

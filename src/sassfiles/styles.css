@@ -429,8 +429,19 @@ p {
   color: #75117a;
 }
 
+.schoolPlaceHolderBorder {
+  border-radius: 0px;
+  height: 3.2rem;
+}
+
 .champFormBgColor {
   background: #dddddd;
+}
+
+.authPlaceHolderBorder {
+  border-radius: 0px;
+  height: 3.2rem;
+  background-color: #dddddd;
 }
 
 .paymentpackage {
