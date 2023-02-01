@@ -1,9 +1,11 @@
 .paymentpackage {
-  border: 2px solid;
+  // border: 2px solid;
   border-radius: 50px;
   box-shadow: 5px;
-  border-color: #1ebeb8;
-  color: #75117a;
+  // border-color: #1ebeb8;
+  // color: #75117a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // backdrop-filter: blur(5px);
 }
 .CardWork {
   gap: 40px;

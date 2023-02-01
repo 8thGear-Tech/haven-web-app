@@ -40,7 +40,7 @@ h4 {
 }
 
 h5 {
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
   color: #75117a;
@@ -128,6 +128,80 @@ p {
   border-radius: 50px;
 }
 
+.LoginBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  width: 8rem;
+}
+.LoginBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+.LoginBtn:focus {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
+.CreateAccountBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  width: 11rem;
+}
+.CreateAccountBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+.CreateAccountBtn:focus {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
+.BackBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  width: 7rem;
+}
+.BackBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+.BackBtn:focus {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
+.joinUsTextColor {
+  background: linear-gradient(180deg, #0f035e 76.04%, #1077f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+}
+
 .navbarBg {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -166,6 +240,26 @@ p {
 
 .createAccountBgTwo {
   background: rgba(255, 231, 255, 0.3);
+}
+
+.placeHolderBorder {
+  border-radius: 10px;
+  height: 3.2rem;
+}
+
+.mutedTextFontColor {
+  color: #6c757d;
+  border: none;
+}
+.mutedTextFontColor:hover {
+  color: #75117a;
+}
+.mutedTextFontColor:focus {
+  color: #75117a;
+}
+
+.joinUsModalBg {
+  background: conic-gradient(from 180deg at 50% 50%, rgba(28, 150, 233, 0.1) -60.7deg, rgba(209, 93, 219, 0.1) 63.33deg, rgba(28, 150, 233, 0.1) 299.3deg, rgba(209, 93, 219, 0.1) 423.33deg);
 }
 
 .GetAFacilitatorBtn {
@@ -282,6 +376,23 @@ p {
   height: 10rem;
 }
 
+.blogImage {
+  border-radius: 50px;
+}
+
+.blogcard {
+  height: auto;
+  border-style: hidden;
+  color: #75117a;
+}
+
+.blogCategoryText {
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  color: #75117a;
+}
+
 .footerOneBgColor {
   background: linear-gradient(180deg, #ffffff 0%, rgba(223, 234, 239, 0.49) 66.15%, rgba(255, 255, 255, 0.515625) 99.99%, #ffffff 100%);
 }
@@ -316,5 +427,26 @@ p {
 .ReadMoreBtn:focus {
   background-color: #75117a;
   color: #75117a;
+}
+
+.champFormBgColor {
+  background: #dddddd;
+}
+
+.paymentpackage {
+  border-radius: 50px;
+  box-shadow: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.CardWork {
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.Cardpicture {
+  border-top-left-radius: 47px;
+  border-top-right-radius: 47px;
+  border-bottom-color: #1ebeb8;
 }
 /*# sourceMappingURL=styles.css.map */

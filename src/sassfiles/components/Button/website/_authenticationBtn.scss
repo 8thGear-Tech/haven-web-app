@@ -1,0 +1,47 @@
+@use "../../../colors" as *;
+@use "../../../font" as *;
+
+@mixin BtnStyle {
+  background-color: $buttoncolor;
+  color: $tertextcolor;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  &:hover {
+    background-color: $buttoncolor;
+    color: $tertextcolor;
+  }
+  &:focus {
+    background-color: $buttoncolor;
+    color: $tertextcolor;
+  }
+}
+
+.LoginBtn {
+  @include BtnStyle;
+  width: 8rem;
+}
+
+.CreateAccountBtn {
+  @include BtnStyle;
+  width: 11rem;
+}
+
+.BackBtn {
+  @include BtnStyle;
+  width: 7rem;
+}
+
+.joinUsTextColor {
+  background: linear-gradient(180deg, #0f035e 76.04%, #1077f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+  // text-fill-color: transparent;
+}

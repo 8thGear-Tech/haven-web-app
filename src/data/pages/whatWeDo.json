@@ -1,0 +1,22 @@
+{
+  "whatwedo": [
+    {
+      "id": "1",
+      "image": "../../../assets/images/whatwedo/tech.png",
+      "title": "Technology",
+      "text": "Our Coding and Robotics often presents champs with problems, and help them ..."
+    },
+    {
+      "id": "2",
+      "image": "../../../assets/images/whatwedo/arts.png",
+      "title": "Pro",
+      "text": "Our Arts activities includes Creative and Martial Arts which enhances your ..."
+    },
+    {
+      "id": "3",
+      "image": "../../../assets/images/whatwedo/languages.png",
+      "title": "Premium",
+      "text": "Learning to speak other foreign languages is fun, we teach languages such as...."
+    }
+  ]
+}

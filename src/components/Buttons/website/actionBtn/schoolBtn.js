@@ -1,9 +1,14 @@
+import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspaceOutlined";
+import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
+
 export const NextBtn = () => {
   return (
     <>
       <a href="" target="_blank">
         {" "}
-        <button className="NextBtn">NEXT</button>
+        <button className="NextBtn">
+          NEXT <ArrowRightAltOutlinedIcon />
+        </button>
       </a>
     </>
   );
@@ -13,7 +18,10 @@ export const BackBtn = () => {
     <>
       <a href="" target="_blank">
         {" "}
-        <button className="BackBtn">BACK</button>
+        <button className="BackBtn">
+          <KeyboardBackspaceOutlinedIcon />
+          BACK
+        </button>
       </a>
     </>
   );

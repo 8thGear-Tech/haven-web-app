@@ -1,5 +1,4 @@
 //external import
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,6 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 // images
 import havenlogo from "../../assets/icons/havenlogo.png";
 import { RegisterNowBtn } from "../../components/Buttons/website/actionBtn/schoolBtn";
+import { LoginBtn } from "../Buttons/website/authenticationBtn";
 
 export const GuestNavbar = () => {
   return (
@@ -100,7 +100,7 @@ export const GuestNavbar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               <div className="mx-3">
-                <RegisterNowBtn />
+                <LoginBtn />
               </div>
             </Nav>
           </Navbar.Collapse>

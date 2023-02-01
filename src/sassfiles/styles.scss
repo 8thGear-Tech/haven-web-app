@@ -10,6 +10,7 @@
 @use "./pages/websitePages/home";
 @use "./pages/websitePages/about";
 @use "./pages/websitePages/gallery";
+@use "./pages/websitePages/blog/blogPage";
 
 //component
 @use "./components/footer" as *;
@@ -20,3 +21,9 @@
 // @use "./components/allCards/website/blogCard" as *;
 // @use "./components//allCards/website/galleryCard" as *;
 @use "./components/Button/dashboard/actionBtn";
+
+//authentication pages
+@use "./pages/websitePages/authenticationPages/school/champsNeeds" as *;
+
+//payment package
+@use "./pages/websitePages/paymentPackages/paymentPackages" as *;

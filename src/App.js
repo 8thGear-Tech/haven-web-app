@@ -11,6 +11,11 @@ import Gallery from "./pages/websitePages/gallery";
 import Blog from "./pages/websitePages/blog/blogPage";
 import BlogReadMore from "./pages/websitePages/blog/blogReadMorePage";
 
+//authentication pages
+import { CreateAccountForm } from "./components/forms/authenticationForms";
+import ChampsNeeds from "./pages/websitePages/authenticationPages/school/champsNeeds";
+import SchoolLocation from "./pages/websitePages/authenticationPages/school/schoolLocation";
+
 import { Footer } from "./components/footer";
 
 function App() {
@@ -26,8 +31,14 @@ function App() {
           <Route path="weekendActivities" element={<WeekendActivities />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="blogReadMore" element={<BlogReadMore />} />
-          {/* <Route path="/" element={<CreateAccountForm />} /> */}
+          <Route path=" " element={<BlogReadMore />} />
+
+          {/* authentication pages */}
+          <Route path="ChampsNeeds" element={<ChampsNeeds />} />
+          <Route path="SchoolLocation" element={<SchoolLocation />} />
+
+          {/* authentication forms */}
+          <Route path="signup" element={<CreateAccountForm />} />
         </Routes>
       </BrowserRouter>
       <footer>

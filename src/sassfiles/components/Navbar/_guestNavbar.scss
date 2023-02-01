@@ -1,4 +1,6 @@
 @use "../../colors" as *;
+@use "../../components/Button/website/authenticationBtn.scss" as *;
+
 .navbarBg {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

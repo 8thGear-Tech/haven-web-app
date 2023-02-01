@@ -3,7 +3,9 @@ import { GuestNavbar } from "../../components/Navbar/guestNavbar";
 import { HomeHero } from "../../components/hero/homeHero";
 import { HomeMobileHero } from "../../components/hero/homeHero";
 import { WhyTrustUsCard } from "../../components/allCards/Website/whyTrustUs";
+import { PaymentpackageCard } from "../../components/allCards/Website/paymentPackage";
 import whyTrustUsInfo from "../../data/allCards/whyTrustUs.json";
+import whatwedo from "../../data/pages/whatWeDo.json";
 
 //external import
 import Button from "react-bootstrap/Button";
@@ -25,8 +27,30 @@ const Home = () => {
       <GuestNavbar />
       <HomeHero />
       <HomeMobileHero />
+      {/* <WhatWeDo /> */}
       <WhyTrustUs />
       <OurActivities />
+    </>
+  );
+};
+
+const WhatWeDo = () => {
+  return (
+    <>
+      <div className="container">
+        <h3 className="text-center mb-4">WHAT WE DO</h3>
+        <div className="CardWork row text-center justify-content-around ">
+          {whatwedo.whatwedo.map((data) => {
+            return (
+              <>
+                <div className="col-lg-3 col-md-5 col-sm-12" key={data.id}>
+                  <PaymentpackageCard {...data} />
+                </div>
+              </>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 };
@@ -34,7 +58,7 @@ const Home = () => {
 const WhyTrustUs = () => {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid pt-5 mt-5">
         <h3 className="text-center">WHY TRUST US</h3>
         <Row
           // xs={1}

@@ -1,16 +1,20 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import CardPhoto from "../../../Image/passport.jpg";
+import CardPhoto from "../../../assets/images/blog/passport.jpg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import BlogCardInfo from "../../../data/blogCard.json";
 
 export const BlogCard = (props) => {
   const { image, text } = props;
   return (
-    <Card style={{ width: "40rem" }} className=" mt-5 blogcard">
-      <Row>
-        <Col>
+    <div
+      style={{ width: "40rem" }}
+      className="mt-5 blogcard d-flex align-items-center"
+    >
+      <Row className="d-flex align-items-center">
+        {/* <Col> */}
+        {/* <Col className="d-flex"> */}
+        <Col className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <Card.Img
             variant="top"
             src={CardPhoto}
@@ -18,34 +22,15 @@ export const BlogCard = (props) => {
             className="blogImage"
           />
         </Col>
-        <Col>
+        {/* <Col> */}
+        <Col className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
           <Card.Body>
             <Card.Text>{text}</Card.Text>
             <Button variant="primary">Read More</Button>
           </Card.Body>
         </Col>
+        {/* </Col> */}
       </Row>
-    </Card>
-  );
-};
-
-export const BloggCcard = () => {
-  return (
-    <>
-      <div className="container">
-        <div className="">
-          {BlogCardInfo.blogCarddata.map((Blog) => {
-            return (
-              <>
-                <div className="col-lg-3 col-md-5 col-sm-12" key={Blog.id}>
-                  <BlogCard {...Blog} />
-                </div>
-              </>
-            );
-          })}
-          ;
-        </div>
-      </div>
-    </>
+    </div>
   );
 };
