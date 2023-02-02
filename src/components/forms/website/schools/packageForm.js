@@ -68,20 +68,11 @@ const BasicForm = () => {
             </Form.Group>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 d-flex">
-            <Form.Group as={Col} controlId="formGridTextTwo" className="mt-4">
+            <Form.Group as={Col} controlId="formGridCity">
               <Form.Label>
-                <h5>No of Champs</h5>
+                <h5>No of champ(s)</h5>
               </Form.Label>
-              {/* <Form.Control type="password" placeholder="Password" /> */}
-              <Form.Select
-                aria-label="Default select example"
-                className="authPlaceHolderBorder"
-              >
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </Form.Select>
+              <Form.Control className="authPlaceHolderBorder" />
             </Form.Group>
           </div>
         </Row>

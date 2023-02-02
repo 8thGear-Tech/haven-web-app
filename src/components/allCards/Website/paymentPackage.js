@@ -1,12 +1,10 @@
 // Awelewa
-import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import { SuscribeBtn } from "../../Buttons/website/actionBtn/schoolBtn";
-// import CardPhoto from "../../../Image/passport.jpg";
-// import PackagePaymentData from "../../../data/paymentpackage.json";
 
 export const PaymentpackageCard = (props) => {
-  const { image, title, text } = props;
+  const { image, title, text, link } = props;
   return (
     <Card style={{ width: "20rem" }} className="paymentpackage mx-auto">
       <Card.Img
@@ -17,7 +15,10 @@ export const PaymentpackageCard = (props) => {
       <Card.Body>
         <Card.Title className=""> {title}</Card.Title>
         <Card.Text>{text}</Card.Text>
-        <SuscribeBtn />
+        <Link to={link}>
+          {" "}
+          <SuscribeBtn />
+        </Link>
       </Card.Body>
     </Card>
   );

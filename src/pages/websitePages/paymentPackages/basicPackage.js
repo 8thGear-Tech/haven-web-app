@@ -21,8 +21,8 @@ const Package = () => {
       <Container className="mt-5 px-4">
         <Row>
           {" "}
-          <h3>Tell us about your champs need</h3>
-          <p>What’s your goal and what subjects do your champ need help in?</p>
+          {/* <h3>Tell us about your champs need</h3>
+          <p>What’s your goal and what subjects do your champ need help in?</p> */}
           <BasicForm />
         </Row>
       </Container>
