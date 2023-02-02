@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
@@ -61,7 +62,9 @@ const SchoolInfoForm = () => {
         <div className="d-flex justify-content-between">
           {" "}
           <BackBtn />
-          <NextBtn />
+          <Link to="/ActivitySchedule">
+            <NextBtn />
+          </Link>
         </div>
       </Form>
     </>

@@ -1,4 +1,4 @@
-import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
@@ -117,7 +117,9 @@ const AboutChampsForm = () => {
         <div className="d-flex justify-content-between">
           {" "}
           <BackBtn />
-          <NextBtn />
+          <Link to="/SchoolInformation">
+            <NextBtn />
+          </Link>
         </div>
       </Form>
     </>

@@ -22,7 +22,7 @@ const ActivityScheduleSection = () => {
         <Row>
           {" "}
           <h3>Activity Schedule</h3>
-          <p>How long do you need an instructor?</p>
+          <p>How long do you need an instructor for?</p>
           <ActivityScheduleForm />
         </Row>
       </Container>

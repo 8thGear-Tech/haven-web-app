@@ -22,7 +22,6 @@ const SchoolInfoSection = () => {
         <Row>
           {" "}
           <h3>Personal information</h3>
-          <p>This helps us get the best instructor close to you.</p>
           <SchoolInfoForm />
         </Row>
       </Container>

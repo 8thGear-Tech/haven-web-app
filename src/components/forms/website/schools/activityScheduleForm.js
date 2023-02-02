@@ -1,10 +1,7 @@
-import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import InputGroup from "react-bootstrap/InputGroup";
 
 import { BackBtn, NextBtn } from "../../../Buttons/website/actionBtn/schoolBtn";
 
@@ -117,7 +114,10 @@ const ActivityScheduleForm = () => {
         <div className="d-flex justify-content-between">
           {" "}
           <BackBtn />
-          <NextBtn />
+          <Link to="/PaymentPackages">
+            {" "}
+            <NextBtn />
+          </Link>
         </div>
       </Form>
     </>

@@ -27,7 +27,7 @@ const Home = () => {
       <GuestNavbar />
       <HomeHero />
       <HomeMobileHero />
-      {/* <WhatWeDo /> */}
+      <WhatWeDo />
       <WhyTrustUs />
       <OurActivities />
     </>
@@ -125,9 +125,9 @@ const OurActivities = () => {
                 <Card.Text className="text-decoration-underline fontSize">
                   Haven Products
                 </Card.Text> */}
-                <Link to="/afterSchool">
+                <Link to="/">
                   <p className="text-decoration-underline fontStyle m-2">
-                    After School
+                    School Facilitation
                   </p>
                 </Link>
                 <Link to="/havenSummer">
@@ -135,10 +135,10 @@ const OurActivities = () => {
                     Haven Summer
                   </p>
                 </Link>
-                <Link to="/weekendActivities">
+                <Link to="/weekendClub">
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
-                    Haven Weekend Activities
+                    Haven Weekend Club
                   </p>
                 </Link>
                 {/* <Link to="/">

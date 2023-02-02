@@ -99,7 +99,7 @@ export const AfterSchoolHero = () => {
             >
               AFTER SCHOOL ACTIVITIES
             </h3>
-            <p className="d-flex text-center mx-2">
+            <p className="text-center ">
               Activities include Tech and Music every School days for Champs of
               ages 4 to 16
             </p>

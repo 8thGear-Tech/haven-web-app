@@ -262,6 +262,14 @@ p {
   background: conic-gradient(from 180deg at 50% 50%, rgba(28, 150, 233, 0.1) -60.7deg, rgba(209, 93, 219, 0.1) 63.33deg, rgba(28, 150, 233, 0.1) 299.3deg, rgba(209, 93, 219, 0.1) 423.33deg);
 }
 
+.activitiesListFont {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
+}
+
 .GetAFacilitatorBtn {
   background-color: #75117a;
   color: #ffffff;

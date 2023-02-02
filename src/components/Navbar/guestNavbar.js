@@ -84,7 +84,7 @@ export const GuestNavbar = () => {
                 className="navTextColor mx-3 "
               >
                 <NavDropdown.Item href="#action3" className="navTextColor">
-                  FIND SUBJECT
+                  FIND ACTIVITIES
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action4" className="navTextColor">

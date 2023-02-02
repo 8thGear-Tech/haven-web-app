@@ -33,8 +33,15 @@ const ActivitiesSectionOne = () => {
             <Card.Body className="">
               <h3 className="mt-3">Taekwondo Club</h3>
               <Card.Text className="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.{" "}
+                Build confidence, fitness and self defence
+                <ul>
+                  <li className="activitiesListFont">
+                    For Champs of ages 4 to 16
+                  </li>
+                  <li className="activitiesListFont">
+                    8am to 10am every saturday{" "}
+                  </li>
+                </ul>
               </Card.Text>
             </Card.Body>
           </Col>
@@ -43,18 +50,16 @@ const ActivitiesSectionOne = () => {
             <Card.Body className="">
               <h3 className="mt-3">Tech Club</h3>
               <Card.Text className="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.{" "}
-              </Card.Text>
-            </Card.Body>
-          </Col>
-          <Col className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 align-items-stretch">
-            <Card.Img variant="top" src={taekwondo} className="" />
-            <Card.Body className="">
-              <h3 className="mt-3">Creative Arts Club</h3>
-              <Card.Text className="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.{" "}
+                Build Creativity and Problem solving skills in Coding and
+                Robotics
+                <ul>
+                  <li className="activitiesListFont">
+                    For Champs of ages 4 to 16
+                  </li>
+                  <li className="activitiesListFont">
+                    10am to 12 noon every saturday
+                  </li>
+                </ul>
               </Card.Text>
             </Card.Body>
           </Col>
@@ -63,8 +68,34 @@ const ActivitiesSectionOne = () => {
             <Card.Body className="">
               <h3 className="mt-3">Music Club</h3>
               <Card.Text className="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.{" "}
+                Learn the rudiments of music, Singing, Sight reading and musical
+                instruments
+                <ul>
+                  <li className="activitiesListFont">
+                    For Champs of ages 4 to 16
+                  </li>
+                  <li className="activitiesListFont">
+                    10am to 12 noon every saturday
+                  </li>
+                </ul>
+              </Card.Text>
+            </Card.Body>
+          </Col>
+          <Col className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 align-items-stretch">
+            <Card.Img variant="top" src={taekwondo} className="mt-3" />
+            <Card.Body className="">
+              <h3 className="mt-3">Creative Arts Club</h3>
+              <Card.Text className="">
+                Whatsoever you imagine in your mind can be created with your
+                Hands, join our Creative club to explore
+                <ul>
+                  <li className="activitiesListFont">
+                    For Champs of ages 4 to 16
+                  </li>
+                  <li className="activitiesListFont">
+                    10am to 12 noon every saturday
+                  </li>
+                </ul>
               </Card.Text>
             </Card.Body>
           </Col>
