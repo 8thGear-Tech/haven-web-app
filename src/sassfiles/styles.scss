@@ -29,5 +29,8 @@
 @use "./pages/websitePages/authenticationPages/school/champsNeeds" as *;
 @use "./pages/websitePages/authenticationPages/school/schoolLocation" as *;
 
+//instructor auth forms
+@use "./pages/websitePages/authenticationPages/instructor/instructorInfo" as *;
+
 //payment package
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;

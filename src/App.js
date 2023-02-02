@@ -22,6 +22,9 @@ import SchoolLocation from "./pages/websitePages/authenticationPages/school/scho
 import SchoolInformation from "./pages/websitePages/authenticationPages/school/schoolInformation";
 import ActivitySchedule from "./pages/websitePages/authenticationPages/school/activitySchedule";
 
+//instructors authentication pages
+import InstructorProfileInfo from "./pages/websitePages/authenticationPages/instructor/instructorInfo";
+
 import { Footer } from "./components/footer";
 
 function App() {
@@ -49,6 +52,12 @@ function App() {
           <Route path="SchoolLocation" element={<SchoolLocation />} />
           <Route path="SchoolInformation" element={<SchoolInformation />} />
           <Route path="ActivitySchedule" element={<ActivitySchedule />} />
+
+          {/* instructor authentication pages */}
+          <Route
+            path="InstructorProfileInfo"
+            element={<InstructorProfileInfo />}
+          />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />
