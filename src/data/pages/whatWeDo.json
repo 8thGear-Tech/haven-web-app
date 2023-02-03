@@ -1,0 +1,22 @@
+{
+  "whatwedo": [
+    {
+      "id": "1",
+      "image": "../../../assets/images/whatwedo/tech.png",
+      "title": "Technology",
+      "text": " Our Coding and Robotics often presents champs with problems, and helps them learn how to make decisions and solve those problems."
+    },
+    {
+      "id": "2",
+      "image": "../../../assets/images/whatwedo/arts.png",
+      "title": "Arts",
+      "text": "Our Art activities includes Creative and Martial Arts which enhances you champs to build Confidence and a creative mind"
+    },
+    {
+      "id": "3",
+      "image": "../../../assets/images/whatwedo/languages.png",
+      "title": "Languages",
+      "text": "Learning to speak other foreign languages is fun, We teach languages such as French, Mandarin, German and Spanish"
+    }
+  ]
+}

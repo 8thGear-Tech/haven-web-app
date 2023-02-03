@@ -1,0 +1,9 @@
+@use "../../../colors" as *;
+@use "../../../components/allCards/website/blogCard" as *;
+
+.blogCategoryText {
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  color: $sectextcolor;
+}

@@ -1,17 +1,68 @@
 //internal import
 
 //buttons
+import { GetAFacilitatorBtn } from "../Buttons/website/actionBtn/homeandAboutBtn";
 
 //images
 import homehero from "../../assets/images/hero/homehero.png";
 import homeheromobilee from "../../assets/images/hero/homeheromobilee.png";
+// import homeheronew from "../../assets/images/hero/homeheronew.png";
 
 //icons
 
 export const HomeHero = () => {
   return (
     <>
-      <div className="container-fluid homeHeroBg d-flex  align-items-center d-none d-xs-none d-sm-none d-md-block d-lg-block">
+      <div className="container-fluid homeHeroBg d-flex align-items-center">
+        <div className="container homeHeroBgg d-flex align-items-center">
+          <div className="row">
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <h2 className="d-none d-lg-block d-md-none d-sm-none d-xs-none heroTextColor">
+                Exciting Young Champs Towards Technology, Arts And Foreign
+                Languages
+              </h2>
+              <h3 className="d-xs-block d-sm-block d-md-block d-lg-none heroTextColor">
+                {" "}
+                Exciting Young Champs Towards Technology, Arts And Foreign
+                Languages
+              </h3>{" "}
+              <div className="">
+                {" "}
+                <GetAFacilitatorBtn />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+export const HomeMobileHero = () => {
+  return (
+    <>
+      <div className="container-fluid  homeHeroMobileBg d-flex align-items-center py-4 d-xs-block d-sm-block d-md-block d-lg-none">
+        {/* <div className="px-3 container-fluid  d-flex pt-3"> */}
+        <div className="row d-flex justify-content-center g-0">
+          <div className="col-sm-12  text-center">
+            <img src={homeheromobilee} class="img-fluid" />
+          </div>
+          <div className="">
+            <h4 className="col-sm-10 mx-auto">
+              Exciting Young Champs Towards Technology, Arts And Foreign
+              Languages
+            </h4>
+          </div>
+        </div>
+        {/* </div> */}
+      </div>
+    </>
+  );
+};
+
+export const HomeHer = () => {
+  return (
+    <>
+      <div className="container-fluid homeHeroBg d-flex align-items-center d-none d-xs-none d-sm-none d-md-block d-lg-block">
         {/* <div className="px-3 container-fluid homeHeroBgg pt-3 pb-4"> */}
         {/* <div className="row"> */}
         {/* <div className=""> */}

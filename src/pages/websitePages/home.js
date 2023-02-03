@@ -1,8 +1,11 @@
 //internal import
 import { GuestNavbar } from "../../components/Navbar/guestNavbar";
 import { HomeHero } from "../../components/hero/homeHero";
+import { HomeMobileHero } from "../../components/hero/homeHero";
 import { WhyTrustUsCard } from "../../components/allCards/Website/whyTrustUs";
+import { PaymentpackageCard } from "../../components/allCards/Website/paymentPackage";
 import whyTrustUsInfo from "../../data/allCards/whyTrustUs.json";
+import whatwedo from "../../data/pages/whatWeDo.json";
 
 //external import
 import Button from "react-bootstrap/Button";
@@ -23,8 +26,31 @@ const Home = () => {
     <>
       <GuestNavbar />
       <HomeHero />
+      <HomeMobileHero />
+      <WhatWeDo />
       <WhyTrustUs />
       <OurActivities />
+    </>
+  );
+};
+
+const WhatWeDo = () => {
+  return (
+    <>
+      <div className="container">
+        <h3 className="text-center mb-4">WHAT WE DO</h3>
+        <div className="CardWork row text-center justify-content-around ">
+          {whatwedo.whatwedo.map((data) => {
+            return (
+              <>
+                <div className="col-lg-3 col-md-5 col-sm-12" key={data.id}>
+                  <PaymentpackageCard {...data} />
+                </div>
+              </>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 };
@@ -32,17 +58,18 @@ const Home = () => {
 const WhyTrustUs = () => {
   return (
     <>
-      <div className="container-fluid px-5 pt-2 mt-5">
+      <div className="container-fluid pt-5 mt-5">
         <h3 className="text-center">WHY TRUST US</h3>
         <Row
-          xs={1}
-          md={2}
+          // xs={1}
+          // md={2}
           className="g-0 justify-content-center justify-content-evenly"
         >
           {whyTrustUsInfo.whyTrustUsInfo.map((info) => {
             return (
               <Col
-                className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch"
+                className="col-lg-4 col-md-4 col-sm-10"
+                // className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch"
                 key={info.id}
               >
                 <WhyTrustUsCard {...info} />
@@ -58,13 +85,13 @@ const WhyTrustUs = () => {
 const OurActivities = () => {
   return (
     <>
-      <div className="container-fluid px-5 pt-2 mt-5">
+      <div className="container-fluid px-5 pt-2 mt-5 bgGradient">
         <Row
           xs={1}
           md={2}
           className="g-0 justify-content-center justify-content-evenly"
         >
-          <Col className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch">
+          <Col className="col-lg-4 col-md-6 col-sm-10 d-flex align-items-stretch">
             <Col className="">
               <Col className="">
                 <Card.Img
@@ -82,22 +109,44 @@ const OurActivities = () => {
               </Col>
             </Col>
           </Col>
-          <Col className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex justify-content-center align-items-center">
+          <Col className="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center align-items-center">
             <div className="w-100 px-5">
-              <Card.Body className="text-center ">
-                <h4 className="mt-3">OUR ACTIVITIES</h4>
-                <p className="text-decoration-underline p-0 m-0">
-                  School Facilitations
+              <Card.Body className="text-center">
+                <h3 className="mt-3">OUR ACTIVITIES</h3>
+                {/* <p className="text-decoration-underline fontSize">
+                  School Facilitation
                 </p>
-                <Card.Text className="text-decoration-underline p-0 m-0">
+                <Card.Text className="text-decoration-underline fontSize">
                   Haven Summer
                 </Card.Text>
-                <Card.Text className="text-decoration-underline p-0 m-0">
-                  Haven Weekend Activities
+                <Card.Text className="text-decoration-underline fontSize">
+                  Haven Weekend Club
                 </Card.Text>
-                <Card.Text className="text-decoration-underline p-0 m-0">
+                <Card.Text className="text-decoration-underline fontSize">
                   Haven Products
-                </Card.Text>
+                </Card.Text> */}
+                <Link to="/">
+                  <p className="text-decoration-underline fontStyle m-2">
+                    School Facilitation
+                  </p>
+                </Link>
+                <Link to="/havenSummer">
+                  <p className="text-decoration-underline fontStyle m-2">
+                    Haven Summer
+                  </p>
+                </Link>
+                <Link to="/weekendClub">
+                  {" "}
+                  <p className="text-decoration-underline fontStyle m-2">
+                    Haven Weekend Club
+                  </p>
+                </Link>
+                {/* <Link to="/">
+                  <p className="text-decoration-underline fontSize m-2">
+                    Haven Products
+                  </p>
+                </Link> */}
+
                 {/* <ul>
                   {" "}
                   <Link to="after-school" style={{ color: "#000" }}>
@@ -113,7 +162,7 @@ const OurActivities = () => {
               </Card.Body>
             </div>
           </Col>
-          <Col className="col-lg-4 col-md-6 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch">
+          <Col className="col-lg-4 col-md-6 col-sm-10 d-flex align-items-stretch">
             <Col className="">
               <Col className="">
                 <Card.Img

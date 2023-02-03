@@ -129,6 +129,12 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
+import { LoginBtnTwo } from "../Buttons/website/authenticationBtn";
+import { CreateAccountBtn } from "../Buttons/website/authenticationBtn";
+
+//button
+import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspaceOutlined";
 
 //images
 import havenlogo from "../../assets/icons/havenlogo.png";
@@ -296,9 +302,7 @@ export const CreateAccountForm = () => {
                 </Form.Control.Feedback>
               </Form.Group>
               <div className="text-center">
-                <Button variant="primary" type="submit">
-                  Create Account
-                </Button>
+                <CreateAccountBtn />
               </div>
             </Form>
             {/* <Form onSubmit={handleSubmit}>
@@ -367,6 +371,87 @@ export const CreateAccountForm = () => {
           </div>
         </div>
       </Container>
+    </>
+  );
+};
+
+export const LoginForm = () => {
+  return (
+    <>
+      <Form className="p-4">
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Control
+            type="email"
+            placeholder="Email"
+            className="placeHolderBorder"
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Control
+            type="password"
+            placeholder="Password"
+            className="placeHolderBorder"
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Remember me" />
+        </Form.Group>
+
+        <div className="text-center">
+          {" "}
+          <LoginBtnTwo />
+        </div>
+        <h6 className="text-muted text-center pt-3">
+          Don't have an account?
+          <Link to="/signup" className="px-1 mutedTextFontColor">
+            SignUp
+          </Link>
+        </h6>
+
+        <h6 className="text-center">
+          <Link to="/" className="mutedTextFontColor">
+            Forgot Password?
+          </Link>
+        </h6>
+      </Form>
+    </>
+  );
+};
+export const JoinUsModal = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  return (
+    <>
+      <div className="joinUsModalBg py-5">
+        {" "}
+        <h3 className="text-center joinUsTextColor">Join Us</h3>
+        <h6 className="text-center pt-3">
+          Continue as a school
+          <Link to="/ChampsNeeds" className="px-1 mutedTextFontColor">
+            Click here
+          </Link>
+        </h6>
+        <h6 className="text-center pt-3">
+          Continue as an instructor
+          <Link to="/" className="px-1 mutedTextFontColor">
+            Click here
+          </Link>
+        </h6>
+        <h6 className="text-center pt-3">
+          Continue as a parent
+          <Link to="/" className="px-1 mutedTextFontColor">
+            Click here
+          </Link>
+        </h6>
+        <div className="text-center mt-4">
+          {" "}
+          <Button variant="secondary" onClick={handleClose} className="BackBtn">
+            <KeyboardBackspaceOutlinedIcon />
+            Back
+          </Button>
+        </div>
+      </div>
     </>
   );
 };

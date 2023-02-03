@@ -1,20 +1,28 @@
+import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspaceOutlined";
+import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
+
 export const NextBtn = () => {
   return (
     <>
-      <a href="" target="_blank">
-        {" "}
-        <button className="NextBtn">NEXT</button>
-      </a>
+      {/* <a href="" target="_blank">
+        {" "} */}
+      <button className="NextBtn">
+        NEXT <ArrowRightAltOutlinedIcon />
+      </button>
+      {/* </a> */}
     </>
   );
 };
 export const BackBtn = () => {
   return (
     <>
-      <a href="" target="_blank">
-        {" "}
-        <button className="BackBtn">BACK</button>
-      </a>
+      {/* <a href="" target="_blank">
+        {" "} */}
+      <button className="BackBtn">
+        <KeyboardBackspaceOutlinedIcon />
+        BACK
+      </button>
+      {/* </a> */}
     </>
   );
 };
@@ -41,10 +49,7 @@ export const SubmitBtn = () => {
 export const RegisterNowBtn = () => {
   return (
     <>
-      <a
-        target="_blank"
-        href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NGppOHBxa2dodGs4a2U4NTNvMWNzMTYxYWEgZDYxNDExMjFiODM1M2Q4NmJhNWVmOTlhNmY4MjdhZTY5OWRkZTVhODM2Y2RkZDg4ZGQ0ODJlODg4YTUyMmMyY0Bn&amp;tmsrc=d6141121b8353d86ba5ef99a6f827ae699dde5a836cddd88dd482e888a522c2c%40group.calendar.google.com"
-      >
+      <a target="_blank" href="">
         <button className="RegisterNowBtn">REGISTER NOW</button>
       </a>
       {/* <a href="" target="_blank">

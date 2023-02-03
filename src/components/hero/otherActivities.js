@@ -12,9 +12,9 @@ export const WeekendActivitiesHero = () => {
   return (
     <>
       <div className="px-3">
-        <div className="px-4 container-fluid pb-4">
+        <div className="px-4 container-fluid py-5">
           <div className="row align-items-center justify-content-center mt-3">
-            <div className="col-lg-6 col-md-12 col-sm-12 ">
+            <div className="col-lg-6 col-md-6 col-sm-12 ">
               <h2 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
                 HAVEN WEEKEND ACTIVITIES
               </h2>
@@ -22,15 +22,15 @@ export const WeekendActivitiesHero = () => {
                 HAVEN WEEKEND ACTIVITIES
               </h3>
               <p className="d-flex">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet.
+                Haven weekend activities holds every Saturday at 8thGear hub,
+                Magodo Lagos.
               </p>
               <div className="">
                 {" "}
                 <RegisterNowBtn />
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 col-sm-10 mb-5">
+            <div className="col-lg-5 col-md-6 col-sm-10 mb-5">
               <img
                 src={weekendactivities}
                 className="mx-lg-auto img-fluid"
@@ -48,9 +48,9 @@ export const CreativeSummerHero = () => {
   return (
     <>
       <div className="px-3">
-        <div className="px-4 container-fluid pb-4">
-          <div className="row align-items-center justify-content-center mt-3">
-            <div className="col-lg-6 col-md-12 col-sm-12 ">
+        <div className="px-4 container-fluid py-5">
+          <div className="row align-items-center justify-content-center">
+            <div className="col-lg-6 col-md-6 col-sm-12 ">
               <h2 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
                 HAVEN SUMMER
               </h2>
@@ -58,15 +58,15 @@ export const CreativeSummerHero = () => {
                 HAVEN SUMMER
               </h3>
               <p className="d-flex">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet.
+                Haven summer activities holds every August. We also facilitate
+                summer activities in partner schools
               </p>
               <div className="">
                 {" "}
                 <RegisterNowBtn />
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 col-sm-10 mb-5">
+            <div className="col-lg-5 col-md-6 col-sm-10 mt-3">
               <img
                 src={creativesummer}
                 className="mx-lg-auto img-fluid"
@@ -99,12 +99,9 @@ export const AfterSchoolHero = () => {
             >
               AFTER SCHOOL ACTIVITIES
             </h3>
-            <p className="d-flex text-center mx-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-              lobortis.
+            <p className="text-center ">
+              Activities include Tech and Music every School days for Champs of
+              ages 4 to 16
             </p>
             <div className="text-center">
               {" "}

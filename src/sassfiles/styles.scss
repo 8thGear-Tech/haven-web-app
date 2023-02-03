@@ -1,12 +1,33 @@
 @use "./reset";
 @use "./font" as *;
-@use "./components//Button/website/actionBtn/facilitatorBtn" as *;
-@use "./components/allCards/dashboard/profileCards" as *;
-@use "./components/allCards/website/paymentPackage" as *;
-@use "./components/allCards/website/blogCard" as *;
-@use "./components//allCards/website/galleryCard" as *;
-@use "./components/hero/homeHero";
 @use "./components/Button/website/actionBtn/schoolBtn";
 @use "./components/allCards/website/teamCards";
 @use "./components/Navbar/guestNavbar";
 @use "./components/forms/authenticationForm";
+@use "./pages/websitePages/otherActivities/weekendActivities";
+
+//pages
+@use "./pages/websitePages/home";
+@use "./pages/websitePages/about";
+@use "./pages/websitePages/gallery";
+@use "./pages/websitePages/blog/blogPage";
+
+//component
+@use "./components/footer" as *;
+
+// @use "./components//Button/website/actionBtn/facilitatorBtn" as *;
+// @use "./components/allCards/dashboard/profileCards" as *;
+// @use "./components/allCards/website/paymentPackage" as *;
+// @use "./components/allCards/website/blogCard" as *;
+// @use "./components//allCards/website/galleryCard" as *;
+@use "./components/Button/dashboard/actionBtn";
+
+//authentication pages
+@use "./pages/websitePages/authenticationPages/school/champsNeeds" as *;
+
+//auth forms
+@use "./pages/websitePages/authenticationPages/school/champsNeeds" as *;
+@use "./pages/websitePages/authenticationPages/school/schoolLocation" as *;
+
+//payment package
+@use "./pages/websitePages/paymentPackages/paymentPackages" as *;

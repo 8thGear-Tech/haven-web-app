@@ -4,19 +4,19 @@
       "id": 1,
       "icon": "../../assets/icons/whytrustus/reliability.png",
       "titleText": "Security",
-      "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit eu erat duis quam."
+      "paragraphText": "We are intentional about the safety of your champs, and also the exposure management."
     },
     {
       "id": 2,
       "icon": "../../assets/icons/whytrustus/security.png",
       "titleText": "Reliability",
-      "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit eu erat duis quam."
+      "paragraphText": "We are passionate about our services, We give our best to ensure every Champ is indeed a champ in what they do."
     },
     {
       "id": 3,
       "icon": "../../assets/icons/whytrustus/professionality.png",
       "titleText": "Professionality",
-      "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit eu erat duis quam."
+      "paragraphText": "We are confident about the delivery of our Facilitators and what they teach, we close the gap between your champ and the expertise they desire in world of Tech, Art and Languages."
     }
   ]
 }

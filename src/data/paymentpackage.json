@@ -2,16 +2,19 @@
   "paymentpackagedata": [
     {
       "id": "1",
+      "image": "../assets/images/paymentpackages/paymentpackageone.png",
       "title": "Basic",
       "text": " Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
       "id": "2",
+      "image": "../assets/images/paymentpackages/paymentpackageone.png",
       "title": "Pro",
       "text": " Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
       "id": "3",
+      "image": "../assets/images/paymentpackages/paymentpackageone.png",
       "title": "Premium",
       "text": " Some quick example text to build on the card title and make up the bulk of the card's content."
     }

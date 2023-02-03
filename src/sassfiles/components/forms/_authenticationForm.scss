@@ -1,4 +1,4 @@
-// @use "../colors" as *;
+@use "../../colors" as *;
 .createAccountBgOne {
   background: conic-gradient(
     from 180deg at 50% 50%,
@@ -15,3 +15,29 @@
 //   width: 500px;
 //   height: 55px;
 // }
+
+.placeHolderBorder {
+  // border: 0px solid #000000;
+  border-radius: 10px;
+  height: 3.2rem;
+}
+.mutedTextFontColor {
+  color: #6c757d;
+  border: none;
+  &:hover {
+    color: $buttoncolor;
+  }
+  &:focus {
+    color: $buttoncolor;
+  }
+}
+
+.joinUsModalBg {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(28, 150, 233, 0.1) -60.7deg,
+    rgba(209, 93, 219, 0.1) 63.33deg,
+    rgba(28, 150, 233, 0.1) 299.3deg,
+    rgba(209, 93, 219, 0.1) 423.33deg
+  );
+}

@@ -1,5 +1,4 @@
 //external import
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,6 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 // images
 import havenlogo from "../../assets/icons/havenlogo.png";
 import { RegisterNowBtn } from "../../components/Buttons/website/actionBtn/schoolBtn";
+import { LoginBtn } from "../Buttons/website/authenticationBtn";
 
 export const GuestNavbar = () => {
   return (
@@ -31,33 +31,60 @@ export const GuestNavbar = () => {
             className="justifyNavItemsEnd my-4 "
           >
             <Nav className="justify-content-end" navbarScroll>
-              <Nav.Link href="#action1" className="navTextColor mx-3">
+              <Nav.Link href="/" className="navTextColor mx-3">
                 HOME
               </Nav.Link>
+              {/* <Nav.Link href="/about" className="navTextColor mx-3">
+                ABOUT
+              </Nav.Link> */}
               <NavDropdown
                 title="ABOUT US"
                 id="navbarScrollingDropdown"
                 className="navTextColor mx-3"
               >
-                <NavDropdown.Item href="#action3" className="navTextColor">
+                <NavDropdown.Item href="/about" className="navTextColor">
                   ABOUT HAVEN
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action4" className="navTextColor">
+                <NavDropdown.Item href="/gallery" className="navTextColor">
                   GALLERY
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5" className="navTextColor">
+                <NavDropdown.Item href="/blog" className="navTextColor">
                   BLOG
                 </NavDropdown.Item>
               </NavDropdown>
+              {/* <NavDropdown
+                title="SERVICES"
+                id="navbarScrollingDropdown"
+                className="navTextColor mx-3 "
+              >
+                <NavDropdown.Item href="/afterSchool" className="navTextColor">
+                  AFTER SCHOOL
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item
+                  href="/creativeSummer"
+                  className="navTextColor"
+                >
+                  CREATIVE SUMMER
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item
+                  href="/weekendActivities"
+                  className="navTextColor"
+                >
+                  WEEKEND ACTIVITIES
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+              </NavDropdown> */}
               <NavDropdown
                 title="SERVICES"
                 id="navbarScrollingDropdown"
                 className="navTextColor mx-3 "
               >
                 <NavDropdown.Item href="#action3" className="navTextColor">
-                  FIND SUBJECT
+                  FIND ACTIVITIES
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action4" className="navTextColor">
@@ -68,12 +95,12 @@ export const GuestNavbar = () => {
                   PRODUCT
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5" className="navTextColor">
+                <NavDropdown.Item href="/afterSchool" className="navTextColor">
                   OTHER SERVICES
                 </NavDropdown.Item>
               </NavDropdown>
               <div className="mx-3">
-                <RegisterNowBtn />
+                <LoginBtn />
               </div>
             </Nav>
           </Navbar.Collapse>
