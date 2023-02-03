@@ -19,7 +19,7 @@ function App() {
         {" "}
         {/* <Route path="/" element={<GallleryCardImage />} />{" "} */}
         {/* <Route path="/" element={<PaymentPackaggee />} /> */}
-        {/* <Route path="/" element={<BloggCcard />} /> */}
+        {/* <Route path="/" element={<CreateAccountForm />} /> */}
         <Route path="/" element={<BloggCcard />} />
       </Routes>
     </BrowserRouter>
