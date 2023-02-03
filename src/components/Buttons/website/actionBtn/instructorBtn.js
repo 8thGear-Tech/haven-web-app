@@ -20,7 +20,17 @@ import Button from "react-bootstrap/Button";
 import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
 import UploadIcon from "@mui/icons-material/Upload";
 import CameraRollIcon from "@mui/icons-material/CameraRoll";
+import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 
+export const SaveAndContinueBtn = () => {
+  return (
+    <>
+      <a target="_blank" href="">
+        <button className="SaveAndContinueBtn">SAVE AND CONTINUE</button>
+      </a>
+    </>
+  );
+};
 
 export const BackToActivity = () => {
   return (
@@ -51,7 +61,8 @@ export const Add = () => {
       <a href="" target="_blank">
         {" "}
         <Button variant="outline-light" className="add">
-          ADD
+          <AddOutlinedIcon />
+          ADD ACTIVITIES
         </Button>
       </a>
     </>
@@ -115,7 +126,6 @@ export const Done = () => {
           DONE
         </Button>
       </a>
-    
     </>
   );
 };

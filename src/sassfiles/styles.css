@@ -457,6 +457,169 @@ p {
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
+.SaveAndContinueBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  width: 12rem;
+}
+
+.backToActivity {
+  width: 15rem;
+  background: #c4c4c4;
+  height: 2.7rem;
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
+  font-style: bold;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.undo {
+  width: 15rem;
+  background: #75117a;
+  height: 2.7rem;
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
+  font-style: bold;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
+}
+
+.undo:hover {
+  background: #75117a;
+  color: #ffffff;
+}
+
+.add {
+  width: 13rem;
+  background: #75117a;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
+}
+
+.add:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
+.UploadBestPhoto {
+  width: 15rem;
+  background: #75117a;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
+}
+
+.UploadBestPhoto:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
+.BackToApplication {
+  width: 15rem;
+  background: #75117a;
+  height: 2.7rem;
+  font-size: 1 rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
+}
+
+.BackToApplication:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
+.StartUpload {
+  width: 15rem;
+  background: #75117a;
+  height: 2.7rem;
+  font-size: 1 rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
+}
+
+.StartUpload:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
+.Abort {
+  width: 6rem;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: #75117a;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
+}
+
+.Abort:hover {
+  color: #75117a;
+  border-radius: 2px;
+}
+
+.Done {
+  width: 6rem;
+  background: #75117a;
+  height: 2.7rem;
+  font-size: -2rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
+}
+
+.Done:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
+.addYourActivitiesBg {
+  background: #dfeaef;
+  border: 1px solid #bc4c92;
+}
+
 .paymentpackage {
   border-radius: 50px;
   box-shadow: 5px;

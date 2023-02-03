@@ -31,6 +31,8 @@
 
 //instructor auth forms
 @use "./pages/websitePages/authenticationPages/instructor/instructorInfo" as *;
+@use "./pages/websitePages/authenticationPages/instructor/aboutInstructor" as *;
+@use "./pages/websitePages/authenticationPages/instructor/addActivity" as *;
 
 //payment package
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;

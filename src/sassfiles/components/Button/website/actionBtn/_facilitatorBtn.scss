@@ -1,6 +1,24 @@
 @use "../../../../font" as *;
 @use "../../../../colors" as *;
 
+@mixin BtnStyle {
+  background-color: $buttoncolor;
+  color: $tertextcolor;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+}
+
+.SaveAndContinueBtn {
+  @include BtnStyle;
+  width: 12rem;
+}
+
 .backToActivity {
   width: 15rem;
   background: #c4c4c4;
@@ -30,7 +48,7 @@
   color: #ffffff;
 }
 .add {
-  width: 4rem;
+  width: 13rem;
   background: #75117a;
   height: 2.7rem;
   font-size: 1rem;

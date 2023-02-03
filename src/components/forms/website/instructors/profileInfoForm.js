@@ -1,6 +1,5 @@
-import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 
@@ -20,7 +19,10 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Personal Information</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/AboutInstructor">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -31,7 +33,10 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Your Education</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/EducationHistory">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
