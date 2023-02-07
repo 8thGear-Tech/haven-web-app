@@ -13,33 +13,35 @@ const AboutChampsForm = () => {
           <div className="col-lg-8 col-md-6 col-sm-12 align-items-center">
             <Form.Group as={Col} controlId="formGridTextOne">
               <Form.Label className="">
-                <h5> What’s your goal about your champ?</h5>
+                <h5> Number of champs in class</h5>
               </Form.Label>
               {/* <Form.Control type="email" placeholder="Enter email" /> */}
               <Form.Select
                 aria-label="Default select example"
                 className="schoolPlaceHolderBorder"
               >
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option>Select</option>
+                <option value="1">5-10</option>
+                <option value="2">10-20</option>
+                <option value="3">20-25</option>
               </Form.Select>
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridTextTwo" className="mt-4">
               <Form.Label>
-                <h5>What’s your activity?</h5>
+                <h5>Number of classes</h5>
               </Form.Label>
               {/* <Form.Control type="password" placeholder="Password" /> */}
               <Form.Select
                 aria-label="Default select example"
                 className="schoolPlaceHolderBorder"
               >
-                <option>Open this select menu</option>
+                <option>Select</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
+                <option value="3">Four</option>
+                <option value="3">Five</option>
               </Form.Select>
             </Form.Group>
           </div>

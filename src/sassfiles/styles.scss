@@ -33,6 +33,7 @@
 @use "./pages/websitePages/authenticationPages/instructor/instructorInfo" as *;
 @use "./pages/websitePages/authenticationPages/instructor/aboutInstructor" as *;
 @use "./pages/websitePages/authenticationPages/instructor/addActivity" as *;
+@use "./pages/websitePages/authenticationPages/instructor/yourActivity" as *;
 
 //payment package
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;

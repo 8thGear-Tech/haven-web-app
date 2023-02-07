@@ -31,7 +31,7 @@ export const SuscribeBtn = () => {
     <>
       <a href="" target="_blank">
         {" "}
-        <button className="SuscribeBtn">SUBSCRIBE</button>
+        <button className="SuscribeBtn">READ MORE</button>
       </a>
     </>
   );

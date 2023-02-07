@@ -90,10 +90,10 @@ const ActivitiesSectionOne = () => {
                 Our Vision
               </h3>
               <p className="d-flex">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Curabitur tempus
+                By 2025, we would be recognized by parents and educational
+                providers in Nigeria as a leading content provider and
+                facilitators for Technology, Foreign languages and Arts related
+                contents.
               </p>
               {/* <div className="">
                 {" "}
@@ -122,10 +122,12 @@ const ActivitiesSectionTwo = () => {
                 Our Mission
               </h3>
               <p className="d-flex">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Curabitur tempus
+                We would operate a subscription-based web and mobile platform
+                where our designed content can be shared with children via
+                multi-level games, quizzes, interactive videos, and early
+                learning assessments These platform will supplement and feed
+                into our current B2B model where we support schools with content
+                and Instructors to fill the identified Gaps.
               </p>
               {/* <div className="">
                 {" "}

@@ -30,6 +30,7 @@ import WorkHistory from "./pages/websitePages/authenticationPages/instructor/wor
 import InstructorLocation from "./pages/websitePages/authenticationPages/instructor/instructorLocation";
 import AddYourActivity from "./pages/websitePages/authenticationPages/instructor/addActivity";
 import { AddActivity } from "./pages/websitePages/authenticationPages/instructor/addActivity";
+import { SelectTest } from "./pages/websitePages/authenticationPages/instructor/yourActivity";
 
 import { Footer } from "./components/footer";
 
@@ -70,6 +71,7 @@ function App() {
           <Route path="InstructorLocation" element={<InstructorLocation />} />
           <Route path="AddYourActivity" element={<AddYourActivity />} />
           <Route path="AddActivity" element={<AddActivity />} />
+          <Route path="SelectTest" element={<SelectTest />} />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />

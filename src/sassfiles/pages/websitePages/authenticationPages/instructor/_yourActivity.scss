@@ -1,0 +1,15 @@
+.selectTestBg {
+  border: 1px solid rgba(208, 93, 219, 0.973958);
+}
+.selectTestBgOrange {
+  background: linear-gradient(
+    180deg,
+    rgba(232, 128, 25, 0.58) 0%,
+    rgba(232, 128, 25, 0.3712) 100%
+  );
+  border-radius: 20px;
+}
+
+.selectTestBgBorderPurple {
+  border: 1px solid #75117a;
+}

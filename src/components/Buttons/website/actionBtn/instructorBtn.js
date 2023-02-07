@@ -22,6 +22,15 @@ import UploadIcon from "@mui/icons-material/Upload";
 import CameraRollIcon from "@mui/icons-material/CameraRoll";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 
+export const TakeATestBtn = () => {
+  return (
+    <>
+      <a target="_blank" href="">
+        <button className="TakeATestBtn">Take a Test</button>
+      </a>
+    </>
+  );
+};
 export const SaveAndContinueBtn = () => {
   return (
     <>
@@ -63,6 +72,19 @@ export const Add = () => {
         <Button variant="outline-light" className="add">
           <AddOutlinedIcon />
           ADD ACTIVITIES
+        </Button>
+      </a>
+    </>
+  );
+};
+export const AddBtn = () => {
+  return (
+    <>
+      <a href="" target="_blank">
+        {" "}
+        <Button variant="outline-light" className="addBtn">
+          <AddOutlinedIcon />
+          ADD
         </Button>
       </a>
     </>

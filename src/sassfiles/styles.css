@@ -457,6 +457,24 @@ p {
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
+.TakeATestBtn {
+  background-color: #ffffff;
+  color: #75117a;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: 1px solid #75117a;
+  width: 8rem;
+}
+.TakeATestBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
 .SaveAndContinueBtn {
   background-color: #75117a;
   color: #ffffff;
@@ -519,6 +537,20 @@ p {
 .add:hover {
   background-color: #75117a;
   color: #ffffff;
+}
+
+.addBtn {
+  width: 6rem;
+  background: #75117a;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
 }
 
 .UploadBestPhoto {
@@ -618,6 +650,19 @@ p {
 .addYourActivitiesBg {
   background: #dfeaef;
   border: 1px solid #bc4c92;
+}
+
+.selectTestBg {
+  border: 1px solid rgba(208, 93, 219, 0.973958);
+}
+
+.selectTestBgOrange {
+  background: linear-gradient(180deg, rgba(232, 128, 25, 0.58) 0%, rgba(232, 128, 25, 0.3712) 100%);
+  border-radius: 20px;
+}
+
+.selectTestBgBorderPurple {
+  border: 1px solid #75117a;
 }
 
 .paymentpackage {
