@@ -31,3 +31,5 @@
 
 //payment package
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;
+
+@use "./components/Navbar/champNavbar" as *;

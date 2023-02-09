@@ -22,6 +22,7 @@ import SchoolLocation from "./pages/websitePages/authenticationPages/school/scho
 import SchoolInformation from "./pages/websitePages/authenticationPages/school/schoolInformation";
 import ActivitySchedule from "./pages/websitePages/authenticationPages/school/activitySchedule";
 
+import ResourcePage from "./pages/dashboardPages/champ/CampAllReaourcePage";
 import { Footer } from "./components/footer";
 
 function App() {
@@ -49,14 +50,13 @@ function App() {
           <Route path="SchoolLocation" element={<SchoolLocation />} />
           <Route path="SchoolInformation" element={<SchoolInformation />} />
           <Route path="ActivitySchedule" element={<ActivitySchedule />} />
+          <Route path="resource-page" element={<ResourcePage />} />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />
         </Routes>
       </BrowserRouter>
-      <footer>
-        <Footer />
-      </footer>
+      <footer>{/* <Footer /> */}</footer>
     </div>
   );
 }
