@@ -22,7 +22,15 @@ import SchoolLocation from "./pages/websitePages/authenticationPages/school/scho
 import SchoolInformation from "./pages/websitePages/authenticationPages/school/schoolInformation";
 import ActivitySchedule from "./pages/websitePages/authenticationPages/school/activitySchedule";
 
-import ResourcePage from "./pages/dashboardPages/champ/CampAllReaourcePage";
+//instructors authentication pages
+import InstructorProfileInfo from "./pages/websitePages/authenticationPages/instructor/instructorInfo";
+import AboutInstructor from "./pages/websitePages/authenticationPages/instructor/aboutInstructor";
+import EducationHistory from "./pages/websitePages/authenticationPages/instructor/educationHistory";
+import WorkHistory from "./pages/websitePages/authenticationPages/instructor/workHistory";
+import InstructorLocation from "./pages/websitePages/authenticationPages/instructor/instructorLocation";
+import AddYourActivity from "./pages/websitePages/authenticationPages/instructor/addActivity";
+import { AddActivity } from "./pages/websitePages/authenticationPages/instructor/addActivity";
+
 import { Footer } from "./components/footer";
 
 function App() {
@@ -51,6 +59,18 @@ function App() {
           <Route path="SchoolInformation" element={<SchoolInformation />} />
           <Route path="ActivitySchedule" element={<ActivitySchedule />} />
           <Route path="resource-page" element={<ResourcePage />} />
+
+          {/* instructor authentication pages */}
+          <Route
+            path="InstructorProfileInfo"
+            element={<InstructorProfileInfo />}
+          />
+          <Route path="AboutInstructor" element={<AboutInstructor />} />
+          <Route path="EducationHistory" element={<EducationHistory />} />
+          <Route path="WorkHistory" element={<WorkHistory />} />
+          <Route path="InstructorLocation" element={<InstructorLocation />} />
+          <Route path="AddYourActivity" element={<AddYourActivity />} />
+          <Route path="AddActivity" element={<AddActivity />} />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />

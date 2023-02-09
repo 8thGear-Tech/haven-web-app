@@ -52,10 +52,6 @@ export const RegisterNowBtn = () => {
       <a target="_blank" href="">
         <button className="RegisterNowBtn">REGISTER NOW</button>
       </a>
-      {/* <a href="" target="_blank">
-        {" "}
-        <button className="RegisterNowBtn">REGISTER NOW</button>
-      </a> */}
     </>
   );
 };
