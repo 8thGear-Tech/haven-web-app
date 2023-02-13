@@ -34,6 +34,9 @@
 @use "./pages/websitePages/authenticationPages/instructor/aboutInstructor" as *;
 @use "./pages/websitePages/authenticationPages/instructor/addActivity" as *;
 @use "./pages/websitePages/authenticationPages/instructor/yourActivity" as *;
+@use "./pages/websitePages/authenticationPages/instructor/profileUpload" as *;
+@use "./pages/websitePages/authenticationPages/instructor/idUpload" as *;
+@use "./pages/websitePages/authenticationPages/instructor/videoUpload" as *;
 
 //payment package
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;

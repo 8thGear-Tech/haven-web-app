@@ -14,6 +14,7 @@ import BlogReadMore from "./pages/websitePages/blog/blogReadMorePage";
 //payment packages
 import PaymentPackages from "./pages/websitePages/paymentPackages/paymentPackages";
 import BasicPackage from "./pages/websitePages/paymentPackages/basicPackage";
+import BasicForm from "./components/forms/website/schools/packageForm";
 
 //authentication pages
 import { CreateAccountForm } from "./components/forms/authenticationForms";
@@ -31,6 +32,14 @@ import InstructorLocation from "./pages/websitePages/authenticationPages/instruc
 import AddYourActivity from "./pages/websitePages/authenticationPages/instructor/addActivity";
 import { AddActivity } from "./pages/websitePages/authenticationPages/instructor/addActivity";
 import { SelectTest } from "./pages/websitePages/authenticationPages/instructor/yourActivity";
+import { Questions } from "./pages/websitePages/authenticationPages/instructor/yourActivity";
+import { ProfileUpload } from "./pages/websitePages/authenticationPages/instructor/profileUpload";
+import { IdUpload } from "./pages/websitePages/authenticationPages/instructor/idUpload";
+import { VideoUpload } from "./pages/websitePages/authenticationPages/instructor/videoUpload";
+import SpecialNeeds from "./pages/websitePages/authenticationPages/instructor/specialNeeds";
+import { PaymentInfo } from "./pages/websitePages/authenticationPages/instructor/paymentInfo";
+import { Referee } from "./pages/websitePages/authenticationPages/instructor/referee";
+import { InstructorAgreement } from "./pages/websitePages/authenticationPages/instructor/referee";
 
 import { Footer } from "./components/footer";
 
@@ -52,6 +61,7 @@ function App() {
           {/* payment packages */}
           <Route path="PaymentPackages" element={<PaymentPackages />} />
           <Route path="BasicPackage" element={<BasicPackage />} />
+          <Route path="BasicForm" element={<BasicForm />} />
 
           {/* authentication pages */}
           <Route path="ChampsNeeds" element={<ChampsNeeds />} />
@@ -72,6 +82,14 @@ function App() {
           <Route path="AddYourActivity" element={<AddYourActivity />} />
           <Route path="AddActivity" element={<AddActivity />} />
           <Route path="SelectTest" element={<SelectTest />} />
+          <Route path="Questions" element={<Questions />} />
+          <Route path="ProfileUpload" element={<ProfileUpload />} />
+          <Route path="IdUpload" element={<IdUpload />} />
+          <Route path="VideoUpload" element={<VideoUpload />} />
+          <Route path="SpecialNeeds" element={<SpecialNeeds />} />
+          <Route path="PaymentInfo" element={<PaymentInfo />} />
+          <Route path="Referee" element={<Referee />} />
+          <Route path="InstructorAgreement" element={<InstructorAgreement />} />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />

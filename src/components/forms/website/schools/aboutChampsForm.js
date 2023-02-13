@@ -117,9 +117,10 @@ const AboutChampsForm = () => {
           ))}
         </Row>
         <div className="d-flex justify-content-between">
-          {" "}
-          <BackBtn />
-          <Link to="/SchoolInformation">
+          <Link to="/signup">
+            <BackBtn />
+          </Link>
+          <Link to="/SchoolLocation">
             <NextBtn />
           </Link>
         </div>

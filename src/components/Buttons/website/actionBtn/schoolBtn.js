@@ -29,10 +29,7 @@ export const BackBtn = () => {
 export const SuscribeBtn = () => {
   return (
     <>
-      <a href="" target="_blank">
-        {" "}
-        <button className="SuscribeBtn">READ MORE</button>
-      </a>
+      <button className="SuscribeBtn">SUBSCRIBE</button>
     </>
   );
 };

@@ -437,6 +437,19 @@ p {
   color: #75117a;
 }
 
+.SaveBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  font-weight: 600;
+  border: none;
+  width: 8rem;
+}
+
 .schoolPlaceHolderBorder {
   border-radius: 0px;
   height: 3.2rem;
@@ -647,6 +660,20 @@ p {
   color: #ffffff;
 }
 
+.IAgreeBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  width: 8rem;
+}
+
 .addYourActivitiesBg {
   background: #dfeaef;
   border: 1px solid #bc4c92;
@@ -663,6 +690,25 @@ p {
 
 .selectTestBgBorderPurple {
   border: 1px solid #75117a;
+}
+
+.profileUploadBgColor {
+  background: linear-gradient(180deg, #724598 0%, rgba(209, 93, 219, 0.7) 54.69%);
+  border-radius: 20px;
+}
+
+.IdUploadBgColor {
+  background: #c6bbd1;
+}
+
+.VideoUploadBgOne {
+  background: #ffffff;
+  border: 1px solid #1c96e9;
+}
+
+.VideoUploadBgTwo {
+  background: #dcf4ff;
+  border: 1px solid #d15ddb;
 }
 
 .paymentpackage {

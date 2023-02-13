@@ -60,8 +60,9 @@ const SchoolInfoForm = () => {
         </Row>
 
         <div className="d-flex justify-content-between">
-          {" "}
-          <BackBtn />
+          <Link to="/SchoolLocation">
+            <BackBtn />
+          </Link>
           <Link to="/ActivitySchedule">
             <NextBtn />
           </Link>

@@ -180,3 +180,7 @@
   background-color: #75117a;
   color: #ffffff;
 }
+.IAgreeBtn {
+  @include BtnStyle;
+  width: 8rem;
+}

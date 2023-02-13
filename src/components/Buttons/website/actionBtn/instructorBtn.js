@@ -151,3 +151,13 @@ export const Done = () => {
     </>
   );
 };
+
+export const IAgreeBtn = () => {
+  return (
+    <>
+      <a target="_blank" href="">
+        <button className="IAgreeBtn">I AGREE</button>
+      </a>
+    </>
+  );
+};

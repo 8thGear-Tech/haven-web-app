@@ -36,7 +36,7 @@ export const SaveBtn = () => {
     <>
       <a href="" target="_blank">
         {" "}
-        <Button className="SaveBtn">Save</Button>
+        <button className="SaveBtn">SAVE</button>
       </a>
     </>
   );
