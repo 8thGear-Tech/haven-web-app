@@ -46,7 +46,7 @@ export const VideoUpload = () => {
           <Link to="">
             <BackToApplication />
           </Link>
-          <Link to="">
+          <Link to="/InstructorProfileInfo">
             <NextBtn />
           </Link>
         </div>

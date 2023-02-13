@@ -37,10 +37,10 @@ export const PaymentInfo = () => {
             </Form.Group>
             {/* </Row> */}
             <div className="d-flex justify-content-between mt-5">
-              <Link to="/AddYourActivity">
+              <Link to="/InstructorProfileInfo">
                 <BackToApplication />
               </Link>
-              <Link to="/AddYourActivity">
+              <Link to="/InstructorProfileInfo">
                 <Done />
               </Link>
             </div>

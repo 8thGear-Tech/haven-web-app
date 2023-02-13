@@ -7,7 +7,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import InputGroup from "react-bootstrap/InputGroup";
 
-import { SaveAndContinueBtn } from "../../../Buttons/website/actionBtn/instructorBtn";
+import { SaveBtn } from "../../../Buttons/dashboard/actionBtn";
 
 const WorkHistoryForm = () => {
   return (
@@ -66,8 +66,8 @@ const WorkHistoryForm = () => {
         </Form.Group>
         <div className="d-flex justify-content-center mt-5">
           {" "}
-          <Link to="/InstructorsLocation">
-            <SaveAndContinueBtn />
+          <Link to="/InstructorProfileInfo">
+            <SaveBtn />
           </Link>
         </div>
       </Form>

@@ -18,7 +18,7 @@ export const Footer = () => {
                 style={{ maxWidth: "6rem", maxHeight: "6rem" }}
                 className="d-inline-block align-top"
               />{" "}
-              <div className="col-md-4">
+              <div className="col-lg-2">
                 <h4>Work with us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
@@ -48,7 +48,7 @@ export const Footer = () => {
                   </li> */}
                 </ul>
               </div>
-              <div className="">
+              <div className="col-lg-2">
                 <h4>Get to know us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
@@ -68,7 +68,7 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="">
+              <div className="col-lg-2">
                 <h4>Learn with us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
@@ -83,7 +83,7 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="">
+              <div className="col-lg-2">
                 <h4>Connect with us</h4>
                 <img
                   alt=""

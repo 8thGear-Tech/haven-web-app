@@ -81,13 +81,13 @@ const SpecialNeeds = () => {
           </div>
         </Row>
         <div className="text-center mt-2 mb-5">
-          <Link to="/PaymentPackages">
+          <Link to="/InstructorProfileInfo">
             {" "}
             <SaveBtn />
           </Link>
         </div>
         <div className="text-center">
-          <Link to="/PaymentPackages">
+          <Link to="/InstructorProfileInfo">
             {" "}
             <BackToApplication />
           </Link>

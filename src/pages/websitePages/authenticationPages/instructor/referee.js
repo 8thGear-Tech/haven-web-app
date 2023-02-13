@@ -39,10 +39,10 @@ export const Referee = () => {
           </div>
         </Row>
         <div className="d-flex justify-content-between mt-5 mx-5">
-          <Link to="/AddYourActivity">
+          <Link to="/InstructorProfileInfo">
             <BackToApplication />
           </Link>
-          <Link to="/AddYourActivity">
+          <Link to="/InstructorProfileInfo">
             <Done />
           </Link>
         </div>
@@ -80,7 +80,10 @@ export const InstructorAgreement = () => {
             cursus nulla convallis quis tempor.
           </p>
           <p>I agree to the company”s terms and condition</p>
-          <IAgreeBtn />
+          <Link to="/InstructorProfileInfo">
+            {" "}
+            <IAgreeBtn />
+          </Link>
         </Row>
       </Container>
     </>

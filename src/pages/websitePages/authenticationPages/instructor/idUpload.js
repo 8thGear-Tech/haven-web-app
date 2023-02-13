@@ -78,11 +78,13 @@ export const IdUpload = () => {
           </div>
           <div className="selectTestBg d-flex justify-content-center d-flex justify-content-between py-3 px-4 mt-5">
             <UploadBestPhoto />
-            <NextBtn />
+            <Link to="/InstructorProfileInfo">
+              <NextBtn />
+            </Link>
           </div>
         </div>
         <div className="d-flex justify-content-center mt-3">
-          <Link to="">
+          <Link to="/InstructorProfileInfo">
             <BackToApplication />
           </Link>
         </div>

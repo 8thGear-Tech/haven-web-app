@@ -103,6 +103,18 @@ export const UploadBestPhoto = () => {
     </>
   );
 };
+export const ChangePhoto = () => {
+  return (
+    <>
+      <a href="" target="_blank">
+        {" "}
+        <Button variant="outline-light" className="ChangePhoto">
+          CHANGE PHOTO
+        </Button>
+      </a>
+    </>
+  );
+};
 export const BackToApplication = () => {
   return (
     <>

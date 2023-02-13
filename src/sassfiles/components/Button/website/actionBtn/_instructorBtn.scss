@@ -113,6 +113,9 @@
   background-color: #75117a;
   color: #ffffff;
 }
+.ChangePhoto {
+  @include BtnStyle;
+}
 .BackToApplication {
   width: 15rem;
   background: #75117a;

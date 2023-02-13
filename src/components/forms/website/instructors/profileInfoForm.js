@@ -5,6 +5,9 @@ import Card from "react-bootstrap/Card";
 
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
+//internal import
+import { SubmitBtn } from "../../../Buttons/dashboard/actionBtn";
+
 const ProfileInfoForm = () => {
   return (
     <>
@@ -47,7 +50,10 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Your Work History</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/WorkHistory">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -58,7 +64,10 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Location</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/InstructorLocation">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -69,7 +78,10 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Activities</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/AddYourActivity">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -80,7 +92,10 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Profile Upload</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/ProfileUpload">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -91,7 +106,10 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Identify Upload</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/IdUpload">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -102,7 +120,10 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Video Introduction Upload</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/VideoUpload">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -113,6 +134,7 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Your Schedule</h5>
               </Card.Title>
+              <Link to="/"></Link>
               <LockOutlinedIcon />
             </Card.Body>
           </Card>
@@ -124,7 +146,9 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Teaching Special Needs</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/SpecialNeeds">
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -135,7 +159,9 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Payment Information</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/PaymentInfo">
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -144,9 +170,12 @@ const ProfileInfoForm = () => {
           >
             <Card.Body className="d-flex justify-content-between align-items-center">
               <Card.Title>
-                <h5>Provide References</h5>
+                <h5>Provide Referees</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/Referees">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
           <Card
@@ -157,12 +186,20 @@ const ProfileInfoForm = () => {
               <Card.Title>
                 <h5>Instructors Agreements</h5>
               </Card.Title>
-              <LockOutlinedIcon />
+              <Link to="/InstructorAgreement">
+                {" "}
+                <LockOutlinedIcon />
+              </Link>
             </Card.Body>
           </Card>
         </Col>
       </Row>
-
+      <div className="text-center">
+        <Link to="/CongratsMessage">
+          {" "}
+          <SubmitBtn />
+        </Link>
+      </div>
       {/* <Form>
         <Row className="p-3">
           <div className="col-lg-8 col-md-6 col-sm-12 align-items-center">

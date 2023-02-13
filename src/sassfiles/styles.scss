@@ -37,6 +37,8 @@
 @use "./pages/websitePages/authenticationPages/instructor/profileUpload" as *;
 @use "./pages/websitePages/authenticationPages/instructor/idUpload" as *;
 @use "./pages/websitePages/authenticationPages/instructor/videoUpload" as *;
+@use "./pages/websitePages/authenticationPages/instructor/congratulatoryMessage"
+  as *;
 
 //payment package
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;
