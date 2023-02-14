@@ -1,9 +1,16 @@
+//FooterItemToTop
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+//images
 import havenlogo from "../assets/icons/havenlogo.png";
+import googlemaps from "../assets/icons/googlemaps.png";
 
 // icons
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import MarkAsUnreadOutlinedIcon from "@mui/icons-material/MarkAsUnreadOutlined";
+// import { FacebookIcon } from "../assets/icons/icons";
 
 export const Footer = () => {
   return (
@@ -87,7 +94,7 @@ export const Footer = () => {
                 <h4>Connect with us</h4>
                 <img
                   alt=""
-                  src={havenlogo}
+                  src={googlemaps}
                   style={{ maxWidth: "6rem", maxHeight: "6rem" }}
                   className="d-inline-block align-top"
                 />{" "}
@@ -200,28 +207,47 @@ export const Footer = () => {
               <div>
                 {" "}
                 <MarkAsUnreadOutlinedIcon />
-                <a class="footerParagraph mx-2" href="#">
+                <a
+                  class="footerParagraph mx-2"
+                  href="mailto: hello@haveneduservices.com"
+                >
                   hello@haveneduservices.com
                 </a>
               </div>
 
               <div className="">
                 <LocalPhoneOutlinedIcon />
-                <a class="footerParagraph mx-2" href="#" target="_blank">
+                <a
+                  class="footerParagraph mx-2"
+                  href="tel:2348098438885"
+                  target="_blank"
+                >
                   080 98438885
                 </a>
-                <a class="footerParagraph mx-2" href="#" target="_blank">
+                <a
+                  class="footerParagraph mx-2"
+                  href="tel:2348098458885"
+                  target="_blank"
+                >
                   080 98458885
                 </a>
               </div>
               <ul class="list-unstyled d-flex">
                 <li class="ms-3">
-                  <a class="link-dark" href="#" target="_blank">
+                  <a
+                    class="link-dark"
+                    href="https://m.facebook.com/haveneduservices/"
+                    target="_blank"
+                  >
                     <FacebookOutlinedIcon />
                   </a>
                 </li>
                 <li class="ms-3">
-                  <a class="link-dark" href="#" target="_blank">
+                  <a
+                    class="link-dark"
+                    href="https://instagram.com/haveneduservices?igshid=1fyt565z18d4u"
+                    target="_blank"
+                  >
                     <FacebookOutlinedIcon />
                   </a>
                 </li>
@@ -253,4 +279,14 @@ export const Footer = () => {
       </div>
     </>
   );
+};
+
+export const FooterItemToTop = ({ children }) => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return children || null;
 };

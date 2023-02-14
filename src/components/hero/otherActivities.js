@@ -12,7 +12,7 @@ export const WeekendActivitiesHero = () => {
   return (
     <>
       <div className="px-3">
-        <div className="px-4 container-fluid py-5">
+        <div className="px-4 container-fluid py-5 mt-5">
           <div className="row align-items-center justify-content-center mt-3">
             <div className="col-lg-6 col-md-6 col-sm-12 ">
               <h2 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">

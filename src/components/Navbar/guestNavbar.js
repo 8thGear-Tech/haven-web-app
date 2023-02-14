@@ -95,7 +95,10 @@ export const GuestNavbar = () => {
                   PRODUCT
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/afterSchool" className="navTextColor">
+                <NavDropdown.Item
+                  href="/otherActivities"
+                  className="navTextColor"
+                >
                   OTHER SERVICES
                 </NavDropdown.Item>
               </NavDropdown>

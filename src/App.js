@@ -44,17 +44,19 @@ import { InstructorAgreement } from "./pages/websitePages/authenticationPages/in
 import CongratsMessage from "./pages/websitePages/authenticationPages/instructor/congratulatoryMessage";
 
 import { Footer } from "./components/footer";
+import { FooterItemToTop } from "./components/footer";
 
 function App() {
   return (
     <div>
-      {" "}
       <BrowserRouter>
+        {" "}
+        <FooterItemToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="afterSchool" element={<AfterSchool />} />
-          <Route path="havenSummer" element={<CreativeSummer />} />
+          <Route path="otherActivities" element={<CreativeSummer />} />
           <Route path="weekendClub" element={<WeekendActivities />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="blog" element={<Blog />} />
