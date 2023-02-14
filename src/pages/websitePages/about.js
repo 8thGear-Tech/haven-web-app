@@ -5,7 +5,8 @@ import { Team } from "../../components/allCards/Website/teamCards";
 import vision from "../../assets/images/about/vision.png";
 import mission from "../../assets/images/about/mission.png";
 import team from "../../assets/images/about/team.png";
-import googlebreakbeatcode from "../../assets/images/about/partners/googlebreakbeatcode.png";
+import google from "../../assets/images/about/partners/google.png";
+import breakbeatcode from "../../assets/images/about/partners/breakbeatcode.png";
 import eightgear from "../../assets/images/about/partners/eightgear.png";
 import cisco from "../../assets/images/about/partners/cisco.png";
 
@@ -194,30 +195,32 @@ const JoinTeam = () => {
 
 const Partners = () => {
   return (
-    <div className="container-fluid partnersBg pt-5">
+    <div className="container-fluid partnersBg pt-5 mt-5">
       {" "}
-      <div className="row g-0">
-        <h3 className="mt-4 text-center mb-4">OUR PARTNERS</h3>
-        <div className="row justify-content-center justify-content-evenly">
-          <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
-            <img src={googlebreakbeatcode} className="logo1 col-12 "></img>
-          </div>
-
-          <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-            <img
-              src={eightgear}
-              className="col-6"
-              // style={{ maxWidth: "90%", maxHeight: "90%" }}
-            ></img>
-          </div>
-          <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
-            <img src={cisco} className="col-12"></img>
-          </div>
-          <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
-            <img src={innkeeper} className="col-12 "></img>
-          </div>
+      {/* <div className="row g-0"> */}
+      <h3 className="mt-4 text-center mb-4">OUR PARTNERS</h3>
+      <div className="row d-flex align-items-center justify-content-center justify-content-evenly">
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
+          <img src={google} className="logo1 col-12 px-3"></img>
+        </div>
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
+          <img src={breakbeatcode} className="logo1 col-12 px-4"></img>
+        </div>
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+          <img
+            src={eightgear}
+            className="col-12 px-5"
+            // style={{ maxWidth: "90%", maxHeight: "90%" }}
+          ></img>
+        </div>
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
+          <img src={innkeeper} className="col-12 "></img>
+        </div>{" "}
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
+          <img src={cisco} className="col-12"></img>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 };

@@ -1,6 +1,7 @@
 //FooterItemToTop
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //images
 import havenlogo from "../assets/icons/havenlogo.png";
@@ -19,6 +20,15 @@ export const Footer = () => {
         <footer class="py-3 mx-5">
           <div class="row ">
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+              {/* <Link to="/">
+                {" "}
+                <img
+                  alt=""
+                  src={havenlogo}
+                  style={{ maxWidth: "6rem", maxHeight: "6rem" }}
+                  className="d-inline-block align-top"
+                />
+              </Link> */}
               <img
                 alt=""
                 src={havenlogo}
