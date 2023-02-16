@@ -3,9 +3,10 @@ import { GuestNavbar } from "../../components/Navbar/guestNavbar";
 import { HomeHero } from "../../components/hero/homeHero";
 import { HomeMobileHero } from "../../components/hero/homeHero";
 import { WhyTrustUsCard } from "../../components/allCards/Website/whyTrustUs";
-import { PaymentpackageCard } from "../../components/allCards/Website/paymentPackage";
+import { WhatWeDoCard } from "../../components/allCards/Website/activitiesCard";
 import whyTrustUsInfo from "../../data/allCards/whyTrustUs.json";
-import whatwedo from "../../data/pages/whatWeDo.json";
+import whatwedo from "../../data/allCards/activitiesCard.json";
+import { ReadMoreBtn } from "../../components/Buttons/dashboard/actionBtn";
 
 //external import
 import Button from "react-bootstrap/Button";
@@ -34,22 +35,51 @@ const Home = () => {
   );
 };
 
+// const WhatWeDo = () => {
+//   return (
+//     <>
+//       <div className="container">
+//         <h3 className="text-center mb-4">WHAT WE DO</h3>
+//         <div className="CardWork row text-center justify-content-around ">
+//           {whatwedo.whatwedo.map((data) => {
+//             return (
+//               <>
+//                 <div className="col-lg-3 col-md-5 col-sm-12" key={data.id}>
+//                   <PaymentpackageCard {...data} />
+//                 </div>
+//               </>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
 const WhatWeDo = () => {
   return (
     <>
       <div className="container">
         <h3 className="text-center mb-4">WHAT WE DO</h3>
-        <div className="CardWork row text-center justify-content-around ">
+        <div className="CardWork row text-center justify-content-around mt-5">
           {whatwedo.whatwedo.map((data) => {
             return (
               <>
                 <div className="col-lg-3 col-md-5 col-sm-12" key={data.id}>
-                  <PaymentpackageCard {...data} />
+                  <WhatWeDoCard {...data} />
                 </div>
               </>
             );
           })}
         </div>
+        {/* <div className="d-flex justify-content-center justify-content-evenly mt-5">
+          <Link to="/signup">
+            <BackBtn />
+          </Link>
+          <Link to="/RegisterNowForm">
+            <RegisterNowBtn />
+          </Link>
+        </div> */}
       </div>
     </>
   );

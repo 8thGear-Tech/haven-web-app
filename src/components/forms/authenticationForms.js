@@ -440,7 +440,7 @@ export const JoinUsModal = () => {
         </h6>
         <h6 className="text-center pt-3">
           Continue as a parent
-          <Link to="/" className="px-1 mutedTextFontColor">
+          <Link to="/AllActivities" className="px-1 mutedTextFontColor">
             Click here
           </Link>
         </h6>

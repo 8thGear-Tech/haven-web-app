@@ -40,5 +40,8 @@
 @use "./pages/websitePages/authenticationPages/instructor/congratulatoryMessage"
   as *;
 
+//parent
+@use "./pages/websitePages/allActivities/allActivities" as *;
+
 //payment package
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;

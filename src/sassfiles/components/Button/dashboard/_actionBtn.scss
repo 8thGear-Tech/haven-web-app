@@ -14,21 +14,21 @@
 }
 .ReadMoreBtn {
   border: 1px solid $buttoncolor;
-  color: $prytextcolor;
-  border-radius: 20px;
-  width: 11rem;
+  background-color: $prybgcolor;
+  // color: $prytextcolor;
+  border-radius: 10px;
+  width: 8rem;
   height: 2.5rem;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
   &:hover {
     background-color: $buttoncolor;
-    color: $sectextcolor;
+    color: $tertextcolor;
   }
   &:focus {
     background-color: $buttoncolor;
-    color: $sectextcolor;
+    color: $tertextcolor;
   }
 }
 .SaveBtn {

@@ -1,7 +1,7 @@
 //internal import
 
 //buttons
-import { GetAFacilitatorBtn } from "../Buttons/website/actionBtn/homeandAboutBtn";
+import { GetAnInstructorBtn } from "../Buttons/website/actionBtn/homeandAboutBtn";
 
 //images
 import homehero from "../../assets/images/hero/homehero.png";
@@ -28,7 +28,7 @@ export const HomeHero = () => {
               </h3>{" "}
               <div className="">
                 {" "}
-                <GetAFacilitatorBtn />
+                <GetAnInstructorBtn />
               </div>
             </div>
           </div>

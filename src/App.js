@@ -16,12 +16,17 @@ import PaymentPackages from "./pages/websitePages/paymentPackages/paymentPackage
 import BasicPackage from "./pages/websitePages/paymentPackages/basicPackage";
 import BasicForm from "./components/forms/website/schools/packageForm";
 
-//authentication pages
+//school authentication pages
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 import ChampsNeeds from "./pages/websitePages/authenticationPages/school/champsNeeds";
 import SchoolLocation from "./pages/websitePages/authenticationPages/school/schoolLocation";
 import SchoolInformation from "./pages/websitePages/authenticationPages/school/schoolInformation";
 import ActivitySchedule from "./pages/websitePages/authenticationPages/school/activitySchedule";
+
+//school activities
+import Technology from "./pages/websitePages/allActivities/technology";
+import Arts from "./pages/websitePages/allActivities/arts";
+import Languages from "./pages/websitePages/allActivities/languages";
 
 //instructors authentication pages
 import InstructorProfileInfo from "./pages/websitePages/authenticationPages/instructor/instructorInfo";
@@ -42,6 +47,10 @@ import { PaymentInfo } from "./pages/websitePages/authenticationPages/instructor
 import { Referee } from "./pages/websitePages/authenticationPages/instructor/referee";
 import { InstructorAgreement } from "./pages/websitePages/authenticationPages/instructor/referee";
 import CongratsMessage from "./pages/websitePages/authenticationPages/instructor/congratulatoryMessage";
+
+//parent
+import AllActivities from "./pages/websitePages/allActivities/allActivities";
+import RegisterNowForm from "./components/forms/website/registerNowForm";
 
 import { Footer } from "./components/footer";
 import { FooterItemToTop } from "./components/footer";
@@ -67,12 +76,20 @@ function App() {
           <Route path="BasicPackage" element={<BasicPackage />} />
           <Route path="BasicForm" element={<BasicForm />} />
 
-          {/* authentication pages */}
+          {/*school authentication pages */}
           <Route path="ChampsNeeds" element={<ChampsNeeds />} />
-
           <Route path="SchoolLocation" element={<SchoolLocation />} />
           <Route path="SchoolInformation" element={<SchoolInformation />} />
           <Route path="ActivitySchedule" element={<ActivitySchedule />} />
+
+          {/*school activities pages */}
+          <Route path="Technology" element={<Technology />} />
+          <Route path="Arts" element={<Arts />} />
+          <Route path="Languages" element={<Languages />} />
+
+          {/* parent authentication pages */}
+          <Route path="AllActivities" element={<AllActivities />} />
+          <Route path="RegisterNowForm" element={<RegisterNowForm />} />
 
           {/* instructor authentication pages */}
           <Route

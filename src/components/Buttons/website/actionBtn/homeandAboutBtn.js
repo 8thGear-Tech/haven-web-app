@@ -2,14 +2,15 @@
 // ReadMore
 
 // import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
-export const GetAFacilitatorBtn = () => {
+export const GetAnInstructorBtn = () => {
   return (
     <>
-      <a href="" target="_blank">
+      <Link to="/signup">
         {" "}
-        <button className="GetAFacilitatorBtn">GET AN INSTRUCTOR</button>
-      </a>
+        <button className="GetAnInstructorBtn">GET AN INSTRUCTOR</button>
+      </Link>
     </>
   );
 };

@@ -47,7 +47,7 @@ export const ReadMoreBtn = () => {
     <>
       <a href="" target="_blank">
         {" "}
-        <Button className="ReadMoreBtn ">Read More</Button>
+        <button className="ReadMoreBtn ">Read More</button>
       </a>
     </>
   );
