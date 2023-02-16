@@ -42,6 +42,9 @@ const ArtsInfo = () => {
           <Link to="/signup">
             <GetAnInstructorBtn />
           </Link>
+          <Link to="/signup">
+            <GetAnInstructorBtn />
+          </Link>
         </div>
       </div>
     </>
