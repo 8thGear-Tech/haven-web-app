@@ -1,622 +1,90 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import havenlogo from "../../assets/icons/havenlogo.png";
+import Nav from "react-bootstrap/Nav";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-// import Container from "react-bootstrap/Container";
-// import Nav from "react-bootstrap/Nav";
-// import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import ManOutlinedIcon from "@mui/icons-material/ManOutlined";
-import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
-import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 
 // internal import
-// import { DashboardProfileCards } from "../allCards/dashBoardcards";
-import DashboardProfileCards from "../../components/allCards/Dashboard/dashboardNavBar";
-// import admin from "../../data/dashboardNavbar.json";
-// import admin from "../../data/pages/dashboardNavabar.json";
-// import counsellor from "../../data/pages/dashboardNavabar.json";
-// import counsellee from "../../data/pages/dashboardNavabar.json";
-// //images
-// import mindafrikfulllogo from "../../assets/images/logo/mindafrik-full-logo-250.png";
-// import havenlogo from "../../assets/icons/havenlogo.png";
-// import sidebarfooterImage from "../../assets/images/dashboard/sidebarfooterImage.png";
 
-export const DashboardNavbar = () => {
+import havenlogo from "../../assets/icons/havenlogo.png";
+import HorizontalSplitIcon from "@mui/icons-material/HorizontalSplit";
+
+export const ChampNavbar = () => {
   return (
     <>
-      <div className="">
-        <div className="d-flex justify-content-between mt-3 justify-content-center ">
+      <div className="d-flex">
+        <div className="flex-shrink-0">
           <img
+            alt=""
             src={havenlogo}
-            className="d-inline-block align-top d-none d-sm-none d-lg-block d-md-block"
-            alt="MindAfrik logo"
+            style={{
+              maxWidth: "6rem",
+              maxHeight: "6rem",
+              backgroundColor: "#ffffff",
+            }}
           />
-          <div className="d-flex align-items-center">
-            {" "}
-            <AccountCircleOutlinedIcon className="mx-3" />
-            <NotificationsActiveIcon className="mx-3" />
-            <LogoutOutlinedIcon className="mx-3" />
-          </div>
+        </div>
+        <div className="flex-grow-1">
+          <Navbar
+            style={{
+              backgroundColor: "#BC4C92",
+            }}
+            expand="md"
+            className="topNavbar"
+          >
+            <Nav className="align-items-end">
+              <Navbar.Brand href="#">
+                <NotificationsNoneIcon
+                  style={{ maxWidth: "9rem", maxHeight: "6rem" }}
+                  className=""
+                />
+              </Navbar.Brand>
+              <Navbar.Brand href="#home">
+                <AccountCircleIcon
+                  style={{ maxWidth: "6rem", maxHeight: "6rem" }}
+                  className=""
+                />
+              </Navbar.Brand>
+            </Nav>
+          </Navbar>
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 };
+export const ChampSideNavBar = () => {
+  const [showSidebar, setShowSidebar] = useState(false);
+  return (
+    <>
+      <React.Fragment>
+        <Navbar
+          className="sidebar"
+          style={{
+            backgroundColor: "#BC4C92",
+          }}
+        >
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav className="flex-column">
+                <Nav.Link href="# Dashboard"> Dashboard</Nav.Link>
+                <Nav.Link href="#materials">Materials</Nav.Link>
+                <Nav.Link href="#services">Assignment</Nav.Link>
+                <Nav.Link href="#virtualclass">Virtual Class</Nav.Link>
+                <Nav.Link href="#calendar">Calendar</Nav.Link>
+                <Nav.Link href="#myprofile">My Profile</Nav.Link>
+                <Nav.Link href="#reportissues">Report Issues</Nav.Link>
+                <Nav.Link href="#submission">Submission</Nav.Link>
+                <Nav.Link href="#ratings">Ratings</Nav.Link>
+                <Nav.Link href="#">Log Out</Nav.Link>
+              </Nav>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
 
-//admin dashboard
-
-// export const AdminDashboardSideNav = () => {
-//   return (
-//     <>
-//       <SmallShow />
-//       <BigShow />
-//     </>
-//   );
-// };
-
-// const options = [
-//   {
-//     scroll: true,
-//     backdrop: false,
-//   },
-// ];
-
-// const SmallShowExample = ({ name, ...props }) => {
-//   const [show, setShow] = useState(false);
-//   const handleClose = () => setShow(false);
-//   const toggleShow = () => setShow((s) => !s);
-
-//   return (
-//     <>
-//       <Button
-//         onClick={toggleShow}
-//         className="me-2 bg-white border-0 d-lg-none position-fixed start-0 top-0"
-//       >
-//         <svg
-//           width="30"
-//           height="20"
-//           viewBox="0 0 30 20"
-//           fill="none"
-//           xmlns="http://www.w3.org/2000/svg"
-//         >
-//           <path
-//             d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-//             fill="#006747"
-//           />
-//         </svg>
-//       </Button>
-
-//       <Offcanvas
-//         show={show}
-//         onHide={handleClose}
-//         responsive="lg"
-//         className="w-75 d-lg-none text-white"
-//         {...props}
-//         style={{
-//           background:
-//             "linear-gradient(0deg, rgba(20, 129, 92, 0.5), rgba(20, 129, 92, 0.5)), linear-gradient(0deg, #058547, #058547), linear-gradient(0deg, rgba(59, 192, 142, 0.1), rgba(59, 192, 142, 0.1)), #09CD1E",
-//         }}
-//       >
-//         <Offcanvas.Header closeButton>
-//           <Offcanvas.Title>
-//             <DashboardProfileCards />
-//           </Offcanvas.Title>
-//         </Offcanvas.Header>
-//         <Offcanvas.Body>
-//           <div className="d-flex justify-content-between flex-column">
-//             <ul className="ps-2">
-//               <li className="d-flex mb-4 align-items-center SideNavItem">
-//                 <div className="me-3">
-//                   <HomeOutlinedIcon />
-//                 </div>
-//                 <span>My Dashboard</span>
-//               </li>
-//               <li className="d-flex mb-4 align-items-center SideNavItem">
-//                 <div className="me-3">
-//                   <AccountCircleOutlinedIcon />
-//                 </div>
-//                 <span>Users</span>
-//               </li>
-//               <li className="d-flex mb-4 align-items-center SideNavItem">
-//                 <div className="me-3">
-//                   <ManOutlinedIcon />
-//                 </div>
-//                 <span>Counselor</span>
-//               </li>
-//               <li className="d-flex align-items-center SideNavItem mb-4">
-//                 <div className="me-3">
-//                   <NotificationsActiveIcon />
-//                 </div>
-//                 <span className="my-1">Notification</span>
-//               </li>
-//               <li className="d-flex align-items-center SideNavItem mb-4">
-//                 <div className="me-3">
-//                   <LogoutOutlinedIcon />
-//                 </div>
-//                 <span>Logout</span>
-//               </li>
-//             </ul>
-//           </div>
-//         </Offcanvas.Body>
-//       </Offcanvas>
-//     </>
-//   );
-// };
-
-// const Demo = (props) => {
-//   const { icon, pageroute, dashboard } = props;
-//   return (
-//     <>
-//       <ul className="ps-2">
-//         <li className="d-flex mb-2 align-items-center SideNavItem">
-//           <div className="me-3">{icon}</div>
-//           <Link to={pageroute} className="nav-link">
-//             <div className="sideNavButton">
-//               <span>{dashboard}</span>
-//             </div>
-//           </Link>
-//         </li>
-//         {/* <Link
-//           to="/adminDashboardCounselleesPage"
-//           className="text-decoration-none"
-//         >
-//           <li className="d-flex mb-4 align-items-center SideNavItem">
-//             <div className="me-3">
-//               <AccountCircleOutlinedIcon />
-//             </div>
-//             <span>{users}</span>
-//           </li>
-//         </Link>
-//         <li className="d-flex mb-4 align-items-center SideNavItem">
-//           <div className="me-3">
-//             <ManOutlinedIcon />
-//           </div>
-//           <span>{counsellors}</span>
-//         </li>
-//         <li className="d-flex align-items-center SideNavItem mb-4">
-//           <div className="me-3">
-//             <NotificationsActiveIcon />
-//           </div>
-//           <span className="my-1">{notification}</span>
-//         </li>
-//         <li className="d-flex align-items-center SideNavItem mb-4">
-//           <div className="me-3">
-//             <LogoutOutlinedIcon />
-//           </div>
-//           <span>Logout</span>
-//         </li>
-//         <li className="d-flex align-items-center SideNavItem mt-lg-5 pt-lg-2 bottom position-fixed">
-//           <div className="pt-5 mt-5">
-//             <img
-//               src={sidebarfooterImage}
-//               style={{ maxHeight: "65%", maxWidth: "65%" }}
-//             />
-//           </div>
-//         </li> */}
-//       </ul>
-//     </>
-//   );
-// };
-
-// const BigShowExample = ({ name, ...props }) => {
-//   const [show, setShow] = useState(true);
-
-//   const handleClose = () => setShow(false);
-//   const toggleShow = () => setShow((s) => !s);
-
-//   return (
-//     <>
-//       <Offcanvas
-//         show={show}
-//         onHide={handleClose}
-//         {...props}
-//         className="d-none d-lg-block"
-//         style={{
-//           background:
-//             "linear-gradient(0deg, rgba(20, 129, 92, 0.5), rgba(20, 129, 92, 0.5)), linear-gradient(0deg, #058547, #058547), linear-gradient(0deg, rgba(59, 192, 142, 0.1), rgba(59, 192, 142, 0.1)), #09CD1E",
-//           width: "20rem",
-//         }}
-//       >
-//         <Offcanvas.Header>
-//           <Offcanvas.Title>
-//             <DashboardProfileCards />
-//           </Offcanvas.Title>
-//         </Offcanvas.Header>
-//         <Offcanvas.Body className="">
-//           {admin.admin.map((navbar) => {
-//             return (
-//               <div className="d-flex justify-content-between flex-column">
-//                 <ul className="ps-2" key={navbar.id}>
-//                   <Demo {...navbar} />
-//                 </ul>
-//               </div>
-//             );
-//           })}
-//         </Offcanvas.Body>
-//       </Offcanvas>
-//     </>
-//   );
-// };
-
-// const BigShow = () => {
-//   return (
-//     <>
-//       {options.map((props, idx) => (
-//         <BigShowExample key={idx} {...props} />
-//       ))}
-//     </>
-//   );
-// };
-// const SmallShow = () => {
-//   return (
-//     <>
-//       {options.map((props, idx) => (
-//         <SmallShowExample key={idx} {...props} />
-//       ))}
-//     </>
-//   );
-// };
-
-// //counsellor dashboard
-
-// export const CounsellorDashboardSideNav = () => {
-//   return (
-//     <>
-//       <CounsellorSmallShow />
-//       <CounsellorBigShow />
-//     </>
-//   );
-// };
-
-// const CounsellorSmallShowExample = ({ name, ...props }) => {
-//   const [show, setShow] = useState(false);
-//   const handleClose = () => setShow(false);
-//   const toggleShow = () => setShow((s) => !s);
-
-//   return (
-//     <>
-//       <Button
-//         onClick={toggleShow}
-//         className="me-2 bg-white border-0 d-lg-none position-fixed start-0 top-0"
-//       >
-//         <svg
-//           width="30"
-//           height="20"
-//           viewBox="0 0 30 20"
-//           fill="none"
-//           xmlns="http://www.w3.org/2000/svg"
-//         >
-//           <path
-//             d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-//             fill="#006747"
-//           />
-//         </svg>
-//       </Button>
-
-//       <Offcanvas
-//         show={show}
-//         onHide={handleClose}
-//         responsive="lg"
-//         className="w-75 d-lg-none text-white"
-//         {...props}
-//         style={{
-//           background:
-//             "linear-gradient(0deg, rgba(20, 129, 92, 0.5), rgba(20, 129, 92, 0.5)), linear-gradient(0deg, #058547, #058547), linear-gradient(0deg, rgba(59, 192, 142, 0.1), rgba(59, 192, 142, 0.1)), #09CD1E",
-//         }}
-//       >
-//         <Offcanvas.Header closeButton>
-//           <Offcanvas.Title>
-//             <DashboardProfileCards />
-//           </Offcanvas.Title>
-//         </Offcanvas.Header>
-//         <Offcanvas.Body>
-//           <div className="d-flex justify-content-between flex-column">
-//             <ul className="ps-2">
-//               <li className="d-flex mb-4 align-items-center SideNavItem">
-//                 <div className="me-3">
-//                   <HomeOutlinedIcon />
-//                 </div>
-//                 <span>My Dashboard</span>
-//               </li>
-//               <li className="d-flex mb-4 align-items-center SideNavItem">
-//                 <div className="me-3">
-//                   <AccountCircleOutlinedIcon />
-//                 </div>
-//                 <span>Users</span>
-//               </li>
-//               <li className="d-flex mb-4 align-items-center SideNavItem">
-//                 <div className="me-3">
-//                   <ManOutlinedIcon />
-//                 </div>
-//                 <span>Counselor</span>
-//               </li>
-//               <li className="d-flex align-items-center SideNavItem mb-4">
-//                 <div className="me-3">
-//                   <NotificationsActiveIcon />
-//                 </div>
-//                 <span className="my-1">Notification</span>
-//               </li>
-//               <li className="d-flex align-items-center SideNavItem mb-4">
-//                 <div className="me-3">
-//                   <LogoutOutlinedIcon />
-//                 </div>
-//                 <span>Logout</span>
-//               </li>
-//             </ul>
-//           </div>
-//         </Offcanvas.Body>
-//       </Offcanvas>
-//     </>
-//   );
-// };
-
-// const CounsellorBigShowExample = ({ name, ...props }) => {
-//   const [show, setShow] = useState(true);
-
-//   const handleClose = () => setShow(false);
-//   const toggleShow = () => setShow((s) => !s);
-
-//   return (
-//     <>
-//       <Offcanvas
-//         show={show}
-//         onHide={handleClose}
-//         {...props}
-//         className="d-none d-lg-block"
-//         style={{
-//           background:
-//             "linear-gradient(0deg, rgba(20, 129, 92, 0.5), rgba(20, 129, 92, 0.5)), linear-gradient(0deg, #058547, #058547), linear-gradient(0deg, rgba(59, 192, 142, 0.1), rgba(59, 192, 142, 0.1)), #09CD1E",
-//           width: "20rem",
-//         }}
-//       >
-//         <Offcanvas.Header>
-//           <Offcanvas.Title>
-//             <DashboardProfileCards />
-//           </Offcanvas.Title>
-//         </Offcanvas.Header>
-//         <Offcanvas.Body className="">
-//           {counsellor.counsellor.map((navbar) => {
-//             return (
-//               <div className="d-flex justify-content-between flex-column">
-//                 <ul className="ps-2" key={navbar.id}>
-//                   <Demo {...navbar} />
-//                 </ul>
-//               </div>
-//             );
-//           })}
-//         </Offcanvas.Body>
-//       </Offcanvas>
-//     </>
-//   );
-// };
-
-// const CounsellorBigShow = () => {
-//   return (
-//     <>
-//       {options.map((props, idx) => (
-//         <CounsellorBigShowExample key={idx} {...props} />
-//       ))}
-//     </>
-//   );
-// };
-// const CounsellorSmallShow = () => {
-//   return (
-//     <>
-//       {options.map((props, idx) => (
-//         <CounsellorSmallShowExample key={idx} {...props} />
-//       ))}
-//     </>
-//   );
-// };
-// //counsellee dashboard
-
-// export const CounselleeDashboardSideNav = () => {
-//   return (
-//     <>
-//       <CounselleeSmallShow />
-//       <CounselleeBigShow />
-//     </>
-//   );
-// };
-
-// const CounselleeSmallShowExample = ({ name, ...props }) => {
-//   const [show, setShow] = useState(false);
-//   const handleClose = () => setShow(false);
-//   const toggleShow = () => setShow((s) => !s);
-
-//   return (
-//     <>
-//       <Button
-//         onClick={toggleShow}
-//         className="me-2 bg-white border-0 d-lg-none position-fixed start-0 top-0"
-//       >
-//         <svg
-//           width="30"
-//           height="20"
-//           viewBox="0 0 30 20"
-//           fill="none"
-//           xmlns="http://www.w3.org/2000/svg"
-//         >
-//           <path
-//             d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-//             fill="#006747"
-//           />
-//         </svg>
-//       </Button>
-
-//       <Offcanvas
-//         show={show}
-//         onHide={handleClose}
-//         responsive="lg"
-//         className="w-75 d-lg-none text-white"
-//         {...props}
-//         style={{
-//           background:
-//             "linear-gradient(0deg, rgba(20, 129, 92, 0.5), rgba(20, 129, 92, 0.5)), linear-gradient(0deg, #058547, #058547), linear-gradient(0deg, rgba(59, 192, 142, 0.1), rgba(59, 192, 142, 0.1)), #09CD1E",
-//         }}
-//       >
-//         <Offcanvas.Header closeButton>
-//           <Offcanvas.Title>
-//             <DashboardProfileCards />
-//           </Offcanvas.Title>
-//         </Offcanvas.Header>
-//         <Offcanvas.Body>
-//           <div className="d-flex justify-content-between flex-column">
-//             <ul className="ps-2">
-//               <li className="d-flex mb-4 align-items-center SideNavItem">
-//                 <div className="me-3">
-//                   <HomeOutlinedIcon />
-//                 </div>
-//                 <span>My Dashboard</span>
-//               </li>
-//               <li className="d-flex mb-4 align-items-center SideNavItem">
-//                 <div className="me-3">
-//                   <AccountCircleOutlinedIcon />
-//                 </div>
-//                 <span>Users</span>
-//               </li>
-//               <li className="d-flex mb-4 align-items-center SideNavItem">
-//                 <div className="me-3">
-//                   <ManOutlinedIcon />
-//                 </div>
-//                 <span>Counselor</span>
-//               </li>
-//               <li className="d-flex align-items-center SideNavItem mb-4">
-//                 <div className="me-3">
-//                   <NotificationsActiveIcon />
-//                 </div>
-//                 <span className="my-1">Notification</span>
-//               </li>
-//               <li className="d-flex align-items-center SideNavItem mb-4">
-//                 <div className="me-3">
-//                   <LogoutOutlinedIcon />
-//                 </div>
-//                 <span>Logout</span>
-//               </li>
-//             </ul>
-//           </div>
-//         </Offcanvas.Body>
-//       </Offcanvas>
-//     </>
-//   );
-// };
-
-// const CounselleeBigShowExample = ({ name, ...props }) => {
-//   const [show, setShow] = useState(true);
-
-//   const handleClose = () => setShow(false);
-//   const toggleShow = () => setShow((s) => !s);
-
-//   return (
-//     <>
-//       <Offcanvas
-//         show={show}
-//         onHide={handleClose}
-//         {...props}
-//         className="d-none d-lg-block"
-//         style={{
-//           background:
-//             "linear-gradient(0deg, rgba(20, 129, 92, 0.5), rgba(20, 129, 92, 0.5)), linear-gradient(0deg, #058547, #058547), linear-gradient(0deg, rgba(59, 192, 142, 0.1), rgba(59, 192, 142, 0.1)), #09CD1E",
-//           width: "20rem",
-//         }}
-//       >
-//         <Offcanvas.Header>
-//           <Offcanvas.Title>
-//             <DashboardProfileCards />
-//           </Offcanvas.Title>
-//         </Offcanvas.Header>
-//         <Offcanvas.Body className="">
-//           {counsellee.counsellee.map((navbar) => {
-//             return (
-//               <div className="d-flex justify-content-between flex-column">
-//                 <ul className="ps-2" key={navbar.id}>
-//                   <Demo {...navbar} />
-//                 </ul>
-//               </div>
-//             );
-//           })}
-//         </Offcanvas.Body>
-//       </Offcanvas>
-//     </>
-//   );
-// };
-
-// const CounselleeBigShow = () => {
-//   return (
-//     <>
-//       {options.map((props, idx) => (
-//         <CounselleeBigShowExample key={idx} {...props} />
-//       ))}
-//     </>
-//   );
-// };
-// const CounselleeSmallShow = () => {
-//   return (
-//     <>
-//       {options.map((props, idx) => (
-//         <CounselleeSmallShowExample key={idx} {...props} />
-//       ))}
-//     </>
-//   );
-// };
-
-// // export const ChampNavBar = () => {
-// //   return (
-// //     <>
-// //       <div className=" row">
-// //         <div className="col-1">
-// //           <img
-// //             alt=""
-// //             src={havenlogo}
-// //             style={{ maxWidth: "6rem", maxHeight: "6rem" }}
-// //             className=" align-top ms-3"
-// //           />
-// //         </div>
-// //         <div className="col-11">
-// //           <Navbar bg="dark" variant="dark" className=" mt-1 ">
-// //             <Container fluid>
-// //               <Navbar.Brand href="#">
-// //                 <NotificationsNoneIcon
-// //                   style={{ maxWidth: "6rem", maxHeight: "6rem" }}
-// //                   className="align-top "
-// //                 />
-// //               </Navbar.Brand>
-// //               <Navbar.Brand href="#home">
-// //                 {" "}
-// //                 <AccountCircleIcon
-// //                   style={{ maxWidth: "6rem", maxHeight: "6rem" }}
-// //                   className="align-top"
-// //                 />
-// //               </Navbar.Brand>
-// //               <Nav className=""></Nav>
-// //             </Container>
-// //           </Navbar>
-// //         </div>
-// //       </div>
-// //     </>
-// //   );
-// // };
-
-// // export const ChampSideNavBar = () => {
-// //   return (
-// //     <>
-// //       <Nav bg="dark" defaultActiveKey="/home" className="flex-column">
-// //         <Nav.Link href="/home">Active</Nav.Link>
-// //         <Nav.Link eventKey="link-1">Link</Nav.Link>
-// //         <Nav.Link eventKey="link-2">Link</Nav.Link>
-// //         <Nav.Link eventKey="disabled" disabled>
-// //           Disabled
-// //         </Nav.Link>
-// //       </Nav>
-// //     </>
-// //   );
-// // };
+        {/* </div> */}
+      </React.Fragment>
+    </>
+  );
+};

@@ -14,7 +14,10 @@ import BlogReadMore from "./pages/websitePages/blog/blogReadMorePage";
 //payment packages
 import PaymentPackages from "./pages/websitePages/paymentPackages/paymentPackages";
 import BasicPackage from "./pages/websitePages/paymentPackages/basicPackage";
-
+import ResourcePage from "./pages/dashboardPages/champ/CampAllReaourcePage";
+import ChampDashboard from "./pages/dashboardPages/champ/champDashboardPage";
+import ChampMaterialPage from "./pages/dashboardPages/champ/champMaterialBoard";
+import AssignmentText from "./pages/dashboardPages/champ/champAssignmentBoard";
 //authentication pages
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 import ChampsNeeds from "./pages/websitePages/authenticationPages/school/champsNeeds";
@@ -58,8 +61,10 @@ function App() {
           <Route path="SchoolLocation" element={<SchoolLocation />} />
           <Route path="SchoolInformation" element={<SchoolInformation />} />
           <Route path="ActivitySchedule" element={<ActivitySchedule />} />
-          <Route path="resource-page" element={<ResourcePage />} />
-
+          <Route path="ResourcePage" element={<ResourcePage />} />
+          <Route path="ChampDashboard" element={<ChampDashboard />} />
+          <Route path="ChampMaterialPg" element={<ChampMaterialPage />} />
+          <Route path="AssignmentText" element={<AssignmentText />} />
           {/* instructor authentication pages */}
           <Route
             path="InstructorProfileInfo"
