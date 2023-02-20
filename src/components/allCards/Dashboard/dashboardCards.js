@@ -7,7 +7,7 @@ import champResourcedata from "../../../data/allCards/dashboardCards.json";
 export const ChampsDashboardCards = (props) => {
   const { image, title, text, id } = props;
   return (
-    <Card style={{ width: "12rem" }} className="">
+    <Card style={{ width: "15rem" }} className="mx-auto">
       <Card.Img variant="top" src={image} />
 
       <Card.Body className="text-center">

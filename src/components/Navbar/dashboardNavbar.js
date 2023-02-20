@@ -4,16 +4,44 @@
 //SchoolSideNav
 //ChampsSideNav
 
-import havenlogo from "../../assets/icons/havenlogo.png";
+import { useState } from "react";
+import OffCanvas from "react-bootstrap/Offcanvas";
 
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+export const DashboardSidebar = () => {
+  const [open, setOpen] = useState(false);
 
-import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
+  return (
+    <OffCanvas
+      width={200}
+      transitionDuration={300}
+      isMenuOpened={open}
+      onMenuClose={() => setOpen(false)}
+      onMenuOpen={() => setOpen(true)}
+      position="start"
+    >
+      <OffCanvas.Body>
+        <p>This is the main content.</p>
+      </OffCanvas.Body>
+      <OffCanvas.Body>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </OffCanvas.Body>
+    </OffCanvas>
+  );
+};
+// import havenlogo from "../../assets/icons/havenlogo.png";
+
+// import Container from "react-bootstrap/Container";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from "react-bootstrap/NavDropdown";
+
+// import React, { useState } from "react";
+// import Button from "react-bootstrap/Button";
+// import Offcanvas from "react-bootstrap/Offcanvas";
 
 // export const AdminSideNav = () => {
 //   const [show, setShow] = useState(false);
@@ -104,7 +132,9 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 // };
 
 // render(<Example />);
-export const AdminSideNavv = () => {
+
+{
+  /* export const AdminSideNavv = () => {
   return (
     <>
       <div className="container-fluid">
@@ -198,4 +228,5 @@ export const AdminSideNavv = () => {
       </div>
     </>
   );
-};
+}; */
+}

@@ -21,7 +21,7 @@ const CreativeSummer = () => {
       <ActivitiesSectionOne />
       <ActivitiesSectionTwo />
       <AfterSchoolHero />
-      <WeekendActivitiesHero />
+      {/* <WeekendActivitiesHero /> */}
       <ActivitiesSectionThree />
     </>
   );
@@ -94,7 +94,7 @@ const ActivitiesSectionTwo = () => {
         <div className="">
           {" "}
           {/* <h3 className="text-center">HAVEN SUMMER</h3> */}
-          <h4 className="text-center">
+          <h4 className="text-center mt-5">
             Highlight of Haven Summer 2022 held at 8thGear hub, Magodo, Lagos
           </h4>
         </div>
@@ -117,6 +117,11 @@ const ActivitiesSectionThree = () => {
   return (
     <>
       <div className="container-fluid px-5 pt-2 mt-5 BgColor">
+        <h3 className="text-center mt-5">HAVEN WEEKEND ACTIVITIES</h3>
+        <p className="text-center mb-5">
+          Haven weekend activities holds every Saturday at 8thGear hub, Magodo
+          Lagos.
+        </p>
         <Row
           xs={1}
           md={2}

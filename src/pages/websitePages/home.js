@@ -160,12 +160,12 @@ const OurActivities = () => {
                     School Facilitation
                   </p>
                 </Link>
-                <Link to="/havenSummer">
+                <Link to="/otherActivities">
                   <p className="text-decoration-underline fontStyle m-2">
                     Haven Summer
                   </p>
                 </Link>
-                <Link to="/weekendClub">
+                <Link to="/otherActivities">
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
                     Haven Weekend Club

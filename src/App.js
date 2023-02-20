@@ -1,6 +1,10 @@
 import * as React from "react";
 // import { Component } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+//sidebar
+// import { DashboardSidebar } from "./components/Navbar/dashboardNavbar";
+
 //pages
 import Home from "./pages/websitePages/home";
 import About from "./pages/websitePages/about";
@@ -48,6 +52,9 @@ import { Referee } from "./pages/websitePages/authenticationPages/instructor/ref
 import { InstructorAgreement } from "./pages/websitePages/authenticationPages/instructor/referee";
 import CongratsMessage from "./pages/websitePages/authenticationPages/instructor/congratulatoryMessage";
 
+//instructor dashboard page
+import InstructorDashboard from "./pages/dashboardPages/instructor/instructorDashboard";
+
 //parent
 import AllActivities from "./pages/websitePages/allActivities/allActivities";
 import RegisterNowForm from "./components/forms/website/registerNowForm";
@@ -62,6 +69,9 @@ function App() {
         {" "}
         <FooterItemToTop />
         <Routes>
+          {/* payment packages */}
+          {/* <Route path="/DashboardSidebar" element={<DashboardSidebar />} /> */}
+
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="afterSchool" element={<AfterSchool />} />
@@ -113,6 +123,9 @@ function App() {
           <Route path="Referees" element={<Referee />} />
           <Route path="InstructorAgreement" element={<InstructorAgreement />} />
           <Route path="CongratsMessage" element={<CongratsMessage />} />
+
+          {/* instructor authentication pages */}
+          <Route path="InstructorDashboard" element={<InstructorDashboard />} />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />

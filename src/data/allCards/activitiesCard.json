@@ -76,16 +76,8 @@
       "title": "Coding",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     },
-
     {
       "id": 2,
-      "image": "../assets/images/whatwedo/technology/coding.png",
-      "title": "Coding",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
-    },
-
-    {
-      "id": 3,
       "image": "../assets/images/whatwedo/technology/robotics.png",
       "title": "Robotics",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
@@ -109,7 +101,7 @@
     {
       "id": 3,
       "image": "../assets/images/whatwedo/arts/tyeanddye.png",
-      "title": "Tye and dye",
+      "title": "Crafts",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     }
   ],
@@ -117,7 +109,7 @@
     {
       "id": 1,
       "image": "../assets/images/whatwedo/languages/french.png",
-      "title": "French",
+      "title": "German",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     },
 
@@ -127,11 +119,16 @@
       "title": "French",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     },
-
     {
       "id": 3,
       "image": "../assets/images/whatwedo/languages/french.png",
-      "title": "French",
+      "title": "Mandarin",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+    {
+      "id": 4,
+      "image": "../assets/images/whatwedo/languages/french.png",
+      "title": "Spanish",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     }
   ],

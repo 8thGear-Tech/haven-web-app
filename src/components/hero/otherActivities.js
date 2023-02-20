@@ -87,16 +87,13 @@ export const AfterSchoolHero = () => {
       <div className="container-fluid ">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-12 col-sm-12 py-5">
-            <h2
+            {/* <h2
               className="lh-5 herotextblack d-none d-lg-block d-md-none d-sm-none d-xs-none text-center"
               style={{ color: "#2B0947" }}
             >
               AFTER SCHOOL ACTIVITIES
-            </h2>
-            <h3
-              className="lh-5 d-xs-block d-sm-block d-md-block d-lg-none text-center"
-              style={{ color: "#2B0947" }}
-            >
+            </h2> */}
+            <h3 className="text-center" style={{ color: "#2B0947" }}>
               AFTER SCHOOL ACTIVITIES
             </h3>
             <p className="text-center ">
