@@ -58,7 +58,7 @@ function App() {
           <Route path="SchoolLocation" element={<SchoolLocation />} />
           <Route path="SchoolInformation" element={<SchoolInformation />} />
           <Route path="ActivitySchedule" element={<ActivitySchedule />} />
-          <Route path="resource-page" element={<ResourcePage />} />
+          {/* <Route path="resource-page" element={<ResourcePage />} /> */}
 
           {/* instructor authentication pages */}
           <Route
