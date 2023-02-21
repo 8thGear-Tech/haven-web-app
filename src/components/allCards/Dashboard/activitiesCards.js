@@ -10,7 +10,7 @@ import Card from "react-bootstrap/Card";
 export const MaterialsandActivitiesCard = (props) => {
   const { image, title, text, id } = props;
   return (
-    <Card style={{ width: "18rem" }} className="">
+    <Card style={{ width: "18rem" }} className="mx-auto">
       <Card.Img variant="top" src={image} />
 
       <Card.Body className="text-center">

@@ -83,11 +83,11 @@ export const GuestNavbar = () => {
                 id="navbarScrollingDropdown"
                 className="navTextColor mx-3 "
               >
-                <NavDropdown.Item href="#action3" className="navTextColor">
+                {/* <NavDropdown.Item href="#action3" className="navTextColor">
                   FIND ACTIVITIES
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action4" className="navTextColor">
+                <NavDropdown.Item href="/signup" className="navTextColor">
                   BECOME AN INSTRUCTOR
                 </NavDropdown.Item>
                 <NavDropdown.Divider />

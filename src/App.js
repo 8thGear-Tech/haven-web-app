@@ -54,6 +54,10 @@ import CongratsMessage from "./pages/websitePages/authenticationPages/instructor
 
 //instructor dashboard page
 import InstructorDashboard from "./pages/dashboardPages/instructor/instructorDashboard";
+import ViewMaterials from "./pages/dashboardPages/instructor/allAssignments/viewMaterials";
+import UploadMaterial from "./pages/dashboardPages/instructor/allAssignments/uploadMaterials";
+import CreateAssignment from "./pages/dashboardPages/instructor/allAssignments/createAssignment";
+import AssignmentCreated from "./pages/dashboardPages/instructor/allAssignments/assignmentsCreated";
 
 //parent
 import AllActivities from "./pages/websitePages/allActivities/allActivities";
@@ -126,6 +130,10 @@ function App() {
 
           {/* instructor authentication pages */}
           <Route path="InstructorDashboard" element={<InstructorDashboard />} />
+          <Route path="ViewMaterials" element={<ViewMaterials />} />
+          <Route path="UploadMaterial" element={<UploadMaterial />} />
+          <Route path="CreateAssignment" element={<CreateAssignment />} />
+          <Route path="AssignmentCreated" element={<AssignmentCreated />} />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />

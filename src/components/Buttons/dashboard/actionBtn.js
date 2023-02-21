@@ -14,7 +14,7 @@ export const SubmitBtn = () => {
     <>
       <a href="" target="_blank">
         {" "}
-        <Button className="SubmitBtn">Submit</Button>
+        <button className="SubmitBtn">Submit</button>
       </a>
     </>
   );
@@ -58,7 +58,7 @@ export const CancelBtn = () => {
     <>
       <a href="" target="_blank">
         {" "}
-        <Button className="CancelBtn">Cancel</Button>
+        <button className="CancelBtn">Cancel</button>
       </a>
     </>
   );

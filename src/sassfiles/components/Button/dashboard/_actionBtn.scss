@@ -36,6 +36,25 @@
   // color: $prytextcolor;
   width: 8rem;
 }
+.CancelBtn {
+  border: 1px solid $buttoncolor;
+  background-color: $prybgcolor;
+  // color: $prytextcolor;
+  border-radius: 10px;
+  width: 7.5rem;
+  height: 2.5rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  &:hover {
+    background-color: $buttoncolor;
+    color: $tertextcolor;
+  }
+  &:focus {
+    background-color: $buttoncolor;
+    color: $tertextcolor;
+  }
+}
 
 // @mixin BtnStyle {
 //   background-color: $buttoncolor;

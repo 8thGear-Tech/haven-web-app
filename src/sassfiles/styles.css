@@ -449,6 +449,25 @@ p {
   width: 8rem;
 }
 
+.CancelBtn {
+  border: 1px solid #75117a;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 7.5rem;
+  height: 2.5rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+}
+.CancelBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+.CancelBtn:focus {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
 .schoolPlaceHolderBorder {
   border-radius: 0px;
   height: 3.2rem;
@@ -730,6 +749,17 @@ p {
 .congratsBgColor {
   background: linear-gradient(180deg, rgba(28, 150, 233, 0.4) 0%, rgba(28, 150, 233, 0) 100%);
   border: 1px solid rgba(28, 150, 233, 0.6);
+}
+
+.InstructorMaterialBg {
+  background: #ffffff;
+  box-shadow: 0px 5px 20px 3px rgba(0, 0, 0, 0.2);
+}
+
+.InstructorMaterialNav {
+  border: 1px solid #000000;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
 .titleTextColor {

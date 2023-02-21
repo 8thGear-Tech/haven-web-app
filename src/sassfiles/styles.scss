@@ -40,6 +40,9 @@
 @use "./pages/websitePages/authenticationPages/instructor/congratulatoryMessage"
   as *;
 
+//instructor dashoard
+@use "./pages/dashboardPages/instructor/allAssignments/viewMaterials" as *;
+
 //parent
 @use "./pages/websitePages/allActivities/allActivities" as *;
 
