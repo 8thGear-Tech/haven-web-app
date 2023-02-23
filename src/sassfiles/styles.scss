@@ -38,3 +38,7 @@
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;
 
 @use "./components/Navbar/champNavbar" as *;
+@use "./components/Navbar/champDashboardpg" as *;
+@use "./pages/dashboardPages/champs/champAssignmentBoard" as *;
+@use "./pages/dashboardPages/champs/virtualClasspage" as *;
+@use "./pages/dashboardPages/champs/champCalenderPage" as *;

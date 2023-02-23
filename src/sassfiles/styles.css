@@ -637,47 +637,69 @@ p {
   border-bottom-color: #1ebeb8;
 }
 
-.champNavBar {
-  background-color: #75117a;
+.offcanvasBg {
+  background-color: linear-gradient(180deg, #64348d 0%, rgb(209, 93, 219) 54.69%, rgba(139, 41, 164, 0.94) 100%);
 }
 
-body {
-  background-color: #fbfbfb;
+.SideNavItem {
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
 }
 
-@media (min-width: 991.98px) {
-  main {
-    padding-left: 240px;
+.sideNavButton {
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+  height: 2.5rem;
+}
+.sideNavButton:hover {
+  color: #64348d;
+  background-color: white;
+}
+.sideNavButton:focus {
+  background-color: white;
+  color: #64348d;
+}
+
+.submitFile {
+  margin-left: 200px;
+}
+
+.assignmenttext {
+  line-height: 2rem;
+}
+
+.virtualContentbg {
+  box-sizing: border-box;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  position: absolute;
+  width: 1241px;
+  height: 500px;
+  background: #ffffff;
+  box-shadow: 0px 9px 50px 3px rgba(0, 0, 0, 0.2);
+  padding: auto;
+}
+
+@media only screen and (max-width: 760px) {
+  .virtualContentbg {
+    width: 300px;
+    height: 1000px;
   }
 }
-/* Sidebar */
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 58px 0 0; /* Height of navbar */
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05), 0 2px 10px 0 rgba(0, 0, 0, 0.05);
-  width: 240px;
-  z-index: 600;
-}
-
-@media (max-width: 991.98px) {
-  .sidebar {
-    width: 100%;
-  }
-}
-.sidebar .active {
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: calc(100vh - 48px);
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+.calendarClass {
+  box-sizing: border-box;
+  margin-left: 15rem;
+  position: absolute;
+  margin-top: 3rem;
+  width: 500px;
+  height: 270px;
+  box-shadow: 0px 9px 50px 3px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  padding: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

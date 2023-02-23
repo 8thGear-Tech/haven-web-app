@@ -1,0 +1,56 @@
+{
+    "champ":[
+        {
+            "id":1,
+            "pageroute": "/ChampDashboard",
+            "text":"Dashboard"
+        },
+        {
+            "id":2,
+            "pageroute": "/ChampMaterialPg",
+            "text":"Materials"
+        },
+        {
+            "id":3,
+            "pageroute": "/AssignmentText",
+            "text":"Assignments"
+
+        },
+        {
+            "id":4,
+            "pageroute": "/VirtualClass",
+            "text":"Virtual Class"
+        },
+        {
+            "id":5,
+            "pageroute": "/Champcalendar",
+            "text":"Calendar"
+        },
+        {
+            "id":6,
+            "pageroute": "/ProfileIdCard",
+            "text":"My Profile"
+        },
+        {
+            "id":7,
+            "pageroute": "/",
+            "text":"Report Issues"
+        },
+        {
+            "id":8,
+            "pageroute": "/",
+            "text":"Submission"
+        },
+        {
+            "id":9,
+            "pageroute": "/",
+            "text":"Ratings"
+        },
+        {
+            "id":10,
+            "pageroute": "/",
+            "text":"Log Out"
+        }
+        
+    ]
+}

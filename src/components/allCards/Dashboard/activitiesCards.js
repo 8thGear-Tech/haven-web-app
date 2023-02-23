@@ -59,7 +59,7 @@ export const ActivitiesPerfomanceCard = (props) => {
 export const ActivitiesPerformance = () => {
   return (
     <div className="container-fluid mt-5">
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
         {performanceData.performanceData.map((card) => {
           return (
             <div className="col-sm-12 col-md-4 col-lg-4" key={card.id}>

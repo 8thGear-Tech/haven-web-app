@@ -14,7 +14,13 @@ import BlogReadMore from "./pages/websitePages/blog/blogReadMorePage";
 //payment packages
 import PaymentPackages from "./pages/websitePages/paymentPackages/paymentPackages";
 import BasicPackage from "./pages/websitePages/paymentPackages/basicPackage";
-
+import ResourcePage from "./pages/dashboardPages/champ/CampAllReaourcePage";
+import ChampDashboard from "./pages/dashboardPages/champ/champDashboardPage";
+import ChampMaterialPage from "./pages/dashboardPages/champ/champMaterialBoard";
+import AssignmentText from "./pages/dashboardPages/champ/champAssignmentBoard";
+import VirtualClass from "./pages/dashboardPages/champ/champVirtualClass";
+import Champcalendar from "./pages/dashboardPages/champ/champCalenderPage";
+import ProfileIdCard from "./pages/dashboardPages/champ/champStudentPage";
 //authentication pages
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 import ChampsNeeds from "./pages/websitePages/authenticationPages/school/champsNeeds";
@@ -32,6 +38,7 @@ import AddYourActivity from "./pages/websitePages/authenticationPages/instructor
 import { AddActivity } from "./pages/websitePages/authenticationPages/instructor/addActivity";
 
 import { Footer } from "./components/footer";
+import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
 
 function App() {
   return (
@@ -58,7 +65,15 @@ function App() {
           <Route path="SchoolLocation" element={<SchoolLocation />} />
           <Route path="SchoolInformation" element={<SchoolInformation />} />
           <Route path="ActivitySchedule" element={<ActivitySchedule />} />
-          {/* <Route path="resource-page" element={<ResourcePage />} /> */}
+          <Route path="ResourcePage" element={<ResourcePage />} />
+          {/* champjourney */}
+          <Route path="ChampDashboard" element={<ChampDashboard />} />
+          <Route path="ChampMaterialPg" element={<ChampMaterialPage />} />
+          <Route path="AssignmentText" element={<AssignmentText />} />
+          <Route path="VirtualClass" element={<VirtualClass />} />
+          <Route path="Champcalendar" element={<Champcalendar />} />
+          <Route path="ProfileIdCard" element={<ProfileIdCard />} />
+          <Route path="ProfileEditCard" element={<ProfileEditCard />} />
 
           {/* instructor authentication pages */}
           <Route
