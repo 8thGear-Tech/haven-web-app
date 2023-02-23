@@ -7,56 +7,36 @@ import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
 import VideocamOutlinedIcon from "@mui/icons-material/VideocamOutlined";
 
 //internal import
+import { CancelBtn } from "../../../components/Buttons/dashboard/actionBtn";
 import { UpdateBtn } from "../../../components/Buttons/dashboard/actionBtn";
 import videoicon from "../../../assets/icons/videoicon.png";
 
 import profilepic from "../../../assets/images/dashboard/instructor/profilepic.png";
 import { ProfileCard } from "../../../components/allCards/Dashboard/profileCards";
-import { InstructorDashboardSideNav } from "../../../components/Navbar/dashboardNavbar";
+import InstrustorUpdateProfileForm from "../../../components/forms/dashboard/instructors/instructorUpdateProfileForm";
 
-const InstructorProfile = () => {
+const InstructorUpdateProfile = () => {
   return (
     <>
-      {/* <DashboardNavbar /> */}
-      <div className="container-fluid">
-        <div className="row d-flex justify-content-center">
-          <div className="col-lg-2">
-            <InstructorDashboardSideNav />
-          </div>
-          <div className="col-lg-9 col-md-12">
-            <div className="col">
-              <div className="">
-                {" "}
-                <InstructorProfileNavbar />
-              </div>
-              <div className="">
-                {" "}
-                <InstructorProfileCard />
-              </div>
-              {/* <div className="">
-                <RegisteredUsersList />
-              </div> */}
-            </div>
-          </div>{" "}
-        </div>
-      </div>
+      <InstructorUpdateProfileNavbar />
+      <InstructorUpdateProfileCard />
     </>
   );
 };
 
-const InstructorProfileNavbar = () => {
+const InstructorUpdateProfileNavbar = () => {
   return (
     <div className="container my-5">
       <div className="row d-flex justify-content-center InstructorMaterialNav">
         <div className="d-flex justify-content-between px-5 pt-2">
           {" "}
           <div className="d-flex">
-            <p className="navFontColor">My Profile</p>
+            <p>My Profile</p>
           </div>
-          <div className="d-flex navFontColor">
+          <div className="d-flex">
             {" "}
-            <Link to="" className="text-decoration-none">
-              <p className="navFontColor">Home</p>
+            <Link to="">
+              <p>Home</p>
             </Link>
             <ArrowUpwardOutlinedIcon />
           </div>
@@ -72,23 +52,25 @@ const InstructorProfileNavbar = () => {
           adipiscing elit.{" "}
         </p>
         {/* </div> */}
-        <Link to="/InstructorChampsFeedback" className="urlFontColor">
-          View Champs Feedback
-        </Link>
+        <Link to="">View Champs Feedback</Link>
       </div>
     </div>
   );
 };
 
-const InstructorProfileCard = () => {
+const InstructorUpdateProfileCard = () => {
   return (
     <>
       <div className="container">
         <div className="row justify-content-center InstructorMaterialBg py-5 mb-4">
-          <ProfileCard />
+          <InstrustorUpdateProfileForm />
         </div>
         <div className="d-flex justify-content-center mt-5">
-          <Link to="">
+          <Link to="" className="mx-2">
+            {" "}
+            <CancelBtn />
+          </Link>
+          <Link to="" className="mx-2">
             {" "}
             <UpdateBtn />
           </Link>
@@ -98,4 +80,4 @@ const InstructorProfileCard = () => {
   );
 };
 
-export default InstructorProfile;
+export default InstructorUpdateProfile;

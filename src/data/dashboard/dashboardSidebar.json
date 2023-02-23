@@ -1,0 +1,118 @@
+{
+  "instructor": [
+    {
+      "id": 1,
+      "pageroute": "/InstructorDashboard",
+      "dashboard": "Dashboard"
+    },
+    {
+      "id": 2,
+      "pageroute": "/ViewMaterials",
+      "dashboard": "Materials"
+    },
+    {
+      "id": 3,
+      "pageroute": "/CreateAssignment",
+      "dashboard": "Assignment"
+    },
+    {
+      "id": 4,
+      "pageroute": "/VirtualClass",
+      "dashboard": "Virtual Class"
+    },
+    {
+      "id": 5,
+      "pageroute": "/",
+      "dashboard": "Calendar"
+    },
+    {
+      "id": 6,
+      "pageroute": "/InstructorProfile",
+      "dashboard": "My Profile"
+    },
+    {
+      "id": 7,
+      "pageroute": "/",
+      "dashboard": "Report Issues"
+    },
+    {
+      "id": 8,
+      "pageroute": "/ViewSubmissions",
+      "dashboard": "Submission"
+    },
+    {
+      "id": 9,
+      "pageroute": "/",
+      "dashboard": "Ratings"
+    },
+    {
+      "id": 10,
+      "pageroute": "/",
+      "dashboard": "Logout"
+    }
+  ],
+  "counsellor": [
+    {
+      "id": 1,
+      "pageroute": "/counsellorDashboard",
+      "dashboard": "My Dashboard"
+    },
+    {
+      "id": 2,
+      "pageroute": "/counsellorProfile",
+      "dashboard": "My Profile"
+    },
+    {
+      "id": 3,
+      "pageroute": "/counsellorCounselleeList",
+      "dashboard": "Counselee"
+    },
+    {
+      "id": 4,
+      "pageroute": "/counsellorDashboardNotification",
+      "dashboard": "Notification"
+    },
+    {
+      "id": 5,
+      "pageroute": "/counsellorNote",
+      "dashboard": "Note"
+    },
+    {
+      "id": 6,
+      "pageroute": "/",
+      "dashboard": "Logout"
+    }
+  ],
+  "counsellee": [
+    {
+      "id": 1,
+      "pageroute": "/counselleeDashboard",
+      "dashboard": "My Dashboard"
+    },
+    {
+      "id": 2,
+      "pageroute": "/counselleeProfile",
+      "dashboard": "My Profile"
+    },
+    {
+      "id": 3,
+      "pageroute": "/counselleeSession",
+      "dashboard": "Session"
+    },
+    {
+      "id": 4,
+      "pageroute": "/counselleeTest",
+      "dashboard": "Take a test"
+    },
+    {
+      "id": 5,
+      "pageroute": "/counselleeNotification",
+      "dashboard": "Notification"
+    },
+    {
+      "id": 6,
+      "pageroute": "/",
+      "dashboard": "Logout"
+    }
+  ]
+}

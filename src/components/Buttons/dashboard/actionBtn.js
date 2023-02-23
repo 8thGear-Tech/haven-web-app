@@ -25,7 +25,7 @@ export const UpdateBtn = () => {
     <>
       <a href="" target="_blank">
         {" "}
-        <Button className="UpdateBtn">Update</Button>
+        <button className="UpdateBtn">UPDATE</button>
       </a>
     </>
   );
@@ -81,6 +81,17 @@ export const ViewAllBtn = () => {
       <a href="" target="_blank">
         {" "}
         <Button className="viewAllBtn">View All</Button>
+      </a>
+    </>
+  );
+};
+
+export const StartaNewSessionBtn = () => {
+  return (
+    <>
+      <a href="" target="_blank">
+        {" "}
+        <button className="StartaNewSessionBtn">START A NEW SESSION</button>
       </a>
     </>
   );

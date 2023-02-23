@@ -5,12 +5,34 @@ import { MaterialsandActivitiesCard } from "../../../../components/allCards/Dash
 
 import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
 import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
+import { InstructorDashboardSideNav } from "../../../../components/Navbar/dashboardNavbar";
 
 const ViewMaterials = () => {
   return (
     <>
-      <MaterialsNavbar />
-      <Materials />
+      {/* <DashboardNavbar /> */}
+      <div className="container-fluid">
+        <div className="row d-flex justify-content-center">
+          <div className="col-lg-2">
+            <InstructorDashboardSideNav />
+          </div>
+          <div className="col-lg-9 col-md-12">
+            <div className="col">
+              <div className="">
+                {" "}
+                <MaterialsNavbar />
+              </div>
+              <div className="">
+                {" "}
+                <Materials />
+              </div>
+              {/* <div className="">
+                <RegisteredUsersList />
+              </div> */}
+            </div>
+          </div>{" "}
+        </div>
+      </div>
     </>
   );
 };
@@ -22,12 +44,12 @@ const MaterialsNavbar = () => {
         <div className="d-flex justify-content-between px-5 pt-2">
           {" "}
           <div className="d-flex">
-            <p>Material</p>
+            <p className="navFontColor">Materials</p>
           </div>
-          <div className="d-flex">
+          <div className="d-flex navFontColor">
             {" "}
-            <Link to="">
-              <p>Home</p>
+            <Link to="" className="text-decoration-none">
+              <p className="navFontColor">Home</p>
             </Link>
             <ArrowUpwardOutlinedIcon />
           </div>
@@ -38,9 +60,9 @@ const MaterialsNavbar = () => {
 };
 const Materials = () => {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row d-flex justify-content-center InstructorMaterialBg py-5">
-        <h4 className="ms-5">Welcome Michael</h4>
+        <h4 className="ps-5">Welcome Michael</h4>
         <h3 className="text-center my-3">Materials</h3>
         {activitiesData.activitiesData.map((card) => {
           return (
@@ -53,16 +75,16 @@ const Materials = () => {
         })}
         <div className="d-flex justify-content-between p-5">
           {" "}
-          <div className="d-flex">
-            <Link to="/UploadMaterial">
-              <p>Upload material</p>
+          <div className="d-flex urlFontColor">
+            <Link to="/UploadMaterial" className="urlFontColor">
+              <p className="urlFontColor">Upload material</p>
             </Link>{" "}
             <ArrowRightAltOutlinedIcon />
           </div>
-          <div className="d-flex">
+          <div className="d-flex urlFontColor">
             {" "}
-            <Link to="">
-              <p>Go to resource</p>
+            <Link to="" className="urlFontColor">
+              <p className="urlFontColor">Go to resource</p>
             </Link>
             <ArrowRightAltOutlinedIcon />
           </div>

@@ -4,12 +4,33 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 
 import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
+import { InstructorDashboardSideNav } from "../../../../components/Navbar/dashboardNavbar";
+import { CancelBtn } from "../../../../components/Buttons/dashboard/actionBtn";
+import { SubmitBtn } from "../../../../components/Buttons/dashboard/actionBtn";
 
 const UploadMaterial = () => {
   return (
     <>
-      <MaterialsNavbar />
-      <MaterialForm />
+      {/* <DashboardNavbar /> */}
+      <div className="container-fluid">
+        <div className="row d-flex justify-content-center">
+          <div className="col-lg-2">
+            <InstructorDashboardSideNav />
+          </div>
+          <div className="col-lg-9 col-md-12">
+            <div className="col">
+              <div className="">
+                {" "}
+                <MaterialsNavbar />
+              </div>
+              <div className="">
+                {" "}
+                <MaterialForm />
+              </div>
+            </div>
+          </div>{" "}
+        </div>
+      </div>
     </>
   );
 };
@@ -21,12 +42,12 @@ const MaterialsNavbar = () => {
         <div className="d-flex justify-content-between px-5 pt-2">
           {" "}
           <div className="d-flex">
-            <p>Upload Material</p>
+            <p className="navFontColor">Materials</p>
           </div>
-          <div className="d-flex">
+          <div className="d-flex navFontColor">
             {" "}
-            <Link to="">
-              <p>Home</p>
+            <Link to="" className="text-decoration-none">
+              <p className="navFontColor">Home</p>
             </Link>
             <ArrowUpwardOutlinedIcon />
           </div>
@@ -72,6 +93,20 @@ const MaterialForm = () => {
               <Form.Control as="textarea" rows={6} />
             </Form.Group>
           </Form>
+        </div>
+        <div className="d-flex mt-5 justify-content-center">
+          <div className="mx-2">
+            {" "}
+            <Link to="">
+              <CancelBtn />
+            </Link>
+          </div>
+          <div className="mx-2">
+            {" "}
+            <Link to="">
+              <SubmitBtn />
+            </Link>
+          </div>
         </div>
       </div>
     </>

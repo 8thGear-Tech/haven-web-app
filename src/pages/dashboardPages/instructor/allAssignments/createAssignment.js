@@ -7,12 +7,34 @@ import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
 
 import { CancelBtn } from "../../../../components/Buttons/dashboard/actionBtn";
 import { SubmitBtn } from "../../../../components/Buttons/dashboard/actionBtn";
+import { InstructorDashboardSideNav } from "../../../../components/Navbar/dashboardNavbar";
 
 const CreateAssignment = () => {
   return (
     <>
-      <CreateAssignmentNavbar />
-      <CreateAssignmentForm />
+      {/* <DashboardNavbar /> */}
+      <div className="container-fluid">
+        <div className="row d-flex justify-content-center">
+          <div className="col-lg-2">
+            <InstructorDashboardSideNav />
+          </div>
+          <div className="col-lg-9 col-md-12">
+            <div className="col">
+              <div className="">
+                {" "}
+                <CreateAssignmentNavbar />
+              </div>
+              <div className="">
+                {" "}
+                <CreateAssignmentForm />
+              </div>
+              {/* <div className="">
+                <RegisteredUsersList />
+              </div> */}
+            </div>
+          </div>{" "}
+        </div>
+      </div>
     </>
   );
 };
@@ -24,12 +46,12 @@ const CreateAssignmentNavbar = () => {
         <div className="d-flex justify-content-between px-5 pt-2">
           {" "}
           <div className="d-flex">
-            <p>Create Assignment</p>
+            <p className="navFontColor">Create Assignment</p>
           </div>
-          <div className="d-flex">
+          <div className="d-flex navFontColor">
             {" "}
-            <Link to="">
-              <p>Home</p>
+            <Link to="" className="text-decoration-none">
+              <p className="navFontColor">Home</p>
             </Link>
             <ArrowUpwardOutlinedIcon />
           </div>

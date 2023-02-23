@@ -56,6 +56,15 @@
   }
 }
 
+.StartaNewSessionBtn {
+  @include BtnStyle;
+  width: 12rem;
+}
+
+.UpdateBtn {
+  @include BtnStyle;
+  width: 8rem;
+}
 // @mixin BtnStyle {
 //   background-color: $buttoncolor;
 //   color: $tertextcolor;

@@ -10,13 +10,13 @@ import Card from "react-bootstrap/Card";
 export const MaterialsandActivitiesCard = (props) => {
   const { image, title, text, id } = props;
   return (
-    <Card style={{ width: "18rem" }} className="mx-auto">
+    <Card style={{ width: "14rem" }} className="mx-auto my-3">
       <Card.Img variant="top" src={image} />
 
       <Card.Body className="text-center">
         <h3 class="card-title">{title}</h3>
         <p class="card-text">{text} </p>{" "}
-        <Card.Link href="#">Go to Resource</Card.Link>
+        {/* <Card.Link href="#">Go to Resource</Card.Link> */}
       </Card.Body>
     </Card>
   );
@@ -69,5 +69,23 @@ export const ActivitiesPerformance = () => {
         })}
       </div>
     </div>
+  );
+};
+
+export const SubmissionsCard = (props) => {
+  const { image, name, activities, status, grade, date, time } = props;
+  return (
+    <Card style={{ width: "20rem" }} className="mx-auto">
+      <Card.Img variant="top" src={image} />
+      <Card.Body className="">
+        <p class="card-title">Name: {name}</p>
+        <p class="card-text">Activities: {activities}</p>
+        <p class="card-text">Status: {status}</p>
+        <p class="card-text">Grade: {grade}</p>
+        <p class="card-text">Date: {date}</p>
+        <p class="card-text">Time: {time}</p>
+        {/* <p class="card-text">V{viewsubmission}</p> */}
+      </Card.Body>
+    </Card>
   );
 };

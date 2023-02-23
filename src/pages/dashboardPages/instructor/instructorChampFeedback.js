@@ -2,16 +2,18 @@ import { Link } from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
 import VideocamOutlinedIcon from "@mui/icons-material/VideocamOutlined";
 
 //internal import
-import { StartaNewSessionBtn } from "../../../components/Buttons/dashboard/actionBtn";
-import videoicon from "../../../assets/icons/videoicon.png";
+import notone from "../../../assets/images/dashboard/instructor/notification/notone.png";
+import { ChampsFeedback } from "../../../components/allCards/Dashboard/champsFeedback";
+import champsFeedbackData from "../../../data/allCards/feedback.json";
 import { InstructorDashboardSideNav } from "../../../components/Navbar/dashboardNavbar";
 
-const VirtualClass = () => {
+const InstructorChampsFeedback = () => {
   return (
     <>
       {/* <DashboardNavbar /> */}
@@ -24,11 +26,10 @@ const VirtualClass = () => {
             <div className="col">
               <div className="">
                 {" "}
-                <VirtualClassNavbar />
+                <InstructorChampsFeedbackNavbar />
               </div>
               <div className="">
-                {" "}
-                <VirtualClassCard />
+                <InstructorAllChampsFeedback />
               </div>
               {/* <div className="">
                 <RegisteredUsersList />
@@ -41,14 +42,14 @@ const VirtualClass = () => {
   );
 };
 
-const VirtualClassNavbar = () => {
+const InstructorChampsFeedbackNavbar = () => {
   return (
     <div className="container my-5">
       <div className="row d-flex justify-content-center InstructorMaterialNav">
         <div className="d-flex justify-content-between px-5 pt-2">
           {" "}
           <div className="d-flex">
-            <p className="navFontColor">Virtual Class</p>
+            <p className="navFontColor">Champs Feedback</p>
           </div>
           <div className="d-flex navFontColor">
             {" "}
@@ -63,21 +64,22 @@ const VirtualClassNavbar = () => {
   );
 };
 
-const VirtualClassCard = () => {
+const InstructorAllChampsFeedback = () => {
   return (
     <>
-      <div className="container">
-        <h4>Name: Michael</h4>
-        <div className="row text-center justify-content-center InstructorMaterialBg py-5 mb-4">
-          <div className="mb-4" style={{ maxWidth: "100px" }}>
-            <img src={videoicon} className="img-fluid" />
-          </div>
-          <StartaNewSessionBtn />
-          <p className="mt-3">View this session performance HERE</p>
+      <div className="container mt-5">
+        <div className="row d-flex justify-content-center">
+          {champsFeedbackData.champsFeedbackData.map((card) => {
+            return (
+              <div className="col-12" key={card.id}>
+                <ChampsFeedback {...card}></ChampsFeedback>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>
   );
 };
 
-export default VirtualClass;
+export default InstructorChampsFeedback;

@@ -154,5 +154,40 @@
       "text": "Learning to speak other foreign languages is fun, We teach languages such as French, Mandarin, German and Spanish",
       "link": "/Languages"
     }
+  ],
+  "submissionsData": [
+    {
+      "id": "1",
+      "image": "../../../assets/images/materialsandactivitiespictures/submissions/submission.png",
+      "name": "Name",
+      "activities": "Lorem ipsum dolor sit amet",
+      "status": "Lorem ipsum dolor sit amet",
+      "grade": "Lorem ipsum dolor sit amet",
+      "date": "Lorem ipsum dolor sit amet",
+      "time": "Lorem ipsum dolor sit amet",
+      "viewsubmissions": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "id": "2",
+      "image": "../../../assets/images/materialsandactivitiespictures/submissions/submission.png",
+      "name": "Name",
+      "activities": "Lorem ipsum dolor sit amet",
+      "status": "Lorem ipsum dolor sit amet",
+      "grade": "Lorem ipsum dolor sit amet",
+      "date": "Lorem ipsum dolor sit amet",
+      "time": "Lorem ipsum dolor sit amet",
+      "viewsubmissions": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "id": "3",
+      "image": "../../../assets/images/materialsandactivitiespictures/submissions/submission.png",
+      "name": "Name",
+      "activities": "Lorem ipsum dolor sit amet",
+      "status": "Lorem ipsum dolor sit amet",
+      "grade": "Lorem ipsum dolor sit amet",
+      "date": "Lorem ipsum dolor sit amet",
+      "time": "Lorem ipsum dolor sit amet",
+      "viewsubmissions": "Lorem ipsum dolor sit amet"
+    }
   ]
 }

@@ -7,7 +7,7 @@
 import { Photo } from "@mui/icons-material";
 
 import Card from "react-bootstrap/Card";
-import CardPhoto from "../../../Image/passport.jpg";
+// import CardPhoto from "../../../Image/passport.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -25,12 +25,12 @@ const ProfileReadMoreCard = () => {
 
         <Modal.Body>
           <div className="text-center">
-            <Card.Img
+            {/* <Card.Img
               className="rounded-circle"
               variant="top"
               src={CardPhoto}
               style={{ width: "10rem" }}
-            />
+            /> */}
           </div>
 
           <Card.Text>
@@ -46,6 +46,26 @@ const ProfileReadMoreCard = () => {
         </Modal.Body>
       </Modal.Dialog>
     </div>
+  );
+};
+
+export const ProfileCard = () => {
+  return (
+    <>
+      <Card className="" style={{ width: "23rem" }}>
+        {/* <Card.Header as="h5" className="text-center">
+          Personal details
+        </Card.Header> */}
+        <Card.Body>
+          <Card.Title className="text-center">Personal details</Card.Title>
+          <Card.Text>Full Name : Ogunsakin Michael</Card.Text>
+          <Card.Text>Email : Adekolaokesonya@gmail.com</Card.Text>
+          <Card.Text>Phone : +2348023672339</Card.Text>
+          <Card.Text>Home Address : Number 55, albert street</Card.Text>
+          <Card.Text>Gender : Male</Card.Text>
+        </Card.Body>
+      </Card>
+    </>
   );
 };
 

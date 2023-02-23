@@ -42,9 +42,12 @@
 
 //instructor dashoard
 @use "./pages/dashboardPages/instructor/allAssignments/viewMaterials" as *;
+@use "./pages/dashboardPages/instructor/instructorProfile" as *;
 
 //parent
 @use "./pages/websitePages/allActivities/allActivities" as *;
 
 //payment package
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;
+
+@use "./components/Navbar/dashboardNavbar" as *;

@@ -11,14 +11,14 @@
       "id": 2,
       "image": "../assets/images/assignments.png",
       "title": "Assignments",
-      "text": "5"
+      "icon": "../../../assets/icons/dashboard/add.png"
     },
 
     {
       "id": 3,
       "image": "../assets/images/virtualclass.png",
       "title": "Virtual Class",
-      "text": "View"
+      "icon": "../../../assets/icons/dashboard/virtualclass.png"
     }
   ],
   "resourceData": [

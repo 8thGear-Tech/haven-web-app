@@ -9,6 +9,10 @@ body {
   overflow: visible !important;
 }
 
+.modal-backdrop.show {
+  opacity: 0 !important;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
@@ -42,6 +46,13 @@ h4 {
 h5 {
   font-weight: 600;
   font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  color: #75117a;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 1rem;
   font-family: "Raleway", sans-serif;
   color: #75117a;
 }
@@ -468,6 +479,32 @@ p {
   color: #ffffff;
 }
 
+.StartaNewSessionBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  font-weight: 600;
+  border: none;
+  width: 12rem;
+}
+
+.UpdateBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  font-weight: 600;
+  border: none;
+  width: 8rem;
+}
+
 .schoolPlaceHolderBorder {
   border-radius: 0px;
   height: 3.2rem;
@@ -762,6 +799,26 @@ p {
   border-radius: 10px;
 }
 
+.urlFontColor {
+  color: #75117a;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.navFontColor {
+  color: #75117a;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.profileFormBorder {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .titleTextColor {
   color: #75117a;
 }
@@ -781,5 +838,18 @@ p {
   border-top-left-radius: 47px;
   border-top-right-radius: 47px;
   border-bottom-color: #1ebeb8;
+}
+
+.dashboardNavbarBg {
+  background: linear-gradient(180deg, #bc4c92 0%, rgba(208, 93, 219, 0.973958) 0.01%, rgba(127, 61, 183, 0.95) 100%);
+  height: 6rem;
+}
+
+.dashboardSideNavText {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */

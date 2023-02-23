@@ -1,19 +1,24 @@
 // UserDashboardCard
-
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import champResourcedata from "../../../data/allCards/dashboardCards.json";
 // import adminResourcedata from "../../../data/allCards/dashboardCards.json";
 
 export const ChampsDashboardCards = (props) => {
-  const { image, title, text, id } = props;
+  const { image, title, text, icon, link } = props;
   return (
-    <Card style={{ width: "15rem" }} className="mx-auto">
+    <Card style={{ width: "15rem" }} className="mx-auto my-4">
       <Card.Img variant="top" src={image} />
 
       <Card.Body className="text-center">
         <h3 class="card-title">{title}</h3>
-        <h5 class="card-text">{text} </h5>{" "}
-        <Card.Link href="#">Click Here</Card.Link>
+        <h2 class="card-text">{text} </h2>
+        {/* <div> */}{" "}
+        <img src={icon} className="img-fluid" style={{ width: "24px" }} />
+        {/* </div> */}
+        <Link to={link} className="urlFontColor">
+          Click Here
+        </Link>
       </Card.Body>
     </Card>
   );

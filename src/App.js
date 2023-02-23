@@ -58,6 +58,16 @@ import ViewMaterials from "./pages/dashboardPages/instructor/allAssignments/view
 import UploadMaterial from "./pages/dashboardPages/instructor/allAssignments/uploadMaterials";
 import CreateAssignment from "./pages/dashboardPages/instructor/allAssignments/createAssignment";
 import AssignmentCreated from "./pages/dashboardPages/instructor/allAssignments/assignmentsCreated";
+import VirtualClass from "./pages/dashboardPages/instructor/instructorVirtualClass";
+import InstructorProfile from "./pages/dashboardPages/instructor/instructorProfile";
+import InstructorUpdateProfile from "./pages/dashboardPages/instructor/instructorUpdateProfile";
+import InstructorGrading from "./pages/dashboardPages/instructor/allAssignments/grading";
+import InstructorNotification from "./pages/dashboardPages/instructor/instructorNotification";
+import ViewSubmissions from "./pages/dashboardPages/instructor/allAssignments/viewSubmissions";
+import InstructorChampsFeedback from "./pages/dashboardPages/instructor/instructorChampFeedback";
+import { ReportIssueBtn } from "./components/Navbar/dashboardNavbar";
+import { RateChampBtn } from "./components/Navbar/dashboardNavbar";
+import { RateAppBtn } from "./components/Navbar/dashboardNavbar";
 
 //parent
 import AllActivities from "./pages/websitePages/allActivities/allActivities";
@@ -134,14 +144,33 @@ function App() {
           <Route path="UploadMaterial" element={<UploadMaterial />} />
           <Route path="CreateAssignment" element={<CreateAssignment />} />
           <Route path="AssignmentCreated" element={<AssignmentCreated />} />
+          <Route path="VirtualClass" element={<VirtualClass />} />
+          <Route path="InstructorProfile" element={<InstructorProfile />} />
+          <Route
+            path="InstructorUpdateProfile"
+            element={<InstructorUpdateProfile />}
+          />
+          <Route path="InstructorGrading" element={<InstructorGrading />} />
+          <Route
+            path="InstructorNotification"
+            element={<InstructorNotification />}
+          />
+          <Route path="ViewSubmissions" element={<ViewSubmissions />} />
+          <Route
+            path="InstructorChampsFeedback"
+            element={<InstructorChampsFeedback />}
+          />
+          <Route path="ReportIssueBtn" element={<ReportIssueBtn />} />
+          <Route path="RateChampBtn" element={<RateChampBtn />} />
+          <Route path="RateAppBtn" element={<RateAppBtn />} />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />
         </Routes>
       </BrowserRouter>
-      <footer>
+      {/* <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 }
