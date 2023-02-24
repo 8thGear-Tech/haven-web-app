@@ -33,75 +33,121 @@ const RegisterNow = () => {
           <p></p>
           <Form>
             {/* <Row className="mb-3"> */}
+            <Form.Group as={Col} controlId="formGridName" className="mb-3">
+              <Form.Label>
+                <h5>Name of parent</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
+            </Form.Group>
             <Form.Group as={Col} controlId="formGridEmail" className="mb-3">
               <Form.Label>
                 <h5>Email</h5>
               </Form.Label>
               <Form.Control type="text" className="authPlaceHolderBorder" />
             </Form.Group>
-            {/* <Form.Group as={Col} controlId="formGridText">
-                <Form.Label>
-                  <h5>Last Name</h5>
-                </Form.Label>
-                <Form.Control type="text" className="authPlaceHolderBorder  " />
-              </Form.Group> */}
+            <Form.Group as={Col} controlId="formGridNumber" className="mb-3">
+              <Form.Label>
+                <h5>Phone number</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder  " />
+            </Form.Group>
             {/* </Row> */}
             <Form.Group className="mb-3" controlId="formGridAddress1">
               <Form.Label>
-                <h5>Champ's full name</h5>
+                <h5>The name(s) of your child/children</h5>
               </Form.Label>
               <Form.Control type="text" className="authPlaceHolderBorder" />
             </Form.Group>
-            <Row className="mb-3">
-              <Form.Group
-                className="mb-3"
-                as={Col}
-                controlId="formGridAddress1"
-              >
-                <Form.Label>
-                  <h5>Champ's full name</h5>
-                </Form.Label>
-                <Form.Control type="text" className="authPlaceHolderBorder" />
-              </Form.Group>
-              <Form.Group
-                className="mb-3"
-                as={Col}
-                controlId="formGridAddress1"
-              >
-                <Form.Label>
-                  <h5>Champ's age</h5>
-                </Form.Label>
-                <Form.Control type="text" className="authPlaceHolderBorder" />
-              </Form.Group>
-              <Form.Group as={Col} controlId="formGridTextOne">
-                <Form.Label className="">
-                  <h5 className="">Champ's date of birth</h5>
-                </Form.Label>
-                {/* <Form.Control type="email" placeholder="Enter email" /> */}{" "}
-                <Form.Select
-                  aria-label="Default select example"
-                  className="authPlaceHolderBorder mx-1"
-                >
-                  <option>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </Form.Select>
-              </Form.Group>
-            </Row>
+            <Form.Group className="mb-3" controlId="formGridAddress1">
+              <Form.Label>
+                <h5>The age(s) of your child/children</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formGridAddress1">
+              <Form.Label>
+                <h5>Relationship with child/ children</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formGridAddress1">
+              <Form.Label>
+                <h5>Home address</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
+            </Form.Group>
             <Row>
-              <h4>Activities interested in</h4>{" "}
+              <h4>What activities are you interested in?</h4>
+              <h6>Weekend clubs</h6>
               {["checkbox"].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
                   <Form.Check
                     inline
-                    label="Graphic design"
+                    label="Taekwondo (N20,000 monthly)"
                     type={type}
                     id={`inline-${type}-3`}
                   />
                   <Form.Check
                     inline
-                    label="Video Editing"
+                    label="Tech (N15,000 monthly)"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    inline
+                    label="Music (N15,000 monthly)"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    inline
+                    label="Arts and Crafts (N15,000 monthly)"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                </div>
+              ))}
+              <h6>After School activities</h6>
+              {["checkbox"].map((type) => (
+                <div key={`default-${type}`} className="mb-3">
+                  <Form.Check
+                    inline
+                    label="Tech (N15,000 monthly)"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    inline
+                    label="Music(N15,000 monthly)"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    inline
+                    label="Music (N15,000 monthly)"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    inline
+                    label="Arts and Crafts (N15,000 monthly)"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                </div>
+              ))}
+              <h6>Virtual coding classes</h6>
+              {["checkbox"].map((type) => (
+                <div key={`default-${type}`} className="mb-3">
+                  <Form.Check
+                    inline
+                    label="1:1 classes (30,000)"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    inline
+                    label="Group classes (15,000)"
                     type={type}
                     id={`inline-${type}-3`}
                   />
@@ -139,45 +185,25 @@ const RegisterNow = () => {
               </Form.Label>
               <Form.Control type="text" className="authPlaceHolderBorder" />
             </Form.Group>
-            <Row>
-              <h4>How did you hear about this program</h4>{" "}
-              {["radio"].map((type) => (
-                <div key={`default-${type}`} className="mb-3">
-                  <Form.Check
-                    inline
-                    label="WhatsApp"
-                    type={type}
-                    id={`inline-${type}-3`}
-                  />
-                  <Form.Check
-                    inline
-                    label="Facebook"
-                    type={type}
-                    id={`inline-${type}-3`}
-                  />
-                </div>
-              ))}
-            </Row>
-            <Row>
-              <p>
-                Declaration: I wish to have my child(ren) attend the selected
-                Haven Program. I also give permission for pictures of my
-                child(ren) while participating in the activities of the program
-                to be taken. Picture may be used for Haven's Instructional and
-                promotional purposes only via brochures, flyers, websites &
-                social media handles.
-              </p>{" "}
-              {["checkbox"].map((type) => (
-                <div key={`default-${type}`} className="mb-3">
-                  <Form.Check
-                    inline
-                    label="I agree"
-                    type={type}
-                    id={`inline-${type}-3`}
-                  />
-                </div>
-              ))}
-            </Row>
+            <Form.Group controlId="formGridTextOne">
+              <Form.Label className="">
+                <h5>How did you hear about us?</h5>
+              </Form.Label>
+              {/* <Form.Control type="email" placeholder="Enter email" /> */}
+              <div className="d-flex">
+                {" "}
+                <Form.Select
+                  aria-label="Default select example"
+                  className="authPlaceHolderBorder mx-1"
+                >
+                  <option>Select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </Form.Select>
+              </div>
+            </Form.Group>
+
             <div className="d-flex justify-content-center justify-content-evenly mt-5">
               <Link to="/AllActivities">
                 <BackBtn />

@@ -32,6 +32,7 @@ import { InstructorRateAppForm } from "../forms/dashboard/instructors/instructor
 
 // import { useState } from "react";
 import OffCanvas from "react-bootstrap/Offcanvas";
+import { OffcanvasBody } from "react-bootstrap";
 
 export const DashboardSidebar = () => {
   const [open, setOpen] = useState(false);
@@ -264,34 +265,23 @@ export const ReportIssueBtn = () => {
 
   return (
     <>
-      <a
-        href=""
+      <Link
+        to=""
         type="button"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop1"
         className="text-decoration-none"
       >
         {" "}
-        <Button variant="" onClick={handleShow} className="LoginBtn">
+        <button variant="" onClick={handleShow} className="LoginBtn">
           Report Issues
-        </Button>
-      </a>
+        </button>
+      </Link>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>
-            {/* <img src={havenlogo} width={70} className="img-fluid" /> */}
-          </Modal.Title>
+          <Modal.Title></Modal.Title>
         </Modal.Header>
         <InstructorReportIssueForm />
-        {/* <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body> */}
-        {/* <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer> */}
       </Modal>
     </>
   );
@@ -303,33 +293,22 @@ export const RateChampBtn = () => {
 
   return (
     <>
-      <a
-        href=""
+      <Link
+        to=""
         type="button"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop1"
       >
         {" "}
-        <Button variant="" onClick={handleShow} className="LoginBtn">
+        <button variant="" onClick={handleShow} className="LoginBtn">
           Rate Champ
-        </Button>
-      </a>
+        </button>
+      </Link>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>
-            {/* <img src={havenlogo} width={70} className="img-fluid" /> */}
-          </Modal.Title>
+          <Modal.Title></Modal.Title>
         </Modal.Header>
         <InstructorChampRatingForm />
-        {/* <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body> */}
-        {/* <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer> */}
       </Modal>
     </>
   );
@@ -341,33 +320,22 @@ export const RateAppBtn = () => {
 
   return (
     <>
-      <a
-        href=""
+      <Link
+        to=""
         type="button"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop1"
       >
         {" "}
-        <Button variant="" onClick={handleShow} className="LoginBtn">
+        <button variant="" onClick={handleShow} className="LoginBtn">
           Rate App
-        </Button>
-      </a>
+        </button>
+      </Link>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>
-            {/* <img src={havenlogo} width={70} className="img-fluid" /> */}
-          </Modal.Title>
+          <Modal.Title></Modal.Title>
         </Modal.Header>
         <InstructorRateAppForm />
-        {/* <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body> */}
-        {/* <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer> */}
       </Modal>
     </>
   );
@@ -808,6 +776,314 @@ const InstructorSmallShow = () => {
     <>
       {options.map((props, idx) => (
         <InstructorSmallShowExample key={idx} {...props} />
+      ))}
+    </>
+  );
+};
+
+//school dashboard
+export const SchoolDashboardSideNav = () => {
+  return (
+    <>
+      <SchoolSmallShow />
+      <SchoolBigShow />
+    </>
+  );
+};
+
+const schooloptions = [
+  {
+    scroll: true,
+    backdrop: false,
+  },
+];
+
+const SchoolSideNavModal = (props) => {
+  const { icon, pageroute, dashboard } = props;
+  return (
+    <>
+      <ul className="ps-2">
+        <Link
+          to="/adminDashboardCounselleesPage"
+          className="text-decoration-none"
+        >
+          <li className="d-flex mb-4 align-items-center SideNavItem">
+            <div className="me-3">
+              <AccountCircleOutlinedIcon />
+            </div>
+            <span>Dashboard</span>
+          </li>
+        </Link>
+        <li className="d-flex mb-4 align-items-center SideNavItem">
+          <div className="me-3">
+            <ManOutlinedIcon />
+          </div>
+        </li>
+        <li className="d-flex align-items-center SideNavItem mb-4">
+          <div className="me-3">
+            <NotificationsActiveIcon />
+          </div>
+          {/* <span className="my-1">{notification}</span> */}
+        </li>
+        <li className="d-flex align-items-center SideNavItem mb-4">
+          <div className="me-3">
+            <LogoutOutlinedIcon />
+          </div>
+          {/* <span>Logout</span> */}
+        </li>
+        {/* <li className="d-flex align-items-center SideNavItem mt-lg-5 pt-lg-2 bottom position-fixed">
+          <div className="pt-5 mt-5">
+            <img
+              src={sidebarfooterImage}
+              style={{ maxHeight: "65%", maxWidth: "65%" }}
+            />
+          </div>
+        </li> */}
+      </ul>
+    </>
+  );
+};
+
+const SchoolBigShowExample = ({ name, ...props }) => {
+  const [show, setShow] = useState(true);
+
+  const handleClose = () => setShow(false);
+  const toggleShow = () => setShow((s) => !s);
+
+  return (
+    <>
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        {...props}
+        className="d-none d-lg-block"
+        style={{
+          background:
+            "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
+          width: "15rem",
+        }}
+      >
+        <Offcanvas.Header>
+          <Offcanvas.Title></Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className="">
+          <ul className="ps-2">
+            <li className="d-flex mb-4 align-items-center SideNavItem">
+              <Link to="/SchoolDashboard" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Dashboard
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex mb-4 align-items-center SideNavItem">
+              <Link
+                to="/AllActivitiesDashboard"
+                className="text-decoration-none"
+              >
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Activities
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/AllChamps" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">Champs</span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/AllInstructors" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Instructors
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/Calendar" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Calendar
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/SchoolProfile" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  My Profile
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/Ratings" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">Ratings</span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              {/* <Link to="/" className="text-decoration-none"> */}{" "}
+              <span className="text-white dashboardSideNavText">
+                Report Issues
+              </span>
+              {/* </Link> */}
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">Logout</span>
+              </Link>
+            </li>
+          </ul>
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
+  );
+};
+
+const SchoolSmallShowExample = ({ name, ...props }) => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const toggleShow = () => setShow((s) => !s);
+
+  return (
+    <>
+      <Button
+        onClick={toggleShow}
+        className="me-2 bg-white border-0 d-lg-none position-fixed start-0 top-0"
+      >
+        <svg
+          width="30"
+          height="20"
+          viewBox="0 0 30 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
+            fill="#006747"
+          />
+        </svg>
+      </Button>
+
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        responsive="lg"
+        className="w-75 d-lg-none text-white"
+        {...props}
+        style={{
+          background:
+            "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
+        }}
+      >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title></Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <ul className="ps-2">
+            <li className="d-flex mb-4 align-items-center SideNavItem">
+              <Link to="/SchoolDashboard" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Dashboard
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex mb-4 align-items-center SideNavItem">
+              <Link
+                to="/AllActivitiesDashboard"
+                className="text-decoration-none"
+              >
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Activities
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/AllChamps" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">Champs</span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/AllInstructors" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Instructors
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/Calendar" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Calendar
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/SchoolProfile" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  My Profile
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/Ratings" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">Ratings</span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              {/* <Link to="/" className="text-decoration-none"> */}{" "}
+              <span className="text-white dashboardSideNavText">
+                Report Issues
+              </span>
+              {/* </Link> */}
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">Logout</span>
+              </Link>
+            </li>
+          </ul>
+        </Offcanvas.Body>
+        {/* <Offcanvas.Body className="">
+          {instructor.instructor.map((navbar) => {
+            return (
+              <div className="d-flex justify-content-between flex-column">
+                <ul className="ps-2" key={navbar.id}>
+                  <InstructorSideNavModal {...navbar} />
+                </ul>
+              </div>
+            );
+          })}
+        </Offcanvas.Body> */}
+      </Offcanvas>
+    </>
+  );
+};
+
+const SchoolBigShow = () => {
+  return (
+    <>
+      {schooloptions.map((props, idx) => (
+        <SchoolBigShowExample key={idx} {...props} />
+      ))}
+    </>
+  );
+};
+const SchoolSmallShow = () => {
+  return (
+    <>
+      {schooloptions.map((props, idx) => (
+        <SchoolSmallShowExample key={idx} {...props} />
       ))}
     </>
   );

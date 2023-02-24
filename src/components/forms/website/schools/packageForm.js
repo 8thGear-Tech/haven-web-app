@@ -81,7 +81,7 @@ const BasicForm = () => {
           <Link to="/PaymentPackages">
             <BackBtn />
           </Link>
-          <Link to="">
+          <Link to="/SchoolDashboard">
             <SubmitBtn />
           </Link>
         </div>

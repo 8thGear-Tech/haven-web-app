@@ -1,5 +1,5 @@
 // MaterialsandActivitiesCard
-
+import { Link } from "react-router-dom";
 import activitiesData from "../../../data/allCards/activitiesCard.json";
 import performanceData from "../../../data/allCards/activitiesCard.json";
 import { ReadMoreBtn } from "../../Buttons/dashboard/actionBtn";
@@ -8,14 +8,19 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 export const MaterialsandActivitiesCard = (props) => {
-  const { image, title, text, id } = props;
+  const { image, title, text, link } = props;
   return (
     <Card style={{ width: "14rem" }} className="mx-auto my-3">
       <Card.Img variant="top" src={image} />
 
       <Card.Body className="text-center">
         <h3 class="card-title">{title}</h3>
-        <p class="card-text">{text} </p>{" "}
+        <p class="card-text">{text} </p>
+        <Link to={link}>
+          {" "}
+          <ReadMoreBtn />
+        </Link>
+
         {/* <Card.Link href="#">Go to Resource</Card.Link> */}
       </Card.Body>
     </Card>

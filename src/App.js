@@ -69,6 +69,13 @@ import { ReportIssueBtn } from "./components/Navbar/dashboardNavbar";
 import { RateChampBtn } from "./components/Navbar/dashboardNavbar";
 import { RateAppBtn } from "./components/Navbar/dashboardNavbar";
 
+// school dashboard pages
+import SchoolDashboard from "./pages/dashboardPages/school/schoolDashboard";
+import AllActivitiesDashboard from "./pages/dashboardPages/school/activities/allActivities";
+import ActivitiesDetails from "./pages/dashboardPages/school/activities/activityDetails";
+import AllChamps from "./pages/dashboardPages/school/allUsers/champs";
+import AllInstructors from "./pages/dashboardPages/school/allUsers/instructors";
+
 //parent
 import AllActivities from "./pages/websitePages/allActivities/allActivities";
 import RegisterNowForm from "./components/forms/website/registerNowForm";
@@ -138,7 +145,7 @@ function App() {
           <Route path="InstructorAgreement" element={<InstructorAgreement />} />
           <Route path="CongratsMessage" element={<CongratsMessage />} />
 
-          {/* instructor authentication pages */}
+          {/* instructor dashboard pages */}
           <Route path="InstructorDashboard" element={<InstructorDashboard />} />
           <Route path="ViewMaterials" element={<ViewMaterials />} />
           <Route path="UploadMaterial" element={<UploadMaterial />} />
@@ -163,6 +170,16 @@ function App() {
           <Route path="ReportIssueBtn" element={<ReportIssueBtn />} />
           <Route path="RateChampBtn" element={<RateChampBtn />} />
           <Route path="RateAppBtn" element={<RateAppBtn />} />
+
+          {/* school dashboard pages */}
+          <Route path="SchoolDashboard" element={<SchoolDashboard />} />
+          <Route
+            path="AllActivitiesDashboard"
+            element={<AllActivitiesDashboard />}
+          />
+          <Route path="ActivitiesDetails" element={<ActivitiesDetails />} />
+          <Route path="AllChamps" element={<AllChamps />} />
+          <Route path="AllInstructors" element={<AllInstructors />} />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />

@@ -30,7 +30,7 @@ const CongratsMessage = () => {
           </div>
         </div>
         <div className="d-flex justify-content-center mt-5">
-          <Link to="">
+          <Link to="/InstructorDashboard">
             <Done />
           </Link>
         </div>

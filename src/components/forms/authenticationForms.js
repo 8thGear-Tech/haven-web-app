@@ -216,10 +216,10 @@ export const CreateAccountForm = () => {
                 <Card.Title>
                   <b>Welcome To Haven</b>
                 </Card.Title>
-                <div className="my-4">
+                {/* <div className="my-4">
                   {" "}
                   <Button variant="primary">Go somewhere</Button>
-                </div>
+                </div> */}
               </Card.Body>
             </div>
           </div>
