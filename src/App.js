@@ -75,6 +75,9 @@ import AllActivitiesDashboard from "./pages/dashboardPages/school/activities/all
 import ActivitiesDetails from "./pages/dashboardPages/school/activities/activityDetails";
 import AllChamps from "./pages/dashboardPages/school/allUsers/champs";
 import AllInstructors from "./pages/dashboardPages/school/allUsers/instructors";
+import SchoolProfile from "./pages/dashboardPages/school/schoolProfile";
+import SchoolUpdateProfile from "./pages/dashboardPages/school/SchoolUpdateProfile";
+import AllActivitiesPerformance from "./pages/dashboardPages/school/activities/activityPerfomance";
 
 //parent
 import AllActivities from "./pages/websitePages/allActivities/allActivities";
@@ -180,6 +183,12 @@ function App() {
           <Route path="ActivitiesDetails" element={<ActivitiesDetails />} />
           <Route path="AllChamps" element={<AllChamps />} />
           <Route path="AllInstructors" element={<AllInstructors />} />
+          <Route path="SchoolProfile" element={<SchoolProfile />} />
+          <Route path="SchoolUpdateProfile" element={<SchoolUpdateProfile />} />
+          <Route
+            path="AllActivitiesPerformance"
+            element={<AllActivitiesPerformance />}
+          />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />

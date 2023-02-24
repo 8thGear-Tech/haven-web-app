@@ -918,6 +918,14 @@ const SchoolBigShowExample = ({ name, ...props }) => {
               </Link>
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/SchoolNotification" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Notification
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
               <Link to="/Ratings" className="text-decoration-none">
                 {" "}
                 <span className="text-white dashboardSideNavText">Ratings</span>
@@ -1030,6 +1038,14 @@ const SchoolSmallShowExample = ({ name, ...props }) => {
                 {" "}
                 <span className="text-white dashboardSideNavText">
                   My Profile
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <Link to="/SchoolNotification" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Notification
                 </span>
               </Link>
             </li>
