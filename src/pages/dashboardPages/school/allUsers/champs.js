@@ -32,6 +32,7 @@ const AllChamps = () => {
               <div className="">
                 {" "}
                 <ProfileCard />
+                <ProfileCard />
               </div>
               {/* <div className="">
                 <RegisteredUsersList />
