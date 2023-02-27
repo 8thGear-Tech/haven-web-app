@@ -31,6 +31,10 @@ export const JoinOurTeamBtn = () => {
         {" "}
         <button className="JoinOurTeamBtn">JOIN OUR TEAM</button>
       </Link>
+      <Link to="/signup">
+        {" "}
+        <button className="JoinOurTeamBtn">JOIN OUR TEAM</button>
+      </Link>
     </>
   );
 };
