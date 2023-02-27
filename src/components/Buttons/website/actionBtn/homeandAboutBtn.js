@@ -34,3 +34,18 @@ export const JoinOurTeamBtn = () => {
     </>
   );
 };
+export const TeamOneViewBioBtn = () => {
+  return (
+    <>
+      <a
+        href=""
+        className="text-decoration-none team-button-color"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop1"
+      >
+        View Bi<i className="bi bi-arrow-right"></i>
+      </a>
+    </>
+  );
+};

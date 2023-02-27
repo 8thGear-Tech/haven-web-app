@@ -13,13 +13,35 @@ import videoicon from "../../../assets/icons/videoicon.png";
 
 import profilepic from "../../../assets/images/dashboard/instructor/profilepic.png";
 import { ProfileCard } from "../../../components/allCards/Dashboard/profileCards";
-import InstrustorUpdateProfileForm from "../../../components/forms/dashboard/instructors/instructorUpdateProfileForm";
+import { InstructorDashboardSideNav } from "../../../components/Navbar/dashboardNavbar";
+import InstructorUpdateProfileForm from "../../../components/forms/dashboard/instructors/instructorUpdateProfileForm";
 
 const InstructorUpdateProfile = () => {
   return (
     <>
-      <InstructorUpdateProfileNavbar />
-      <InstructorUpdateProfileCard />
+      {/* <DashboardNavbar /> */}
+      <div className="container-fluid">
+        <div className="row d-flex justify-content-center">
+          <div className="col-lg-2">
+            <InstructorDashboardSideNav />
+          </div>
+          <div className="col-lg-9 col-md-12">
+            <div className="col">
+              <div className="">
+                {" "}
+                <InstructorUpdateProfileNavbar />
+              </div>
+              <div className="">
+                {" "}
+                <InstructorUpdateProfileCard />
+              </div>
+              {/* <div className="">
+                <RegisteredUsersList />
+              </div> */}
+            </div>
+          </div>{" "}
+        </div>
+      </div>
     </>
   );
 };
@@ -27,7 +49,7 @@ const InstructorUpdateProfile = () => {
 const InstructorUpdateProfileNavbar = () => {
   return (
     <div className="container my-5">
-      <div className="row d-flex justify-content-center InstructorMaterialNav">
+      <div className="row d-flex justify-content-center s">
         <div className="d-flex justify-content-between px-5 pt-2">
           {" "}
           <div className="d-flex">
@@ -63,7 +85,7 @@ const InstructorUpdateProfileCard = () => {
     <>
       <div className="container">
         <div className="row justify-content-center InstructorMaterialBg py-5 mb-4">
-          <InstrustorUpdateProfileForm />
+          <InstructorUpdateProfileForm />
         </div>
         <div className="d-flex justify-content-center mt-5">
           <Link to="" className="mx-2">

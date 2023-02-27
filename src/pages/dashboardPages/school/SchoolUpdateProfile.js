@@ -7,14 +7,16 @@ import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
 import VideocamOutlinedIcon from "@mui/icons-material/VideocamOutlined";
 
 //internal import
+import { CancelBtn } from "../../../components/Buttons/dashboard/actionBtn";
 import { UpdateBtn } from "../../../components/Buttons/dashboard/actionBtn";
 import videoicon from "../../../assets/icons/videoicon.png";
 
 import profilepic from "../../../assets/images/dashboard/instructor/profilepic.png";
-import { PersonalDetailsCard } from "../../../components/allCards/Dashboard/profileCards";
+import { ProfileCard } from "../../../components/allCards/Dashboard/profileCards";
 import { SchoolDashboardSideNav } from "../../../components/Navbar/dashboardNavbar";
+import SchoolUpdateProfileForm from "../../../components/forms/dashboard/schools/schoolupdateProfileForm";
 
-const SchoolProfile = () => {
+const SchoolUpdateProfile = () => {
   return (
     <>
       {/* <DashboardNavbar /> */}
@@ -27,11 +29,11 @@ const SchoolProfile = () => {
             <div className="col">
               <div className="">
                 {" "}
-                <SchoolProfileNavbar />
+                <SchoolUpdateProfileNavbar />
               </div>
               <div className="">
                 {" "}
-                <SchoolProfileCard />
+                <SchoolUpdateProfileCard />
               </div>
               {/* <div className="">
                 <RegisteredUsersList />
@@ -44,19 +46,19 @@ const SchoolProfile = () => {
   );
 };
 
-const SchoolProfileNavbar = () => {
+const SchoolUpdateProfileNavbar = () => {
   return (
     <div className="container my-5">
       <div className="row d-flex justify-content-center InstructorMaterialNav">
         <div className="d-flex justify-content-between px-5 pt-2">
           {" "}
           <div className="d-flex">
-            <p className="navFontColor">My Profile</p>
+            <p>My Profile</p>
           </div>
-          <div className="d-flex navFontColor">
+          <div className="d-flex">
             {" "}
-            <Link to="" className="text-decoration-none">
-              <p className="navFontColor">Home</p>
+            <Link to="">
+              <p>Home</p>
             </Link>
             <ArrowUpwardOutlinedIcon />
           </div>
@@ -72,20 +74,25 @@ const SchoolProfileNavbar = () => {
           adipiscing elit.{" "}
         </p>
         {/* </div> */}
+        <Link to="">View Champs Feedback</Link>
       </div>
     </div>
   );
 };
 
-const SchoolProfileCard = () => {
+const SchoolUpdateProfileCard = () => {
   return (
     <>
       <div className="container">
-        <div className="row justify-content-center InstructorMaterialBg py-5 mb-4">
-          <PersonalDetailsCard />
+        <div className="row justify-content-center SchoolMaterialBg py-5 mb-4">
+          <SchoolUpdateProfileForm />
         </div>
         <div className="d-flex justify-content-center mt-5">
-          <Link to="/SchoolUpdateProfile">
+          <Link to="" className="mx-2">
+            {" "}
+            <CancelBtn />
+          </Link>
+          <Link to="" className="mx-2">
             {" "}
             <UpdateBtn />
           </Link>
@@ -95,4 +102,4 @@ const SchoolProfileCard = () => {
   );
 };
 
-export default SchoolProfile;
+export default SchoolUpdateProfile;

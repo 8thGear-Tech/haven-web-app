@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 
 import { BackBtn, NextBtn } from "../../../Buttons/website/actionBtn/schoolBtn";
 
-const InstructorUpdateProfileForm = () => {
+const SchoolUpdateProfileForm = () => {
   return (
     <>
       <Form style={{ width: "32rem" }} className="profileFormBorder">
@@ -55,4 +55,4 @@ const InstructorUpdateProfileForm = () => {
   );
 };
 
-export default InstructorUpdateProfileForm;
+export default SchoolUpdateProfileForm;

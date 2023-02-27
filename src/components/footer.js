@@ -39,7 +39,7 @@ export const Footer = () => {
                 <h4>Work with us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a href="/signup" class="nav-link p-0 footerParagraph">
                       Become a facilitator
                     </a>
                   </li>
@@ -69,17 +69,20 @@ export const Footer = () => {
                 <h4>Get to know us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a href="/about" class="nav-link p-0 footerParagraph">
                       About Haven
                     </a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a
+                      href="/otherActivities"
+                      class="nav-link p-0 footerParagraph"
+                    >
                       Other services
                     </a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a href="/gallery" class="nav-link p-0 footerParagraph">
                       Gallery
                     </a>
                   </li>
@@ -89,12 +92,15 @@ export const Footer = () => {
                 <h4>Learn with us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a href="/" class="nav-link p-0 footerParagraph">
                       School services
                     </a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a
+                      href="/AllActivities"
+                      class="nav-link p-0 footerParagraph"
+                    >
                       Find Activities
                     </a>
                   </li>
@@ -102,12 +108,14 @@ export const Footer = () => {
               </div>
               <div className="col-lg-2">
                 <h4>Connect with us</h4>
-                <img
-                  alt=""
-                  src={googlemaps}
-                  style={{ maxWidth: "6rem", maxHeight: "6rem" }}
-                  className="d-inline-block align-top"
-                />{" "}
+                <a href="https://maps.app.goo.gl/DFurq3id3D9i5TrE7">
+                  <img
+                    alt=""
+                    src={googlemaps}
+                    style={{ maxWidth: "6rem", maxHeight: "6rem" }}
+                    className="d-inline-block align-top"
+                  />{" "}
+                </a>
               </div>
             </div>
             {/* <div className="d-flex flex-column flex-sm-row justify-content-between">

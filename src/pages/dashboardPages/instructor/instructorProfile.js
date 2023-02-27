@@ -11,7 +11,7 @@ import { UpdateBtn } from "../../../components/Buttons/dashboard/actionBtn";
 import videoicon from "../../../assets/icons/videoicon.png";
 
 import profilepic from "../../../assets/images/dashboard/instructor/profilepic.png";
-import { ProfileCard } from "../../../components/allCards/Dashboard/profileCards";
+import { PersonalDetailsCard } from "../../../components/allCards/Dashboard/profileCards";
 import { InstructorDashboardSideNav } from "../../../components/Navbar/dashboardNavbar";
 
 const InstructorProfile = () => {
@@ -85,7 +85,7 @@ const InstructorProfileCard = () => {
     <>
       <div className="container">
         <div className="row justify-content-center InstructorMaterialBg py-5 mb-4">
-          <ProfileCard />
+          <PersonalDetailsCard />
         </div>
         <div className="d-flex justify-content-center mt-5">
           <Link to="">

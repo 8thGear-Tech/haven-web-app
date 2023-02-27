@@ -142,4 +142,25 @@ export const InstructorProfileCard = () => {
   );
 };
 
+export const PersonalDetailsCard = () => {
+  return (
+    <>
+      <Card className="" style={{ width: "23rem" }}>
+        <Card.Body className="">
+          <div className="text-center"></div>
+          <Card.Title className="text-center">Personal Details</Card.Title>
+          {/* <Card.Text className="text-center">M.COM., P.H.D.</Card.Text> */}
+          <Card.Text>Email : adekolaokesanya@gmail.com</Card.Text>
+          <Card.Text>Phone : +2348023672339</Card.Text>
+          <Card.Text>Home Address : Number 55, albert street</Card.Text>
+          <Card.Text>Gender : Male</Card.Text>
+        </Card.Body>
+        <div className="mb-4 text-center">
+          <Link to=""> {/* <ProfileReadMoreBtn /> */}</Link>
+        </div>
+      </Card>
+    </>
+  );
+};
+
 export default ProfileReadMoreCard;
