@@ -27,10 +27,10 @@ export const LearnMoreBtn = () => {
 export const JoinOurTeamBtn = () => {
   return (
     <>
-      <a href="" target="_blank">
+      <Link to="/signup">
         {" "}
         <button className="JoinOurTeamBtn">JOIN OUR TEAM</button>
-      </a>
+      </Link>
     </>
   );
 };
