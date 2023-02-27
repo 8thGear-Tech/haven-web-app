@@ -194,9 +194,9 @@ function App() {
           <Route path="signup" element={<CreateAccountForm />} />
         </Routes>
       </BrowserRouter>
-      {/* <footer>
+      <footer>
         <Footer />
-      </footer> */}
+      </footer>
     </div>
   );
 }
