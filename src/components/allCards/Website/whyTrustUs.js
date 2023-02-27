@@ -11,13 +11,13 @@ export const WhyTrustUsCard = (props) => {
       <div className="w-100 px-5">
         <img
           src={icon}
-          className="card-img-center p-5 mx-auto img-fluid"
+          className="card-img-center px-5 py-3 mx-auto img-fluid"
           alt="..."
           // style={{ width: "60%" }}
         />
         {/* <Card.Img variant="top" src={icon} className="px-5" /> */}
         <Card.Body className="text-center">
-          <h4 className="mt-3">{titleText}</h4>
+          <h4 className="mt-1">{titleText}</h4>
           <Card.Text className="">{paragraphText}</Card.Text>
         </Card.Body>
       </div>

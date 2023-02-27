@@ -155,17 +155,17 @@ const OurActivities = () => {
                 <Card.Text className="text-decoration-underline fontSize">
                   Haven Products
                 </Card.Text> */}
-                <Link to="/">
+                <Link to="/" style={{ color: "#75117A" }}>
                   <p className="text-decoration-underline fontStyle m-2">
                     School Facilitation
                   </p>
                 </Link>
-                <Link to="/otherActivities">
+                <Link to="/otherActivities" style={{ color: "#75117A" }}>
                   <p className="text-decoration-underline fontStyle m-2">
                     Haven Summer
                   </p>
                 </Link>
-                <Link to="/otherActivities">
+                <Link to="/otherActivities" style={{ color: "#75117A" }}>
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
                     Haven Weekend Club
