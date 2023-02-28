@@ -20,6 +20,10 @@ export const WhyTrustUsCard = (props) => {
           <h4 className="">{titleText}</h4>
           <Card.Text className="">{paragraphText}</Card.Text>
         </Card.Body>
+        <Card.Body className="text-center">
+          <h4 className="">{titleText}</h4>
+          <Card.Text className="">{paragraphText}</Card.Text>
+        </Card.Body>
       </div>
     </>
   );
