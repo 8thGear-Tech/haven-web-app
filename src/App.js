@@ -78,6 +78,7 @@ import AllInstructors from "./pages/dashboardPages/school/allUsers/instructors";
 import SchoolProfile from "./pages/dashboardPages/school/schoolProfile";
 import SchoolUpdateProfile from "./pages/dashboardPages/school/SchoolUpdateProfile";
 import AllActivitiesPerformance from "./pages/dashboardPages/school/activities/activityPerfomance";
+import SchoolInstructorFeedback from "./pages/dashboardPages/school/feedbackandrating/instructorFeedback";
 
 //parent
 import AllActivities from "./pages/websitePages/allActivities/allActivities";
@@ -189,14 +190,18 @@ function App() {
             path="AllActivitiesPerformance"
             element={<AllActivitiesPerformance />}
           />
+          <Route
+            path="SchoolInstructorFeedback"
+            element={<SchoolInstructorFeedback />}
+          />
 
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />
         </Routes>
       </BrowserRouter>
-      <footer>
+      {/* <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 }

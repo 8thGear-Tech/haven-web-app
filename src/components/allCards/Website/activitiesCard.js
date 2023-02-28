@@ -31,7 +31,7 @@ export const ActivitiesCard = (props) => {
 export const WhatWeDoCard = (props) => {
   const { image, link, title, text } = props;
   return (
-    <Card style={{ width: "20rem" }} className="paymentpackage mx-auto">
+    <Card style={{ width: "20rem" }} className="paymentpackage mx-auto mb-5">
       <Card.Img
         variant="top"
         src={image}

@@ -53,6 +53,8 @@ export const TeamCardOne = (props) => {
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop1"
+              style={{ color: "#75117A" }}
+              className="text-decoration-none"
             >
               View Bio
             </a>
@@ -114,6 +116,8 @@ export const TeamCardTwo = (props) => {
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop1"
+              style={{ color: "#75117A" }}
+              className="text-decoration-none"
             >
               View Bio
             </a>
@@ -175,6 +179,8 @@ export const TeamCardThree = (props) => {
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop1"
+              style={{ color: "#75117A" }}
+              className="text-decoration-none"
             >
               View Bio
             </a>
@@ -236,6 +242,8 @@ export const TeamCardFour = (props) => {
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop1"
+              style={{ color: "#75117A" }}
+              className="text-decoration-none"
             >
               View Bio
             </a>
@@ -297,6 +305,8 @@ export const TeamCardFive = (props) => {
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop1"
+              style={{ color: "#75117A" }}
+              className="text-decoration-none"
             >
               View Bio
             </a>
