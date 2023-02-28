@@ -5,7 +5,7 @@ import { GetAnInstructorBtn } from "../Buttons/website/actionBtn/homeandAboutBtn
 
 //images
 import homehero from "../../assets/images/hero/homehero.png";
-import homeheromobilee from "../../assets/images/hero/homeheromobilee.png";
+import hero from "../../assets/images/hero/hero.png";
 // import homeheronew from "../../assets/images/hero/homeheronew.png";
 
 //icons
@@ -14,22 +14,25 @@ export const HomeHero = () => {
   return (
     <>
       <div className="container-fluid homeHeroBg d-flex align-items-center">
-        <div className="container homeHeroBgg d-flex align-items-center">
-          <div className="row">
+        <div className="container-fluid homeHeroBgg d-flex align-items-center">
+          <div className="row d-flex align-items-center mx-lg-5">
             <div className="col-lg-6 col-md-6 col-sm-12">
               <h2 className="d-none d-lg-block d-md-none d-sm-none d-xs-none heroTextColor">
                 Exciting Young Champs Towards Technology, Arts And Foreign
                 Languages
               </h2>
-              <h3 className="d-xs-block d-sm-block d-md-block d-lg-none heroTextColor">
+              <h3 className="d-xs-block d-sm-block d-md-block d-lg-none heroTextColor mt-3">
                 {" "}
                 Exciting Young Champs Towards Technology, Arts And Foreign
                 Languages
               </h3>{" "}
-              <div className="">
+              <div className="mb-3">
                 {" "}
                 <GetAnInstructorBtn />
               </div>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-12 text-center">
+              <img src={hero} class="img-fluid" />
             </div>
           </div>
         </div>
@@ -44,7 +47,7 @@ export const HomeMobileHero = () => {
         {/* <div className="px-3 container-fluid  d-flex pt-3"> */}
         <div className="row d-flex justify-content-center g-0">
           <div className="col-sm-12  text-center">
-            <img src={homeheromobilee} class="img-fluid" />
+            {/* <img src={homeheromobilee} class="img-fluid" /> */}
           </div>
           <div className="">
             <h4 className="col-sm-10 mx-auto">
@@ -82,7 +85,7 @@ export const HomeHer = () => {
         {/* <div className="px-3 container-fluid  d-flex pt-3"> */}
         <div className="row d-flex justify-content-center g-0">
           <div className="col-sm-12 d-xs-block d-sm-block d-md-none d-lg-none text-center">
-            <img src={homeheromobilee} class="img-fluid" />
+            {/* <img src={homeheromobilee} class="img-fluid" /> */}
           </div>
           <div className="">
             <h4 className="col-sm-10 d-xs-block d-sm-block d-md-none d-lg-none mx-auto">

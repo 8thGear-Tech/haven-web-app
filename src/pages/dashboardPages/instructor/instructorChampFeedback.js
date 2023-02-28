@@ -9,7 +9,7 @@ import VideocamOutlinedIcon from "@mui/icons-material/VideocamOutlined";
 
 //internal import
 import notone from "../../../assets/images/dashboard/instructor/notification/notone.png";
-import { ChampsFeedback } from "../../../components/allCards/Dashboard/champsFeedback";
+import { ChampFeedback } from "../../../components/allCards/Dashboard/Feedback";
 import champsFeedbackData from "../../../data/allCards/feedback.json";
 import { InstructorDashboardSideNav } from "../../../components/Navbar/dashboardNavbar";
 
@@ -72,7 +72,7 @@ const InstructorAllChampsFeedback = () => {
           {champsFeedbackData.champsFeedbackData.map((card) => {
             return (
               <div className="col-12" key={card.id}>
-                <ChampsFeedback {...card}></ChampsFeedback>
+                <ChampFeedback {...card}></ChampFeedback>
               </div>
             );
           })}
