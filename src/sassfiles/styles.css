@@ -430,6 +430,15 @@ p {
   height: 10rem;
 }
 
+.galleryBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+.galleryBtn:focus {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
 .blogImage {
   border-radius: 50px;
 }

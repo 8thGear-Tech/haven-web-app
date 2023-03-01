@@ -1,1 +1,17 @@
+@use "../../colors" as *;
 @use "../../components/hero/galleryHero";
+
+.galleryBtn {
+  &:hover {
+    background-color: $buttoncolor;
+    color: $tertextcolor;
+  }
+  &:focus {
+    background-color: $buttoncolor;
+    color: $tertextcolor;
+  }
+}
+// .galleryBtn:focus {
+//   background-color: $buttoncolor;
+//   color: $tertextcolor;
+// }
