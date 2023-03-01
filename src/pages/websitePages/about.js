@@ -20,8 +20,8 @@ const About = () => {
       <GuestNavbar />
       <AboutHero />
       <Statistics />
-      <ActivitiesSectionOne />
-      <ActivitiesSectionTwo />
+      <OurVision />
+      <OurMission />
       <AboutCEO />
       <JoinTeam />
       <Partners />
@@ -68,12 +68,12 @@ const Statistics = () => {
   );
 };
 
-const ActivitiesSectionOne = () => {
+const OurVision = () => {
   return (
     <>
       <div className="px-3">
         <div className="px-4 container-fluid">
-          <div className="row align-items-center justify-content-center mt-5">
+          <div className="row align-items-center justify-content-center mt-3">
             {" "}
             <div className="col-lg-5 col-md-12 col-sm-10 mb-5">
               <img
@@ -108,7 +108,7 @@ const ActivitiesSectionOne = () => {
   );
 };
 
-const ActivitiesSectionTwo = () => {
+const OurMission = () => {
   return (
     <>
       <div className="px-3">
@@ -174,50 +174,69 @@ const AboutCEO = () => {
 const JoinTeam = () => {
   return (
     <>
-      {/* <div className="container-fluid bgColor p-5 mt-5">
-        <div className="d-flex justify-content-center my-5 ">
-          <img src={team} className="img-fluid" />
-        </div>
-      </div> */}
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center align-items-center">
         <div>
-          <h3 className="mx-3">Interested in working with us?</h3>
+          <h3 className="mx-3 my-0">Interested in working with us?</h3>
         </div>
-
         <div className="mx-3">
           {" "}
           <JoinOurTeamBtn />
         </div>
       </div>
+      {/* <div className="d-xs-block d-sm-block d-md-none d-lg-none justify-content-center align-items-center">
+        <div>
+          <h3 className="mx-3">Interested in working with us?</h3>
+        </div>
+        <div className="mx-3">
+          {" "}
+          <JoinOurTeamBtn />
+        </div>
+      </div> */}
     </>
   );
 };
 
 const Partners = () => {
   return (
-    <div className="container-fluid partnersBg pt-5 mt-5">
+    <div className="container-fluid partnersBg py-5 mt-2">
       {" "}
       {/* <div className="row g-0"> */}
       <h3 className="mt-4 text-center mb-4">OUR PARTNERS</h3>
       <div className="row d-flex align-items-center justify-content-center justify-content-evenly">
-        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
-          <img src={google} className="logo1 col-12 px-3"></img>
-        </div>
-        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
-          <img src={breakbeatcode} className="logo1 col-12 px-4"></img>
-        </div>
-        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3 d-flex justify-content-center">
           <img
-            src={eightgear}
-            className="col-12 px-5"
-            // style={{ maxWidth: "90%", maxHeight: "90%" }}
+            src={google}
+            className="logo1 col-12 px-3 d-flex justify-content-center smallerWidth"
+            // style={{ width: "40%", height: "40%" }}
           ></img>
         </div>
-        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
-          <img src={innkeeper} className="col-12 "></img>
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3 d-flex justify-content-center">
+          <img
+            src={breakbeatcode}
+            className="logo1 col-12 px-4 pb-2 smallerWidth"
+            // style={{ width: "40%", height: "40%" }}
+          ></img>
+        </div>
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 d-flex justify-content-center">
+          <img
+            src={eightgear}
+            className="col-12 px-5 py-2 smallerWidth"
+            // style={{ width: "40%", height: "40%" }}
+          ></img>
+        </div>
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3 d-flex justify-content-center">
+          <img
+            src={innkeeper}
+            className="col-12 smallerWidth"
+            // style={{ width: "50%", height: "50%" }}
+          ></img>
         </div>{" "}
-        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3">
-          <img src={cisco} className="col-12"></img>
+        <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 my-3 d-flex justify-content-center">
+          <img
+            src={cisco}
+            className="col-12 smallerWidth"
+            // style={{ width: "50%", height: "50%" }}
+          ></img>
         </div>
       </div>
       {/* </div> */}
