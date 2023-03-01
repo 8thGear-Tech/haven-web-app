@@ -21,6 +21,8 @@ import AssignmentText from "./pages/dashboardPages/champ/champAssignmentBoard";
 import VirtualClass from "./pages/dashboardPages/champ/champVirtualClass";
 import Champcalendar from "./pages/dashboardPages/champ/champCalenderPage";
 import ProfileIdCard from "./pages/dashboardPages/champ/champStudentPage";
+import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
+import AdminDashboardPg from "./pages/dashboardPages/admin/adminDashboardPage";
 //authentication pages
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 import ChampsNeeds from "./pages/websitePages/authenticationPages/school/champsNeeds";
@@ -38,7 +40,7 @@ import AddYourActivity from "./pages/websitePages/authenticationPages/instructor
 import { AddActivity } from "./pages/websitePages/authenticationPages/instructor/addActivity";
 
 import { Footer } from "./components/footer";
-import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
+import Admincalendar from "./pages/dashboardPages/admin/adminCalenderEventPage";
 
 function App() {
   return (
@@ -74,6 +76,8 @@ function App() {
           <Route path="Champcalendar" element={<Champcalendar />} />
           <Route path="ProfileIdCard" element={<ProfileIdCard />} />
           <Route path="ProfileEditCard" element={<ProfileEditCard />} />
+          <Route path="AdminDashboardPg" element={<AdminDashboardPg />} />
+          <Route path="Admincalendar" element={<Admincalendar />} />
 
           {/* instructor authentication pages */}
           <Route

@@ -13,7 +13,7 @@ import { Button, Dropdown, DropdownButton, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ChampDashboard from "../../pages/dashboardPages/champ/champDashboardPage";
 
-export const AdminNavbar = () => {
+export const AdminTopNavbar = () => {
   return (
     <>
       <div className="d-flex">
@@ -57,109 +57,9 @@ export const AdminNavbar = () => {
     </>
   );
 };
-// export const ChampSideNavBar = () => {
-//   const [showSidebar, setShowSidebar] = useState(false);
-//   return (
-//     <>
-//       <React.Fragment>
-//         <Navbar
-//           className="sidebar text-start"
-//           style={{
-//             width: "10rem",
-//             height: "100%",
-//             backgroundColor: "#BC4C92",
-//           }}
-//         >
-//           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//           <Navbar.Collapse id="basic-navbar-nav">
-//             <Nav className="ml-auto">
-//               <Nav className="flex-column">
-//                 <Nav.Link href="# Dashboard"> Dashboard</Nav.Link>
-//                 <Nav.Link href="#materials">Materials</Nav.Link>
-//                 <Nav.Link href="#services">Assignment</Nav.Link>
-//                 <Nav.Link href="#virtualclass">Virtual Class</Nav.Link>
-//                 <Nav.Link href="#calendar">Calendar</Nav.Link>
-//                 <Nav.Link href="#myprofile">My Profile</Nav.Link>
-//                 <Nav.Link href="#reportissues">Report Issues</Nav.Link>
-//                 <Nav.Link href="#submission">Submission</Nav.Link>
-//                 <Nav.Link href="#ratings">Ratings</Nav.Link>
-//                 <Nav.Link href="#">Log Out</Nav.Link>
-//               </Nav>
-//             </Nav>
-//           </Navbar.Collapse>
-//         </Navbar>
 
-//         {/* </div> */}
-//       </React.Fragment>
-//     </>
-//   );
-// };
 
-// export const ChampSideNavBar = () => {
-//   return (
-//     <aside
-//       className="d-flex align-center flex-column"
-//       style={{ width: "15rem", height: "100vh", backgroundColor: "#BC4C92" }}
-//     >
-//       {/* <div>
-//         <img
-//           className="SideNavLogo ms-3 mt-3"
-//           // src={logo}
-//           alt="MyDoshBox Logo"
-//         />
-//       </div> */}
-//       <div className="d-flex justify-content-between align-center flex-column mt-5">
-//         <ul className="ps-3">
-//           <li className="d-flex align-center SideNavItem mt-3">
-//             {/* <DashboardIcon width="30" height="30" className="me-3" /> */}
-//             <span className="my-1">Dashboard</span>
-//             <div className="hoverBlock"></div>
-//           </li>
-//           <li className="d-flex align-center SideNavItem mt-3">
-//             {/* <NavTransactionIcon width="30" height="30" className="me-3" /> */}
-//             <span className="my-1">
-//               {["end"].map((direction) => (
-//                 <DropdownButton
-//                   key={direction}
-//                   id={`dropdown-button-drop-${direction}`}
-//                   drop={direction}
-//                   variant="secondary"
-//                   title={`Conflicts`}
-//                   className="SideNavDropdown"
-//                 >
-//                   <Dropdown.Item eventKey="1">Open Conflicts</Dropdown.Item>
-//                   <Dropdown.Item eventKey="2">Ongoing Conflicts</Dropdown.Item>
-//                   <Dropdown.Item eventKey="3">Closed Conflicts</Dropdown.Item>
-//                 </DropdownButton>
-//               ))}
-//             </span>
-//             <div className="hoverBlock"></div>
-//           </li>
-//           <li className="d-flex align-center SideNavItem mt-3">
-//             {/* <NotificationIcon width="30" height="30" className="me-3" /> */}
-//             <span className="my-1">Notifications</span>
-//             <div className="hoverBlock"></div>
-//           </li>
-//           <li className="d-flex align-center SideNavItem mt-3">
-//             {/* <SettingsIcon width="30" height="30" className="me-3" /> */}
-//             <span className="my-1">Settings</span>
-//             <div className="hoverBlock"></div>
-//           </li>
-//         </ul>
-//         <ul className="ps-3">
-//           <li className="d-flex align-center SideNavItem mb-5">
-//             {/* <LogoutIcon width="30" height="30" className="me-3" /> */}
-//             <span className="my-1">Logout</span>
-//             <div className="hoverBlock"></div>
-//           </li>
-//         </ul>
-//       </div>
-//       {/* <Outlet /> */}
-//     </aside>
-//   );
-// };
-
-export const ChampSideNavBar = () => {
+export const AdminSideNavBar = () => {
   return (
     <>
       <SmallShow />
@@ -212,7 +112,7 @@ const SmallShowExample = ({ name, ...props }) => {
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
-            {/* <img src={havenlogo} alt="logo" /> */}
+           
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -222,22 +122,19 @@ const SmallShowExample = ({ name, ...props }) => {
                 <span>Dashboard</span>
               </li>
               <li className="d-flex mb-4 align-items-center SideNavItem">
-                <span>Materials</span>
+                <span>Calendar</span>
               </li>
               <li className="d-flex mb-4 align-items-center SideNavItem">
-                <span>Assignments</span>
+                <span>Instructors</span>
               </li>
               <li className="d-flex mb-4 align-items-center SideNavItem">
-                <span>Virtual Class</span>
+                <span>Champs</span>
               </li>
               <li className="d-flex align-items-center SideNavItem mb-4">
-                <span className="my-1">Calendar</span>
+                <span className="my-1">Activities</span>
               </li>
               <li className="d-flex align-items-center SideNavItem mb-4">
-                <span>My Profile</span>
-              </li>
-              <li className="d-flex  align-items-center SideNavItem mb-4">
-                <span>Report Issues</span>
+                <span>Profile</span>
               </li>
               <li className="d-flex align-items-center SideNavItem mb-5">
                 <span>Submission</span>

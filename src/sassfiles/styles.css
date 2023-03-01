@@ -669,10 +669,6 @@ p {
   margin-left: 200px;
 }
 
-.assignmenttext {
-  line-height: 2rem;
-}
-
 .virtualContentbg {
   box-sizing: border-box;
   margin-left: 3rem;
@@ -691,15 +687,8 @@ p {
     height: 1000px;
   }
 }
-.calendarClass {
-  box-sizing: border-box;
-  margin-left: 15rem;
-  position: absolute;
-  margin-top: 3rem;
-  width: 500px;
-  height: 270px;
-  box-shadow: 0px 9px 50px 3px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
-  padding: 15px;
+.timeStamp {
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgba(201, 246, 255, 0.5098039216);
 }
 /*# sourceMappingURL=styles.css.map */
