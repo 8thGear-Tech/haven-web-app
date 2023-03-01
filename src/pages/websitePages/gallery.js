@@ -47,6 +47,14 @@ const GalleryImages = () => {
         >
           Arts
         </div>
+        <div
+          className="btn ms-4 mt-3 galleryBtn"
+          mb1
+          // style={{ backgroundColor: "#75117a", color: "#ffffff" }}
+          onClick={() => setActive("Thirdcard")}
+        >
+          Arts
+        </div>
       </div>
       {active === "Firstcard" && <Tech />}
       {active === "Secondcard" && <Language />}
