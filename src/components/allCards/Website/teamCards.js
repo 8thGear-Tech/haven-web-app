@@ -366,32 +366,32 @@ export const Team = () => {
   return (
     <div className="container ">
       <div className="row justify-content-center mt-5">
-        <h3 className="text-center ">Our Core Team</h3>
-        <div className="col-lg-4 col-md-6 mt-5">
+        <h3 className="text-center mb-3">OUR CORE TEAM</h3>
+        <div className="col-lg-4 col-md-6 mb-5">
           {" "}
           {teamMemberOneInfo.teamMemberOneInfo.map((card) => {
             return <TeamCardOne {...card}></TeamCardOne>;
           })}
         </div>
-        <div className="col-lg-4 col-md-6 mt-5">
+        <div className="col-lg-4 col-md-6 mb-5">
           {" "}
           {teamMemberTwoInfo.teamMemberTwoInfo.map((card) => {
             return <TeamCardTwo {...card}></TeamCardTwo>;
           })}
         </div>
-        <div className="col-lg-4 col-md-6 mt-5">
+        <div className="col-lg-4 col-md-6 mb-5">
           {" "}
           {teamMemberThreeInfo.teamMemberThreeInfo.map((card) => {
             return <TeamCardThree {...card}></TeamCardThree>;
           })}
         </div>
-        <div className="col-lg-4 col-md-6 mt-5">
+        <div className="col-lg-4 col-md-6 mb-5">
           {" "}
           {teamMemberFourInfo.teamMemberFourInfo.map((card) => {
             return <TeamCardFour {...card}></TeamCardFour>;
           })}
         </div>
-        <div className="col-lg-4 col-md-6 mt-5">
+        <div className="col-lg-4 col-md-6 mb-5">
           {" "}
           {teamMemberFiveInfo.teamMemberFiveInfo.map((card) => {
             return <TeamCardFive {...card}></TeamCardFive>;

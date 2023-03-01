@@ -9,3 +9,23 @@
     rgba(208, 93, 219, 0.7) 397.8deg
   );
 }
+@media only screen and (max-width: 575px) {
+  .smallerWidth {
+    width: 40%;
+    height: 40%;
+  }
+  .smallWidth {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .smallerWidth {
+    width: 50%;
+    height: 50%;
+  }
+  .smallWidth {
+    width: 50%;
+    height: 50%;
+  }
+}

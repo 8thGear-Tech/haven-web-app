@@ -130,7 +130,7 @@ const WhyTrustUs = () => {
 const OurActivities = () => {
   return (
     <>
-      <div className="container-fluid px-5 pt-5 mt-5 bgGradient">
+      <div className="container-fluid px-5 pt-4 bgGradient">
         <Row
           xs={1}
           md={2}

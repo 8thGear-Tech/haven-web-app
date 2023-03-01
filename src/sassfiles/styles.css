@@ -397,6 +397,26 @@ p {
   background: conic-gradient(from 180deg at 50% 50%, rgba(28, 150, 233, 0.7) -25.05deg, rgba(208, 93, 219, 0.7) 37.8deg, rgba(28, 150, 233, 0.7) 334.95deg, rgba(208, 93, 219, 0.7) 397.8deg);
 }
 
+@media only screen and (max-width: 575px) {
+  .smallerWidth {
+    width: 40%;
+    height: 40%;
+  }
+  .smallWidth {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .smallerWidth {
+    width: 50%;
+    height: 50%;
+  }
+  .smallWidth {
+    width: 50%;
+    height: 50%;
+  }
+}
 .galleryBg {
   background: url(/src/assets/images/hero/gallerybg.png);
   background-repeat: no-repeat;
@@ -408,6 +428,15 @@ p {
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   height: 10rem;
+}
+
+.galleryBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+.galleryBtn:focus {
+  background-color: #75117a;
+  color: #ffffff;
 }
 
 .blogImage {
