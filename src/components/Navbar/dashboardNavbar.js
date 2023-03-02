@@ -273,9 +273,14 @@ export const ReportIssueBtn = () => {
         className="text-decoration-none"
       >
         {" "}
-        <button variant="" onClick={handleShow} className="LoginBtn">
+        <a
+          href=""
+          variant=""
+          onClick={handleShow}
+          className="text-white text-decoration-none SideNavText"
+        >
           Report Issues
-        </button>
+        </a>
       </Link>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -591,7 +596,182 @@ const InstructorBigShowExample = ({ name, ...props }) => {
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
               <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
-              <Link to="/Virtual Class" className="text-decoration-none">
+              <Link
+                to="/InstructorVirtualClass"
+                className="text-decoration-none"
+              >
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Virtual Class
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link to="/" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Calendar
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link to="/InstructorProfile" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  My Profile
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              {/* <Link to="/" className="text-decoration-none"> */}
+              <ReportIssueBtn />
+              {/* <span className="text-white dashboardSideNavText">
+                Report Issues
+              </span> */}
+              {/* </Link> */}
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link to="/ViewSubmissions" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Submission
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link to="/" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">Ratings</span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link to="/" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">Logout</span>
+              </Link>
+            </li>
+            {/* <li className="d-flex align-items-center SideNavItem mt-lg-5 pt-lg-2 bottom position-fixed">
+          <div className="pt-5 mt-5">
+            <img
+              src={sidebarfooterImage}
+              style={{ maxHeight: "65%", maxWidth: "65%" }}
+            />
+          </div>
+        </li> */}
+          </ul>
+          {/* {instructor.instructor.map((navbar) => {
+            return (
+              <div className="d-flex justify-content-between flex-column">
+                <ul className="ps-2" key={navbar.id}>
+                  <InstructorSideNavModal {...navbar} />
+                </ul>
+              </div>
+            );
+          })} */}
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
+  );
+};
+
+const InstructorSmallShowExample = ({ name, ...props }) => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const toggleShow = () => setShow((s) => !s);
+
+  return (
+    <>
+      <Button
+        onClick={toggleShow}
+        className="me-2 bg-white border-0 d-lg-none position-fixed start-0 top-0"
+      >
+        <svg
+          width="30"
+          height="20"
+          viewBox="0 0 30 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
+            fill="#75117A"
+          />
+        </svg>
+      </Button>
+
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        responsive="lg"
+        className="w-75 d-lg-none text-white"
+        {...props}
+        style={{
+          background:
+            "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
+        }}
+      >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title></Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className="">
+          <ul className="ps-2">
+            {/* <li className="d-flex mb-2 align-items-center SideNavItem">
+          <div className="me-3">{icon}</div>
+          <Link to={pageroute} className="nav-link">
+            <div className="sideNavButton text-white dashboardSideNavText">
+              <span>{dashboard}</span>
+            </div>
+          </Link>
+        </li> */}
+            <Link
+              to="/adminDashboardCounselleesPage"
+              className="text-decoration-none"
+            >
+              <li className="d-flex mb-4 align-items-center SideNavItem">
+                <div className="me-3">
+                  {/* <AccountCircleOutlinedIcon /> */}
+                </div>
+                <Link
+                  to="/InstructorDashboard"
+                  className="text-decoration-none"
+                >
+                  {" "}
+                  <span className="text-white dashboardSideNavText">
+                    Dashboard
+                  </span>
+                </Link>
+              </li>
+            </Link>
+            <li className="d-flex mb-4 align-items-center SideNavItem">
+              <div className="me-3">{/* <ManOutlinedIcon /> */}</div>
+              <Link to="/ViewMaterials" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Materials
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <NotificationsActiveIcon /> */}</div>
+              <Link to="/CreateAssignment" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Assigment
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link
+                to="/InstructorVirtualClass"
+                className="text-decoration-none"
+              >
                 {" "}
                 <span className="text-white dashboardSideNavText">
                   Virtual Class
@@ -665,97 +845,6 @@ const InstructorBigShowExample = ({ name, ...props }) => {
               </div>
             );
           })} */}
-        </Offcanvas.Body>
-      </Offcanvas>
-    </>
-  );
-};
-
-const InstructorSmallShowExample = ({ name, ...props }) => {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const toggleShow = () => setShow((s) => !s);
-
-  return (
-    <>
-      <Button
-        onClick={toggleShow}
-        className="me-2 bg-white border-0 d-lg-none position-fixed start-0 top-0"
-      >
-        <svg
-          width="30"
-          height="20"
-          viewBox="0 0 30 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-            fill="#006747"
-          />
-        </svg>
-      </Button>
-
-      <Offcanvas
-        show={show}
-        onHide={handleClose}
-        responsive="lg"
-        className="w-75 d-lg-none text-white"
-        {...props}
-        style={{
-          background:
-            "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
-        }}
-      >
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title></Offcanvas.Title>
-        </Offcanvas.Header>
-        {/* <Offcanvas.Body>
-          <div className="d-flex justify-content-between flex-column">
-            <ul className="ps-2">
-              <li className="d-flex mb-4 align-items-center SideNavItem">
-                <div className="me-3">
-                  <HomeOutlinedIcon />
-                </div>
-                <span>My Dashboard</span>
-              </li>
-              <li className="d-flex mb-4 align-items-center SideNavItem">
-                <div className="me-3">
-                  <AccountCircleOutlinedIcon />
-                </div>
-                <span>Users</span>
-              </li>
-              <li className="d-flex mb-4 align-items-center SideNavItem">
-                <div className="me-3">
-                  <ManOutlinedIcon />
-                </div>
-                <span>Counselor</span>
-              </li>
-              <li className="d-flex align-items-center SideNavItem mb-4">
-                <div className="me-3">
-                  <NotificationsActiveIcon />
-                </div>
-                <span className="my-1">Notification</span>
-              </li>
-              <li className="d-flex align-items-center SideNavItem mb-4">
-                <div className="me-3">
-                  <LogoutOutlinedIcon />
-                </div>
-                <span>Logout</span>
-              </li>
-            </ul>
-          </div>
-        </Offcanvas.Body> */}
-        <Offcanvas.Body className="">
-          {instructor.instructor.map((navbar) => {
-            return (
-              <div className="d-flex justify-content-between flex-column">
-                <ul className="ps-2" key={navbar.id}>
-                  <InstructorSideNavModal {...navbar} />
-                </ul>
-              </div>
-            );
-          })}
         </Offcanvas.Body>
       </Offcanvas>
     </>
@@ -971,7 +1060,7 @@ const SchoolSmallShowExample = ({ name, ...props }) => {
         >
           <path
             d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-            fill="#006747"
+            fill="#75117A"
           />
         </svg>
       </Button>

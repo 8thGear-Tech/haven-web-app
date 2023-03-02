@@ -44,7 +44,7 @@ const InstructorChampsFeedback = () => {
 
 const InstructorChampsFeedbackNavbar = () => {
   return (
-    <div className="container my-5">
+    <div className="container mt-5 my-3">
       <div className="row d-flex justify-content-center InstructorMaterialNav">
         <div className="d-flex justify-content-between px-5 pt-2">
           {" "}
@@ -67,7 +67,7 @@ const InstructorChampsFeedbackNavbar = () => {
 const InstructorAllChampsFeedback = () => {
   return (
     <>
-      <div className="container mt-5">
+      <div className="container">
         <div className="row d-flex justify-content-center">
           {champsFeedbackData.champsFeedbackData.map((card) => {
             return (

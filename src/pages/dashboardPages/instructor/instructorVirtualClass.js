@@ -11,7 +11,7 @@ import { StartaNewSessionBtn } from "../../../components/Buttons/dashboard/actio
 import videoicon from "../../../assets/icons/videoicon.png";
 import { InstructorDashboardSideNav } from "../../../components/Navbar/dashboardNavbar";
 
-const VirtualClass = () => {
+const instructorVirtualClass = () => {
   return (
     <>
       {/* <DashboardNavbar /> */}
@@ -80,4 +80,4 @@ const VirtualClassCard = () => {
   );
 };
 
-export default VirtualClass;
+export default instructorVirtualClass;

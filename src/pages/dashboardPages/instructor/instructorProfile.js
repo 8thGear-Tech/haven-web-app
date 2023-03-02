@@ -28,14 +28,22 @@ const InstructorProfile = () => {
               <div className="">
                 {" "}
                 <InstructorProfileNavbar />
+              </div>{" "}
+              <div className="">
+                <div className="d-flex justify-content-end mt-4">
+                  <Link to="/InstructorChampsFeedback" className="urlFontColor">
+                    View Champs Feedback
+                  </Link>
+                </div>
+              </div>
+              <div className="">
+                {" "}
+                <InstructorProfileSection />
               </div>
               <div className="">
                 {" "}
                 <InstructorProfileCard />
               </div>
-              {/* <div className="">
-                <RegisteredUsersList />
-              </div> */}
             </div>
           </div>{" "}
         </div>
@@ -62,19 +70,24 @@ const InstructorProfileNavbar = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex align-items-center justify-content-evenly mt-5">
-        <div className="mb-4">
+    </div>
+  );
+};
+const InstructorProfileSection = () => {
+  return (
+    <div className="container my-2">
+      <div className="d-flex align-items-center justify-content-evenly">
+        {" "}
+        <div className="mb-4 col-lg-4 col-md-4">
           <img src={profilepic} className="img-fluid" />
         </div>
-        {/* <div> */}
-        <p className="mt-3">
-          Ut velit eu erat duis quaLorem ipsum dolor sit amet, consectetur
-          adipiscing elit.{" "}
-        </p>
-        {/* </div> */}
-        <Link to="/InstructorChampsFeedback" className="urlFontColor">
-          View Champs Feedback
-        </Link>
+        <div>
+          {" "}
+          <p className="mt-3 col-lg-8 col-md-8">
+            Ut velit eu erat duis quaLorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+        </div>
       </div>
     </div>
   );

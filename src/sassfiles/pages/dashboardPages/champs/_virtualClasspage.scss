@@ -1,0 +1,20 @@
+.virtualContentbg{
+    
+        box-sizing: border-box;
+        margin-left: 3rem;
+        margin-top: 3rem;
+        position: absolute;
+        width: 1241px;
+        height: 500px;
+        background: #ffffff;
+        box-shadow: 0px 9px 50px 3px rgba(0, 0, 0, 0.2);
+        padding: auto;
+  
+}
+@media only screen and (max-width: 760px) {
+    .virtualContentbg {
+      width: 300px;
+    //   margin-top: 750px;
+      height: 1000px;
+    
+    }}

@@ -1,24 +1,24 @@
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import { MaterialsandActivities } from "../../../../components/allCards/Dashboard/activitiesCards";
-import activitiesData from "../../../../data/allCards/activitiesCard.json";
+import instructorActivitiesData from "../../../../data/allCards/activitiesCard.json";
 import { MaterialsandActivitiesCard } from "../../../../components/allCards/Dashboard/activitiesCards";
 
 import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
 import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
-import { SchoolDashboardSideNav } from "../../../../components/Navbar/dashboardNavbar";
+import { InstructorDashboardSideNav } from "../../../../components/Navbar/dashboardNavbar";
 
 //images
 import detailsimage from "../../../../assets/images/dashboard/school/detailsimage.png";
 
-const ActivitiesDetails = () => {
+const InstructorActivitiesDetails = () => {
   return (
     <>
       {/* <DashboardNavbar /> */}
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-2">
-            <SchoolDashboardSideNav />
+            <InstructorDashboardSideNav />
           </div>
           <div className="col-lg-9 col-md-12">
             <div className="col">
@@ -153,7 +153,7 @@ const Materials = () => {
       <div className="row d-flex justify-content-center InstructorMaterialBg py-5">
         <h4 className="ps-5">Welcome Michael</h4>
         <h3 className="text-center my-3">Materials</h3>
-        {activitiesData.activitiesData.map((card) => {
+        {instructorActivitiesData.instructorActivitiesData.map((card) => {
           return (
             <div className="col-sm-12 col-md-4 col-lg-4" key={card.id}>
               <MaterialsandActivitiesCard
@@ -183,4 +183,4 @@ const Materials = () => {
   );
 };
 
-export default ActivitiesDetails;
+export default InstructorActivitiesDetails;
