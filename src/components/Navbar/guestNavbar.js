@@ -8,6 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import havenlogo from "../../assets/icons/havenlogo.png";
 import { RegisterNowBtn } from "../../components/Buttons/website/actionBtn/schoolBtn";
 import { LoginBtn } from "../Buttons/website/authenticationBtn";
+import { LoginButton } from "../Buttons/website/authenticationBtn";
 
 export const GuestNavbar = () => {
   return (
@@ -90,7 +91,8 @@ export const GuestNavbar = () => {
                   FIND ACTIVITIES
                 </NavDropdown.Item> */}
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/signup" className="navTextColor">
+                <NavDropdown.Item href="/" className="navTextColor">
+                  {/* <NavDropdown.Item href="/signup" className="navTextColor"> */}
                   BECOME AN INSTRUCTOR
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -106,7 +108,7 @@ export const GuestNavbar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               <div className="mx-3">
-                <LoginBtn />
+                <LoginButton />
               </div>
             </Nav>
           </Navbar.Collapse>

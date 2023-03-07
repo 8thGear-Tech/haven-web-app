@@ -39,7 +39,8 @@ export const Footer = () => {
                 <h4>Work with us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="/signup" class="nav-link p-0 footerParagraph">
+                    <a href="/" class="nav-link p-0 footerParagraph">
+                      {/* <a href="/signup" class="nav-link p-0 footerParagraph"> */}
                       Become an instructor
                     </a>
                   </li>
@@ -292,7 +293,7 @@ export const Footer = () => {
       <div className="container-fluid footerTwoBgColor py-2">
         {" "}
         <p class="text-center text-light p-0 m-0">
-          &copy; 2022 Haven-Edu Services
+          &copy; 2023 Haven-Edu Services
         </p>
       </div>
     </>

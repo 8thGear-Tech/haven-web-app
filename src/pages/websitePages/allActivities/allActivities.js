@@ -39,10 +39,12 @@ const AllActivitiesMapping = () => {
           )}
         </div>
         <div className="d-flex justify-content-center justify-content-evenly mt-5">
-          <Link to="/signup">
+          <Link to="/">
+            {/* <Link to="/signup"> */}
             <BackBtn />
           </Link>
-          <Link to="/RegisterNowForm">
+          <Link to="/">
+            {/* <Link to="/RegisterNowForm"> */}
             <RegisterNowBtn />
           </Link>
         </div>
