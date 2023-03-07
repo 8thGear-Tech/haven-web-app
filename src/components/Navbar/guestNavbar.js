@@ -50,10 +50,13 @@ export const GuestNavbar = () => {
                   GALLERY
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/blog" className="navTextColor">
+                {/* <NavDropdown.Item href="/blog" className="navTextColor">
                   BLOG
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
+              <Nav.Link href="/blog" className="navTextColor mx-3">
+                BLOG
+              </Nav.Link>
               {/* <NavDropdown
                 title="SERVICES"
                 id="navbarScrollingDropdown"

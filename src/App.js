@@ -207,7 +207,7 @@ function App() {
             path="AllActivitiesDashboard"
             element={<AllActivitiesDashboard />}
           />
-          {/* <Route path="ActivitiesDetails" element={<ActivitiesDetails />} /> */}
+          <Route path="ActivitiesDetails" element={<ActivitiesDetails />} />
           <Route path="AllChamps" element={<AllChamps />} />
           <Route path="AllInstructors" element={<AllInstructors />} />
           <Route path="SchoolProfile" element={<SchoolProfile />} />
@@ -225,7 +225,9 @@ function App() {
           <Route path="signup" element={<CreateAccountForm />} />
         </Routes>
       </BrowserRouter>
-      <footer>{/* <Footer /> */}</footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

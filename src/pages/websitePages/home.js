@@ -157,7 +157,7 @@ const OurActivities = () => {
           <Col className="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center align-items-center">
             <div className="w-100 px-5">
               <Card.Body className="text-center">
-                <h3 className="mt-3">OUR ACTIVITIES</h3>
+                <h3 className="mt-3">OUR OFFERINGS</h3>
                 {/* <p className="text-decoration-underline fontSize">
                   School Facilitation
                 </p>
@@ -172,18 +172,30 @@ const OurActivities = () => {
                 </Card.Text> */}
                 <Link to="/" style={{ color: "#75117A" }}>
                   <p className="text-decoration-underline fontStyle m-2">
-                    School Facilitation
+                    Instructor Matching
                   </p>
                 </Link>
-                <Link to="/otherActivities" style={{ color: "#75117A" }}>
+                <Link to="/" style={{ color: "#75117A" }}>
                   <p className="text-decoration-underline fontStyle m-2">
-                    Haven Summer
+                    Holiday Sessions
                   </p>
                 </Link>
-                <Link to="/otherActivities" style={{ color: "#75117A" }}>
+                <Link to="/" style={{ color: "#75117A" }}>
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
-                    Haven Weekend Club
+                    After School Clubs
+                  </p>
+                </Link>
+                <Link to="/" style={{ color: "#75117A" }}>
+                  {" "}
+                  <p className="text-decoration-underline fontStyle m-2">
+                    Weekend Clubs
+                  </p>
+                </Link>
+                <Link to="/" style={{ color: "#75117A" }}>
+                  {" "}
+                  <p className="text-decoration-underline fontStyle m-2">
+                    Virtual Tech Sessions
                   </p>
                 </Link>
 

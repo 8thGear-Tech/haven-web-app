@@ -897,6 +897,14 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+.sideNavSmallText {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
+}
+
 .offcanvasBg {
   background-color: linear-gradient(180deg, #64348d 0%, rgb(209, 93, 219) 54.69%, rgba(139, 41, 164, 0.94) 100%);
 }

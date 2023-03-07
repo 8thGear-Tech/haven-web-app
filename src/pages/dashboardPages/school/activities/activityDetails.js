@@ -43,7 +43,7 @@ const ActivitiesDetails = () => {
 
 const MaterialsNavbar = () => {
   return (
-    <div className="container my-5">
+    <div className="container mt-5">
       <div className="row d-flex justify-content-center InstructorMaterialNav">
         <div className="d-flex justify-content-between px-5 pt-2">
           {" "}

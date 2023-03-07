@@ -50,14 +50,14 @@ const ProfileReadMoreCard = () => {
 export const ProfileCard = () => {
   return (
     <>
-      <Card className="" style={{ width: "20rem" }}>
+      <Card className="mx-auto" style={{ width: "20rem" }}>
         <Card.Body className="">
           <div className="text-center">
             {" "}
-            {/* <img
+            <img
               src={champpic}
               className="rounded-circle ms-3 border border-light border-5 img-fluid"
-            /> */}
+            />
           </div>
           <h4 className="text-center">Alexander </h4>
           {/* <Card.Text className="text-center">M.COM., P.H.D.</Card.Text> */}
@@ -71,7 +71,10 @@ export const ProfileCard = () => {
           <hr />
         </Card.Body>
         <div className="mb-4 text-center">
-          <Link to=""> {/* <ProfileReadMoreBtn /> */}</Link>
+          <Link to="">
+            {" "}
+            <ProfileReadMoreBtn />
+          </Link>
         </div>
       </Card>
     </>
@@ -111,7 +114,7 @@ export const InstructorProfileReadMoreCard = () => {
 export const InstructorProfileCard = () => {
   return (
     <>
-      <Card className="" style={{ width: "20rem" }}>
+      <Card className="mx-auto" style={{ width: "20rem" }}>
         <Card.Body className="">
           <div className="text-center">
             {" "}
