@@ -40,7 +40,7 @@ export const WhatWeDoCard = (props) => {
       <Card.Body>
         <Link to={link} className="text-decoration-none titleTextColor">
           {" "}
-          <Card.Title className=""> {title}</Card.Title>
+          <Card.Title className="">{title}</Card.Title>
         </Link>
 
         <Card.Text>{text}</Card.Text>

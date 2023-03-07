@@ -40,7 +40,7 @@ export const Footer = () => {
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
                     <a href="/signup" class="nav-link p-0 footerParagraph">
-                      Become a facilitator
+                      Become an instructor
                     </a>
                   </li>
                   {/* <li class="nav-item mb-2">
@@ -66,6 +66,24 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className="col-lg-2">
+                <h4>Learn with us</h4>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/" class="nav-link p-0 footerParagraph">
+                      School services
+                    </a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="/AllActivities"
+                      class="nav-link p-0 footerParagraph"
+                    >
+                      Find Activities
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-2">
                 <h4>Get to know us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
@@ -84,24 +102,6 @@ export const Footer = () => {
                   <li class="nav-item mb-2">
                     <a href="/gallery" class="nav-link p-0 footerParagraph">
                       Gallery
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-2">
-                <h4>Learn with us</h4>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2">
-                    <a href="/" class="nav-link p-0 footerParagraph">
-                      School services
-                    </a>
-                  </li>
-                  <li class="nav-item mb-2">
-                    <a
-                      href="/AllActivities"
-                      class="nav-link p-0 footerParagraph"
-                    >
-                      Find Activities
                     </a>
                   </li>
                 </ul>
@@ -260,7 +260,7 @@ export const Footer = () => {
                     <FacebookOutlinedIcon />
                   </a>
                 </li>
-                <li class="ms-3">
+                {/* <li class="ms-3">
                   <a
                     class="link-dark"
                     href="https://instagram.com/haveneduservices?igshid=1fyt565z18d4u"
@@ -283,7 +283,7 @@ export const Footer = () => {
                   <a class="link-dark" href="#" target="_blank">
                     <FacebookOutlinedIcon />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

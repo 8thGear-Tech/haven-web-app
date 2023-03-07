@@ -10,7 +10,7 @@ import Card from "react-bootstrap/Card";
 export const MaterialsandActivitiesCard = (props) => {
   const { image, title, text, link } = props;
   return (
-    <div style={{ width: "14rem" }} className="mx-auto my-3">
+    <Card style={{ width: "14rem" }} className="mx-auto my-3">
       <img variant="top" src={image} />
       <Card.Body className="text-center">
         <h3 class="card-title">{title}</h3>
@@ -19,12 +19,25 @@ export const MaterialsandActivitiesCard = (props) => {
           {" "}
           <ReadMoreBtn />
         </Link>
-
         {/* <Card.Link href="#">Go to Resource</Card.Link> */}
       </Card.Body>
-    </div>
+    </Card>
   );
 };
+
+//  <div style={{ width: "14rem" }} className="mx-auto my-3">
+//    <img variant="top" src={image} />
+//    <Card.Body className="text-center">
+//      <h3 class="card-title">{title}</h3>
+//      <p class="card-text">{text} </p>
+//      <Link to={link}>
+//        {" "}
+//        <ReadMoreBtn />
+//      </Link>
+
+//      {/* <Card.Link href="#">Go to Resource</Card.Link> */}
+//    </Card.Body>
+//  </div>;
 
 export const MaterialsandActivities = () => {
   return (
@@ -72,7 +85,7 @@ export const ActivitiesPerfomanceCard = (props) => {
 export const ActivitiesPerformance = () => {
   return (
     <div className="container-fluid mt-5">
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
         {performanceData.performanceData.map((card) => {
           return (
             <div className="col-sm-12 col-md-6 col-lg-6" key={card.id}>
@@ -118,7 +131,7 @@ export const ActivitiesPerformance = () => {
 export const SubmissionsCard = (props) => {
   const { image, name, activities, status, grade, date, time } = props;
   return (
-    <Card style={{ width: "20rem" }} className="mx-auto">
+    <Card style={{ width: "20rem" }} className="mx-auto mb-5">
       <Card.Img variant="top" src={image} />
       <Card.Body className="">
         <p class="card-title">Name: {name}</p>

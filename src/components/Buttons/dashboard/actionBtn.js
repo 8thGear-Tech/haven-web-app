@@ -53,10 +53,10 @@ export const SaveBtn = () => {
 export const ReadMoreBtn = () => {
   return (
     <>
-      <a href="" target="_blank">
-        {" "}
-        <button className="ReadMoreBtn ">Read More</button>
-      </a>
+      {/* <a href="" target="_blank">
+        {" "} */}
+      <button className="ReadMoreBtn ">Read More</button>
+      {/* </a> */}
     </>
   );
 };

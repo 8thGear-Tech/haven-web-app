@@ -21,6 +21,14 @@ import BasicPackage from "./pages/websitePages/paymentPackages/basicPackage";
 import BasicForm from "./components/forms/website/schools/packageForm";
 
 //school authentication pages
+import ResourcePage from "./pages/dashboardPages/champ/CampAllReaourcePage";
+import ChampDashboard from "./pages/dashboardPages/champ/champDashboardPage";
+import ChampMaterialPage from "./pages/dashboardPages/champ/champMaterialBoard";
+import AssignmentText from "./pages/dashboardPages/champ/champAssignmentBoard";
+import VirtualClass from "./pages/dashboardPages/champ/champVirtualClass";
+import Champcalendar from "./pages/dashboardPages/champ/champCalenderPage";
+import ProfileIdCard from "./pages/dashboardPages/champ/champStudentPage";
+//authentication pages
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 import ChampsNeeds from "./pages/websitePages/authenticationPages/school/champsNeeds";
 import SchoolLocation from "./pages/websitePages/authenticationPages/school/schoolLocation";
@@ -58,7 +66,8 @@ import ViewMaterials from "./pages/dashboardPages/instructor/allAssignments/view
 import UploadMaterial from "./pages/dashboardPages/instructor/allAssignments/uploadMaterials";
 import CreateAssignment from "./pages/dashboardPages/instructor/allAssignments/createAssignment";
 import AssignmentCreated from "./pages/dashboardPages/instructor/allAssignments/assignmentsCreated";
-import VirtualClass from "./pages/dashboardPages/instructor/instructorVirtualClass";
+import InstructorActivitiesDetails from "./pages/dashboardPages/instructor/allAssignments/activityDetails";
+import InstructorVirtualClass from "./pages/dashboardPages/instructor/instructorVirtualClass";
 import InstructorProfile from "./pages/dashboardPages/instructor/instructorProfile";
 import InstructorUpdateProfile from "./pages/dashboardPages/instructor/instructorUpdateProfile";
 import InstructorGrading from "./pages/dashboardPages/instructor/allAssignments/grading";
@@ -86,6 +95,7 @@ import RegisterNowForm from "./components/forms/website/registerNowForm";
 
 import { Footer } from "./components/footer";
 import { FooterItemToTop } from "./components/footer";
+import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
 
 function App() {
   return (
@@ -116,6 +126,15 @@ function App() {
           <Route path="SchoolLocation" element={<SchoolLocation />} />
           <Route path="SchoolInformation" element={<SchoolInformation />} />
           <Route path="ActivitySchedule" element={<ActivitySchedule />} />
+          <Route path="ResourcePage" element={<ResourcePage />} />
+          {/* champjourney */}
+          <Route path="ChampDashboard" element={<ChampDashboard />} />
+          <Route path="ChampMaterialPg" element={<ChampMaterialPage />} />
+          <Route path="AssignmentText" element={<AssignmentText />} />
+          <Route path="VirtualClass" element={<VirtualClass />} />
+          <Route path="Champcalendar" element={<Champcalendar />} />
+          <Route path="ProfileIdCard" element={<ProfileIdCard />} />
+          <Route path="ProfileEditCard" element={<ProfileEditCard />} />
 
           {/*school activities pages */}
           <Route path="Technology" element={<Technology />} />
@@ -137,6 +156,10 @@ function App() {
           <Route path="InstructorLocation" element={<InstructorLocation />} />
           <Route path="AddYourActivity" element={<AddYourActivity />} />
           <Route path="AddActivity" element={<AddActivity />} />
+          <Route
+            path="InstructorActivitiesDetails"
+            element={<InstructorActivitiesDetails />}
+          />
           <Route path="SelectTest" element={<SelectTest />} />
           <Route path="ScreeningQuestions" element={<ScreeningQuestions />} />
           <Route path="ProfileUpload" element={<ProfileUpload />} />
@@ -155,7 +178,10 @@ function App() {
           <Route path="UploadMaterial" element={<UploadMaterial />} />
           <Route path="CreateAssignment" element={<CreateAssignment />} />
           <Route path="AssignmentCreated" element={<AssignmentCreated />} />
-          <Route path="VirtualClass" element={<VirtualClass />} />
+          <Route
+            path="InstructorVirtualClass"
+            element={<InstructorVirtualClass />}
+          />
           <Route path="InstructorProfile" element={<InstructorProfile />} />
           <Route
             path="InstructorUpdateProfile"

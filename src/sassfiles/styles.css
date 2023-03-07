@@ -896,4 +896,74 @@ p {
   line-height: 1.75rem;
   font-family: "Raleway", sans-serif;
 }
+
+.sideNavSmallText {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.offcanvasBg {
+  background-color: linear-gradient(180deg, #64348d 0%, rgb(209, 93, 219) 54.69%, rgba(139, 41, 164, 0.94) 100%);
+}
+
+.SideNavItem {
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.sideNavButton {
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+  height: 2.5rem;
+}
+.sideNavButton:hover {
+  color: #64348d;
+  background-color: white;
+}
+.sideNavButton:focus {
+  background-color: white;
+  color: #64348d;
+}
+
+.submitFile {
+  margin-left: 200px;
+}
+
+.virtualContentbg {
+  box-sizing: border-box;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  position: absolute;
+  width: 1241px;
+  height: 500px;
+  background: #ffffff;
+  box-shadow: 0px 9px 50px 3px rgba(0, 0, 0, 0.2);
+  padding: auto;
+}
+
+@media only screen and (max-width: 760px) {
+  .virtualContentbg {
+    width: 300px;
+    height: 1000px;
+  }
+}
+.calendarClass {
+  box-sizing: border-box;
+  margin-left: 15rem;
+  position: absolute;
+  margin-top: 3rem;
+  width: 500px;
+  height: 270px;
+  box-shadow: 0px 9px 50px 3px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  padding: 15px;
+}
 /*# sourceMappingURL=styles.css.map */

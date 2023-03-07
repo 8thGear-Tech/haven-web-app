@@ -1,0 +1,32 @@
+@use "../../colors" as *;
+
+.offcanvasBg {
+  background-color: linear-gradient(
+    180deg,
+    #64348d 0%,
+    rgb(209, 93, 219) 54.69%,
+    rgba(139, 41, 164, 0.94) 100%
+  );
+}
+.SideNavItem {
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+}
+.sideNavButton {
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+  height: 2.5rem;
+  &:hover {
+    color: #64348d;
+    background-color: white;
+  }
+  &:focus {
+    background-color: #ffff;
+    color: #64348d;
+  }
+}

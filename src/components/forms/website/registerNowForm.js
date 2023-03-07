@@ -122,18 +122,6 @@ const RegisterNow = () => {
                     type={type}
                     id={`inline-${type}-3`}
                   />
-                  <Form.Check
-                    inline
-                    label="Music (N15,000 monthly)"
-                    type={type}
-                    id={`inline-${type}-3`}
-                  />
-                  <Form.Check
-                    inline
-                    label="Arts and Crafts (N15,000 monthly)"
-                    type={type}
-                    id={`inline-${type}-3`}
-                  />
                 </div>
               ))}
               <h6>Virtual coding classes</h6>
@@ -173,7 +161,7 @@ const RegisterNow = () => {
                 </div>
               ))}
             </Row>
-            <Form.Group as={Col} controlId="formGridEmail" className="mb-3">
+            {/* <Form.Group as={Col} controlId="formGridEmail" className="mb-3">
               <Form.Label>
                 <h5>Parents/Guardian’s Name</h5>
               </Form.Label>
@@ -184,7 +172,7 @@ const RegisterNow = () => {
                 <h5>Parents/ Guardian’s Phone Number</h5>
               </Form.Label>
               <Form.Control type="text" className="authPlaceHolderBorder" />
-            </Form.Group>
+            </Form.Group> */}
             <Form.Group controlId="formGridTextOne">
               <Form.Label className="">
                 <h5>How did you hear about us?</h5>

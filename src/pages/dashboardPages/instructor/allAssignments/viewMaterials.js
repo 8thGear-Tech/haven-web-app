@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { MaterialsandActivities } from "../../../../components/allCards/Dashboard/activitiesCards";
-import activitiesData from "../../../../data/allCards/activitiesCard.json";
+import instructorActivitiesData from "../../../../data/allCards/activitiesCard.json";
 import { MaterialsandActivitiesCard } from "../../../../components/allCards/Dashboard/activitiesCards";
 
 import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
@@ -61,10 +61,10 @@ const MaterialsNavbar = () => {
 const Materials = () => {
   return (
     <div className="container-fluid">
-      <div className="row d-flex justify-content-center InstructorMaterialBg py-5">
+      <div className="row d-flex justify-content-center InstructorMaterialBg pb-5 pt-3">
         <h4 className="ps-5">Welcome Michael</h4>
-        <h3 className="text-center my-3">Materials</h3>
-        {activitiesData.activitiesData.map((card) => {
+        <h3 className="text-center mb-1 mt-3">Materials</h3>
+        {instructorActivitiesData.instructorActivitiesData.map((card) => {
           return (
             <div className="col-sm-12 col-md-4 col-lg-4" key={card.id}>
               <MaterialsandActivitiesCard

@@ -29,6 +29,7 @@ import Modal from "react-bootstrap/Modal";
 import { InstructorReportIssueForm } from "../forms/dashboard/instructors/instructorReportIssueForm";
 import { InstructorChampRatingForm } from "../forms/dashboard/instructors/instructorChampRatingForm";
 import { InstructorRateAppForm } from "../forms/dashboard/instructors/instructorsRateAppForm";
+import { RateInstructorForm } from "../forms/dashboard/schools/feedbackRatingForm";
 
 // import { useState } from "react";
 import OffCanvas from "react-bootstrap/Offcanvas";
@@ -267,15 +268,22 @@ export const ReportIssueBtn = () => {
     <>
       <Link
         to=""
-        type="button"
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop1"
-        className="text-decoration-none"
+        // type="button"
+        // data-bs-toggle="modal"
+        // data-bs-target="#staticBackdrop1"
+        // variant=""
+        onClick={handleShow}
+        className="text-decoration-none text-white text-decoration-none dashboardSideNavText"
       >
-        {" "}
-        <button variant="" onClick={handleShow} className="LoginBtn">
-          Report Issues
-        </button>
+        {/* {" "}
+        <a
+          href=""
+          variant=""
+          onClick={handleShow}
+          className="text-black text-decoration-none dashboardSideNavText"
+        > */}
+        Report Issues
+        {/* </a> */}
       </Link>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -295,20 +303,39 @@ export const RateChampBtn = () => {
     <>
       <Link
         to=""
-        type="button"
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop1"
+        onClick={handleShow}
+        className="text-decoration-none text-black text-decoration-none sideNavSmallText"
       >
-        {" "}
-        <button variant="" onClick={handleShow} className="LoginBtn">
-          Rate Champ
-        </button>
+        Rate Champ
       </Link>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title></Modal.Title>
         </Modal.Header>
         <InstructorChampRatingForm />
+      </Modal>
+    </>
+  );
+};
+export const RateInstructorBtn = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
+  return (
+    <>
+      <Link
+        to=""
+        onClick={handleShow}
+        className="text-decoration-none text-black text-decoration-none sideNavSmallText"
+      >
+        Rate Instructor
+      </Link>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <RateInstructorForm />
       </Modal>
     </>
   );
@@ -322,14 +349,10 @@ export const RateAppBtn = () => {
     <>
       <Link
         to=""
-        type="button"
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop1"
+        onClick={handleShow}
+        className="text-decoration-none text-black text-decoration-none sideNavSmallText"
       >
-        {" "}
-        <button variant="" onClick={handleShow} className="LoginBtn">
-          Rate App
-        </button>
+        Rate App
       </Link>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -552,25 +575,20 @@ const InstructorBigShowExample = ({ name, ...props }) => {
             </div>
           </Link>
         </li> */}
-            <Link
+            {/* <Link
               to="/adminDashboardCounselleesPage"
               className="text-decoration-none"
-            >
-              <li className="d-flex mb-4 align-items-center SideNavItem">
-                <div className="me-3">
-                  {/* <AccountCircleOutlinedIcon /> */}
-                </div>
-                <Link
-                  to="/InstructorDashboard"
-                  className="text-decoration-none"
-                >
-                  {" "}
-                  <span className="text-white dashboardSideNavText">
-                    Dashboard
-                  </span>
-                </Link>
-              </li>
-            </Link>
+            > */}
+            <li className="d-flex mb-4 align-items-center SideNavItem">
+              <div className="me-3">{/* <AccountCircleOutlinedIcon /> */}</div>
+              <Link to="/InstructorDashboard" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Dashboard
+                </span>
+              </Link>
+            </li>
+            {/* </Link> */}
             <li className="d-flex mb-4 align-items-center SideNavItem">
               <div className="me-3">{/* <ManOutlinedIcon /> */}</div>
               <Link to="/ViewMaterials" className="text-decoration-none">
@@ -591,7 +609,10 @@ const InstructorBigShowExample = ({ name, ...props }) => {
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
               <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
-              <Link to="/Virtual Class" className="text-decoration-none">
+              <Link
+                to="/InstructorVirtualClass"
+                className="text-decoration-none"
+              >
                 {" "}
                 <span className="text-white dashboardSideNavText">
                   Virtual Class
@@ -618,10 +639,11 @@ const InstructorBigShowExample = ({ name, ...props }) => {
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
               <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
-              {/* <Link to="/" className="text-decoration-none"> */}{" "}
-              <span className="text-white dashboardSideNavText">
+              {/* <Link to="/" className="text-decoration-none"> */}
+              <ReportIssueBtn />
+              {/* <span className="text-white dashboardSideNavText">
                 Report Issues
-              </span>
+              </span> */}
               {/* </Link> */}
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
@@ -633,12 +655,39 @@ const InstructorBigShowExample = ({ name, ...props }) => {
                 </span>
               </Link>
             </li>
-            <li className="d-flex align-items-center SideNavItem mb-4">
-              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
-              <Link to="/" className="text-decoration-none">
-                {" "}
-                <span className="text-white dashboardSideNavText">Ratings</span>
-              </Link>
+            <li
+              class="nav-item dropdown mb-4 ms-3"
+              style={{ listStyle: "none" }}
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span className="text-white dashboardSideNavText">
+                  {" "}
+                  Ratings
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item sideNavSmallText" href="#">
+                    {/* Rate Champs */}
+                    <RateChampBtn />
+                  </a>
+                </li>{" "}
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item sideNavSmallText" href="#">
+                    <RateAppBtn />
+                    {/* Rate App */}
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
               <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
@@ -691,7 +740,7 @@ const InstructorSmallShowExample = ({ name, ...props }) => {
         >
           <path
             d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-            fill="#006747"
+            fill="#75117A"
           />
         </svg>
       </Button>
@@ -710,44 +759,142 @@ const InstructorSmallShowExample = ({ name, ...props }) => {
         <Offcanvas.Header closeButton>
           <Offcanvas.Title></Offcanvas.Title>
         </Offcanvas.Header>
-        {/* <Offcanvas.Body>
-          <div className="d-flex justify-content-between flex-column">
-            <ul className="ps-2">
-              <li className="d-flex mb-4 align-items-center SideNavItem">
-                <div className="me-3">
-                  <HomeOutlinedIcon />
-                </div>
-                <span>My Dashboard</span>
-              </li>
-              <li className="d-flex mb-4 align-items-center SideNavItem">
-                <div className="me-3">
-                  <AccountCircleOutlinedIcon />
-                </div>
-                <span>Users</span>
-              </li>
-              <li className="d-flex mb-4 align-items-center SideNavItem">
-                <div className="me-3">
-                  <ManOutlinedIcon />
-                </div>
-                <span>Counselor</span>
-              </li>
-              <li className="d-flex align-items-center SideNavItem mb-4">
-                <div className="me-3">
-                  <NotificationsActiveIcon />
-                </div>
-                <span className="my-1">Notification</span>
-              </li>
-              <li className="d-flex align-items-center SideNavItem mb-4">
-                <div className="me-3">
-                  <LogoutOutlinedIcon />
-                </div>
-                <span>Logout</span>
-              </li>
-            </ul>
-          </div>
-        </Offcanvas.Body> */}
         <Offcanvas.Body className="">
-          {instructor.instructor.map((navbar) => {
+          <ul className="ps-2">
+            {/* <li className="d-flex mb-2 align-items-center SideNavItem">
+          <div className="me-3">{icon}</div>
+          <Link to={pageroute} className="nav-link">
+            <div className="sideNavButton text-white dashboardSideNavText">
+              <span>{dashboard}</span>
+            </div>
+          </Link>
+        </li> */}
+            {/* <Link
+              to="/adminDashboardCounselleesPage"
+              className="text-decoration-none"
+            > */}
+            <li className="d-flex mb-4 align-items-center SideNavItem">
+              <div className="me-3">{/* <AccountCircleOutlinedIcon /> */}</div>
+              <Link to="/InstructorDashboard" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Dashboard
+                </span>
+              </Link>
+            </li>
+            {/* </Link> */}
+            <li className="d-flex mb-4 align-items-center SideNavItem">
+              <div className="me-3">{/* <ManOutlinedIcon /> */}</div>
+              <Link to="/ViewMaterials" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Materials
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <NotificationsActiveIcon /> */}</div>
+              <Link to="/CreateAssignment" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Assigment
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link
+                to="/InstructorVirtualClass"
+                className="text-decoration-none"
+              >
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Virtual Class
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link to="/" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Calendar
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link to="/InstructorProfile" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  My Profile
+                </span>
+              </Link>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <ReportIssueBtn />
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link to="/ViewSubmissions" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">
+                  Submission
+                </span>
+              </Link>
+            </li>
+            <li
+              class="nav-item dropdown mb-4 ms-3"
+              style={{ listStyle: "none" }}
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span className="text-white dashboardSideNavText">
+                  {" "}
+                  Ratings
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item sideNavSmallText" href="#">
+                    {/* Rate Champs */}
+                    <RateChampBtn />
+                  </a>
+                </li>{" "}
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item sideNavSmallText" href="#">
+                    <RateAppBtn />
+                    {/* Rate App */}
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="d-flex align-items-center SideNavItem mb-4">
+              <div className="me-3">{/* <LogoutOutlinedIcon /> */}</div>
+              <Link to="/" className="text-decoration-none">
+                {" "}
+                <span className="text-white dashboardSideNavText">Logout</span>
+              </Link>
+            </li>
+            {/* <li className="d-flex align-items-center SideNavItem mt-lg-5 pt-lg-2 bottom position-fixed">
+          <div className="pt-5 mt-5">
+            <img
+              src={sidebarfooterImage}
+              style={{ maxHeight: "65%", maxWidth: "65%" }}
+            />
+          </div>
+        </li> */}
+          </ul>
+          {/* {instructor.instructor.map((navbar) => {
             return (
               <div className="d-flex justify-content-between flex-column">
                 <ul className="ps-2" key={navbar.id}>
@@ -755,7 +902,7 @@ const InstructorSmallShowExample = ({ name, ...props }) => {
                 </ul>
               </div>
             );
-          })}
+          })} */}
         </Offcanvas.Body>
       </Offcanvas>
     </>
@@ -925,18 +1072,39 @@ const SchoolBigShowExample = ({ name, ...props }) => {
                 </span>
               </Link>
             </li>
-            <li className="d-flex align-items-center SideNavItem mb-4">
-              <Link to="/Ratings" className="text-decoration-none">
-                {" "}
-                <span className="text-white dashboardSideNavText">Ratings</span>
-              </Link>
+            <li class="nav-item dropdown mb-4" style={{ listStyle: "none" }}>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span className="text-white dashboardSideNavText">
+                  {" "}
+                  Ratings
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item sideNavSmallText" href="#">
+                    {/* Rate Champs */}
+                    <RateInstructorBtn />
+                  </a>
+                </li>{" "}
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item sideNavSmallText" href="#">
+                    <RateAppBtn />
+                    {/* Rate App */}
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
-              {/* <Link to="/" className="text-decoration-none"> */}{" "}
-              <span className="text-white dashboardSideNavText">
-                Report Issues
-              </span>
-              {/* </Link> */}
+              <ReportIssueBtn />
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
               <Link to="/" className="text-decoration-none">
@@ -971,7 +1139,7 @@ const SchoolSmallShowExample = ({ name, ...props }) => {
         >
           <path
             d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-            fill="#006747"
+            fill="#75117A"
           />
         </svg>
       </Button>
@@ -1049,18 +1217,39 @@ const SchoolSmallShowExample = ({ name, ...props }) => {
                 </span>
               </Link>
             </li>
-            <li className="d-flex align-items-center SideNavItem mb-4">
-              <Link to="/Ratings" className="text-decoration-none">
-                {" "}
-                <span className="text-white dashboardSideNavText">Ratings</span>
-              </Link>
+            <li class="nav-item dropdown mb-4" style={{ listStyle: "none" }}>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span className="text-white dashboardSideNavText">
+                  {" "}
+                  Ratings
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item sideNavSmallText" href="#">
+                    {/* Rate Champs */}
+                    <RateInstructorBtn />
+                  </a>
+                </li>{" "}
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item sideNavSmallText" href="#">
+                    <RateAppBtn />
+                    {/* Rate App */}
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
-              {/* <Link to="/" className="text-decoration-none"> */}{" "}
-              <span className="text-white dashboardSideNavText">
-                Report Issues
-              </span>
-              {/* </Link> */}
+              <ReportIssueBtn />
             </li>
             <li className="d-flex align-items-center SideNavItem mb-4">
               <Link to="/" className="text-decoration-none">
