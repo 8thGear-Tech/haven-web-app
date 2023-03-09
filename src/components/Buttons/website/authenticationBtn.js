@@ -63,6 +63,17 @@ export const LoginBtnTwo = () => {
     </>
   );
 };
+
+export const SchoolCreateAccountBtn = () => {
+  return (
+    <>
+      <Link to="/ChampsNeeds">
+        {" "}
+        <button className="CreateAccountBtn">Create Account</button>
+      </Link>
+    </>
+  );
+};
 export const SignUpBtn = () => {
   return (
     <>
