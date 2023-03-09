@@ -31,6 +31,7 @@ import ProfileIdCard from "./pages/dashboardPages/champ/champStudentPage";
 //authentication pages
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 import { SchoolCreateAccountForm } from "./components/forms/authenticationForms";
+import { ParentCreateAccountForm } from "./components/forms/authenticationForms";
 import ChampsNeeds from "./pages/websitePages/authenticationPages/school/champsNeeds";
 import SchoolLocation from "./pages/websitePages/authenticationPages/school/schoolLocation";
 import SchoolInformation from "./pages/websitePages/authenticationPages/school/schoolInformation";
@@ -225,6 +226,7 @@ function App() {
           {/* authentication forms */}
           <Route path="signup" element={<CreateAccountForm />} />
           <Route path="school-signup" element={<SchoolCreateAccountForm />} />
+          <Route path="parent-signup" element={<ParentCreateAccountForm />} />
         </Routes>
       </BrowserRouter>
       <footer>

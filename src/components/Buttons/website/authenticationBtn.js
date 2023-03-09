@@ -74,6 +74,16 @@ export const SchoolCreateAccountBtn = () => {
     </>
   );
 };
+export const ParentCreateAccountBtn = () => {
+  return (
+    <>
+      <Link to="/AllActivities">
+        {" "}
+        <button className="CreateAccountBtn">Create Account</button>
+      </Link>
+    </>
+  );
+};
 export const SignUpBtn = () => {
   return (
     <>
