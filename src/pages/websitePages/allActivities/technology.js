@@ -10,6 +10,8 @@ import {
   RegisterNowBtn,
 } from "../../../components/Buttons/website/actionBtn/schoolBtn";
 import { GetAnInstructorBtn } from "../../../components/Buttons/website/actionBtn/homeandAboutBtn";
+// import { SignUpBtn } from "../../../components/Buttons/website/authenticationBtn";
+import { SchoolParentSignUpBtn } from "../../../components/Buttons/website/authenticationBtn";
 
 const Technology = () => {
   return (
@@ -39,8 +41,8 @@ const Tech = () => {
           {/* <Link to="/">
             <BackBtn />
           </Link> */}
-          <Link to="/signup">
-            <GetAnInstructorBtn />
+          <Link to="">
+            <SchoolParentSignUpBtn />
           </Link>
         </div>
       </div>

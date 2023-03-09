@@ -455,3 +455,39 @@ export const JoinUsModal = () => {
     </>
   );
 };
+export const SchoolParentSignUpModal = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  return (
+    <>
+      <div className="joinUsModalBg py-5">
+        <h6 className="text-center pt-3">
+          Continue as a school
+          <Link to="/ChampsNeeds" className="px-1 mutedTextFontColor">
+            Click here
+          </Link>
+        </h6>
+        {/* <h6 className="text-center pt-3">
+          Continue as an instructor
+          <Link to="/InstructorProfileInfo" className="px-1 mutedTextFontColor">
+            Click here
+          </Link>
+        </h6> */}
+        <h6 className="text-center pt-3">
+          Continue as a parent
+          <Link to="/AllActivities" className="px-1 mutedTextFontColor">
+            Click here
+          </Link>
+        </h6>
+        <div className="text-center mt-4">
+          {" "}
+          <Button variant="secondary" onClick={handleClose} className="BackBtn">
+            <KeyboardBackspaceOutlinedIcon />
+            Back
+          </Button>
+        </div>
+      </div>
+    </>
+  );
+};

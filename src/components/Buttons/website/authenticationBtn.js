@@ -12,6 +12,7 @@ import havenlogo from "../../../assets/icons/havenlogo.png";
 //internal import
 import { LoginForm } from "../../forms/authenticationForms";
 import { JoinUsModal } from "../../forms/authenticationForms";
+import { SchoolParentSignUpModal } from "../../forms/authenticationForms";
 
 export const LoginBtn = () => {
   const [show, setShow] = useState(false);
@@ -131,6 +132,41 @@ export const CreateAccountBtn = () => {
           </Modal.Title>
         </Modal.Header> */}
         <JoinUsModal />
+        {/* <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body> */}
+        {/* <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer> */}
+      </Modal>
+    </>
+  );
+};
+export const SchoolParentSignUpBtn = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
+  return (
+    <>
+      <Link
+        href=""
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop1"
+      >
+        {" "}
+        <Button variant="" onClick={handleShow} className="CreateAccountBtn">
+          SIGN UP
+        </Button>
+      </Link>
+      <Modal show={show} onHide={handleClose}>
+        {/* <Modal.Header closeButton>
+          <Modal.Title>
+            <img src={havenlogo} width={70} className="img-fluid" />
+          </Modal.Title>
+        </Modal.Header> */}
+        <SchoolParentSignUpModal />
         {/* <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body> */}
         {/* <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
