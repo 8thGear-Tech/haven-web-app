@@ -112,8 +112,10 @@ const ActivityScheduleForm = () => {
           </Form.Group>
         </Row>
         <div className="d-flex justify-content-between">
-          {" "}
-          <BackBtn />
+          <Link to="/SchoolInformation">
+            <BackBtn />
+          </Link>
+
           <Link to="/PaymentPackages">
             {" "}
             <NextBtn />

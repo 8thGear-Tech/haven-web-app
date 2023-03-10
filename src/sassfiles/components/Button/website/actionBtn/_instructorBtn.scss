@@ -13,7 +13,26 @@
   font-weight: 600;
   border: none;
 }
-
+@mixin BtnStyleTwo {
+  background-color: $prybgcolor;
+  color: $buttoncolor;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: 1px solid #75117a;
+}
+.TakeATestBtn {
+  @include BtnStyleTwo;
+  width: 8rem;
+  &:hover {
+    background-color: $buttoncolor;
+    color: $tertextcolor;
+  }
+}
 .SaveAndContinueBtn {
   @include BtnStyle;
   width: 12rem;
@@ -64,6 +83,19 @@
   background-color: #75117a;
   color: #ffffff;
 }
+.addBtn {
+  width: 6rem;
+  background: #75117a;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
+}
 .UploadBestPhoto {
   width: 15rem;
   background: #75117a;
@@ -80,6 +112,9 @@
 .UploadBestPhoto:hover {
   background-color: #75117a;
   color: #ffffff;
+}
+.ChangePhoto {
+  @include BtnStyle;
 }
 .BackToApplication {
   width: 15rem;
@@ -147,4 +182,8 @@
 .Done:hover {
   background-color: #75117a;
   color: #ffffff;
+}
+.IAgreeBtn {
+  @include BtnStyle;
+  width: 8rem;
 }

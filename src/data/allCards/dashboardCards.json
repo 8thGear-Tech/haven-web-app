@@ -1,4 +1,48 @@
 {
+  "instructorDashboardCard": [
+    {
+      "id": 1,
+      "image": "../assets/images/materials.png",
+      "title": "Materials",
+      "text": "12"
+    },
+
+    {
+      "id": 2,
+      "image": "../assets/images/assignments.png",
+      "title": "Assignments",
+      "icon": "../../../assets/icons/dashboard/add.png"
+    },
+
+    {
+      "id": 3,
+      "image": "../assets/images/virtualclass.png",
+      "title": "Virtual Class",
+      "icon": "../../../assets/icons/dashboard/virtualclass.png"
+    }
+  ],
+  "schoolDashboardCard": [
+    {
+      "id": 1,
+      "image": "../assets/images/materials.png",
+      "title": "All Champs",
+      "text": "12"
+    },
+
+    {
+      "id": 2,
+      "image": "../assets/images/assignments.png",
+      "title": "All Activities",
+      "text": "12"
+    },
+
+    {
+      "id": 3,
+      "image": "../assets/images/virtualclass.png",
+      "title": "All Instructors",
+      "text": "12"
+    }
+  ],
   "resourceData": [
     {
       "id": 1,

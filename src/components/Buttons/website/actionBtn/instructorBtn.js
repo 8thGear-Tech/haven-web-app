@@ -22,6 +22,15 @@ import UploadIcon from "@mui/icons-material/Upload";
 import CameraRollIcon from "@mui/icons-material/CameraRoll";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 
+export const TakeATestBtn = () => {
+  return (
+    <>
+      <a target="_blank" href="">
+        <button className="TakeATestBtn">Take a Test</button>
+      </a>
+    </>
+  );
+};
 export const SaveAndContinueBtn = () => {
   return (
     <>
@@ -68,6 +77,19 @@ export const Add = () => {
     </>
   );
 };
+export const AddBtn = () => {
+  return (
+    <>
+      <a href="" target="_blank">
+        {" "}
+        <Button variant="outline-light" className="addBtn">
+          <AddOutlinedIcon />
+          ADD
+        </Button>
+      </a>
+    </>
+  );
+};
 export const UploadBestPhoto = () => {
   return (
     <>
@@ -76,6 +98,18 @@ export const UploadBestPhoto = () => {
         <Button variant="outline-light" className="UploadBestPhoto">
           <UploadIcon />
           UPLOAD BEST PHOTO
+        </Button>
+      </a>
+    </>
+  );
+};
+export const ChangePhoto = () => {
+  return (
+    <>
+      <a href="" target="_blank">
+        {" "}
+        <Button variant="outline-light" className="ChangePhoto">
+          CHANGE PHOTO
         </Button>
       </a>
     </>
@@ -125,6 +159,16 @@ export const Done = () => {
         <Button variant="outline-light" className="Done">
           DONE
         </Button>
+      </a>
+    </>
+  );
+};
+
+export const IAgreeBtn = () => {
+  return (
+    <>
+      <a target="_blank" href="">
+        <button className="IAgreeBtn">I AGREE</button>
       </a>
     </>
   );

@@ -1,0 +1,39 @@
+{
+  "adminsdetails": [
+    {
+      "id": 1,
+      "pageroute": "/AdminDashboardPg",
+      "text": "Dashboard"
+    },
+    {
+      "id": 2,
+      "pageroute": "/Admincalendar",
+      "text": "Calendar"
+    },
+    {
+      "id": 3,
+      "pageroute": "/allTutorPage",
+      "text": "Tutor"
+    },
+    {
+      "id": 4,
+      "pageroute": "/allChampPage",
+      "text": "Student"
+    },
+    {
+      "id": 5,
+      "pageroute": "/",
+      "text": "Course"
+    },
+    {
+      "id": 6,
+      "pageroute": "/",
+      "text": "Reported Issues"
+    },
+    {
+      "id": 7,
+      "pageroute": "/",
+      "text": "Log out"
+    }
+  ]
+}

@@ -33,6 +33,19 @@
 @use "./pages/websitePages/authenticationPages/instructor/instructorInfo" as *;
 @use "./pages/websitePages/authenticationPages/instructor/aboutInstructor" as *;
 @use "./pages/websitePages/authenticationPages/instructor/addActivity" as *;
+@use "./pages/websitePages/authenticationPages/instructor/yourActivity" as *;
+@use "./pages/websitePages/authenticationPages/instructor/profileUpload" as *;
+@use "./pages/websitePages/authenticationPages/instructor/idUpload" as *;
+@use "./pages/websitePages/authenticationPages/instructor/videoUpload" as *;
+@use "./pages/websitePages/authenticationPages/instructor/congratulatoryMessage"
+  as *;
+
+//instructor dashoard
+@use "./pages/dashboardPages/instructor/allAssignments/viewMaterials" as *;
+@use "./pages/dashboardPages/instructor/instructorProfile" as *;
+
+//parent
+@use "./pages/websitePages/allActivities/allActivities" as *;
 
 //payment package
 @use "./pages/websitePages/paymentPackages/paymentPackages" as *;
@@ -42,3 +55,7 @@
 @use "./pages/dashboardPages/champs/champAssignmentBoard" as *;
 @use "./pages/dashboardPages/champs/virtualClasspage" as *;
 @use "./pages/dashboardPages/champs/champCalenderPage" as *;
+@use "./components/Navbar/dashboardNavbar" as *;
+@use "./pages//errorPage" as *;
+// admin dashboard
+@use "./pages/dashboardPages/admin/allInstructorPage" as *;

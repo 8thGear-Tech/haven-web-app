@@ -3,6 +3,7 @@
 // Save
 
 //external import
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -19,17 +20,17 @@ export const LoginBtn = () => {
 
   return (
     <>
-      <a
-        href=""
+      <Link
+        to=""
         type="button"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop1"
       >
         {" "}
-        <Button variant="" onClick={handleShow} className="LoginBtn">
+        <button variant="" onClick={handleShow} className="LoginBtn">
           LOGIN
-        </Button>
-      </a>
+        </button>
+      </Link>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>
@@ -112,7 +113,7 @@ export const CreateAccountBtn = () => {
 
   return (
     <>
-      <a
+      <Link
         href=""
         type="button"
         data-bs-toggle="modal"
@@ -122,7 +123,7 @@ export const CreateAccountBtn = () => {
         <Button variant="" onClick={handleShow} className="CreateAccountBtn">
           CREATE ACCOUNT
         </Button>
-      </a>
+      </Link>
       <Modal show={show} onHide={handleClose}>
         {/* <Modal.Header closeButton>
           <Modal.Title>

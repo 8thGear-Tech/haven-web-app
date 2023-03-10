@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import havenlogo from "../../assets/icons/havenlogo.png";
 import champ from "../../data/champNavbar.json";
 import HorizontalSplitIcon from "@mui/icons-material/HorizontalSplit";
-import { Button, Dropdown, DropdownButton, Offcanvas } from "react-bootstrap";
+import { Button, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ChampDashboard from "../../pages/dashboardPages/champ/champDashboardPage";
 
@@ -30,8 +30,10 @@ export const ChampNavbar = () => {
         </div>
         <div className="flex-grow-1">
           <Navbar
+            fixed="top"
             style={{
-              backgroundColor: "#BC4C92",
+              background:
+                "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
             }}
             expand="md"
             className="topNavbar"
@@ -303,9 +305,10 @@ const BigShowExample = ({ name, ...props }) => {
         show={show}
         onHide={handleClose}
         {...props}
-        className="mt-5 pt-5 d-none d-lg-block"
+        className="w-25 mt-5 pt-5 d-none d-lg-block"
         style={{
-          backgroundColor: "#BC4C92",
+          background:
+            "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
         }}
       >
         <Offcanvas.Header>
@@ -314,11 +317,11 @@ const BigShowExample = ({ name, ...props }) => {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          { champ.champ.map((navbar) => {
+          {champ.champ.map((navbar) => {
             return (
               <div className="d-flex justify-content-between flex-column ">
-                <ul className="ps-2" key={ navbar.id }>
-                  < Demo {...navbar}/>
+                <ul className="ps-2" key={navbar.id}>
+                  <Demo {...navbar} />
                 </ul>
               </div>
             );

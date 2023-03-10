@@ -7,11 +7,10 @@ import React, { useState } from "react";
 // internal import
 
 import havenlogo from "../../assets/icons/havenlogo.png";
-import champ from "../../data/champNavbar.json";
+import admin from "../../data/dashboard/adminSidebarInfo.json";
 import HorizontalSplitIcon from "@mui/icons-material/HorizontalSplit";
 import { Button, Dropdown, DropdownButton, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import ChampDashboard from "../../pages/dashboardPages/champ/champDashboardPage";
 
 export const AdminTopNavbar = () => {
   return (
@@ -31,9 +30,9 @@ export const AdminTopNavbar = () => {
         <div className="flex-grow-1">
           <Navbar
             style={{
-              backgroundColor: "#BC4C92",
+              background:
+                "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
             }}
-            expand="md"
             className="topNavbar"
           >
             <Nav className="align-items-end">
@@ -57,7 +56,6 @@ export const AdminTopNavbar = () => {
     </>
   );
 };
-
 
 export const AdminSideNavBar = () => {
   return (
@@ -106,14 +104,9 @@ const SmallShowExample = ({ name, ...props }) => {
         responsive="lg"
         className="w-75 mt-5 d-lg-none "
         {...props}
-        style={{
-          backgroundColor: "#BC4C92",
-        }}
       >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>
-           
-          </Offcanvas.Title>
+          <Offcanvas.Title></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className="d-flex justify-content-between flex-column">
@@ -125,22 +118,16 @@ const SmallShowExample = ({ name, ...props }) => {
                 <span>Calendar</span>
               </li>
               <li className="d-flex mb-4 align-items-center SideNavItem">
-                <span>Instructors</span>
+                <span>Tutors</span>
               </li>
               <li className="d-flex mb-4 align-items-center SideNavItem">
-                <span>Champs</span>
+                <span>Student</span>
               </li>
               <li className="d-flex align-items-center SideNavItem mb-4">
-                <span className="my-1">Activities</span>
+                <span className="my-1">Course</span>
               </li>
               <li className="d-flex align-items-center SideNavItem mb-4">
-                <span>Profile</span>
-              </li>
-              <li className="d-flex align-items-center SideNavItem mb-5">
-                <span>Submission</span>
-              </li>
-              <li className="d-flex align-items-center SideNavItem mb-5">
-                <span>Ratings</span>
+                <span>Reported Issues</span>
               </li>
               <li className="d-flex align-items-center SideNavItem mt-5 ">
                 <span>Logout</span>
@@ -202,7 +189,8 @@ const BigShowExample = ({ name, ...props }) => {
         {...props}
         className="mt-5 pt-5 d-none d-lg-block"
         style={{
-          backgroundColor: "#BC4C92",
+          background:
+            "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
         }}
       >
         <Offcanvas.Header>
@@ -211,7 +199,7 @@ const BigShowExample = ({ name, ...props }) => {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          {champ.champ.map((navbar) => {
+          {admin.adminsdetails.map((navbar) => {
             return (
               <div className="d-flex justify-content-between flex-column ">
                 <ul className="ps-2" key={navbar.id}>

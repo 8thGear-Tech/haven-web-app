@@ -4,6 +4,32 @@
       "id": 1,
       "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
       "title": "Tech",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
+      "link": "/ActivitiesDetails"
+    },
+
+    {
+      "id": 2,
+      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
+      "title": "Art",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
+      "link": "/"
+    },
+
+    {
+      "id": 3,
+      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
+      "title": "Languages",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
+      "link": "/"
+    }
+  ],
+
+  "performanceData": [
+    {
+      "id": 1,
+      "image": "../assets/images/materialsandactivitiespictures/perfomance.png",
+      "title": "Tech",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     },
 
@@ -21,27 +47,150 @@
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     }
   ],
-
-  "performanceData": [
+  "allActivitiesPageData": [
     {
       "id": 1,
-      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
-      "title": "Tech",
+      "image": "../assets/images/otheractivities/afterschool.png",
+      "link": "/otherActivities",
+      "title": "After School",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     },
 
     {
       "id": 2,
-      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
-      "title": "Art",
+      "image": "../assets/images/otheractivities/weekendclub.png",
+      "link": "/otherActivities",
+      "title": "Weekend Club",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     },
 
     {
       "id": 3,
-      "image": "../assets/images/materialsandactivitiespictures/materialsandactivitiespicture.png",
-      "title": "Languages",
+      "image": "../assets/images/otheractivities/havensummer.png",
+      "link": "/otherActivities",
+      "title": "Haven Summer",
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    }
+  ],
+  "techData": [
+    {
+      "id": 1,
+      "image": "../assets/images/whatwedo/technology/coding.png",
+      "title": "Coding",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+    {
+      "id": 2,
+      "image": "../assets/images/whatwedo/technology/robotics.png",
+      "title": "Robotics",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    }
+  ],
+  "artsData": [
+    {
+      "id": 1,
+      "image": "../assets/images/whatwedo/arts/taekwondo.png",
+      "title": "Taekwondo",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+
+    {
+      "id": 2,
+      "image": "../assets/images/whatwedo/arts/music.png",
+      "title": "Music",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+
+    {
+      "id": 3,
+      "image": "../assets/images/whatwedo/arts/tyeanddye.png",
+      "title": "Crafts",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    }
+  ],
+  "languagesData": [
+    {
+      "id": 1,
+      "image": "../assets/images/whatwedo/languages/french.png",
+      "title": "German",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+
+    {
+      "id": 2,
+      "image": "../assets/images/whatwedo/languages/french.png",
+      "title": "French",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+    {
+      "id": 3,
+      "image": "../assets/images/whatwedo/languages/french.png",
+      "title": "Mandarin",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    },
+    {
+      "id": 4,
+      "image": "../assets/images/whatwedo/languages/french.png",
+      "title": "Spanish",
+      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+    }
+  ],
+  "whatwedo": [
+    {
+      "id": "1",
+      "image": "../../../assets/images/whatwedo/tech.png",
+      "title": "Technology",
+      "text": " Our Coding and Robotics often presents champs with problems, and helps them learn how to make decisions and solve those problems.",
+      "link": "/Technology"
+    },
+    {
+      "id": "2",
+      "image": "../../../assets/images/whatwedo/arts.png",
+      "title": "Arts",
+      "text": "Our Art activities includes Creative and Martial Arts which enhances you champs to build Confidence and a creative mind",
+      "link": "/Arts"
+    },
+    {
+      "id": "3",
+      "image": "../../../assets/images/whatwedo/languages.png",
+      "title": "Languages",
+      "text": "Learning to speak other foreign languages is fun, We teach languages such as French, Mandarin, German and Spanish",
+      "link": "/Languages"
+    }
+  ],
+  "submissionsData": [
+    {
+      "id": "1",
+      "image": "../../../assets/images/materialsandactivitiespictures/submissions/submission.png",
+      "name": "Name",
+      "activities": "Lorem ipsum dolor sit amet",
+      "status": "Lorem ipsum dolor sit amet",
+      "grade": "Lorem ipsum dolor sit amet",
+      "date": "Lorem ipsum dolor sit amet",
+      "time": "Lorem ipsum dolor sit amet",
+      "viewsubmissions": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "id": "2",
+      "image": "../../../assets/images/materialsandactivitiespictures/submissions/submission.png",
+      "name": "Name",
+      "activities": "Lorem ipsum dolor sit amet",
+      "status": "Lorem ipsum dolor sit amet",
+      "grade": "Lorem ipsum dolor sit amet",
+      "date": "Lorem ipsum dolor sit amet",
+      "time": "Lorem ipsum dolor sit amet",
+      "viewsubmissions": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "id": "3",
+      "image": "../../../assets/images/materialsandactivitiespictures/submissions/submission.png",
+      "name": "Name",
+      "activities": "Lorem ipsum dolor sit amet",
+      "status": "Lorem ipsum dolor sit amet",
+      "grade": "Lorem ipsum dolor sit amet",
+      "date": "Lorem ipsum dolor sit amet",
+      "time": "Lorem ipsum dolor sit amet",
+      "viewsubmissions": "Lorem ipsum dolor sit amet"
     }
   ]
 }

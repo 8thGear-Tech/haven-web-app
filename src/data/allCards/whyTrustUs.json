@@ -2,13 +2,13 @@
   "whyTrustUsInfo": [
     {
       "id": 1,
-      "icon": "../../assets/icons/whytrustus/reliability.png",
+      "icon": "../../assets/icons/whytrustus/security.png",
       "titleText": "Security",
       "paragraphText": "We are intentional about the safety of your champs, and also the exposure management."
     },
     {
       "id": 2,
-      "icon": "../../assets/icons/whytrustus/security.png",
+      "icon": "../../assets/icons/whytrustus/reliability.png",
       "titleText": "Reliability",
       "paragraphText": "We are passionate about our services, We give our best to ensure every Champ is indeed a champ in what they do."
     },

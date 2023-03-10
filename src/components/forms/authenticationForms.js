@@ -216,10 +216,10 @@ export const CreateAccountForm = () => {
                 <Card.Title>
                   <b>Welcome To Haven</b>
                 </Card.Title>
-                <div className="my-4">
+                {/* <div className="my-4">
                   {" "}
                   <Button variant="primary">Go somewhere</Button>
-                </div>
+                </div> */}
               </Card.Body>
             </div>
           </div>
@@ -440,7 +440,7 @@ export const JoinUsModal = () => {
         </h6>
         <h6 className="text-center pt-3">
           Continue as a parent
-          <Link to="/" className="px-1 mutedTextFontColor">
+          <Link to="/AllActivities" className="px-1 mutedTextFontColor">
             Click here
           </Link>
         </h6>

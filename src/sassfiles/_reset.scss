@@ -8,3 +8,6 @@ body {
   padding: 0 !important;
   overflow: visible !important;
 }
+.modal-backdrop.show {
+  opacity: 0 !important;
+}

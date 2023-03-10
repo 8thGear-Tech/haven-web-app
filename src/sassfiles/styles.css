@@ -9,6 +9,10 @@ body {
   overflow: visible !important;
 }
 
+.modal-backdrop.show {
+  opacity: 0 !important;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
@@ -42,6 +46,13 @@ h4 {
 h5 {
   font-weight: 600;
   font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  color: #75117a;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 1rem;
   font-family: "Raleway", sans-serif;
   color: #75117a;
 }
@@ -270,7 +281,7 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
-.GetAFacilitatorBtn {
+.GetAnInstructorBtn {
   background-color: #75117a;
   color: #ffffff;
   font-size: 15px;
@@ -316,7 +327,7 @@ p {
   content: "";
   position: absolute;
   background-color: #2e3133;
-  height: 80vh;
+  height: 65vh;
   width: 100%;
   top: 0px;
   right: 0px;
@@ -326,14 +337,14 @@ p {
 }
 
 .homeHeroBg {
-  background: url(/src/assets/images/hero/homeheronew.png);
+  background: url(/src/assets/images/hero/Group\ 879.png);
   background-size: cover;
   position: relative;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  height: 80vh;
+  height: 65vh;
   width: 100%;
 }
 
@@ -352,9 +363,24 @@ p {
   align-items: center !important;
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 523px) {
   .homeHeroBg {
-    height: 22.5rem;
+    height: 27.5rem;
+  }
+}
+@media (min-width: 524px) and (max-width: 754px) {
+  .homeHeroBg {
+    height: 37.5rem;
+  }
+}
+@media (min-width: 755px) and (max-width: 767px) {
+  .homeHeroBg {
+    height: 40.5rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 780px) {
+  .homeHeroBg {
+    height: 28.5rem;
   }
 }
 .fontStyle {
@@ -371,6 +397,26 @@ p {
   background: conic-gradient(from 180deg at 50% 50%, rgba(28, 150, 233, 0.7) -25.05deg, rgba(208, 93, 219, 0.7) 37.8deg, rgba(28, 150, 233, 0.7) 334.95deg, rgba(208, 93, 219, 0.7) 397.8deg);
 }
 
+@media only screen and (max-width: 575px) {
+  .smallerWidth {
+    width: 40%;
+    height: 40%;
+  }
+  .smallWidth {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .smallerWidth {
+    width: 50%;
+    height: 50%;
+  }
+  .smallWidth {
+    width: 50%;
+    height: 50%;
+  }
+}
 .galleryBg {
   background: url(/src/assets/images/hero/gallerybg.png);
   background-repeat: no-repeat;
@@ -382,6 +428,15 @@ p {
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   height: 10rem;
+}
+
+.galleryBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+.galleryBtn:focus {
+  background-color: #75117a;
+  color: #ffffff;
 }
 
 .blogImage {
@@ -419,22 +474,93 @@ p {
 
 .ReadMoreBtn {
   border: 1px solid #75117a;
-  color: #000000;
-  border-radius: 20px;
-  width: 11rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 8rem;
   height: 2.5rem;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
 }
 .ReadMoreBtn:hover {
   background-color: #75117a;
-  color: #75117a;
+  color: #ffffff;
 }
 .ReadMoreBtn:focus {
   background-color: #75117a;
-  color: #75117a;
+  color: #ffffff;
+}
+
+.GoHome {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  font-weight: 600;
+  border: none;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.SaveBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  font-weight: 600;
+  border: none;
+  width: 8rem;
+}
+
+.CancelBtn {
+  border: 1px solid #75117a;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 7.5rem;
+  height: 2.5rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+}
+.CancelBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
+}
+.CancelBtn:focus {
+  background-color: #75117a;
+  color: #ffffff;
+}
+
+.StartaNewSessionBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  font-weight: 600;
+  border: none;
+  width: 12rem;
+}
+
+.UpdateBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  font-weight: 600;
+  border: none;
+  width: 8rem;
 }
 
 .schoolPlaceHolderBorder {
@@ -455,6 +581,24 @@ p {
 .instructorCardBorder {
   border: 2px solid rgba(139, 41, 164, 0.94);
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.TakeATestBtn {
+  background-color: #ffffff;
+  color: #75117a;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: 1px solid #75117a;
+  width: 8rem;
+}
+.TakeATestBtn:hover {
+  background-color: #75117a;
+  color: #ffffff;
 }
 
 .SaveAndContinueBtn {
@@ -521,6 +665,20 @@ p {
   color: #ffffff;
 }
 
+.addBtn {
+  width: 6rem;
+  background: #75117a;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #75117a;
+  border-radius: 10px;
+  word-spacing: 2px;
+}
+
 .UploadBestPhoto {
   width: 15rem;
   background: #75117a;
@@ -538,6 +696,19 @@ p {
 .UploadBestPhoto:hover {
   background-color: #75117a;
   color: #ffffff;
+}
+
+.ChangePhoto {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
 }
 
 .BackToApplication {
@@ -615,9 +786,99 @@ p {
   color: #ffffff;
 }
 
+.IAgreeBtn {
+  background-color: #75117a;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  border: none;
+  width: 8rem;
+}
+
 .addYourActivitiesBg {
   background: #dfeaef;
   border: 1px solid #bc4c92;
+}
+
+.selectTestBg {
+  border: 1px solid rgba(208, 93, 219, 0.973958);
+}
+
+.selectTestBgOrange {
+  background: linear-gradient(180deg, rgba(232, 128, 25, 0.58) 0%, rgba(232, 128, 25, 0.3712) 100%);
+  border-radius: 20px;
+}
+
+.selectTestBgBorderPurple {
+  border: 1px solid #75117a;
+}
+
+.profileUploadBgColor {
+  background: linear-gradient(180deg, #724598 0%, rgba(209, 93, 219, 0.7) 54.69%);
+  border-radius: 20px;
+}
+
+.IdUploadBgColor {
+  background: #c6bbd1;
+}
+
+.VideoUploadBgOne {
+  background: #ffffff;
+  border: 1px solid #1c96e9;
+}
+
+.VideoUploadBgTwo {
+  background: #dcf4ff;
+  border: 1px solid #d15ddb;
+}
+
+.containerBg {
+  background: linear-gradient(180deg, rgba(28, 150, 233, 0.1) 0%, rgba(28, 150, 233, 0) 100%);
+}
+
+.congratsBgColor {
+  background: linear-gradient(180deg, rgba(28, 150, 233, 0.4) 0%, rgba(28, 150, 233, 0) 100%);
+  border: 1px solid rgba(28, 150, 233, 0.6);
+}
+
+.InstructorMaterialBg {
+  background: #ffffff;
+  box-shadow: 0px 5px 20px 3px rgba(0, 0, 0, 0.2);
+}
+
+.InstructorMaterialNav {
+  border: 1px solid #000000;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.urlFontColor {
+  color: #75117a;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.navFontColor {
+  color: #75117a;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.profileFormBorder {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.titleTextColor {
+  color: #75117a;
 }
 
 .paymentpackage {
@@ -689,6 +950,33 @@ p {
 }
 .timeStamp {
   border-radius: 0px 0px 10px 10px;
-  background-color: rgba(201, 246, 255, 0.5098039216);
+  background-color: linear-gradient(157.2deg, #F3FBFD 29.23%, rgba(201, 246, 255, 0.509434) 50.61%, rgba(63, 167, 188, 0) 79.86%);
+}
+
+.dashboardNavbarBg {
+  background: linear-gradient(180deg, #bc4c92 0%, rgba(208, 93, 219, 0.973958) 0.01%, rgba(127, 61, 183, 0.95) 100%);
+  height: 6rem;
+}
+
+.dashboardSideNavText {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.75rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.error404Bg {
+  background-image: linear-gradient(180deg, rgba(137, 200, 232, 0.5) 0%, rgba(232, 128, 25, 0.185) 97.5%);
+}
+
+.paragraphColor {
+  color: black;
+}
+
+.AdmintTutorNav {
+  border: 1px solid #000000;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

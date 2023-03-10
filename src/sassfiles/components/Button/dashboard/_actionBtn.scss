@@ -8,26 +8,82 @@
   font-style: normal;
   border-radius: 10px;
   height: 2.7rem;
-  width: 10.5rem;
+  // width: 10.5rem;
   font-weight: 600;
   border: none;
 }
 .ReadMoreBtn {
   border: 1px solid $buttoncolor;
-  color: $prytextcolor;
-  border-radius: 20px;
-  width: 11rem;
+  background-color: $prybgcolor;
+  // color: $prytextcolor;
+  border-radius: 10px;
+  width: 8rem;
   height: 2.5rem;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
   &:hover {
     background-color: $buttoncolor;
-    color: $sectextcolor;
+    color: $tertextcolor;
   }
   &:focus {
     background-color: $buttoncolor;
-    color: $sectextcolor;
+    color: $tertextcolor;
   }
 }
+.GoHome {
+  @include BtnStyle;
+  width: 15rem;
+
+  border-radius: 10px;
+}
+.SaveBtn {
+  @include BtnStyle; // border: 1px solid $buttoncolor;
+  // color: $prytextcolor;
+  width: 8rem;
+}
+.CancelBtn {
+  border: 1px solid $buttoncolor;
+  background-color: $prybgcolor;
+  // color: $prytextcolor;
+  border-radius: 10px;
+  width: 7.5rem;
+  height: 2.5rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  &:hover {
+    background-color: $buttoncolor;
+    color: $tertextcolor;
+  }
+  &:focus {
+    background-color: $buttoncolor;
+    color: $tertextcolor;
+  }
+}
+
+.StartaNewSessionBtn {
+  @include BtnStyle;
+  width: 12rem;
+}
+
+.UpdateBtn {
+  @include BtnStyle;
+  width: 8rem;
+}
+// @mixin BtnStyle {
+//   background-color: $buttoncolor;
+//   color: $tertextcolor;
+//   font-size: 15px;
+//   font-family: "Raleway", sans-serif;
+//   font-style: normal;
+//   border-radius: 10px;
+//   height: 2.7rem;
+//   width: 10.5rem;
+//   font-weight: 600;
+//   border: none;
+// }
+// .GetAFacilitatorBtn {
+//   @include BtnStyle;
+//   width: 10.5rem;
+// }

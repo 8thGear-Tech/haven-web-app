@@ -3,13 +3,11 @@ import { GuestNavbar } from "../../components/Navbar/guestNavbar";
 import { HomeHero } from "../../components/hero/homeHero";
 import { HomeMobileHero } from "../../components/hero/homeHero";
 import { WhyTrustUsCard } from "../../components/allCards/Website/whyTrustUs";
-import { PaymentpackageCard } from "../../components/allCards/Website/paymentPackage";
+import { WhatWeDoCard } from "../../components/allCards/Website/activitiesCard";
 import whyTrustUsInfo from "../../data/allCards/whyTrustUs.json";
-import whatwedo from "../../data/pages/whatWeDo.json";
+import whatwedo from "../../data/allCards/activitiesCard.json";
 
 //external import
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -23,33 +21,74 @@ import activitiesimagefour from "../../assets/images/home/activitiesimagefour.pn
 
 const Home = () => {
   return (
-    <>
+    <div
+      style={{
+        background:
+          "radial-gradient(50.66% 50.66% at 50% 49.34%, #DFEFE1 0.01%, #FFFFFF 100%)",
+      }}
+    >
       <GuestNavbar />
       <HomeHero />
-      <HomeMobileHero />
+      {/* <HomeMobileHero /> */}
       <WhatWeDo />
       <WhyTrustUs />
       <OurActivities />
-    </>
+    </div>
   );
 };
+
+// const WhatWeDo = () => {
+//   return (
+//     <>
+//       <div className="container">
+//         <h3 className="text-center mb-4">WHAT WE DO</h3>
+//         <div className="CardWork row text-center justify-content-around ">
+//           {whatwedo.whatwedo.map((data) => {
+//             return (
+//               <>
+//                 <div className="col-lg-3 col-md-5 col-sm-12" key={data.id}>
+//                   <PaymentpackageCard {...data} />
+//                 </div>
+//               </>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
 const WhatWeDo = () => {
   return (
     <>
-      <div className="container">
-        <h3 className="text-center mb-4">WHAT WE DO</h3>
-        <div className="CardWork row text-center justify-content-around ">
+      <div
+        className="container-fluid"
+        // style={{
+        //   background:
+        //     "radial-gradient(50.66% 50.66% at 50% 49.34%, #DFEFE1 0.01%, #FFFFFF 100%)",
+        // }}
+      >
+        <h3 className="text-center mt-lg-3">WHAT WE DO</h3>
+        <div className="row text-center justify-content-around mt-3 mx-2">
+          {/* <div className="CardWork row text-center justify-content-around mt-5"> */}
           {whatwedo.whatwedo.map((data) => {
             return (
               <>
-                <div className="col-lg-3 col-md-5 col-sm-12" key={data.id}>
-                  <PaymentpackageCard {...data} />
+                <div className="col-lg-4 col-md-5 col-sm-12" key={data.id}>
+                  <WhatWeDoCard {...data} />
                 </div>
               </>
             );
           })}
         </div>
+        {/* <div className="d-flex justify-content-center justify-content-evenly mt-5">
+          <Link to="/signup">
+            <BackBtn />
+          </Link>
+          <Link to="/RegisterNowForm">
+            <RegisterNowBtn />
+          </Link>
+        </div> */}
       </div>
     </>
   );
@@ -58,8 +97,14 @@ const WhatWeDo = () => {
 const WhyTrustUs = () => {
   return (
     <>
-      <div className="container-fluid pt-5 mt-5">
-        <h3 className="text-center">WHY TRUST US</h3>
+      <div
+        className="container-fluid py-5"
+        // style={{
+        //   background:
+        //     "radial-gradient(50.66% 50.66% at 50% 49.34%, #DFEFE1 0.01%, #FFFFFF 100%)",
+        // }}
+      >
+        <h3 className="text-center mt-3">WHY TRUST US</h3>
         <Row
           // xs={1}
           // md={2}
@@ -85,7 +130,7 @@ const WhyTrustUs = () => {
 const OurActivities = () => {
   return (
     <>
-      <div className="container-fluid px-5 pt-2 mt-5 bgGradient">
+      <div className="container-fluid px-5 pt-4 bgGradient">
         <Row
           xs={1}
           md={2}
@@ -125,22 +170,23 @@ const OurActivities = () => {
                 <Card.Text className="text-decoration-underline fontSize">
                   Haven Products
                 </Card.Text> */}
-                <Link to="/">
+                <Link to="/" style={{ color: "#75117A" }}>
                   <p className="text-decoration-underline fontStyle m-2">
                     School Facilitation
                   </p>
                 </Link>
-                <Link to="/havenSummer">
+                <Link to="/otherActivities" style={{ color: "#75117A" }}>
                   <p className="text-decoration-underline fontStyle m-2">
                     Haven Summer
                   </p>
                 </Link>
-                <Link to="/weekendClub">
+                <Link to="/otherActivities" style={{ color: "#75117A" }}>
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
                     Haven Weekend Club
                   </p>
                 </Link>
+
                 {/* <Link to="/">
                   <p className="text-decoration-underline fontSize m-2">
                     Haven Products

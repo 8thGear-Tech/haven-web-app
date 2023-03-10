@@ -25,24 +25,24 @@ const GalleryImages = () => {
     <div>
       <div className="d-flex justify-content-center mt-4">
         <div
-          className="btn ms-4 mt-3 btnHover active"
-          // style={{ backgroundColor: "#724598", color: "#ffffff" }}
+          className="btn ms-4 mt-3 btnHover active galleryBtn"
+          // style={{ backgroundColor: "#75117a", color: "#ffffff" }}
           onClick={() => setActive("Firstcard")}
         >
           Tech
         </div>
         <div
-          className="btn ms-4 mt-3"
+          className="btn ms-4 mt-3 galleryBtn"
           mb1
-          // style={{ backgroundColor: "#724598", color: "#ffffff" }}
+          // style={{ backgroundColor: "#75117a", color: "#ffffff" }}
           onClick={() => setActive("Secondcard")}
         >
           Language
         </div>
         <div
-          className="btn ms-4 mt-3"
+          className="btn ms-4 mt-3 galleryBtn"
           mb1
-          // style={{ backgroundColor: "#724598", color: "#ffffff" }}
+          // style={{ backgroundColor: "#75117a", color: "#ffffff" }}
           onClick={() => setActive("Thirdcard")}
         >
           Arts

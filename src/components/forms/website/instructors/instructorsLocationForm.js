@@ -99,7 +99,7 @@ const InstructorLocationForm = () => {
         ))}
         <div className="d-flex justify-content-center mt-5">
           {" "}
-          <Link to="/AddYourActivity">
+          <Link to="/InstructorProfileInfo">
             <SaveAndContinueBtn />
           </Link>
         </div>

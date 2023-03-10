@@ -1,0 +1,91 @@
+{
+  "champsdata": [
+    {
+      "id": "1",
+      "name": "Alex Bammie",
+      "title": "M.COM., P.H.D.",
+      "gender": "Gender: Female",
+      "phone": "Phone : +234889899479",
+      "email": "Email : judithFanika@gmail.com",
+      "address": "Address : 8, Mamora Road"
+    },
+
+    {
+      "id": "2",
+      "name": "Alexander Carlton",
+      "title": "M.COM., P.H.D.",
+      "gender": "Gender: Female",
+      "phone": "Phone : +234889899479",
+      "email": "Email : judithFanika@gmail.com",
+      "address": "Address : 8, Mamora Road"
+    },
+
+    {
+      "id": "3",
+      "name": "Alexander Carlson",
+      "title": "M.COM., P.H.D.",
+      "gender": "Gender: Female",
+      "phone": "Phone : +234889899479",
+      "email": "Email : judithFanika@gmail.com",
+      "address": "Address : 8, Mamora Road"
+    },
+
+    {
+      "id": "4",
+      "name": "Ben Carson",
+      "title": "M.COM., P.H.D.",
+      "gender": "Gender: Female",
+      "phone": "Phone : +234889899479",
+      "email": "Email : judithFanika@gmail.com",
+      "address": "Address : 8, Mamora Road"
+    },
+
+    {
+      "id": "5",
+      "name": "Benjamin Carter ",
+      "title": "M.COM., P.H.D.",
+      "gender": "Gender: Female",
+      "phone": "Phone : +234889899479",
+      "email": "Email : judithFanika@gmail.com",
+      "address": "Address : 8, Mamora Road"
+    },
+
+    {
+      "id": "6",
+      "name": "Alexander",
+      "title": "M.COM., P.H.D.",
+      "gender": "Gender: Female",
+      "phone": "Phone : +234889899479",
+      "email": "Email : judithFanika@gmail.com",
+      "address": "Address : 8, Mamora Road"
+    },
+
+    {
+      "id": "7",
+      "name": "Steve Harvey",
+      "title": "M.COM., P.H.D.",
+      "gender": "Gender: Female",
+      "phone": "Phone : +234889899479",
+      "email": "Email : judithFanika@gmail.com",
+      "address": "Address : 8, Mamora Road"
+    },
+    {
+      "id": "8",
+      "name": "Adam Clarke",
+      "title": "M.COM., P.H.D.",
+      "gender": "Gender: Female",
+      "phone": "Phone : +234889899479",
+      "email": "Email : judithFanika@gmail.com",
+      "address": "Address : 8, Mamora Road"
+    },
+    {
+      "id": "9",
+      "name": "Stephanie Linus",
+      "title": "M.COM., P.H.D.",
+      "gender": "Gender: Female",
+      "phone": "Phone : +234889899479",
+      "email": "Email : judithFanika@gmail.com",
+      "address": "Address : 8, Mamora Road"
+    }
+  ]
+}

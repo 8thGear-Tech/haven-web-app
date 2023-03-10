@@ -1,9 +1,17 @@
+//FooterItemToTop
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+//images
 import havenlogo from "../assets/icons/havenlogo.png";
+import googlemaps from "../assets/icons/googlemaps.png";
 
 // icons
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import MarkAsUnreadOutlinedIcon from "@mui/icons-material/MarkAsUnreadOutlined";
+// import { FacebookIcon } from "../assets/icons/icons";
 
 export const Footer = () => {
   return (
@@ -12,17 +20,26 @@ export const Footer = () => {
         <footer class="py-3 mx-5">
           <div class="row ">
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+              {/* <Link to="/">
+                {" "}
+                <img
+                  alt=""
+                  src={havenlogo}
+                  style={{ maxWidth: "6rem", maxHeight: "6rem" }}
+                  className="d-inline-block align-top"
+                />
+              </Link> */}
               <img
                 alt=""
                 src={havenlogo}
                 style={{ maxWidth: "6rem", maxHeight: "6rem" }}
                 className="d-inline-block align-top"
               />{" "}
-              <div className="col-md-4">
+              <div className="col-lg-2">
                 <h4>Work with us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a href="/signup" class="nav-link p-0 footerParagraph">
                       Become a facilitator
                     </a>
                   </li>
@@ -48,49 +65,57 @@ export const Footer = () => {
                   </li> */}
                 </ul>
               </div>
-              <div className="">
+              <div className="col-lg-2">
                 <h4>Get to know us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a href="/about" class="nav-link p-0 footerParagraph">
                       About Haven
                     </a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a
+                      href="/otherActivities"
+                      class="nav-link p-0 footerParagraph"
+                    >
                       Other services
                     </a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a href="/gallery" class="nav-link p-0 footerParagraph">
                       Gallery
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="">
+              <div className="col-lg-2">
                 <h4>Learn with us</h4>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a href="/" class="nav-link p-0 footerParagraph">
                       School services
                     </a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 footerParagraph">
+                    <a
+                      href="/AllActivities"
+                      class="nav-link p-0 footerParagraph"
+                    >
                       Find Activities
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="">
+              <div className="col-lg-2">
                 <h4>Connect with us</h4>
-                <img
-                  alt=""
-                  src={havenlogo}
-                  style={{ maxWidth: "6rem", maxHeight: "6rem" }}
-                  className="d-inline-block align-top"
-                />{" "}
+                <a href="https://maps.app.goo.gl/DFurq3id3D9i5TrE7">
+                  <img
+                    alt=""
+                    src={googlemaps}
+                    style={{ maxWidth: "6rem", maxHeight: "6rem" }}
+                    className="d-inline-block align-top"
+                  />{" "}
+                </a>
               </div>
             </div>
             {/* <div className="d-flex flex-column flex-sm-row justify-content-between">
@@ -200,28 +225,47 @@ export const Footer = () => {
               <div>
                 {" "}
                 <MarkAsUnreadOutlinedIcon />
-                <a class="footerParagraph mx-2" href="#">
+                <a
+                  class="footerParagraph mx-2"
+                  href="mailto: hello@haveneduservices.com"
+                >
                   hello@haveneduservices.com
                 </a>
               </div>
 
               <div className="">
                 <LocalPhoneOutlinedIcon />
-                <a class="footerParagraph mx-2" href="#" target="_blank">
+                <a
+                  class="footerParagraph mx-2"
+                  href="tel:2348098438885"
+                  target="_blank"
+                >
                   080 98438885
                 </a>
-                <a class="footerParagraph mx-2" href="#" target="_blank">
+                <a
+                  class="footerParagraph mx-2"
+                  href="tel:2348098458885"
+                  target="_blank"
+                >
                   080 98458885
                 </a>
               </div>
               <ul class="list-unstyled d-flex">
                 <li class="ms-3">
-                  <a class="link-dark" href="#" target="_blank">
+                  <a
+                    class="link-dark"
+                    href="https://m.facebook.com/haveneduservices/"
+                    target="_blank"
+                  >
                     <FacebookOutlinedIcon />
                   </a>
                 </li>
                 <li class="ms-3">
-                  <a class="link-dark" href="#" target="_blank">
+                  <a
+                    class="link-dark"
+                    href="https://instagram.com/haveneduservices?igshid=1fyt565z18d4u"
+                    target="_blank"
+                  >
                     <FacebookOutlinedIcon />
                   </a>
                 </li>
@@ -253,4 +297,14 @@ export const Footer = () => {
       </div>
     </>
   );
+};
+
+export const FooterItemToTop = ({ children }) => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return children || null;
 };
