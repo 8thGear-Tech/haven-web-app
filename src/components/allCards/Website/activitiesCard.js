@@ -102,6 +102,10 @@ export const WhatWeDoCard = (props) => {
           {" "}
           <ReadMoreBtn />
         </Link>
+        <Link to={link}>
+          {" "}
+          <ReadMoreBtn />
+        </Link>
       </Card.Body>
     </Card>
   );
