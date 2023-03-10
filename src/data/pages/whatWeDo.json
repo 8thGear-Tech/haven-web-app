@@ -1,5 +1,5 @@
 {
-  "whatwedo": [
+  "whatwed": [
     {
       "id": "1",
       "image": "../../../assets/images/whatwedo/tech.png",
@@ -16,7 +16,7 @@
       "id": "3",
       "image": "../../../assets/images/whatwedo/languages.png",
       "title": "Languages",
-      "text": "Learning to speak other foreign languages is fun, We teach languages such as French, Mandarin, German and Spanish"
+      "text": "Learning to speak other languages avails Champs to access broader  opportunities life can present! Asides it being so much fun, our language classes are taught by specialist who uses these languages daily."
     }
   ]
 }

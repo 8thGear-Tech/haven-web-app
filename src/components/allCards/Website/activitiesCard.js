@@ -1,7 +1,8 @@
 // Awelewa
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-// import { SuscribeBtn } from "../../Buttons/website/actionBtn/schoolBtn";\
+// import { SuscribeBtn } from "../../Buttons/website/actionBtn/schoolBtn";
+
 import { ReadMoreBtn } from "../../Buttons/dashboard/actionBtn";
 
 export const ActivitiesCard = (props) => {
@@ -28,6 +29,59 @@ export const ActivitiesCard = (props) => {
     </Card>
   );
 };
+
+export const NewActivitiesCard = (props) => {
+  const {
+    image,
+    title,
+    agetitle,
+    age,
+    stageonetitle,
+    stageonetext,
+    stagetwotitle,
+    stagetwotext,
+    stagethreetitle,
+    stagethreetext,
+  } = props;
+  return (
+    <Card
+      style={{ width: "20rem" }}
+      className="paymentpackage mx-auto text-center cardBgColor pb-4 mb-5"
+    >
+      <img
+        src={image}
+        width="100px"
+        height="100px"
+        className="rounded-circle mx-auto mt-4 img-fluid"
+      />
+      <Card.Body>
+        <h4 className="text-white mt-3">{title}</h4>
+        <p className="m-0 p-0 text-white">{agetitle}</p>
+        <p className="m-0 p-0 text-white">{age}</p>
+        <Card className="paymentpackage mx-auto text-center mt-3">
+          <h6 className="mt-2 mb-0">{stageonetitle}</h6>
+
+          <p className="mb-1 p-0" style={{ fontSize: "0.85rem" }}>
+            {stageonetext}
+          </p>
+        </Card>
+        <Card className="paymentpackage mx-auto text-center mt-3">
+          <h6 className="mt-2 mb-0">{stagetwotitle}</h6>
+          <p className="mb-1 p-0" style={{ fontSize: "0.85rem" }}>
+            {stagetwotext}
+          </p>
+        </Card>
+        <Card className="paymentpackage mx-auto text-center mt-3">
+          <h6 className="mt-2 mb-0">{stagethreetitle}</h6>
+          <p className="m-0 p-0 mb-1" style={{ fontSize: "0.85rem" }}>
+            {stagethreetext}
+          </p>
+        </Card>
+      </Card.Body>
+    </Card>
+  );
+};
+
 export const WhatWeDoCard = (props) => {
   const { image, link, title, text } = props;
   return (

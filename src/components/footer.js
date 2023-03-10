@@ -18,7 +18,7 @@ export const Footer = () => {
     <>
       <div class="container-fluid px-5 footerOneBgColor">
         <footer class="py-3 mx-5">
-          <div class="row ">
+          <div class="row">
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
               {/* <Link to="/">
                 {" "}
@@ -34,7 +34,7 @@ export const Footer = () => {
                 src={havenlogo}
                 style={{ maxWidth: "6rem", maxHeight: "6rem" }}
                 className="d-inline-block align-top"
-              />{" "}
+              />
               <div className="col-lg-2">
                 <h4>Work with us</h4>
                 <ul class="nav flex-column">
