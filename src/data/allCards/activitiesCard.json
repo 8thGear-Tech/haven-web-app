@@ -97,18 +97,86 @@
       "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
     }
   ],
-  "techData": [
+  "codingData": [
     {
       "id": 1,
       "image": "../assets/images/whatwedo/technology/coding.png",
-      "title": "Coding",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "Beginners",
+      "agetitle": "Age Range",
+      "age": "(6-8)",
+      "stageonetitle": "Stage 1",
+      "stageonetext": "Coding Fundamentals",
+      "stagetwotitle": "Stage 2",
+      "stagetwotext": "Scratch and Its Component",
+      "stagethreetitle": "Stage 3",
+      "stagethreetext": "Advanced Scratch Programming"
     },
     {
       "id": 2,
-      "image": "../assets/images/whatwedo/technology/robotics.png",
-      "title": "Robotics",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "image": "../assets/images/whatwedo/technology/codingtwo.png",
+      "title": "Intermediate",
+      "agetitle": "Age Range",
+      "age": "(8-10)",
+      "stageonetitle": "Stage 1",
+      "stageonetext": "Introduction to mBlock",
+      "stagetwotitle": "Stage 2",
+      "stagetwotext": "Converting Block Codes to Python Codes",
+      "stagethreetitle": "Stage 3",
+      "stagethreetext": "Advanced mBlock Programming"
+    },
+    {
+      "id": 3,
+      "image": "../assets/images/whatwedo/technology/codingthree.png",
+      "title": "Advanced",
+      "agetitle": "Age Range",
+      "age": "(10-12)",
+      "stageonetitle": "Stage 1",
+      "stageonetext": "Introduction to Python",
+      "stagetwotitle": "Stage 2",
+      "stagetwotext": "Variables and Functions",
+      "stagethreetitle": "Stage 3",
+      "stagethreetext": "App/Web Development using Python"
+    }
+  ],
+  "roboticsData": [
+    {
+      "id": 1,
+      "image": "../assets/images/whatwedo/technology/roboticsone.png",
+      "title": "Beginners",
+      "agetitle": "Age Range",
+      "age": "(6-8)",
+      "stageonetitle": "Stage 1",
+      "stageonetext": "Simple K’nex Robots",
+      "stagetwotitle": "Stage 2",
+      "stagetwotext": "K’nex Rotor Robots",
+      "stagethreetitle": "Stage 3",
+      "stagethreetext": "Creative mobile Robots"
+    },
+    {
+      "id": 2,
+      "image": "../assets/images/whatwedo/technology/roboticstwo.png",
+      "title": "Intermediate",
+      "agetitle": "Age Range",
+      "age": "(8-10)",
+      "stageonetitle": "Stage 1",
+      "stageonetext": "Introduction to Arduino codes",
+      "stagetwotitle": "Stage 2",
+      "stagetwotext": "Arduino and its components",
+      "stagethreetitle": "Stage 3",
+      "stagethreetext": "Robot complete Construct"
+    },
+    {
+      "id": 3,
+      "image": "../assets/images/whatwedo/technology/roboticsthree.png",
+      "title": "Advanced",
+      "agetitle": "Age Range",
+      "age": "(10-12)",
+      "stageonetitle": "Stage 1",
+      "stageonetext": "Introduction to Machine Learning",
+      "stagetwotitle": "Stage 2",
+      "stagetwotext": "Introduction to Artificial Intelligence",
+      "stagethreetitle": "Stage 3",
+      "stagethreetext": "Artificial Intelligence with Machine learning (Communicating with mobile devices)"
     }
   ],
   "artsData": [
@@ -163,23 +231,23 @@
   "whatwedo": [
     {
       "id": "1",
-      "image": "../../../assets/images/whatwedo/tech.png",
+      "image": "../../../assets/images/whatwedo/tech.jpg",
       "title": "Technology",
-      "text": " Our Coding and Robotics often presents champs with problems, and helps them learn how to make decisions and solve those problems.",
+      "text": "Coding and Robotics do not just introduce Champ(s) to Tech, but it empowers them to become problem solvers, equipping them with solution-driven skills amongst others.",
       "link": "/Technology"
     },
     {
       "id": "2",
-      "image": "../../../assets/images/whatwedo/arts.png",
+      "image": "../../../assets/images/whatwedo/arts.jpg",
       "title": "Arts",
-      "text": "Our Art activities includes Creative and Martial Arts which enhances you champs to build Confidence and a creative mind",
+      "text": "Our Art activities includes Creative and Martial Arts which enhances building of Confidence and Creativity in Champs.",
       "link": "/Arts"
     },
     {
       "id": "3",
-      "image": "../../../assets/images/whatwedo/languages.png",
+      "image": "../../../assets/images/whatwedo/languages.jpg",
       "title": "Languages",
-      "text": "Learning to speak other foreign languages is fun, We teach languages such as French, Mandarin, German and Spanish",
+      "text": "Learning to speak other languages avails Champs to access broader opportunities life can present! Asides it being so much fun, our language classes are taught by specialist who uses these languages daily.",
       "link": "/Languages"
     }
   ],

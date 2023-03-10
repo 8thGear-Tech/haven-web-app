@@ -74,7 +74,10 @@ const WhatWeDo = () => {
           {whatwedo.whatwedo.map((data) => {
             return (
               <>
-                <div className="col-lg-4 col-md-5 col-sm-12" key={data.id}>
+                <div
+                  className="col-lg-4 col-md-5 col-sm-12 d-flex align-items-stretch"
+                  key={data.id}
+                >
                   <WhatWeDoCard {...data} />
                 </div>
               </>
@@ -172,7 +175,7 @@ const OurActivities = () => {
                 </Card.Text> */}
                 <Link to="/" style={{ color: "#75117A" }}>
                   <p className="text-decoration-underline fontStyle m-2">
-                    Instructor Matching
+                    Tech Instructors Matching
                   </p>
                 </Link>
                 <Link to="/" style={{ color: "#75117A" }}>

@@ -21,26 +21,27 @@ export const LoginBtn = () => {
 
   return (
     <>
-      <Link
+      {/* <Link
         to=""
         type="button"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop1"
       >
-        {" "}
-        <button variant="" onClick={handleShow} className="LoginBtn">
-          LOGIN
-        </button>
-      </Link>
+        {" "} */}
+      <button variant="" className="LoginBtn">
+        {/* <button variant="" onClick={handleShow} className="LoginBtn"> */}
+        LOGIN
+      </button>
+      {/* </Link>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>
             <img src={havenlogo} width={70} className="img-fluid" />
           </Modal.Title>
         </Modal.Header>
-        <LoginForm />
-        {/* <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body> */}
-        {/* <Modal.Footer>
+        <LoginForm /> */}
+      {/* <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body> */}
+      {/* <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
@@ -48,7 +49,7 @@ export const LoginBtn = () => {
             Save Changes
           </Button>
         </Modal.Footer> */}
-      </Modal>
+      {/* </Modal> */}
     </>
   );
 };
