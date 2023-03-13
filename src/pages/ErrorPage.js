@@ -1,3 +1,4 @@
+import { color } from "@mui/system";
 import React from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import havenlogo from "../assets/icons/havenlogo.png";
@@ -42,31 +43,7 @@ const ErrorPage = () => {
             </div>
           </div>
         </div>
-
-        <div className="d-flex justify-content-center">
-          <div className="row">
-            <div className="col">
-              {" "}
-              <a href="tel:09077887765" className="text-decoration-none">
-                <p className="paragraphColor mx-3">09077887765</p>
-              </a>
-              <a href="tel:080 9481 8883" className="text-decoration-none">
-                <p className="paragraphColor mx-3">080 9481 8883</p>
-              </a>
-            </div>
-            <div className="col d-flex justify-content-cente">
-              {" "}
-              <a
-                href="haveneduservices@gmail.com"
-                className="text-decoration-none"
-              >
-                <p className="paragraphColor mx-3">
-                  haveneduservices@gmail.com
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
+        <ErrorFooter />
       </div>
     </>
   );
@@ -75,28 +52,92 @@ const ErrorPage = () => {
 const Erro404Navbar = () => {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      {/* <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="/">
             <img
               src={havenlogo}
-              height="30"
+              height="60"
               className="d-inline-block align-top"
               alt="My Logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="d-flex align-content-end">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
+
+          <div className="justify-content-end">
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="">
+                <Nav.Link
+                  href="/"
+                  style={{ color: "#000000" }}
+                  className="mx-3"
+                >
+                  Home
+                </Nav.Link>
+                <Nav.Link
+                  href="/about"
+                  style={{ color: "#000000" }}
+                  className="mx-3"
+                >
+                  About
+                </Nav.Link>
+                <Nav.Link
+                  href="/contact"
+                  style={{ color: "#000000" }}
+                  className="mx-3"
+                >
+                  Contact
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </div>
         </Container>
-      </Navbar>
+      </Navbar> */}
+      <nav className="navbar navbar-expand-sm navbar-light bg-light">
+        <img src={havenlogo} height="60" className="mx-5" alt="My Logo" />
+
+        <div
+          className="justify-content-end collapse navbar-collapse"
+          id="navbarNavAltMarkup"
+        >
+          <div className="navbar-nav">
+            <a class=" mx-3 nav-item nav-link active" href="#">
+              Home
+            </a>
+            <a className=" mx-3 nav-item nav-link active" href="#">
+              About
+            </a>
+            <a className=" mx-3 nav-item nav-link active" href="#">
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
     </>
   );
 };
-
+const ErrorFooter = () => {
+  return (
+    <>
+      <div className="d-flex justify-content-center">
+        {/* <div className="row"> */}
+        <div className="">
+          {" "}
+          <a href="tel:09077887765" className="text-decoration-none">
+            <p className="paragraphColor mx-3">09077887765</p>
+          </a>
+          <a href="tel:080 9481 8883" className="text-decoration-none">
+            <p className="paragraphColor mx-3">080 9481 8883</p>
+          </a>
+        </div>
+        <div className="vl"></div>
+        <div className="d-flex justify-content-center">
+          <a href="haveneduservices@gmail.com" className="text-decoration-none">
+            <p className="paragraphColor mx-3">haveneduservices@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </>
+  );
+};
 export default ErrorPage;

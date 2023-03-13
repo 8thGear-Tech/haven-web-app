@@ -4,7 +4,12 @@
     rgba(137, 200, 232, 0.5) 0%,
     rgba(232, 128, 25, 0.185) 97.5%
   );
+  height: 100vh;
 }
 .paragraphColor {
   color: black;
+}
+.vl {
+  border-left: 5px solid black;
+  height: 70px;
 }
