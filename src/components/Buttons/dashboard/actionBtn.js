@@ -61,6 +61,16 @@ export const ReadMoreBtn = () => {
   );
 };
 
+export const GoHome = () => {
+  return (
+    <>
+      <a href="/" target="_blank">
+        <button className="GoHome"> Go Home</button>
+      </a>{" "}
+    </>
+  );
+};
+
 export const ProfileReadMoreBtn = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
@@ -92,6 +102,36 @@ export const ProfileReadMoreBtn = () => {
   );
 };
 export const InstructorProfileReadMoreBtn = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
+  return (
+    <>
+      <Link
+        to=""
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop1"
+      >
+        {" "}
+        <button variant="" onClick={handleShow} className="ReadMoreBtn">
+          READ MORE
+        </button>
+      </Link>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <p className="m-0">
+            <b>Instructor Profile</b>
+          </p>
+          {/* <img src={profilepic} /> */}
+        </Modal.Header>
+        <InstructorProfileReadMoreCard />
+      </Modal>
+    </>
+  );
+};
+export const TutorReadMoreBtn = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);

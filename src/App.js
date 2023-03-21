@@ -25,10 +25,15 @@ import ResourcePage from "./pages/dashboardPages/champ/CampAllReaourcePage";
 import ChampDashboard from "./pages/dashboardPages/champ/champDashboardPage";
 import ChampMaterialPage from "./pages/dashboardPages/champ/champMaterialBoard";
 import AssignmentText from "./pages/dashboardPages/champ/champAssignmentBoard";
-import VirtualClass from "./pages/dashboardPages/champ/champVirtualClass";
+import ChampVirtualClass from "./pages/dashboardPages/champ/champVirtualClass";
 import Champcalendar from "./pages/dashboardPages/champ/champCalenderPage";
 import ProfileIdCard from "./pages/dashboardPages/champ/champStudentPage";
+// import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
+import AdminDashboardPg from "./pages/dashboardPages/admin/adminDashboardPage";
 //authentication pages
+// import BasicForm from "./components/forms/website/schools/packageForm";
+
+//school authentication pages
 import { CreateAccountForm } from "./components/forms/authenticationForms";
 import { SchoolCreateAccountForm } from "./components/forms/authenticationForms";
 import { ParentCreateAccountForm } from "./components/forms/authenticationForms";
@@ -97,7 +102,13 @@ import RegisterNowForm from "./components/forms/website/registerNowForm";
 
 import { Footer } from "./components/footer";
 import { FooterItemToTop } from "./components/footer";
+
 import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
+import Admincalendar from "./pages/dashboardPages/admin/adminCalenderEventPage";
+import AllTutorPage from "./pages/dashboardPages/admin/allInstructorPage";
+import AllChampPage from "./pages/dashboardPages/admin/allChampsPage";
+import AddChampsPage from "./pages/dashboardPages/admin/adminAddChamps";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
@@ -117,6 +128,8 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="blog" element={<Blog />} />
           <Route path=" " element={<BlogReadMore />} />
+          {/* Error page */}
+          <Route path="*" element={<ErrorPage />} />
 
           {/* payment packages */}
           <Route path="PaymentPackages" element={<PaymentPackages />} />
@@ -133,11 +146,17 @@ function App() {
           <Route path="ChampDashboard" element={<ChampDashboard />} />
           <Route path="ChampMaterialPg" element={<ChampMaterialPage />} />
           <Route path="AssignmentText" element={<AssignmentText />} />
-          <Route path="VirtualClass" element={<VirtualClass />} />
+          <Route path="ChampVirtualClass" element={<ChampVirtualClass />} />
           <Route path="Champcalendar" element={<Champcalendar />} />
           <Route path="ProfileIdCard" element={<ProfileIdCard />} />
           <Route path="ProfileEditCard" element={<ProfileEditCard />} />
 
+          {/* Admin dashboard pages */}
+          <Route path="AdminDashboardPg" element={<AdminDashboardPg />} />
+          <Route path="Admincalendar" element={<Admincalendar />} />
+          <Route path="allTutorPage" element={<AllTutorPage />} />
+          <Route path="allChampPage" element={<AllChampPage />} />
+          <Route path="addChampsPage" element={<AddChampsPage />} />
           {/*school activities pages */}
           <Route path="Technology" element={<Technology />} />
           <Route path="Arts" element={<Arts />} />

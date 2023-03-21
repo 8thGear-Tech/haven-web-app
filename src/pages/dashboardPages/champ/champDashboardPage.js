@@ -11,7 +11,6 @@ const ChampDashboard = () => {
   return (
     <>
       <ChampNavbar />
-    
 
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
@@ -21,18 +20,17 @@ const ChampDashboard = () => {
           <div className="col-lg-9 col-md-12">
             <div>
               <div>
-              <ChampsResource />
+                <ChampsResource />
               </div>
-             <div className="">
-              <ChampDashboardCoCards />
+              <div className="">
+                <ChampDashboardCoCards />
+              </div>
             </div>
-            </div>
-
-            
           </div>
         </div>
       </div>
     </>
   );
 };
+
 export default ChampDashboard;

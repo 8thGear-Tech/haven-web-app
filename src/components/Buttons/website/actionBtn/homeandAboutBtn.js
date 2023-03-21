@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 export const GetAnInstructorBtn = () => {
   return (
     <>
-      <Link to="/signup">
-        {" "}
+      <Link to="">
+        {/* <Link to="/signup"> */}{" "}
         <button className="GetAnInstructorBtn">GET AN INSTRUCTOR</button>
       </Link>
     </>
@@ -27,10 +27,10 @@ export const LearnMoreBtn = () => {
 export const JoinOurTeamBtn = () => {
   return (
     <>
-      <a href="" target="_blank">
+      <Link to="/signup">
         {" "}
         <button className="JoinOurTeamBtn">JOIN OUR TEAM</button>
-      </a>
+      </Link>
     </>
   );
 };
