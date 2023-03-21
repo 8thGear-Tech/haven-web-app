@@ -4,7 +4,7 @@ import VideoChatIcon from '@mui/icons-material/VideoChat';
 import Button from "react-bootstrap/Button";
 
 
-const VirtualClass = () =>{
+const ChampVirtualClass = () =>{
     return (
       <>
         <ChampNavbar />
@@ -74,4 +74,4 @@ const VirtualContent =() =>{
     );
 }
 
-export default VirtualClass; 
+export default ChampVirtualClass; 

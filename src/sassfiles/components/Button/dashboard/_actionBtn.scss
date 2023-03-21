@@ -31,6 +31,12 @@
     color: $tertextcolor;
   }
 }
+.GoHome {
+  @include BtnStyle;
+  width: 15rem;
+
+  border-radius: 10px;
+}
 .SaveBtn {
   @include BtnStyle; // border: 1px solid $buttoncolor;
   // color: $prytextcolor;
