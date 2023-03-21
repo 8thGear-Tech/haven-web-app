@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 
 // images
 import havenlogo from "../../assets/icons/havenlogo.png";
@@ -16,13 +17,15 @@ export const GuestNavbar = () => {
       {" "}
       <Navbar bg="light" expand="md" className="navbarBg navbar-light">
         <Container fluid>
-          {" "}
-          <img
-            alt=""
-            src={havenlogo}
-            style={{ maxWidth: "6rem", maxHeight: "6rem" }}
-            className="d-inline-block align-top ms-3"
-          />{" "}
+          <Link to="/">
+            {" "}
+            <img
+              alt=""
+              src={havenlogo}
+              style={{ maxWidth: "6rem", maxHeight: "6rem" }}
+              className="d-inline-block align-top ms-3"
+            />
+          </Link>
           <Navbar.Toggle
             aria-controls="navbarScroll"
             className="navbar-toggler btn"
