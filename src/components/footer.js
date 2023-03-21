@@ -1,6 +1,9 @@
 //FooterItemToTop
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+
+// import "C:UsersTOLANIDocumentsGitHubhaven-web-appsrcsassfilescomponents_footer.scss";
+
 import { Link } from "react-router-dom";
 
 //images
@@ -11,6 +14,10 @@ import googlemaps from "../assets/icons/googlemaps.png";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import MarkAsUnreadOutlinedIcon from "@mui/icons-material/MarkAsUnreadOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { LearnMoreBtn } from "./Buttons/website/actionBtn/homeandAboutBtn";
 // import { FacebookIcon } from "../assets/icons/icons";
 
 export const Footer = () => {
@@ -18,8 +25,17 @@ export const Footer = () => {
     <>
       <div class="container-fluid px-5 footerOneBgColor">
         <footer class="py-3 mx-5">
-          <div class="row">
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+          <div className="footR">
+            <h5 className="text-light size ">
+              Check out our Blogpost to know our latest activities
+            </h5>
+            <LearnMoreBtn />
+          </div>
+          <div class="">
+            <div
+              class="row justify-self-center  d-flex  justify-content-evenly text-center
+            mx-4 my-4"
+            >
               {/* <Link to="/">
                 {" "}
                 <img
@@ -29,17 +45,26 @@ export const Footer = () => {
                   className="d-inline-block align-top"
                 />
               </Link> */}
-              <img
-                alt=""
-                src={havenlogo}
-                style={{ maxWidth: "6rem", maxHeight: "6rem" }}
-                className="d-inline-block align-top"
-              />
-              <div className="col-lg-2">
-                <h4>Work with us</h4>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2">
-                    <a href="/" class="nav-link p-0 footerParagraph">
+              <div className="col-sm-6 col-md-12 col-lg-2">
+                <img
+                  alt=""
+                  src={havenlogo}
+                  style={{ maxWidth: "5rem", maxHeight: "5rem" }}
+                  className=" "
+                />
+              </div>
+
+              <div className="col-sm-6 col-md-6 col-lg-2">
+                <h4 className="">Work with us</h4>
+                <ul class="list-unstyled list-inline">
+                  <li class="nav-item mb-2 list-inline-item">
+                    <a
+                      href="/"
+                      class="nav-link p-0 footerParagraph"
+                      style={{
+                        fontSize: "16px",
+                      }}
+                    >
                       {/* <a href="/signup" class="nav-link p-0 footerParagraph"> */}
                       Become an instructor
                     </a>
@@ -66,28 +91,11 @@ export const Footer = () => {
                   </li> */}
                 </ul>
               </div>
-              <div className="col-lg-2">
-                <h4>Learn with us</h4>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2">
-                    <a href="/" class="nav-link p-0 footerParagraph">
-                      School services
-                    </a>
-                  </li>
-                  <li class="nav-item mb-2">
-                    <a
-                      href="/AllActivities"
-                      class="nav-link p-0 footerParagraph"
-                    >
-                      Find Activities
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-2">
-                <h4>Get to know us</h4>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2">
+
+              <div className="col-sm-6 col-md-6 col-lg-2">
+                <h4 className="">Get to know us</h4>
+                <ul class="list-unstyled list-inline">
+                  <li class="nav-item mb-2 list-inline-item">
                     <a href="/about" class="nav-link p-0 footerParagraph">
                       About Haven
                     </a>
@@ -107,7 +115,45 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-2">
+
+              {/* <div
+                className="col-lg-1 col-sm-none"
+                style={{
+                  background: "#75117a",
+                  width: "1px",
+                  height: "20px",
+                }}
+              ></div> */}
+
+              <div className="col-sm-6 col-md-6 col-lg-2">
+                <h4 className="">Learn with us</h4>
+                <ul class="list-unstyled list-inline">
+                  <li class="nav-item mb-2">
+                    <a href="/" class="nav-link p-0 footerParagraph">
+                      School services
+                    </a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="/AllActivities"
+                      class="nav-link p-0 footerParagraph"
+                    >
+                      Find Activities
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* <div
+                className="col-lg-1 col-sm-none"
+                style={{
+                  background: "#75117a",
+                  width: "1px",
+                  height: "20px",
+                }}
+              ></div> */}
+
+              <div className="col-sm-12 col-md-6 col-lg-2">
                 <h4>Connect with us</h4>
                 <a href="https://maps.app.goo.gl/DFurq3id3D9i5TrE7">
                   <img
@@ -222,36 +268,38 @@ export const Footer = () => {
               </div>
             </div> */}
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between">
-              <div>
+            <div class="row my-2 mx-3 m-3">
+              <div className="col-lg-4 col-md-6 col-sm-12">
                 {" "}
                 <MarkAsUnreadOutlinedIcon />
                 <a
-                  class="footerParagraph mx-2"
+                  class="footerParagraph mx-2 text-decoration-none"
                   href="mailto: hello@haveneduservices.com"
                 >
                   hello@haveneduservices.com
                 </a>
               </div>
 
-              <div className="">
-                <LocalPhoneOutlinedIcon />
-                <a
-                  class="footerParagraph mx-2"
-                  href="tel:2348098438885"
-                  target="_blank"
-                >
-                  080 98438885
-                </a>
-                <a
-                  class="footerParagraph mx-2"
-                  href="tel:2348098458885"
-                  target="_blank"
-                >
-                  080 98458885
-                </a>
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <div className="d-flex d-flex-row">
+                  <LocalPhoneOutlinedIcon />
+                  <a
+                    class="footerParagraph text-decoration-none mx-2 d-sm-flex"
+                    href="tel:2348098438885"
+                    target="_blank"
+                  >
+                    080 98438885
+                  </a>
+                  <a
+                    class="footerParagraph text-decoration-none d-sm-flex"
+                    href="tel:2348098458885"
+                    target="_blank"
+                  >
+                    080 98458885
+                  </a>
+                </div>
               </div>
-              <ul class="list-unstyled d-flex">
+              <ul class="list-unstyled d-flex footIcon col-lg-4 col-md-12 col-sm-12">
                 <li class="ms-3">
                   <a
                     class="link-dark"
@@ -259,6 +307,21 @@ export const Footer = () => {
                     target="_blank"
                   >
                     <FacebookOutlinedIcon />
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-dark" href="#" target="_blank">
+                    <InstagramIcon />
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-dark" href="#" target="_blank">
+                    <TwitterIcon />
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-dark" href="#" target="_blank">
+                    <LinkedInIcon />
                   </a>
                 </li>
                 {/* <li class="ms-3">
