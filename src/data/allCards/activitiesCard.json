@@ -183,49 +183,42 @@
     {
       "id": 1,
       "image": "../assets/images/whatwedo/arts/taekwondo.png",
-      "title": "Taekwondo",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "Taekwondo"
     },
 
     {
       "id": 2,
       "image": "../assets/images/whatwedo/arts/music.png",
-      "title": "Music",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "Music"
     },
 
     {
       "id": 3,
       "image": "../assets/images/whatwedo/arts/tyeanddye.png",
-      "title": "Crafts",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "Crafts"
     }
   ],
   "languagesData": [
     {
       "id": 1,
       "image": "../assets/images/whatwedo/languages/french.png",
-      "title": "German",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "German"
     },
 
     {
       "id": 2,
       "image": "../assets/images/whatwedo/languages/french.png",
-      "title": "French",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "French"
     },
     {
       "id": 3,
       "image": "../assets/images/whatwedo/languages/french.png",
-      "title": "Mandarin",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "Mandarin"
     },
     {
       "id": 4,
       "image": "../assets/images/whatwedo/languages/french.png",
-      "title": "Spanish",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "Spanish"
     }
   ],
   "whatwedo": [

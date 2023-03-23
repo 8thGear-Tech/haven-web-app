@@ -2,20 +2,182 @@ import { Link } from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-
+import React, { useState } from "react";
 import { BackBtn, NextBtn } from "../../../Buttons/website/actionBtn/schoolBtn";
 
 const AboutChampsForm = () => {
+  const [form, setForm] = useState({});
+  const [errors, setErrors] = useState({});
+  const setField = (field, value) => {
+    setForm({
+      ...form,
+      [field]: value,
+    });
+    if (!!errors[field])
+      setErrors({
+        ...errors,
+        [field]: null,
+      });
+  };
+
+  const validateForm = () => {
+    const {
+      name,
+      addressOfSchool,
+      email,
+      phone,
+      noClass,
+      avgNumber,
+      activities,
+    } = form;
+    const newErrors = {};
+
+    if (!name || name === "") newErrors.name = "please enter your name";
+    if (!addressOfSchool || addressOfSchool === "")
+      newErrors.addressOfSchool = "please enter address of school";
+    if (!email || email === "") newErrors.email = "please enter email";
+    if (!phone || phone === "") newErrors.phone = "please enter phone number";
+    if (!noClass || noClass === "")
+      newErrors.noClass = "please number of classes";
+    if (!avgNumber || avgNumber === "")
+      newErrors.avgNumber = "please enter averange number";
+    if (!activities || activities === "")
+      newErrors.activities = "please enter activities";
+
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formErrors = validateForm();
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+    } else {
+      console.log("form submitted");
+
+      console.log(form);
+    }
+  };
   return (
     <>
       <Form>
-        <Row className="champFormBgColor p-3">
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>Name of School</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.name}
+            onChange={(e) => setField("name", e.target.value)}
+            isInvalid={!!errors.name}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.name}
+          </Form.Control.Feedback>
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formGridEmail">
+          <Form.Label>
+            <h5>Address of School</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.addressOfSchool}
+            onChange={(e) => setField("addressOfSchool", e.target.value)}
+            isInvalid={!!errors.addressOfSchool}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.addressOfSchool}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridEmail">
+          <Form.Label>
+            <h5>Email adress</h5>
+          </Form.Label>
+          <Form.Control
+            type="email"
+            className="authPlaceHolderBorder"
+            value={form.email}
+            onChange={(e) => setField("email", e.target.value)}
+            isInvalid={!!errors.email}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.email}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridEmail">
+          <Form.Label>
+            <h5>Phone number</h5>
+          </Form.Label>
+          <Form.Control
+            type="number"
+            className="authPlaceHolderBorder"
+            value={form.phone}
+            onChange={(e) => setField("phone", e.target.value)}
+            isInvalid={!!errors.phone}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.phone}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridEmail">
+          <Form.Label>
+            <h5>Number of class you need an instructor for </h5>
+          </Form.Label>
+          <Form.Control
+            type="number"
+            className="authPlaceHolderBorder"
+            value={form.noClass}
+            onChange={(e) => setField("noClass", e.target.value)}
+            isInvalid={!!errors.noClass}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.noClass}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridEmail">
+          <Form.Label>
+            <h5>Average number of Champs in a class </h5>
+          </Form.Label>
+          <Form.Control
+            type="number"
+            className="authPlaceHolderBorder"
+            value={form.avgNumber}
+            onChange={(e) => setField("avgNumber", e.target.value)}
+            isInvalid={!!errors.avgNumber}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.avgNumber}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridEmail">
+          <Form.Label>
+            <h5>
+              Activities of interest (coding, Robotics, Taekwondo, Music, Arts
+              and Craft)
+            </h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.activities}
+            onChange={(e) => setField("activities", e.target.value)}
+            isInvalid={!!errors.activities}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.activities}
+          </Form.Control.Feedback>
+        </Form.Group>
+        {/* <Row className="champFormBgColor p-3">
           <div className="col-lg-8 col-md-6 col-sm-12 align-items-center">
             <Form.Group as={Col} controlId="formGridTextOne">
               <Form.Label className="">
-                <h5> Number of champs in class</h5>
+              
+                <h5>Name of School</h5>
               </Form.Label>
-              {/* <Form.Control type="email" placeholder="Enter email" /> */}
+            
               <Form.Select
                 aria-label="Default select example"
                 className="schoolPlaceHolderBorder"
@@ -31,7 +193,7 @@ const AboutChampsForm = () => {
               <Form.Label>
                 <h5>Number of classes</h5>
               </Form.Label>
-              {/* <Form.Control type="password" placeholder="Password" /> */}
+              
               <Form.Select
                 aria-label="Default select example"
                 className="schoolPlaceHolderBorder"
@@ -115,14 +277,16 @@ const AboutChampsForm = () => {
               />
             </div>
           ))}
-        </Row>
+        </Row> */}
         <div className="d-flex justify-content-between">
           <Link to="/signup">
             <BackBtn />
           </Link>
-          <Link to="/SchoolLocation">
-            <NextBtn />
-          </Link>
+          <div type="submit" onClick={handleSubmit}>
+            <Link to="/SchoolLocation">
+              <NextBtn />
+            </Link>
+          </div>
         </div>
       </Form>
     </>

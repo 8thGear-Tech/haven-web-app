@@ -2,20 +2,70 @@ import { Link } from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
+import React, { useState } from "react";
 
 import { BackBtn, NextBtn } from "../../../Buttons/website/actionBtn/schoolBtn";
 
 const ActivityScheduleForm = () => {
+  const [form, setForm] = useState({});
+  const [errors, setErrors] = useState({});
+  const setField = (field, value) => {
+    setForm({
+      ...form,
+      [field]: value,
+    });
+    if (!!errors[field])
+      setErrors({
+        ...errors,
+        [field]: null,
+      });
+  };
+
+  const validateForm = () => {
+    const { day, instructor, hours, time } = form;
+    const newErrors = {};
+
+    if (!day || day === "") newErrors.day = "please enter your name";
+    if (!instructor || instructor === "")
+      newErrors.instructor = "please enter your name";
+    if (!hours || hours === "") newErrors.hours = "please enter your email";
+    if (!time || time === "") newErrors.time = "please enter your number";
+    // if (!dob || dob === "") newErrors.dob = "please enter yor date of birth";
+    // if (!address || address === "")
+    //   newErrors.address = "please enter your address";
+    // if (!nextOfKin || nextOfKin === "")
+    //   newErrors.nextOfKin = "please enter your next of kin";
+
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formErrors = validateForm();
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+    } else {
+      console.log("form submitted");
+
+      console.log(form);
+    }
+  };
   return (
     <>
       <Form>
         {" "}
         <Row className="mt-3">
           <Form.Label>
-            <h5>Which day do want activities to hold?</h5>
+            <h5>What day(s) do want activities to hold?</h5>
           </Form.Label>
           {["checkbox"].map((type) => (
-            <div key={`inline-${type}`} className="mb-3">
+            <div
+              key={`inline-${type}`}
+              className="mb-3"
+              value={form.day}
+              onChange={(e) => setField("day", e.target.value)}
+              isInvalid={!!errors.day}
+            >
               <Form.Check
                 inline
                 label="Monday"
@@ -56,8 +106,56 @@ const ActivityScheduleForm = () => {
               />
             </div>
           ))}
+          <Form.Control.Feedback type="invalid">
+            {errors.day}
+          </Form.Control.Feedback>
         </Row>
-        <Row className="mb-3 mt-3">
+        <Form.Group className="mb-3" controlId="formGridEmail">
+          <Form.Label>
+            <h5>For how long do you need an instructor for?</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.instructor}
+            onChange={(e) => setField("instructor", e.target.value)}
+            isInvalid={!!errors.instructor}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.instructor}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridEmail">
+          <Form.Label>
+            <h5>How many hours per day</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.hours}
+            onChange={(e) => setField("hours", e.target.value)}
+            isInvalid={!!errors.hours}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.hours}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridEmail">
+          <Form.Label>
+            <h5>From what time?</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.time}
+            onChange={(e) => setField("time", e.target.value)}
+            isInvalid={!!errors.time}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.time}
+          </Form.Control.Feedback>
+        </Form.Group>
+        {/* <Row className="mb-3 mt-3">
           <Form.Group as={Col} controlId="formGridState">
             <Form.Label>
               <h5>When do you want to start?</h5>
@@ -109,17 +207,19 @@ const ActivityScheduleForm = () => {
               <option>Choose...</option>
               <option>...</option>
             </Form.Select>
-          </Form.Group>
-        </Row>
+          </Form.Group> */}
+        {/* </Row> */}
         <div className="d-flex justify-content-between">
           <Link to="/SchoolInformation">
             <BackBtn />
           </Link>
 
-          <Link to="/PaymentPackages">
-            {" "}
-            <NextBtn />
-          </Link>
+          <div type="submit" onClick={handleSubmit}>
+            <Link to="/PaymentPackages">
+              {" "}
+              <NextBtn />
+            </Link>
+          </div>
         </div>
       </Form>
     </>

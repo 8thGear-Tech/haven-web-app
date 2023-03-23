@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 export const GetAnInstructorBtn = () => {
   return (
     <>
-      <Link to="/signup">
-        {" "}
+      <Link to="">
+        {/* <Link to="/signup"> */}{" "}
         <button className="GetAnInstructorBtn">GET AN INSTRUCTOR</button>
       </Link>
     </>

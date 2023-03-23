@@ -11,10 +11,218 @@ import React, { useState } from "react";
 import { SaveAndContinueBtn } from "../../../Buttons/website/actionBtn/instructorBtn";
 
 const AboutInstructorForm = () => {
+  const [form, setForm] = useState({});
+  const [errors, setErrors] = useState({});
+  const setField = (field, value) => {
+    setForm({
+      ...form,
+      [field]: value,
+    });
+    if (!!errors[field])
+      setErrors({
+        ...errors,
+        [field]: null,
+      });
+  };
+
+  const validateForm = () => {
+    const { name, email, phone, location, education, about, subject } = form;
+    const newErrors = {};
+
+    if (!name || name === "") newErrors.name = "please enter your name";
+    if (!email || email === "") newErrors.email = "please enter your email";
+    if (!phone || phone === "")
+      newErrors.phone = "please enter your phone number";
+    if (!location || location === "")
+      newErrors.location = "please enter your location";
+    if (!education || education === "")
+      newErrors.education = "please enter your location";
+    if (!about || about === "") newErrors.about = "please enter your location";
+    if (!subject || subject === "")
+      newErrors.subject = "please enter your location";
+
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formErrors = validateForm();
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+    } else {
+      console.log("form submitted");
+
+      console.log(form);
+    }
+  };
   return (
     <>
       <Form>
-        <Row className="mb-3">
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>Name of School</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.name}
+            onChange={(e) => setField("name", e.target.value)}
+            isInvalid={!!errors.name}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.name}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>Email</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.email}
+            onChange={(e) => setField("email", e.target.value)}
+            isInvalid={!!errors.email}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.email}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>Contact number</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.phone}
+            onChange={(e) => setField("phone", e.target.value)}
+            isInvalid={!!errors.phone}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.phone}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>What do you do Currently</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.location}
+            onChange={(e) => setField("location", e.target.value)}
+            isInvalid={!!errors.location}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.location}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>What educational qualification do you have?</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.education}
+            onChange={(e) => setField("education", e.target.value)}
+            isInvalid={!!errors.education}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.education}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>
+              Please tell us about past teaching/tutoring experience you have
+              E.g. Jsay Prevarsity - Mathematics Teacher for Grade 6 (March 2022
+              - Present)
+            </h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.about}
+            onChange={(e) => setField("about", e.target.value)}
+            isInvalid={!!errors.about}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.about}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>
+              What subject are you applying to be a tutor for?(Coding, Robotics,
+              music, Crafts)
+            </h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.subject}
+            onChange={(e) => setField("subject", e.target.value)}
+            isInvalid={!!errors.subject}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.subject}
+          </Form.Control.Feedback>
+          <h5>
+            Ref 1: Who can we speak to verify all your input above? Please
+            follow this format:
+          </h5>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>Name</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.referal}
+            onChange={(e) => setField("location", e.target.value)}
+            isInvalid={!!errors.referal}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.referal}
+          </Form.Control.Feedback>
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>Designation</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.referal}
+            onChange={(e) => setField("location", e.target.value)}
+            isInvalid={!!errors.referal}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.referal}
+          </Form.Control.Feedback>
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>
+            <h5>Phone Number</h5>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            className="authPlaceHolderBorder"
+            value={form.referal}
+            onChange={(e) => setField("location", e.target.value)}
+            isInvalid={!!errors.referal}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.referal}
+          </Form.Control.Feedback>
+        </Form.Group>
+
+        {/* <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridText">
             <Form.Label>
               <h5>First Name</h5>
@@ -27,8 +235,8 @@ const AboutInstructorForm = () => {
             </Form.Label>
             <Form.Control type="text" className="authPlaceHolderBorder  " />
           </Form.Group>
-        </Row>
-        <Form.Group className="mb-3" controlId="formGridAddress1">
+        </Row> */}
+        {/* <Form.Group className="mb-3" controlId="formGridAddress1">
           <Form.Label>
             <h5>Email Address</h5>
           </Form.Label>
@@ -36,15 +244,15 @@ const AboutInstructorForm = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Send me jobs and offers" />
-        </Form.Group>
+        </Form.Group> */}
 
-        <Row className="mb-3">
+        {/* <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridTextOne">
             <Form.Label className="">
               <h5>Birthday</h5>
               <p>You must be 18 and above to apply</p>
             </Form.Label>
-            {/* <Form.Control type="email" placeholder="Enter email" /> */}
+          
             <div className="d-flex">
               {" "}
               <Form.Select
@@ -76,8 +284,8 @@ const AboutInstructorForm = () => {
               </Form.Select>
             </div>
           </Form.Group>
-        </Row>
-        <Row className="mb-3">
+        </Row> */}
+        {/* <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridNumber">
             <Form.Label>
               <h5 className="mt-4">Primary phone number</h5>
@@ -122,14 +330,14 @@ const AboutInstructorForm = () => {
               />
             </InputGroup>
           </Form.Group>
-        </Row>
-        <Row className="mb-3">
+        </Row> */}
+        {/* <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridTextOne">
             <Form.Label className="">
               <h5>Birthday</h5>
               <p>You must be 18 and above to apply</p>
             </Form.Label>
-            {/* <Form.Control type="email" placeholder="Enter email" /> */}
+            
             <div className="d-flex">
               {" "}
               <Form.Select
@@ -161,13 +369,13 @@ const AboutInstructorForm = () => {
               </Form.Select>
             </div>
           </Form.Group>
-        </Row>
-        <Row className="mb-3">
+        </Row> */}
+        {/* <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridTextOne">
             <Form.Label className="">
               <h5 className="mt-3">Gender</h5>
             </Form.Label>
-            {/* <Form.Control type="email" placeholder="Enter email" /> */}{" "}
+            {" "}
             {["radio"].map((type) => (
               <div key={`inline-${type}`} className="mb-3">
                 <Form.Check
@@ -191,7 +399,7 @@ const AboutInstructorForm = () => {
             <Form.Label className="">
               <h5 className="mt-3">How did you hear about us?</h5>
             </Form.Label>
-            {/* <Form.Control type="email" placeholder="Enter email" /> */}{" "}
+          {" "}
             <Form.Select
               aria-label="Default select example"
               className="authPlaceHolderBorder mx-1"
@@ -202,13 +410,13 @@ const AboutInstructorForm = () => {
               <option value="3">Three</option>
             </Form.Select>
           </Form.Group>
-        </Row>
-        <Row className="mb-3">
+        </Row> */}
+        {/* <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridTextOne">
             <Form.Label className="">
               <h5 className="mt-3">Nationality</h5>
             </Form.Label>
-            {/* <Form.Control type="email" placeholder="Enter email" /> */}{" "}
+            {" "}
             <Form.Select
               aria-label="Default select example"
               className="authPlaceHolderBorder mx-1"
@@ -223,7 +431,7 @@ const AboutInstructorForm = () => {
             <Form.Label className="">
               <h5 className="mt-3">Primary language</h5>
             </Form.Label>
-            {/* <Form.Control type="email" placeholder="Enter email" /> */}{" "}
+            {" "}
             <Form.Select
               aria-label="Default select example"
               className="authPlaceHolderBorder mx-1"
@@ -234,8 +442,12 @@ const AboutInstructorForm = () => {
               <option value="3">Three</option>
             </Form.Select>
           </Form.Group>
-        </Row>
-        <div className="d-flex justify-content-center mt-5">
+        </Row> */}
+        <div
+          className="d-flex justify-content-center mt-5"
+          type="submit"
+          onClick={handleSubmit}
+        >
           {" "}
           <Link to="/InstructorProfileInfo">
             <SaveAndContinueBtn />

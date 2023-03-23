@@ -25,7 +25,12 @@ export const Footer = () => {
     <>
       <div class="container-fluid px-5 footerOneBgColor">
         <footer class="py-3 mx-5">
-          <div className="footR">
+          <div
+            className="footR"
+            style={{
+              backgroundColor: " #75117a",
+            }}
+          >
             <h5 className="text-light size ">
               Check out our Blogpost to know our latest activities
             </h5>

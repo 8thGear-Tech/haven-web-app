@@ -120,13 +120,13 @@ const Timestamp = () => {
   return (
     <>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={havenlogo} />{" "}
-        <Card.Body>
+        <Card.Img variant="top" src={havenlogo} />
+        <Card.Body style={{fill:"Solid #e2e9f0 "}}>
           <Card.Link href="#">About </Card.Link>
           <Card.Link href="#">Description</Card.Link>
+          <Card.Title>Card Title</Card.Title>{" "}
         </Card.Body>
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
+        <Card.Body className="timeStamp">
           <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
