@@ -58,21 +58,20 @@ const AboutInstructorForm = () => {
   return (
     <>
       <Form>
-        <Form.Group className="mb-3" controlId="formGridAddress1">
-          <Form.Label>
-            <h5>Name of School</h5>
-          </Form.Label>
-          <Form.Control
-            type="text"
-            className="authPlaceHolderBorder"
-            value={form.name}
-            onChange={(e) => setField("name", e.target.value)}
-            isInvalid={!!errors.name}
-          />
-          <Form.Control.Feedback type="invalid">
-            {errors.name}
-          </Form.Control.Feedback>
-        </Form.Group>
+        <Row className="mb-3">
+          <Form.Group as={Col} controlId="formGridText">
+            <Form.Label>
+              <h5>First Name</h5>
+            </Form.Label>
+            <Form.Control type="text" className="authPlaceHolderBorder" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridText">
+            <Form.Label>
+              <h5>Last Name</h5>
+            </Form.Label>
+            <Form.Control type="text" className="authPlaceHolderBorder  " />
+          </Form.Group>
+        </Row>
         <Form.Group className="mb-3" controlId="formGridAddress1">
           <Form.Label>
             <h5>Email</h5>
@@ -152,75 +151,81 @@ const AboutInstructorForm = () => {
             {errors.about}
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formGridAddress1">
-          <Form.Label>
-            <h5>
-              What subject are you applying to be a tutor for?(Coding, Robotics,
-              music, Crafts)
-            </h5>
-          </Form.Label>
-          <Form.Control
-            type="text"
-            className="authPlaceHolderBorder"
-            value={form.subject}
-            onChange={(e) => setField("subject", e.target.value)}
-            isInvalid={!!errors.subject}
-          />
-          <Form.Control.Feedback type="invalid">
-            {errors.subject}
-          </Form.Control.Feedback>
-          <h5>
-            Ref 1: Who can we speak to verify all your input above? Please
-            follow this format:
-          </h5>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formGridAddress1">
-          <Form.Label>
-            <h5>Name</h5>
-          </Form.Label>
-          <Form.Control
-            type="text"
-            className="authPlaceHolderBorder"
-            value={form.referal}
-            onChange={(e) => setField("location", e.target.value)}
-            isInvalid={!!errors.referal}
-          />
-          <Form.Control.Feedback type="invalid">
-            {errors.referal}
-          </Form.Control.Feedback>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formGridAddress1">
-          <Form.Label>
-            <h5>Designation</h5>
-          </Form.Label>
-          <Form.Control
-            type="text"
-            className="authPlaceHolderBorder"
-            value={form.referal}
-            onChange={(e) => setField("location", e.target.value)}
-            isInvalid={!!errors.referal}
-          />
-          <Form.Control.Feedback type="invalid">
-            {errors.referal}
-          </Form.Control.Feedback>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formGridAddress1">
-          <Form.Label>
-            <h5>Phone Number</h5>
-          </Form.Label>
-          <Form.Control
-            type="text"
-            className="authPlaceHolderBorder"
-            value={form.referal}
-            onChange={(e) => setField("location", e.target.value)}
-            isInvalid={!!errors.referal}
-          />
-          <Form.Control.Feedback type="invalid">
-            {errors.referal}
-          </Form.Control.Feedback>
-        </Form.Group>
+        <Row>
+          <h4>What subject are you applying to be a tutor for?</h4>
+          {["checkbox"].map((type) => (
+            <div key={`default-${type}`} className="mb-3">
+              <Form.Check
+                inline
+                label="Coding"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+              <Form.Check
+                inline
+                label="Robotics"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+              <Form.Check
+                inline
+                label="Music"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+              <Form.Check
+                inline
+                label="Arts and Crafts"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+            </div>
+          ))}
+        </Row>
+        <Row>
+          <h4>Do you have a smart phone</h4>{" "}
+          {["radio"].map((type) => (
+            <div key={`default-${type}`} className="mb-3">
+              <Form.Check
+                inline
+                label="Yes"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+              <Form.Check
+                inline
+                label="No"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+            </div>
+          ))}
+        </Row>
+        <Row>
+          <h4>Do you have working laptop</h4>{" "}
+          {["radio"].map((type) => (
+            <div key={`default-${type}`} className="mb-3">
+              <Form.Check
+                inline
+                label="Yes"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+              <Form.Check
+                inline
+                label="No, but i can afford to get one right now"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+              <Form.Check
+                inline
+                label="No, but i can't afford to get one right now"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+            </div>
+          ))}
+        </Row>
 
         {/* <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridText">

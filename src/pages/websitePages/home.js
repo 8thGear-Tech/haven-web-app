@@ -18,6 +18,12 @@ import activitiesimageone from "../../assets/images/home/activitiesimageone.png"
 import activitiesimagetwo from "../../assets/images/home/activitiesimagetwo.png";
 import activitiesimagethree from "../../assets/images/home/activitiesimagethree.png";
 import activitiesimagefour from "../../assets/images/home/activitiesimagefour.png";
+// import CapstoneSchool from "../../assets/images/home/CapstoneSchool.jpg";
+import GraciaDavins from "../../assets/images/home/GraciaDavins.png";
+import Hauk from "../../assets/images/home/hauk.PNG";
+// import Hauk from "../../assets/images/home/Hauk.png";
+// import HaukExplorers from "../../assets/images/home/HaukExplorers.png";
+import Smallville from "../../assets/images/home/Smallville.png";
 
 const Home = () => {
   return (
@@ -33,6 +39,7 @@ const Home = () => {
       <WhatWeDo />
       <WhyTrustUs />
       <OurActivities />
+      <SomeOfOurSchools />
     </div>
   );
 };
@@ -198,7 +205,7 @@ const OurActivities = () => {
                 <Link to="/" style={{ color: "#75117A" }}>
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
-                    Virtual Tech Sessions
+                    Virtual / Physical Tech Sessions
                   </p>
                 </Link>
 
@@ -264,6 +271,50 @@ const OurActivities = () => {
     //     {/* ))} */}
     //   </Row>
     // </Container>
+  );
+};
+
+const SomeOfOurSchools = () => {
+  return (
+    <>
+      <div className="text-center container mt-2">
+        <h3>SOME OF OUR TRUSTED SCHOOLS </h3>
+        <div className="">
+          <div className="row">
+            {/* <div className="col-sm-12 col-md-3 col-lg-3">
+            <img src={CapstoneSchool} alt="" />
+          </div> */}
+            <div className="col-md-4 col-lg-4">
+              <img
+                style={{
+                  width: "60%",
+                }}
+                src={GraciaDavins}
+                alt=""
+              />
+            </div>
+            <div className=" col-md-4 col-lg-4">
+              <img
+                style={{
+                  width: "60%",
+                }}
+                src={Hauk}
+                alt=""
+              />
+            </div>
+            <div className="col-sm-12 col-md-4 col-lg-4">
+              <img
+                style={{
+                  width: "55%",
+                }}
+                src={Smallville}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

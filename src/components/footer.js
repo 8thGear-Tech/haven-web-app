@@ -315,7 +315,11 @@ export const Footer = () => {
                   </a>
                 </li>
                 <li class="ms-3">
-                  <a class="link-dark" href="#" target="_blank">
+                  <a
+                    class="link-dark"
+                    href="https://instagram.com/haveneduservices?igshid=1fyt565z18d4u"
+                    target="_blank"
+                  >
                     <InstagramIcon />
                   </a>
                 </li>
@@ -325,7 +329,11 @@ export const Footer = () => {
                   </a>
                 </li>
                 <li class="ms-3">
-                  <a class="link-dark" href="#" target="_blank">
+                  <a
+                    class="link-dark"
+                    href="https://www.linkedin.com/company/havenedu-services/?originalSubdomain=ng"
+                    target="_blank"
+                  >
                     <LinkedInIcon />
                   </a>
                 </li>

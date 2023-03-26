@@ -28,7 +28,8 @@ const AboutChampsForm = () => {
       phone,
       noClass,
       avgNumber,
-      activities,
+      // activities,
+      // interest,
     } = form;
     const newErrors = {};
 
@@ -41,8 +42,10 @@ const AboutChampsForm = () => {
       newErrors.noClass = "please number of classes";
     if (!avgNumber || avgNumber === "")
       newErrors.avgNumber = "please enter averange number";
-    if (!activities || activities === "")
-      newErrors.activities = "please enter activities";
+    // if (!activities || activities === "")
+    //   newErrors.activities = "please enter activities";
+    // if (!interest || interest === "")
+    // newErrors.interest = "please enter activties of interest";
 
     return newErrors;
   };
@@ -152,24 +155,45 @@ const AboutChampsForm = () => {
             {errors.avgNumber}
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formGridEmail">
-          <Form.Label>
-            <h5>
-              Activities of interest (coding, Robotics, Taekwondo, Music, Arts
-              and Craft)
-            </h5>
-          </Form.Label>
-          <Form.Control
-            type="text"
-            className="authPlaceHolderBorder"
-            value={form.activities}
-            onChange={(e) => setField("activities", e.target.value)}
-            isInvalid={!!errors.activities}
-          />
-          <Form.Control.Feedback type="invalid">
-            {errors.activities}
-          </Form.Control.Feedback>
-        </Form.Group>
+
+        <Row>
+          <h4>Activities of interest </h4>
+
+          {["checkbox"].map((type) => (
+            <div
+              key={`default-${type}`}
+              className="mb-3"
+              value={form.day}
+              onChange={(e) => setField("day", e.target.value)}
+              isInvalid={!!errors.day}
+            >
+              <Form.Check
+                inline
+                label="Coding"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+              <Form.Check
+                inline
+                label="Robotics"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+              <Form.Check
+                inline
+                label="Music"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+              <Form.Check
+                inline
+                label="Arts and Crafts"
+                type={type}
+                id={`inline-${type}-3`}
+              />
+            </div>
+          ))}
+        </Row>
         {/* <Row className="champFormBgColor p-3">
           <div className="col-lg-8 col-md-6 col-sm-12 align-items-center">
             <Form.Group as={Col} controlId="formGridTextOne">
@@ -278,15 +302,22 @@ const AboutChampsForm = () => {
             </div>
           ))}
         </Row> */}
+
         <div className="d-flex justify-content-between">
           <Link to="/signup">
             <BackBtn />
           </Link>
           <div type="submit" onClick={handleSubmit}>
-            <Link to="/SchoolLocation">
+            <Link to="/ActivitySchedule">
               <NextBtn />
             </Link>
           </div>
+          {/* <div type="submit" onClick={handleSubmit}>
+             <Link to="/SchoolLocation">
+            <NextBtn />
+          </Link>
+
+          </div> */}
         </div>
       </Form>
     </>

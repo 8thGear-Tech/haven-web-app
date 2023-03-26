@@ -13,19 +13,19 @@ const SchoolInfoForm = () => {
   return (
     <>
       <Form>
-        <Form.Group className="mb-3" controlId="formGridEmail">
+        <Form.Group className="mb-3" controlId="formGridAddress1">
           <Form.Label>
             <h5>School Name</h5>
           </Form.Label>
           <Form.Control type="text" className="authPlaceHolderBorder" />
         </Form.Group>
+
         <Form.Group className="mb-3" controlId="formGridEmail">
           <Form.Label>
             <h5>Active Email</h5>
           </Form.Label>
-          <Form.Control type="text" className="authPlaceHolderBorder" />
+          <Form.Control type="email" className="authPlaceHolderBorder" />
         </Form.Group>
-
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridNumber">
             <Form.Label>
@@ -48,7 +48,7 @@ const SchoolInfoForm = () => {
                 className="authPlaceHolderBorder"
               />
             </InputGroup>
-            <Form.Control type="number" className="authPlaceHolderBorder" />
+            {/* <Form.Control type="number" className="authPlaceHolderBorder" /> */}
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridText">
@@ -63,7 +63,6 @@ const SchoolInfoForm = () => {
           <Link to="/SchoolLocation">
             <BackBtn />
           </Link>
-
           <Link to="/ActivitySchedule">
             <NextBtn />
           </Link>

@@ -30,11 +30,6 @@ const ActivityScheduleForm = () => {
       newErrors.instructor = "please enter your name";
     if (!hours || hours === "") newErrors.hours = "please enter your email";
     if (!time || time === "") newErrors.time = "please enter your number";
-    // if (!dob || dob === "") newErrors.dob = "please enter yor date of birth";
-    // if (!address || address === "")
-    //   newErrors.address = "please enter your address";
-    // if (!nextOfKin || nextOfKin === "")
-    //   newErrors.nextOfKin = "please enter your next of kin";
 
     return newErrors;
   };
@@ -210,9 +205,12 @@ const ActivityScheduleForm = () => {
           </Form.Group> */}
         {/* </Row> */}
         <div className="d-flex justify-content-between">
-          <Link to="/SchoolInformation">
+          <Link to="/ChampsNeeds">
             <BackBtn />
           </Link>
+          {/* <Link to="/SchoolInformation">
+            <BackBtn />
+          </Link> */}
 
           <div type="submit" onClick={handleSubmit}>
             <Link to="/PaymentPackages">

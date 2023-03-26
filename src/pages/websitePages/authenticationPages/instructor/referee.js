@@ -19,34 +19,82 @@ export const Referee = () => {
     <>
       <GuestNavbar />
 
-      <Form>
-        {" "}
-        <Row className="mt-5 justify-content-center">
+      <Container>
+        <Form>
           {" "}
-          <div className="text-center">
+          <Row className="mt-5 justify-content-center">
             <h4>
-              List the name of your refree below (at least 4 reputable persons
-              or companies.)
+              {" "}
+              Ref 1: Who can we speak to verify all your input above? Please
+              follow this format:
             </h4>
-          </div>
-          <div className="col-lg-6">
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Control as="textarea" rows={3} />
+            <Form.Group className="mb-3" controlId="formGridAddress1">
+              <Form.Label>
+                <h5>Name</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
             </Form.Group>
+            <Form.Group className="mb-3" controlId="formGridAddress1">
+              <Form.Label>
+                <h5>Designation</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formGridAddress1">
+              <Form.Label>
+                <h5>Phone Number</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
+            </Form.Group>
+            <h4>
+              {" "}
+              Ref 2: Who can we speak to verify all your input above? Please
+              follow this format:
+            </h4>
+            <Form.Group className="mb-3" controlId="formGridAddress1">
+              <Form.Label>
+                <h5>Name</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formGridAddress1">
+              <Form.Label>
+                <h5>Designation</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formGridAddress1">
+              <Form.Label>
+                <h5>Phone Number</h5>
+              </Form.Label>
+              <Form.Control type="text" className="authPlaceHolderBorder" />
+            </Form.Group>
+
+            {/* <div className="text-center">
+              <h4>
+                List the name of your refree below (at least 4 reputable persons
+                or companies.)
+              </h4>
+            </div> 
+            <div className="col-lg-6">
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Control as="textarea" rows={3} />
+              </Form.Group>
+            </div> */}
+          </Row>
+          <div className="d-flex justify-content-between mt-5 mx-5">
+            <Link to="/InstructorProfileInfo">
+              <BackToApplication />
+            </Link>
+            <Link to="/InstructorProfileInfo">
+              <Done />
+            </Link>
           </div>
-        </Row>
-        <div className="d-flex justify-content-between mt-5 mx-5">
-          <Link to="/InstructorProfileInfo">
-            <BackToApplication />
-          </Link>
-          <Link to="/InstructorProfileInfo">
-            <Done />
-          </Link>
-        </div>
-      </Form>
+        </Form>
+      </Container>
     </>
   );
 };
