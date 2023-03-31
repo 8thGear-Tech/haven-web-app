@@ -73,8 +73,8 @@ const Coding = () => {
         </div>
         <div className="d-flex justify-content-center justify-content-evenly mt-2">
           <Link to="">
-            <SignUpBtn />
-            {/* <SchoolParentSignUpBtn /> */}
+            {/* <SignUpBtn /> */}
+            <SchoolParentSignUpBtn />
           </Link>
         </div>
       </div>
@@ -102,8 +102,8 @@ const Robotics = () => {
         </div>
         <div className="d-flex justify-content-center justify-content-evenly mt-2">
           <Link to="">
-            {/* <SchoolParentSignUpBtn /> */}
-            <SignUpBtn />
+            <SchoolParentSignUpBtn />
+            {/* <SignUpBtn /> */}
           </Link>
         </div>
       </div>

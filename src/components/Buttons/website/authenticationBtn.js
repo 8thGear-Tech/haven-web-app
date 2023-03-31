@@ -90,8 +90,12 @@ export const SignUpBtn = () => {
     <>
       <a href="">
         {" "}
-        <button className="LoginBtn">SIGNUP</button>
+        <button className="LoginBtn">SIGN UP</button>
       </a>
+      {/* <a href="">
+        {" "}
+        <button className="LoginBtn">SIGN UP</button>
+      </a> */}
     </>
   );
 };
@@ -171,7 +175,7 @@ export const SchoolParentSignUpBtn = () => {
 
   return (
     <>
-      <Link
+      <a
         href=""
         type="button"
         data-bs-toggle="modal"
@@ -179,16 +183,19 @@ export const SchoolParentSignUpBtn = () => {
       >
         {" "}
         <Button variant="" onClick={handleShow} className="CreateAccountBtn">
-          SIGN UP
+          REGISTER NOW
         </Button>
-      </Link>
+        {/* <Button variant="" onClick={handleShow} className="CreateAccountBtn">
+          SIGN UP
+        </Button> */}
+      </a>
       <Modal show={show} onHide={handleClose}>
         {/* <Modal.Header closeButton>
           <Modal.Title>
             <img src={havenlogo} width={70} className="img-fluid" />
           </Modal.Title>
         </Modal.Header> */}
-        <SchoolParentSignUpModal />
+        <SchoolParentSignUpModal handleClose={handleClose} />
         {/* <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body> */}
         {/* <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

@@ -727,21 +727,61 @@ export const JoinUsModal = () => {
     </>
   );
 };
-export const SchoolParentSignUpModal = () => {
-  const [show, setShow] = useState(false);
-  const handleShow = () => setShow(true);
-  const handleClose = () => setShow(false);
+export const SchoolParentSignUpModal = ({ handleClose }) => {
+  // const [show, setShow] = useState(false);
+  // const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
   return (
     <>
       <div className="joinUsModalBg py-5">
         <h6 className="text-center pt-3">
           Continue as a school
-          <Link to="/school-signup" className="px-1 mutedTextFontColor">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScaOieURFObPVm4shxavB7Z6mtyUOXadCMUa_MKu-8KT77m0g/viewform?usp=sf_link"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLScaOieURFObPVm4shxavB7Z6mtyUOXadCMUa_MKu-8KT77m0g/viewform?usp=sf_link",
+                "_blank"
+              )
+            }
+            className="px-1 mutedTextFontColor"
+            // target="_blank"
+            rel="noopener noreferrer"
+          >
             Click here
-          </Link>
+          </a>
+          {/* <Link to="/school-signup" className="px-1 mutedTextFontColor">
+            Click here
+          </Link> */}
           {/* <Link to="/ChampsNeeds" className="px-1 mutedTextFontColor">
             Click here
           </Link> */}
+        </h6>
+        {/* <h6 className="text-center pt-3">
+          Continue as a school
+          <Link to="/school-signup" className="px-1 mutedTextFontColor">
+            Click here
+          </Link>
+          <Link to="/ChampsNeeds" className="px-1 mutedTextFontColor">
+            Click here
+          </Link>
+        </h6> */}
+        <h6 className="text-center pt-3">
+          Continue as an instructor
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdV1S2xwMwH35oaMLbzuJanRCnxK1bmrd8tLIRDdIsW9WmhAg/viewform?usp=sharing"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdV1S2xwMwH35oaMLbzuJanRCnxK1bmrd8tLIRDdIsW9WmhAg/viewform?usp=sf_link",
+                "_blank"
+              )
+            }
+            className="px-1 mutedTextFontColor"
+            // target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click here
+          </a>
         </h6>
         {/* <h6 className="text-center pt-3">
           Continue as an instructor
@@ -751,10 +791,27 @@ export const SchoolParentSignUpModal = () => {
         </h6> */}
         <h6 className="text-center pt-3">
           Continue as a parent
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScTQuY6r0NkWTeRX1jcUD-ceHguT4JfbiF2OTWTV2Oj-4o7bg/viewform?usp=sharing"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLScTQuY6r0NkWTeRX1jcUD-ceHguT4JfbiF2OTWTV2Oj-4o7bg/viewform?usp=sf_link",
+                "_blank"
+              )
+            }
+            className="px-1 mutedTextFontColor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click here
+          </a>
+        </h6>
+        {/* <h6 className="text-center pt-3">
+          Continue as a parent
           <Link to="/parent-signup" className="px-1 mutedTextFontColor">
             Click here
           </Link>
-        </h6>
+        </h6> */}
         <div className="text-center mt-4">
           {" "}
           <Button variant="secondary" onClick={handleClose} className="BackBtn">
