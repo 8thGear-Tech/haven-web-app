@@ -7,10 +7,16 @@ import { Link } from "react-router-dom";
 export const GetAnInstructorBtn = () => {
   return (
     <>
-      <Link to="">
+      {/* <Link to=""> */}
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScaOieURFObPVm4shxavB7Z6mtyUOXadCMUa_MKu-8KT77m0g/viewform"
+        target="_blank"
+      >
+        {" "}
         {/* <Link to="/signup"> */}{" "}
         <button className="GetAnInstructorBtn">GET AN INSTRUCTOR</button>
-      </Link>
+        {/* </Link> */}
+      </a>
     </>
   );
 };

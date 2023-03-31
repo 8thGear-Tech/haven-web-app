@@ -482,9 +482,16 @@ export const Footer = () => {
                   <h4>Work with us</h4>
                   <ul class="nav flex-column">
                     <li class="nav-item mb-2">
-                      <a href="/signup" class="nav-link p-0 footerParagraph">
+                      <a
+                        href="/https://docs.google.com/forms/d/e/1FAIpQLSdV1S2xwMwH35oaMLbzuJanRCnxK1bmrd8tLIRDdIsW9WmhAg/viewform?usp=sharing"
+                        class="nav-link p-0 footerParagraph"
+                        target="_blank"
+                      >
                         Become an instructor
                       </a>
+                      {/* <a href="/signup" class="nav-link p-0 footerParagraph">
+                        Become an instructor
+                      </a> */}
                     </li>
                   </ul>
                 </div>
