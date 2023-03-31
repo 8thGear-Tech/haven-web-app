@@ -135,9 +135,11 @@ const AboutInstructorForm = () => {
         <Form.Group className="mb-3" controlId="formGridAddress1">
           <Form.Label>
             <h5>
-              Please tell us about past teaching/tutoring experience you have
-              E.g. Jsay Prevarsity - Mathematics Teacher for Grade 6 (March 2022
-              - Present)
+              Please tell us about past teaching/tutoring experience you have{" "}
+              <i>
+                E.g. Jsay Prevarsity - Mathematics Teacher for Grade 6 (March
+                2022 - Present)
+              </i>
             </h5>
           </Form.Label>
           <Form.Control
@@ -150,6 +152,11 @@ const AboutInstructorForm = () => {
           <Form.Control.Feedback type="invalid">
             {errors.about}
           </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group controlId="formFileLg" className="mb-3">
+          {/* <Form.Label>Kindly upload your resume</Form.Label> */}
+          <h4>Kindly upload your resume</h4>
+          <Form.Control type="file" size="lg" />
         </Form.Group>
         <Row>
           <h4>What subject are you applying to be a tutor for?</h4>

@@ -18,11 +18,9 @@ import activitiesimageone from "../../assets/images/home/activitiesimageone.png"
 import activitiesimagetwo from "../../assets/images/home/activitiesimagetwo.png";
 import activitiesimagethree from "../../assets/images/home/activitiesimagethree.png";
 import activitiesimagefour from "../../assets/images/home/activitiesimagefour.png";
-// import CapstoneSchool from "../../assets/images/home/CapstoneSchool.jpg";
+import CapstoneSchool from "../../assets/images/home/CapstoneSchool.jpg";
 import GraciaDavins from "../../assets/images/home/GraciaDavins.png";
 import Hauk from "../../assets/images/home/hauk.PNG";
-// import Hauk from "../../assets/images/home/Hauk.png";
-// import HaukExplorers from "../../assets/images/home/HaukExplorers.png";
 import Smallville from "../../assets/images/home/Smallville.png";
 
 const Home = () => {
@@ -277,14 +275,20 @@ const OurActivities = () => {
 const SomeOfOurSchools = () => {
   return (
     <>
-      <div className="text-center container mt-2">
+      <div className="text-center container mt-5 mb-3">
         <h3>SOME OF OUR TRUSTED SCHOOLS </h3>
         <div className="">
           <div className="row">
-            {/* <div className="col-sm-12 col-md-3 col-lg-3">
-            <img src={CapstoneSchool} alt="" />
-          </div> */}
-            <div className="col-md-4 col-lg-4">
+            <div className="col-sm-12 col-md-3 col-lg-3">
+              <img
+                style={{
+                  width: "45%",
+                }}
+                src={CapstoneSchool}
+                alt=""
+              />
+            </div>
+            <div className="col-md-3 col-lg-3">
               <img
                 style={{
                   width: "60%",
@@ -293,19 +297,19 @@ const SomeOfOurSchools = () => {
                 alt=""
               />
             </div>
-            <div className=" col-md-4 col-lg-4">
+            <div className=" col-md-3 col-lg-3">
               <img
                 style={{
-                  width: "60%",
+                  width: "55%",
                 }}
                 src={Hauk}
                 alt=""
               />
             </div>
-            <div className="col-sm-12 col-md-4 col-lg-4">
+            <div className="col-sm-12 col-md-3 col-lg-3 mt-4">
               <img
                 style={{
-                  width: "55%",
+                  width: "45%",
                 }}
                 src={Smallville}
                 alt=""

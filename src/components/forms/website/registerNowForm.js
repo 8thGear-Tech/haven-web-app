@@ -295,9 +295,9 @@ const RegisterNow = () => {
                   className="authPlaceHolderBorder mx-1"
                 >
                   <option>Select</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option value="1">WhatsApp</option>
+                  <option value="2">Twitter</option>
+                  <option value="3">Instagram</option>
                 </Form.Select>
               </div>
             </Form.Group>

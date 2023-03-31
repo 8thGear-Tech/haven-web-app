@@ -25,11 +25,11 @@ const ActivityScheduleForm = () => {
     const { day, instructor, hours, time } = form;
     const newErrors = {};
 
-    if (!day || day === "") newErrors.day = "please enter your name";
+    if (!day || day === "") newErrors.day = "please enter day";
     if (!instructor || instructor === "")
-      newErrors.instructor = "please enter your name";
-    if (!hours || hours === "") newErrors.hours = "please enter your email";
-    if (!time || time === "") newErrors.time = "please enter your number";
+      newErrors.instructor = "please enter how long";
+    if (!hours || hours === "") newErrors.hours = "please enter hours";
+    if (!time || time === "") newErrors.time = "please enter time";
 
     return newErrors;
   };
