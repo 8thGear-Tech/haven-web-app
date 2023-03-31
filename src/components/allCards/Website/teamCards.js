@@ -44,9 +44,16 @@ export const TeamCardOne = (props) => {
         <Card.Img variant="top" src={image} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
-          <Card.Text className="">{role}</Card.Text>
+          <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
             <a
+              href="https://www.linkedin.com/in/omowunmiobidairo/"
+              target="_blank"
+            >
+              {" "}
+              <LinkedIn />
+            </a>
+            {/* <a
               // variant="primary"
               onClick={handleShow}
               href=""
@@ -57,7 +64,7 @@ export const TeamCardOne = (props) => {
               className="text-decoration-none"
             >
               View Bio
-            </a>
+            </a> */}
 
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton></Modal.Header>
@@ -79,7 +86,7 @@ export const TeamCardOne = (props) => {
                 <Card.Text className="mx-3 my-2">{modaltext}</Card.Text>
               </div>
             </Modal>
-            <EastIcon style={{ color: "#75117a" }} />
+            {/* <EastIcon style={{ color: "#75117a" }} /> */}
           </div>
         </Card.Body>
       </div>
@@ -107,9 +114,16 @@ export const TeamCardTwo = (props) => {
         <Card.Img variant="top" src={image} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
-          <Card.Text className="">{role}</Card.Text>
+          <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
             <a
+              href="https://www.linkedin.com/in/omotola-adaramaja-a8240621a/"
+              target="_blank"
+            >
+              {" "}
+              <LinkedIn />
+            </a>
+            {/* <a
               // variant="primary"
               onClick={handleShow}
               href=""
@@ -120,7 +134,7 @@ export const TeamCardTwo = (props) => {
               className="text-decoration-none"
             >
               View Bio
-            </a>
+            </a> */}
 
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton></Modal.Header>
@@ -142,7 +156,7 @@ export const TeamCardTwo = (props) => {
                 <Card.Text className="mx-3 my-2">{modaltext}</Card.Text>
               </div>
             </Modal>
-            <EastIcon style={{ color: "#75117a" }} />
+            {/* <EastIcon style={{ color: "#75117a" }} /> */}
           </div>
         </Card.Body>
       </div>
@@ -170,9 +184,16 @@ export const TeamCardThree = (props) => {
         <Card.Img variant="top" src={image} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
-          <Card.Text className="">{role}</Card.Text>
+          <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
             <a
+              href="https://www.linkedin.com/in/owoyele-femi-793a70224/"
+              target="_blank"
+            >
+              {" "}
+              <LinkedIn />
+            </a>
+            {/* <a
               // variant="primary"
               onClick={handleShow}
               href=""
@@ -183,7 +204,7 @@ export const TeamCardThree = (props) => {
               className="text-decoration-none"
             >
               View Bio
-            </a>
+            </a> */}
 
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton></Modal.Header>
@@ -205,7 +226,7 @@ export const TeamCardThree = (props) => {
                 <Card.Text className="mx-3 my-2">{modaltext}</Card.Text>
               </div>
             </Modal>
-            <EastIcon style={{ color: "#75117a" }} />
+            {/* <EastIcon style={{ color: "#75117a" }} /> */}
           </div>
         </Card.Body>
       </div>
@@ -233,9 +254,16 @@ export const TeamCardFour = (props) => {
         <Card.Img variant="top" src={image} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
-          <Card.Text className="">{role}</Card.Text>
+          <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
             <a
+              href="https://www.linkedin.com/in/samuel-afolayan-1a528b134/"
+              target="_blank"
+            >
+              {" "}
+              <LinkedIn />
+            </a>
+            {/* <a
               // variant="primary"
               onClick={handleShow}
               href=""
@@ -246,7 +274,7 @@ export const TeamCardFour = (props) => {
               className="text-decoration-none"
             >
               View Bio
-            </a>
+            </a> */}
 
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton></Modal.Header>
@@ -268,7 +296,7 @@ export const TeamCardFour = (props) => {
                 <Card.Text className="mx-3 my-2">{modaltext}</Card.Text>
               </div>
             </Modal>
-            <EastIcon style={{ color: "#75117a" }} />
+            {/* <EastIcon style={{ color: "#75117a" }} /> */}
           </div>
         </Card.Body>
       </div>
@@ -296,9 +324,16 @@ export const TeamCardFive = (props) => {
         <Card.Img variant="top" src={image} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
-          <Card.Text className="">{role}</Card.Text>
+          <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
             <a
+              href="https://www.linkedin.com/in/olamide-ogunbanjo-927637b2/"
+              target="_blank"
+            >
+              {" "}
+              <LinkedIn />
+            </a>
+            {/* <a
               // variant="primary"
               onClick={handleShow}
               href=""
@@ -309,7 +344,7 @@ export const TeamCardFive = (props) => {
               className="text-decoration-none"
             >
               View Bio
-            </a>
+            </a> */}
 
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton></Modal.Header>
@@ -331,7 +366,7 @@ export const TeamCardFive = (props) => {
                 <Card.Text className="mx-3 my-2">{modaltext}</Card.Text>
               </div>
             </Modal>
-            <EastIcon style={{ color: "#75117a" }} />
+            {/* <EastIcon style={{ color: "#75117a" }} /> */}
           </div>
         </Card.Body>
       </div>

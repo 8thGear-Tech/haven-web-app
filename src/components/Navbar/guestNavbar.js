@@ -8,6 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import havenlogo from "../../assets/icons/havenlogo.png";
 import { RegisterNowBtn } from "../../components/Buttons/website/actionBtn/schoolBtn";
 import { LoginBtn } from "../Buttons/website/authenticationBtn";
+import { Link } from "react-router-dom";
 
 export const GuestNavbar = () => {
   return (
@@ -16,12 +17,15 @@ export const GuestNavbar = () => {
       <Navbar bg="light" expand="md" className="navbarBg navbar-light">
         <Container fluid>
           {" "}
-          <img
-            alt=""
-            src={havenlogo}
-            style={{ maxWidth: "6rem", maxHeight: "6rem" }}
-            className="d-inline-block align-top ms-3"
-          />{" "}
+          <Link to="/">
+            {" "}
+            <img
+              alt=""
+              src={havenlogo}
+              style={{ maxWidth: "6rem", maxHeight: "6rem" }}
+              className="d-inline-block align-top ms-3"
+            />{" "}
+          </Link>
           <Navbar.Toggle
             aria-controls="navbarScroll"
             className="navbar-toggler btn"
