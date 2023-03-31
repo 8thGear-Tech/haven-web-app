@@ -50,9 +50,6 @@ export const GuestNavbar = () => {
                 <NavDropdown.Item href="/about" className="navTextColor">
                   ABOUT HAVEN
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/about" className="navTextColor">
-                  ABOUT HAVEN
-                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/gallery" className="navTextColor">
                   GALLERY
