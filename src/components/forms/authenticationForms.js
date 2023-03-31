@@ -780,7 +780,7 @@ export const SchoolParentSignUpModal = ({ handleClose }) => {
             // target="_blank"
             rel="noopener noreferrer"
           >
-            Click here Click here
+            Click here
           </a>
         </h6>
         {/* <h6 className="text-center pt-3">
