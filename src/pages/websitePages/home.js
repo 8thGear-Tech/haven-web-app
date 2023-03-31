@@ -198,7 +198,7 @@ const OurActivities = () => {
                 <Link to="/" style={{ color: "#75117A" }}>
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
-                    Virtual Tech Sessions
+                    Physical/Virtual Tech Sessions
                   </p>
                 </Link>
 

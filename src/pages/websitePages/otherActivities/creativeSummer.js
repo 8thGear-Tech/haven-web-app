@@ -1,6 +1,7 @@
 import { GuestNavbar } from "../../../components/Navbar/guestNavbar";
 import { CreativeSummerHero } from "../../../components/hero/otherActivities";
 import { AfterSchoolHero } from "../../../components/hero/otherActivities";
+import { SchoolParentSignUpBtn } from "../../../components/Buttons/website/authenticationBtn";
 import { WeekendActivitiesHero } from "../../../components/hero/otherActivities";
 
 //images
@@ -33,7 +34,7 @@ const ActivitiesSectionOne = () => {
       <div className="container-fluid px-5 py-3">
         <div className="">
           {" "}
-          <h3 className="text-center pb-1">HAVEN SUMMER</h3>
+          <h3 className="text-center pb-1">HOLIDAY SESSIONS</h3>
           <div className="card-group">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto">
               <div className="row d-lg-flex d-md-flex ">
@@ -117,10 +118,9 @@ const ActivitiesSectionThree = () => {
   return (
     <>
       <div className="container-fluid px-5 pt-2 mt-5 BgColor">
-        <h3 className="text-center mt-5">HAVEN WEEKEND ACTIVITIES</h3>
+        <h3 className="text-center mt-5">WEEKEND CLUBS</h3>
         <p className="text-center mb-5">
-          Haven weekend activities holds every Saturday at 8thGear hub, Magodo
-          Lagos.
+          Weekend clubs holds every Saturday at 8thGear Hub, Magodo Lagos.
         </p>
         <Row
           xs={1}
@@ -199,6 +199,10 @@ const ActivitiesSectionThree = () => {
             </Card.Body>
           </Col>
         </Row>
+        <div className="text-center mt-3 mb-5">
+          {" "}
+          <SchoolParentSignUpBtn />
+        </div>
       </div>
     </>
   );

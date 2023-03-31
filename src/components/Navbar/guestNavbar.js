@@ -95,8 +95,11 @@ export const GuestNavbar = () => {
                   FIND ACTIVITIES
                 </NavDropdown.Item> */}
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/" className="navTextColor">
-                  {/* <NavDropdown.Item href="/signup" className="navTextColor"> */}
+                <NavDropdown.Item
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdV1S2xwMwH35oaMLbzuJanRCnxK1bmrd8tLIRDdIsW9WmhAg/viewform?usp=sf_link"
+                  target="_blank"
+                  className="navTextColor"
+                >
                   BECOME AN INSTRUCTOR
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -104,11 +107,8 @@ export const GuestNavbar = () => {
                   PRODUCT
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item
-                  href="/otherActivities"
-                  className="navTextColor"
-                >
-                  OTHER SERVICES
+                <NavDropdown.Item href="/ourOfferings" className="navTextColor">
+                  OUR OFFERINGS
                 </NavDropdown.Item>
               </NavDropdown>
               <div className="mx-3">
