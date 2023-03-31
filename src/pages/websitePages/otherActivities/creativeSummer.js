@@ -55,7 +55,7 @@ const ActivitiesSectionOne = () => {
                     Partner Schools Summer powered by Haven
                   </p>
                 </div>
-                <div className="col-lg-4 col-md-6 d-flex  py-2">
+                {/* <div className="col-lg-4 col-md-6 d-flex  py-2">
                   <VerifiedUserOutlinedIcon />
 
                   <p className="ms-3">
@@ -78,7 +78,7 @@ const ActivitiesSectionOne = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nunc vulputate
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
