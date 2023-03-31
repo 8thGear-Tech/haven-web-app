@@ -298,6 +298,8 @@ import googlemaps from "../assets/icons/googlemaps.png";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import MarkAsUnreadOutlinedIcon from "@mui/icons-material/MarkAsUnreadOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import "./Footer.css"; // import custom CSS file
 
 // export const Footer = () => {
@@ -471,12 +473,14 @@ export const Footer = () => {
                 </div> */}
                 <div className="d-none d-lg-block d-md-block d-sm-none d-xs-none col-lg-2 col-md-2">
                   {" "}
+                  {/* <Link> */}{" "}
                   <img
                     alt=""
                     src={havenlogo}
                     style={{ maxWidth: "6rem", maxHeight: "6rem" }}
                     className="d-inline-block align-top"
                   />
+                  {/* </Link> */}
                 </div>
                 <div className="col-6 col-lg-2 col-md-2">
                   <h4>Work with us</h4>
@@ -581,10 +585,28 @@ export const Footer = () => {
                   <li class="ms-3">
                     <a
                       class="link-dark"
+                      href="https://www.linkedin.com/company/havenedu-services/"
+                      target="_blank"
+                    >
+                      <LinkedInIcon />
+                    </a>
+                  </li>
+                  <li class="ms-3">
+                    <a
+                      class="link-dark"
                       href="https://m.facebook.com/haveneduservices/"
                       target="_blank"
                     >
                       <FacebookOutlinedIcon />
+                    </a>
+                  </li>
+                  <li class="ms-3">
+                    <a
+                      class="link-dark"
+                      href="https://www.instagram.com/haveneduservices/"
+                      target="_blank"
+                    >
+                      <InstagramIcon />
                     </a>
                   </li>
                 </ul>

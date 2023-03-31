@@ -17,6 +17,7 @@ export const GuestNavbar = () => {
       {" "}
       <Navbar bg="light" expand="md" className="navbarBg navbar-light">
         <Container fluid>
+          {" "}
           <Link to="/">
             {" "}
             <img
@@ -24,7 +25,7 @@ export const GuestNavbar = () => {
               src={havenlogo}
               style={{ maxWidth: "6rem", maxHeight: "6rem" }}
               className="d-inline-block align-top ms-3"
-            />
+            />{" "}
           </Link>
           <Navbar.Toggle
             aria-controls="navbarScroll"
