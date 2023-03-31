@@ -123,7 +123,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="afterSchool" element={<AfterSchool />} />
-          <Route path="otherActivities" element={<CreativeSummer />} />
+          <Route path="ourOfferings" element={<CreativeSummer />} />
           <Route path="weekendClub" element={<WeekendActivities />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="blog" element={<Blog />} />

@@ -7,6 +7,7 @@ import creativesummer from "../../assets/images/hero/creativesummer.png";
 import afterschool from "../../assets/images/hero/afterschool.png";
 
 import { RegisterNowBtn } from "../Buttons/website/actionBtn/schoolBtn";
+import { SchoolParentSignUpBtn } from "../Buttons/website/authenticationBtn";
 
 export const WeekendActivitiesHero = () => {
   return (
@@ -16,18 +17,19 @@ export const WeekendActivitiesHero = () => {
           <div className="row align-items-center justify-content-center mt-3">
             <div className="col-lg-6 col-md-6 col-sm-12 ">
               <h2 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
-                HAVEN WEEKEND ACTIVITIES
+                WEEKEND CLUBS
               </h2>
               <h3 className="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
-                HAVEN WEEKEND ACTIVITIES
+                WEEKEND CLUBS
               </h3>
               <p className="d-flex">
-                Haven weekend activities holds every Saturday at 8thGear hub,
-                Magodo Lagos.
+                Haven weekend clubs holds every Saturday at 8thGear hub, Magodo
+                Lagos.
               </p>
               <div className="">
                 {" "}
-                <RegisterNowBtn />
+                {/* <RegisterNowBtn /> */}
+                <SchoolParentSignUpBtn />
               </div>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-10 mb-5">
@@ -52,18 +54,19 @@ export const CreativeSummerHero = () => {
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-6 col-md-6 col-sm-12 ">
               <h2 className="d-none d-xl-block d-lg-block d-md-block d-sm-none d-xs-none">
-                HAVEN SUMMER
+                HOLIDAY SESSIONS
               </h2>
               <h3 className="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
-                HAVEN SUMMER
+                HOLIDAY SESSIONS
               </h3>
               <p className="d-flex">
-                Haven summer activities holds every August. We also facilitate
-                summer activities in partner schools
+                Haven holiday sessions holds every August. We also facilitate
+                holiday sessions in partner schools.
               </p>
               <div className="">
                 {" "}
-                <RegisterNowBtn />
+                {/* <RegisterNowBtn /> */}
+                <SchoolParentSignUpBtn />
               </div>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-10 mt-3">
@@ -94,7 +97,7 @@ export const AfterSchoolHero = () => {
               AFTER SCHOOL ACTIVITIES
             </h2> */}
             <h3 className="text-center" style={{ color: "#2B0947" }}>
-              AFTER SCHOOL ACTIVITIES
+              AFTER SCHOOL CLUBS
             </h3>
             <p className="text-center ">
               Activities include Tech and Music every School days for Champs of
@@ -102,7 +105,8 @@ export const AfterSchoolHero = () => {
             </p>
             <div className="text-center">
               {" "}
-              <RegisterNowBtn />
+              {/* <RegisterNowBtn /> */}
+              <SchoolParentSignUpBtn />
             </div>
           </div>
         </div>
