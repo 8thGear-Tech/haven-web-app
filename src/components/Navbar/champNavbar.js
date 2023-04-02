@@ -221,7 +221,7 @@ const SmallShowExample = ({ name, ...props }) => {
           <div className="d-flex justify-content-between flex-column">
             <ul className="ps-2">
               <li className="d-flex mb-4 align-items-center SideNavItem">
-                <span>Dashboard</span>
+                <span>Dashboardsss</span>
               </li>
               <li className="d-flex mb-4 align-items-center SideNavItem">
                 <span>Materials</span>
@@ -321,7 +321,7 @@ const BigShowExample = ({ name, ...props }) => {
             return (
               <div className="d-flex justify-content-between flex-column ">
                 <ul className="ps-2" key={navbar.id}>
-                  <Demo {...navbar} />
+                  {/* <Demo {...navbar} /> */}
                 </ul>
               </div>
             );

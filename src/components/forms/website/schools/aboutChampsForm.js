@@ -97,7 +97,7 @@ const AboutChampsForm = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGridEmail">
           <Form.Label>
-            <h5>Email adress</h5>
+            <h5>Email address</h5>
           </Form.Label>
           <Form.Control
             type="email"
