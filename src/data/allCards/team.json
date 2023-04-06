@@ -8,8 +8,7 @@
       "modalimage": "../../assets/images/team/madamwunmi.png",
       "modalname": "Omowunmi Obidairo",
       "modaltitle": "Founder/CEO",
-      "modallink": "",
-      "modaltext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis."
+      "modallink": ""
     }
   ],
   "teamMemberTwoInfo": [
@@ -21,8 +20,7 @@
       "modalimage": "../../assets/images/team/omotola.png",
       "modalname": "Adaramaja Omotola",
       "modaltitle": "Chief Operating Officer",
-      "modallink": "",
-      "modaltext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis."
+      "modallink": ""
     }
   ],
   "teamMemberThreeInfo": [
@@ -34,8 +32,7 @@
       "modalimage": "../../assets/images/team/oluwafemi.png",
       "modalname": "Owoyele Oluwafemi",
       "modaltitle": "Tech Lead",
-      "modallink": "",
-      "modaltext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis."
+      "modallink": ""
     }
   ],
   "teamMemberFourInfo": [
@@ -47,8 +44,7 @@
       "modalimage": "../../assets/images/team/samuel.png",
       "modalname": "Samuel Afolayan",
       "modaltitle": "Creative Lead",
-      "modallink": "",
-      "modaltext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis."
+      "modallink": ""
     }
   ],
   "teamMemberFiveInfo": [
@@ -60,8 +56,7 @@
       "modalimage": "../../assets/images/team/olamide.png",
       "modalname": "Olamide Ogunbanjo",
       "modaltitle": "Language Lead",
-      "modallink": "",
-      "modaltext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis."
+      "modallink": ""
     }
   ]
 }

@@ -73,9 +73,9 @@ const StudentProfile = () => {
 const DetailsCards = () => {
   return (
     <>
-      <Container>
+      <Container className="m-auto">
         <Row>
-          <Col md={6} lg={4} className=" mt-5 mb-4">
+          <Col md={6} lg={6} className=" mt-5 mb-4">
             <Card>
               <Card.Body>
                 <Card.Title>Personal details</Card.Title>
@@ -88,10 +88,10 @@ const DetailsCards = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6} lg={4} className="mt-5 mb-4">
+          <Col md={6} lg={6} className="mt-5 mb-4">
             <Card>
               <Card.Body>
-                <Card.Title>Class Details</Card.Title>
+                <Card.Title>Class details</Card.Title>
                 <Card.Text>Student ID : 111747747</Card.Text>
                 <Card.Text>Grade level : 2</Card.Text>
                 <Card.Text>Number of classes : 6 </Card.Text>

@@ -18,6 +18,10 @@ import activitiesimageone from "../../assets/images/home/activitiesimageone.png"
 import activitiesimagetwo from "../../assets/images/home/activitiesimagetwo.png";
 import activitiesimagethree from "../../assets/images/home/activitiesimagethree.png";
 import activitiesimagefour from "../../assets/images/home/activitiesimagefour.png";
+import CapstoneSchool from "../../assets/images/home/CapstoneSchool.jpg";
+import GraciaDavins from "../../assets/images/home/GraciaDavins.png";
+import Hauk from "../../assets/images/home/hauk.PNG";
+import Smallville from "../../assets/images/home/Smallville.png";
 
 const Home = () => {
   return (
@@ -33,6 +37,7 @@ const Home = () => {
       <WhatWeDo />
       <WhyTrustUs />
       <OurActivities />
+      <SomeOfOurSchools />
     </div>
   );
 };
@@ -264,6 +269,56 @@ const OurActivities = () => {
     //     {/* ))} */}
     //   </Row>
     // </Container>
+  );
+};
+
+const SomeOfOurSchools = () => {
+  return (
+    <>
+      <div className="text-center container mt-5 mb-3">
+        <h3>SOME OF OUR TRUSTED SCHOOLS </h3>
+        <div className="">
+          <div className="row">
+            <div className="col-sm-12 col-md-3 col-lg-3">
+              <img
+                style={{
+                  width: "45%",
+                }}
+                src={CapstoneSchool}
+                alt=""
+              />
+            </div>
+            <div className="col-md-3 col-lg-3">
+              <img
+                style={{
+                  width: "60%",
+                }}
+                src={GraciaDavins}
+                alt=""
+              />
+            </div>
+            <div className=" col-md-3 col-lg-3">
+              <img
+                style={{
+                  width: "55%",
+                }}
+                src={Hauk}
+                alt=""
+              />
+            </div>
+            <div className="col-sm-12 col-md-3 col-lg-3 mt-4">
+              <img
+                style={{
+                  width: "45%",
+                }}
+                src={Smallville}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

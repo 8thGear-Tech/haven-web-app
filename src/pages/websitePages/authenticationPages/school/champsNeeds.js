@@ -21,11 +21,11 @@ const ChampsNeed = () => {
       <Container className="mt-5 px-4">
         <Row>
           {" "}
-          <h3>Tell us about your champs</h3>
+          {/* <h3>Tell us about your champs</h3>
           <p>
             What's your goal and which of our activities do you want for your
             school
-          </p>
+          </p> */}
           <AboutChampsForm />
         </Row>
       </Container>

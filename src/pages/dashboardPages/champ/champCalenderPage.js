@@ -121,9 +121,11 @@ const Timestamp = () => {
     <>
       <Card style={{ width: "18rem" }}>
         <Card.Img variant="top" src={havenlogo} />
-        <Card.Body style={{fill:"Solid #e2e9f0 "}}>
+        <Card.Body style={{ fill: "Solid #e2e9f0 " }}>
           <Card.Link href="#">About </Card.Link>
-          <Card.Link href="#">Description</Card.Link>
+          <Card.Link href="#" className="text-end">
+            Description
+          </Card.Link>
           <Card.Title>Card Title</Card.Title>{" "}
         </Card.Body>
         <Card.Body className="timeStamp">

@@ -14,6 +14,24 @@ import { LoginForm } from "../../forms/authenticationForms";
 import { JoinUsModal } from "../../forms/authenticationForms";
 import { SchoolParentSignUpModal } from "../../forms/authenticationForms";
 
+export const LoginButton = () => {
+  // const [show, setShow] = useState(false);
+  // const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
+
+  return (
+    <>
+      {/* <Link
+        to=""
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop1"
+      > */}{" "}
+      <button className="LoginBtn">LOGIN</button>
+      {/* </Link> */}
+    </>
+  );
+};
 export const LoginBtn = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
