@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 //pages
 import Home from "./pages/websitePages/home";
+import UpComingEvent from "./pages/websitePages/upComingEvent"
 import About from "./pages/websitePages/about";
 import AfterSchool from "./pages/websitePages/otherActivities/afterSchool";
 import CreativeSummer from "./pages/websitePages/otherActivities/creativeSummer";
@@ -127,6 +128,7 @@ function App() {
           <Route path="weekendClub" element={<WeekendActivities />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="UpComingEvent" element={<UpComingEvent />} />
           <Route path=" " element={<BlogReadMore />} />
           {/* Error page */}
           <Route path="*" element={<ErrorPage />} />

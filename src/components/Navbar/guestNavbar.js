@@ -58,6 +58,9 @@ export const GuestNavbar = () => {
               <Nav.Link href="/blog" className="navTextColor mx-3">
                 BLOG
               </Nav.Link>
+              <Nav.Link href="/UpComingEvent" className="navTextColor mx-3">
+                UPCOMING EVENTS
+              </Nav.Link>
               {/* <NavDropdown
                 title="SERVICES"
                 id="navbarScrollingDropdown"
