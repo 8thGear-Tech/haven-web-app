@@ -10,6 +10,7 @@ import havenlogo from "../../../assets/icons/havenlogo.png";
 import champResourcedata from "../../../data/allCards/dashboardCards.json";
 import { height } from "@mui/system";
 import Button from "react-bootstrap/Button";
+import ProgressBar from "react-bootstrap/ProgressBar";
 // import adminResourcedata from "../../../data/allCards/dashboardCards.json";
 
 export const ChampsDashboardCards = (props) => {
@@ -92,46 +93,56 @@ export const ChampDashboardCoCards = () => {
               </Card.Title>
               <Card.Body>
                 <Row>
-                  <Col lg={ 3 } md={ 3 } sm={ 3 }>
-                    <Card.Img src={ havenlogo } />
+                  <Col lg={3} md={3} sm={3}>
+                    <Card.Img src={havenlogo} />
                   </Col>
-                  <Col lg={ 9 } md={ 9 } sm={ 9 }>
-                    <Card.Text>
+                  <Col lg={9} md={9} sm={9}>
+                    {/* <Card.Text>
                       <h5>Mathematics</h5>
-                    </Card.Text>
+                    </Card.Text> */}
                     <Card.Text>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      <h5>Art</h5>
                     </Card.Text>
+                    <Card.Text>Lorem ipsum dolor sit amet.</Card.Text>
                   </Col>
+                  <div>
+                    <ProgressBar variant="info" now={20} />
+                  </div>
                 </Row>
                 <Row className="mt-3 mb-3">
-                  <Col lg={ 3 } md={ 3 } sm={ 3 }>
-                    <Card.Img src={ havenlogo } />
+                  <Col lg={3} md={3} sm={3}>
+                    <Card.Img src={havenlogo} />
                   </Col>
-                  <Col lg={ 9 } md={ 9 } sm={ 9 }>
+                  <Col lg={9} md={9} sm={9}>
                     <Card.Text>
                       <h5>English Language</h5>
                     </Card.Text>
                     <Card.Text>
-                      { " " }
+                      {" "}
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </Card.Text>
                   </Col>
+                  <div>
+                    <ProgressBar variant="info" now={60} />
+                  </div>
                 </Row>
                 <Row className="mt-3 mb-3">
-                  <Col lg={ 3 } md={ 3 } sm={ 3 }>
-                    <Card.Img className="rounded" src={ havenlogo } />
+                  <Col lg={3} md={3} sm={3}>
+                    <Card.Img className="rounded" src={havenlogo} />
                   </Col>
-                  <Col lg={ 9 } md={ 9 } sm={ 9 }>
+                  <Col lg={9} md={9} sm={9}>
                     <Card.Text>
-                      { " " }
+                      {" "}
                       <h5>Chemistry</h5>
                     </Card.Text>
                     <Card.Text>
-                      { " " }
+                      {" "}
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </Card.Text>
                   </Col>
+                  <div>
+                    <ProgressBar variant="info" now={60} />
+                  </div>
                 </Row>
               </Card.Body>
               <a href="" className="text-end">
@@ -154,15 +165,15 @@ export const ChampDashboardCoCards = () => {
                   <ListGroup.Item>
                     <Card.Text>
                       <Row>
-                        <Col lg={ 2 }>
+                        <Col lg={2}>
                           <NoteAddIcon />
                         </Col>
-                        <Col lg={ 10 }>
+                        <Col lg={10}>
                           <h5>Prepare Question For Unit Test</h5>
                           <p>
-                            { " " }
+                            {" "}
                             Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Perferendis sit dolorem,{ " " }
+                            elit. Perferendis sit dolorem,{" "}
                           </p>
                           <p>05 Dec 2020 </p>
                         </Col>
@@ -172,39 +183,22 @@ export const ChampDashboardCoCards = () => {
                   <ListGroup.Item>
                     <Card.Text>
                       <Row>
-                        <Col lg={ 2 }>
+                        <Col lg={2}>
                           <NoteAddIcon />
                         </Col>
-                        <Col lg={ 10 }>
+                        <Col lg={10}>
                           <h5>Prepare Question For Unit Test</h5>
                           <p>
-                            { " " }
+                            {" "}
                             Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Perferendis sit dolorem,{ " " }
+                            elit. Perferendis sit dolorem,{" "}
                           </p>
                           <p>05 Dec 2020 </p>
                         </Col>
                       </Row>
                     </Card.Text>
                   </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Card.Text>
-                      <Row>
-                        <Col lg={ 2 }>
-                          <NoteAddIcon />
-                        </Col>
-                        <Col lg={ 10 }>
-                          <h5>Prepare Question For Unit Test</h5>
-                          <p>
-                            { " " }
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Perferendis sit dolorem,{ " " }
-                          </p>
-                          <p>05 Dec 2020 </p>
-                        </Col>
-                      </Row>
-                    </Card.Text>
-                  </ListGroup.Item>
+                  <ListGroup.Item></ListGroup.Item>
                 </ListGroup>
               </Card.Body>
               <a href="" className="text-end">
@@ -215,18 +209,13 @@ export const ChampDashboardCoCards = () => {
         </div>
       </div>
     </>
-  )
+  );
 };
-
 
 export const AdminDashboardCard1 = (props) => {
   const { subtitle, title, text, id } = props;
-  return (  
-   
-    <Card
-      style={{ width: "14rem"  }}
-      className="col-md-4 mt-5 cardShadow"
-    >
+  return (
+    <Card style={{ width: "14rem" }} className="col-md-4 mt-5 cardShadow">
       <Card.Body className="text-left">
         <h5 class="card-subtitle">New School</h5>
         <h3 class="card-title">245</h3>
@@ -268,7 +257,6 @@ export const AdminDashboardCard3 = (props) => {
 export const AdminDashboardCard = () => {
   return (
     <Container>
-      
       <Card style={{ width: "14rem" }} className="col-md-4 mb-3 cardShadow">
         <Card.Body className="text-left">
           <h5 class="card-subtitle">New School</h5>
@@ -298,5 +286,5 @@ export const AdminDashboardCard = () => {
       </Card>
     </Container>
   );
-}
+};
 // export const AdminInstructorCard = ()

@@ -28,7 +28,7 @@ const ProfileInfoForm = () => {
               </Link>
             </Card.Body>
           </Card>
-          <Card
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -41,8 +41,8 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
-          <Card
+          </Card> */}
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -55,8 +55,8 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
-          <Card
+          </Card> */}
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -69,8 +69,8 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
-          <Card
+          </Card> */}
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -83,8 +83,8 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
-          <Card
+          </Card> */}
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -97,8 +97,8 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
-          <Card
+          </Card> */}
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -111,8 +111,8 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
-          <Card
+          </Card> */}
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -125,8 +125,8 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
-          <Card
+          </Card> */}
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -137,8 +137,8 @@ const ProfileInfoForm = () => {
               <Link to="/"></Link>
               <LockOutlinedIcon />
             </Card.Body>
-          </Card>
-          <Card
+          </Card> */}
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -150,8 +150,8 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
-          <Card
+          </Card> */}
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -163,7 +163,7 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
+          </Card> */}
           <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
@@ -178,7 +178,7 @@ const ProfileInfoForm = () => {
               </Link>
             </Card.Body>
           </Card>
-          <Card
+          {/* <Card
             style={{ width: "45rem" }}
             className="instructorCardBorder my-4"
           >
@@ -191,7 +191,7 @@ const ProfileInfoForm = () => {
                 <LockOutlinedIcon />
               </Link>
             </Card.Body>
-          </Card>
+          </Card> */}
         </Col>
       </Row>
       <div className="text-center">

@@ -41,8 +41,17 @@ const ChampText = () => {
       <div className="container-fluid">
         <h2>ASSIGNMENT</h2>
         <div className="assignmenttext">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Enim labore
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim labore
+          praesentium ipsam cum officia cupiditate unde est harum
+          explicabolaboriosam ad culpa,
+        </div>
+        <div className="assignmenttext">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim labore
+          praesentium ipsam cum officia cupiditate unde est harum
+          explicabolaboriosam ad culpa,
+        </div>
+        <div className="assignmenttext">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim labore
           praesentium ipsam cum officia cupiditate unde est harum
           explicabolaboriosam ad culpa,
         </div>

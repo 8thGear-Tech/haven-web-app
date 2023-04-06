@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import havenlogo from "../../assets/icons/havenlogo.png";
 import { RegisterNowBtn } from "../../components/Buttons/website/actionBtn/schoolBtn";
 import { LoginBtn } from "../Buttons/website/authenticationBtn";
+// import { Link } from "react-router-dom";
 import { LoginButton } from "../Buttons/website/authenticationBtn";
 
 export const GuestNavbar = () => {
@@ -62,6 +63,9 @@ export const GuestNavbar = () => {
               <Nav.Link href="/blog" className="navTextColor mx-3">
                 BLOG
               </Nav.Link>
+              <Nav.Link href="/UpcomingEvents" className="navTextColor mx-3">
+                UPCOMING EVENTS
+              </Nav.Link>
               {/* <NavDropdown
                 title="SERVICES"
                 id="navbarScrollingDropdown"
@@ -111,9 +115,9 @@ export const GuestNavbar = () => {
                   OUR OFFERINGS
                 </NavDropdown.Item>
               </NavDropdown>
-              <div className="mx-3">
+              {/* <div className="mx-3">
                 <LoginButton />
-              </div>
+              </div> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

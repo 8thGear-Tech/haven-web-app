@@ -17,7 +17,7 @@ export const AboutHero = () => {
             <p className="d-flex">
               Haven Edu-Services is an extra-curricular childhood educational
               organisation focused on providing training contents related to
-              Technology, Multi-languages, and Arts for children (ages 4-12) and
+              Technology, Arts and Multi-languages for children (ages 4-12) and
               Teenagers (ages 13-16)
             </p>
           </div>

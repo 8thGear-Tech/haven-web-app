@@ -18,7 +18,7 @@ export const BackBtn = () => {
     <>
       {/* <a href="" target="_blank">
         {" "} */}
-      <button className="BackBtn">
+      <button className="BackBtn" type="submit">
         <KeyboardBackspaceOutlinedIcon />
         BACK
       </button>
