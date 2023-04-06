@@ -45,7 +45,7 @@ const Hero = () => {
 const CardUpcoming = () => {
   return (
     <div className="container p-5">
-      <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
         <div class="col">
           <div class="card h-100">
             <img src={flier} class="card-img-top" alt="..." />
@@ -58,11 +58,14 @@ const CardUpcoming = () => {
               <h5 class="card-title">
                 <strong>EASTER TECH BOOTCAMP</strong>
               </h5>
-              <h6 class="card-text text-black">Tue, Apr 11, 10:00AM</h6>
+              <h6 class="card-text text-black">Apr 11 - 22, 2023</h6>
               <p>Virtual and Physical</p>
             </div>
             <div>
-              <a href="https://docs.google.com/forms/d/1Ju1K9utRAbytFjYEP1l86avpOS9pQUjfVU1UCCGkLIY/viewform?edit_requested=true">
+              <a
+                href="https://docs.google.com/forms/d/1Ju1K9utRAbytFjYEP1l86avpOS9pQUjfVU1UCCGkLIY/viewform?edit_requested=true"
+                target="_blank"
+              >
                 {" "}
                 <Button style={{ backgroundColor: "#75117A", width: "100%" }}>
                   <strong>Register</strong>
@@ -71,7 +74,7 @@ const CardUpcoming = () => {
             </div>
           </div>
         </div>
-        <div class="col">
+        {/* <div class="col">
           <div class="card  h-100">
             <img src={flier} class="card-img-top" alt="..." />
             <div
@@ -112,7 +115,10 @@ const CardUpcoming = () => {
               <p>Virtual and Physical</p>
             </div>
             <div>
-              <a href="https://docs.google.com/forms/d/1Ju1K9utRAbytFjYEP1l86avpOS9pQUjfVU1UCCGkLIY/viewform?edit_requested=true">
+              <a
+                href="https://docs.google.com/forms/d/1Ju1K9utRAbytFjYEP1l86avpOS9pQUjfVU1UCCGkLIY/viewform?edit_requested=true"
+                target="_blank"
+              >
                 {" "}
                 <Button style={{ backgroundColor: "#75117A", width: "100%" }}>
                   <strong>Register</strong>
@@ -120,7 +126,7 @@ const CardUpcoming = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
 
