@@ -37,7 +37,7 @@ const Home = () => {
       <WhatWeDo />
       <WhyTrustUs />
       <OurActivities />
-      <SomeOfOurSchools />
+      {/* <SomeOfOurSchools /> */}
     </div>
   );
 };
