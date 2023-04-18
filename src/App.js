@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 //pages
 import Home from "./pages/websitePages/home";
-import UpComingEvent from "./pages/websitePages/upComingEvent"
+import UpComingEvent from "./pages/websitePages/upComingEvent";
 import About from "./pages/websitePages/about";
 import AfterSchool from "./pages/websitePages/otherActivities/afterSchool";
 import CreativeSummer from "./pages/websitePages/otherActivities/creativeSummer";
@@ -29,6 +29,8 @@ import AssignmentText from "./pages/dashboardPages/champ/champAssignmentBoard";
 import ChampVirtualClass from "./pages/dashboardPages/champ/champVirtualClass";
 import Champcalendar from "./pages/dashboardPages/champ/champCalenderPage";
 import ProfileIdCard from "./pages/dashboardPages/champ/champStudentPage";
+import ChampSubmissionPage from "./pages/dashboardPages/champ/champSubmissionPage";
+import ChampReportIssuepage from "./pages/dashboardPages/champ/champReportIssuePage";
 // import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
 import AdminDashboardPg from "./pages/dashboardPages/admin/adminDashboardPage";
 //authentication pages
@@ -109,6 +111,8 @@ import Admincalendar from "./pages/dashboardPages/admin/adminCalenderEventPage";
 import AllTutorPage from "./pages/dashboardPages/admin/allInstructorPage";
 import AllChampPage from "./pages/dashboardPages/admin/allChampsPage";
 import AddChampsPage from "./pages/dashboardPages/admin/adminAddChamps";
+import AdminProfilePage from "./pages/dashboardPages/admin/AdminProfilePage";
+import AdminReportIssue from "./pages/dashboardPages/admin/AdminReportIssue";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
@@ -151,7 +155,12 @@ function App() {
           <Route path="ChampVirtualClass" element={<ChampVirtualClass />} />
           <Route path="Champcalendar" element={<Champcalendar />} />
           <Route path="ProfileIdCard" element={<ProfileIdCard />} />
+          <Route path="ChampSubmissionPage" element={<ChampSubmissionPage />} />
           <Route path="ProfileEditCard" element={<ProfileEditCard />} />
+          <Route
+            path="ChampReportIssuepage"
+            element={<ChampReportIssuepage />}
+          />
 
           {/* Admin dashboard pages */}
           <Route path="AdminDashboardPg" element={<AdminDashboardPg />} />
@@ -159,6 +168,8 @@ function App() {
           <Route path="allTutorPage" element={<AllTutorPage />} />
           <Route path="allChampPage" element={<AllChampPage />} />
           <Route path="addChampsPage" element={<AddChampsPage />} />
+          <Route path="AdminProfilePage" element={<AdminProfilePage />} />
+          <Route path="AdminReportIssue" element={<AdminReportIssue />} />
           {/*school activities pages */}
           <Route path="Technology" element={<Technology />} />
           <Route path="Arts" element={<Arts />} />

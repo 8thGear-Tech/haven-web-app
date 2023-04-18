@@ -22,13 +22,13 @@
     },
     {
       "id": 5,
-      "pageroute": "/",
-      "text": "Course"
+      "pageroute": "/AdminProfilePage",
+      "text": "Profile"
     },
     {
       "id": 6,
-      "pageroute": "/",
-      "text": "Reported Issues"
+      "pageroute": "/AdminReportIssue",
+      "text": "Reported Issue  "
     },
     {
       "id": 7,

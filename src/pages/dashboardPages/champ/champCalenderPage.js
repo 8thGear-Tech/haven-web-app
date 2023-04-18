@@ -7,6 +7,11 @@ import { Container, Row, Col, Button, Modal } from "react-bootstrap";
 // import moment from "moment";
 import Card from "react-bootstrap/Card";
 import havenlogo from "../../../assets/icons/havenlogo.png";
+
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
+
 const Champcalendar = () => {
   return (
     <>
@@ -18,9 +23,9 @@ const Champcalendar = () => {
           </div>
           <div className="col-lg-9 col-md-12">
             <div className="row">
-              {/* <div className="col-6">
-                <Calendar />
-              </div> */}
+              <div className="col-6">
+                <Calender />
+              </div>
               <div className="col-6">
                 <Timestamp />
               </div>
@@ -116,10 +121,14 @@ const Champcalendar = () => {
 //     </Container>
 //   );
 // };
-const Timestamp = () => {
+const Calender = () => {
   return (
     <>
-      <Card style={{ width: "18rem" }}>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <DateCalendar />
+      </LocalizationProvider>
+
+      {/* <Card style={{ width: "18rem" }}>
         <Card.Img variant="top" src={havenlogo} />
         <Card.Body style={{ fill: "Solid #e2e9f0 " }}>
           <Card.Link href="#">About </Card.Link>
@@ -132,6 +141,38 @@ const Timestamp = () => {
           <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
+          </Card.Text>
+        </Card.Body>
+      </Card> */}
+    </>
+  );
+};
+
+const Timestamp = () => {
+  return (
+    <>
+      <Card style={{ width: "18rem" }}>
+        <Card.Img variant="top" src={havenlogo} />
+        <Card.Body style={{ fill: "Solid #e2e9f0 " }}>
+          <Card.Link href="#">About </Card.Link>
+          <Card.Link href="#">Description</Card.Link>
+          <Card.Title>Card Title</Card.Title>{" "}
+        </Card.Body>
+        <Card.Body className="timeStamp">
+          <Card.Text>
+            {/* Some quick example text to build on the card title and make up the
+            bulk of the card's content. */}
+            <p>Novermber 12</p>
+          </Card.Text>
+          <Card.Text>
+            {/* Some quick example text to build on the card title and make up the
+            bulk of the card's content. */}
+            <p>Arlington, VA 22205</p>
+          </Card.Text>
+          <Card.Text>
+            {/* Some quick example text to build on the card title and make up the
+            bulk of the card's content. */}
+            <p>24hr before e vent</p>
           </Card.Text>
         </Card.Body>
       </Card>

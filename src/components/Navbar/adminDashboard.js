@@ -93,7 +93,7 @@ const SmallShowExample = ({ name, ...props }) => {
         >
           <path
             d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-            fill="#006747"
+            fill="#683590"
           />
         </svg>
       </Button>
@@ -141,18 +141,18 @@ const SmallShowExample = ({ name, ...props }) => {
 };
 
 const Demo = (props) => {
-  const { pageroute, text } = props;
+  const { icon, pageroute, dashboard, text } = props;
   return (
     <>
       <ul className="ps-2">
         <li className="d-flex mb-2 align-items-center SideNavItem">
-          <div className="me-3">
-            <Link to={pageroute} className="nav-link">
-              <div className="sideNavButton">
-                <span>{text}</span>
-              </div>
-            </Link>
-          </div>
+          <div className="me-3">{icon}</div>
+          <Link to={pageroute} className="nav-link">
+            <div className="sideNavButton">
+              <span>{text}</span>
+              <span>{dashboard}</span>
+            </div>
+          </Link>
         </li>
       </ul>
     </>
@@ -187,10 +187,11 @@ const BigShowExample = ({ name, ...props }) => {
         show={show}
         onHide={handleClose}
         {...props}
-        className="mt-5 pt-5 d-none d-lg-block"
+        className="w-25 mt-5 pt-5 d-none d-lg-block"
         style={{
           background:
             "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
+          width: "20rem",
         }}
       >
         <Offcanvas.Header>
@@ -218,7 +219,7 @@ const BigShow = () => {
   return (
     <>
       {options.map((props, idx) => (
-        <BigShowExample key={idx} {...props} />
+        <BigShowExample className="d-lg-block" key={idx} {...props} />
       ))}
     </>
   );

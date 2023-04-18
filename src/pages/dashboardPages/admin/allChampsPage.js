@@ -14,13 +14,15 @@ const AllChampPage = () => {
       <AdminTopNavbar />
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
-          <div className="col-lg-2">
+          <div className="col-lg-3">
             <AdminSideNavBar />
           </div>
 
           <div className="col-lg-9 col-md-12">
-            <div className="col">
+            <div>
               <ChampsNavbar />
+            </div>
+            <div className="col">
               <div className="row">
                 <div className="">
                   <AllChampsCard />

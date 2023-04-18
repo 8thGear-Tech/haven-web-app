@@ -2,6 +2,7 @@ import { ChampNavbar } from "../../../components/Navbar/champNavbar";
 import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
 import VideoChatIcon from '@mui/icons-material/VideoChat';
 import Button from "react-bootstrap/Button";
+import videochat from "../../../../src/assets/icons/videoicon.png";
 
 
 const ChampVirtualClass = () =>{
@@ -40,14 +41,17 @@ const VirtualContent =() =>{
       <>
         <div className="container-fluid">
           <div className="shadow-lg p-3 mb-5 bg-white rounded">
-            <div className="text-right m-5">
+            <div className="text-center m-5">
               <h3>Classroom</h3>
               <p className="font-weight-bold">Username:Michael</p>
               <p className="font-weight-bold"> Profile ID:647276545</p>
             </div>
             <div style={{ fontSize: "18px " }}> </div>
 
-            <VideoChatIcon />
+            {/* <VideoChatIcon /> */}
+            <div className="text-center">
+              <img src={videochat} alt="" />
+            </div>
 
             <div>
               <a href="" className="text-center">

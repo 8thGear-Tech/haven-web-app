@@ -156,7 +156,7 @@ export const ChampDashboardCoCards = () => {
                 <Card.Title className="text-center">
                   <div className="d-flex bd-highlight">
                     <div className="mr-auto"> My Notes</div>
-                    <div className="text-end">
+                    <div className="text-end ms-auto">
                       <Button variant="primary">Add Note</Button>
                     </div>
                   </div>
@@ -214,12 +214,14 @@ export const ChampDashboardCoCards = () => {
 
 export const AdminDashboardCard1 = (props) => {
   const { subtitle, title, text, id } = props;
+  const now = 60;
   return (
     <Card style={{ width: "14rem" }} className="col-md-4 mt-5 cardShadow">
       <Card.Body className="text-left">
         <h5 class="card-subtitle">New School</h5>
         <h3 class="card-title">245</h3>
         <br />
+
         <p class="card-text">50% increase in 25 days</p>
       </Card.Body>
     </Card>
@@ -236,6 +238,7 @@ export const AdminDashboardCard2 = (props) => {
         <h5 class="card-subtitle">Total Activities</h5>
         <h3 class="card-title">280</h3>
         <br />
+
         <p class="card-text">76% increase in 20 days</p>
       </Card.Body>
     </Card>
@@ -249,6 +252,7 @@ export const AdminDashboardCard3 = (props) => {
         <h5 class="card-subtitle">Total Schools</h5>
         <h3 class="card-title">3280</h3>
         <br />
+
         <p class="card-text">80% increase in 20 days</p>
       </Card.Body>
     </Card>
@@ -262,6 +266,9 @@ export const AdminDashboardCard = () => {
           <h5 class="card-subtitle">New School</h5>
           <h3 class="card-title">245</h3>
           <br />
+          <div>
+            <ProgressBar variant="info" now={50} />
+          </div>
           <p class="card-text">50% increase in 25 days</p>
         </Card.Body>
       </Card>
@@ -273,14 +280,20 @@ export const AdminDashboardCard = () => {
           <h5 class="card-subtitle">Total Activities</h5>
           <h3 class="card-title">280</h3>
           <br />
+          <div>
+            <ProgressBar variant="info" now={76} />
+          </div>
           <p class="card-text">76% increase in 20 days</p>
         </Card.Body>
       </Card>
       <Card style={{ width: "14rem" }} className="col-md-4 mt-3 cardShadow">
-        <Card.Body className="text-left">
+        <Card.Body className="text-right">
           <h5 class="card-subtitle">Total Schools</h5>
           <h3 class="card-title">3280</h3>
           <br />
+          <div>
+            <ProgressBar variant="info" now={80} />
+          </div>
           <p class="card-text">80% increase in 20 days</p>
         </Card.Body>
       </Card>

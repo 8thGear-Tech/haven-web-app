@@ -46,26 +46,44 @@ const ProfileIdCard = () => {
 const StudentProfile = () => {
   return (
     <>
-      <Card style={{ width: "23rem" }} className="group-flush">
-        <Row>
-          <Col>
-            {" "}
-            <Card.Img variant="top" className="roundedCircle" src={havenlogo} />
-          </Col>
-          <Col>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-          </Col>
-        </Row>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "end",
+          justifyItems: "end",
+        }}
+      >
+        <div>
+          <Card style={{ width: "23rem" }} className="group-flush">
+            <Row>
+              <Col>
+                {" "}
+                <Card.Img
+                  variant="top"
+                  className="roundedCircle"
+                  src={havenlogo}
+                />
+              </Col>
+              <Col>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Col>
+            </Row>
 
-        <Card.Body>
-          {/* <Card.Title>Card Title</Card.Title>
+            <Card.Body>
+              {/* <Card.Title>Card Title</Card.Title>
             
             <Button variant="primary">Go somewhere</Button> */}
-        </Card.Body>
-      </Card>
+            </Card.Body>
+          </Card>
+        </div>
+
+        <div>
+          <p>View Champ Feedback</p>
+        </div>
+      </div>
     </>
   );
 };

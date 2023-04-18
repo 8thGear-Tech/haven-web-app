@@ -7,7 +7,7 @@ const ChampMaterialPage = () => {
   return (
     <>
       <ChampNavbar />
-      
+
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-3">
@@ -23,7 +23,6 @@ const ChampMaterialPage = () => {
                   <ActivitiesPerformance />
                 </Container>
               </div>
-              
             </div>
           </div>
         </div>

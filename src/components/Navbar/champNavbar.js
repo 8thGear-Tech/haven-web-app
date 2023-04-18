@@ -30,7 +30,7 @@ export const ChampNavbar = () => {
         </div>
         <div className="flex-grow-1">
           <Navbar
-            fixed="top"
+            // fixed="top"
             style={{
               background:
                 "linear-gradient(180deg, #64348D 0%, #D15DDB 99.99%, rgba(139, 41, 164, 0.94) 100%)",
@@ -197,7 +197,7 @@ const SmallShowExample = ({ name, ...props }) => {
         >
           <path
             d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-            fill="#006747"
+            fill="#6D3894"
           />
         </svg>
       </Button>
@@ -208,9 +208,6 @@ const SmallShowExample = ({ name, ...props }) => {
         responsive="lg"
         className="w-75 mt-5 d-lg-none "
         {...props}
-        style={{
-          backgroundColor: "#BC4C92",
-        }}
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
@@ -221,7 +218,7 @@ const SmallShowExample = ({ name, ...props }) => {
           <div className="d-flex justify-content-between flex-column">
             <ul className="ps-2">
               <li className="d-flex mb-4 align-items-center SideNavItem">
-                <span>Dashboardsss</span>
+                <span>Dashboard</span>
               </li>
               <li className="d-flex mb-4 align-items-center SideNavItem">
                 <span>Materials</span>
@@ -259,18 +256,19 @@ const SmallShowExample = ({ name, ...props }) => {
 };
 
 const Demo = (props) => {
-  const { pageroute, text } = props;
+  const { icon, pageroute, text, dashboard } = props;
   return (
     <>
       <ul className="ps-2">
         <li className="d-flex mb-2 align-items-center SideNavItem">
-          <div className="me-3">
-            <Link to={pageroute} className="nav-link">
-              <div className="sideNavButton">
-                <span>{text}</span>
-              </div>
-            </Link>
-          </div>
+          <div className="me-3">{icon}</div>
+          <Link to={pageroute} className="nav-link">
+            <div className="sideNavButton">
+              <span>{dashboard}</span>
+
+              <span>{text}</span>
+            </div>
+          </Link>
         </li>
       </ul>
     </>
@@ -321,7 +319,7 @@ const BigShowExample = ({ name, ...props }) => {
             return (
               <div className="d-flex justify-content-between flex-column ">
                 <ul className="ps-2" key={navbar.id}>
-                  {/* <Demo {...navbar} /> */}
+                  <Demo {...navbar} />
                 </ul>
               </div>
             );

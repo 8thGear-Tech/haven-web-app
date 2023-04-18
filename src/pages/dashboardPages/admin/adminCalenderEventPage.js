@@ -1,10 +1,12 @@
 import { Button, Card, Col, Container, Modal, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import {
   AdminSideNavBar,
   AdminTopNavbar,
 } from "../../../components/Navbar/adminDashboard";
 import moment from "moment";
 import React, { useState } from "react";
+import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
 import havenlogo from "../../../assets/icons/havenlogo.png";
 const Admincalendar = () => {
   return (
@@ -16,6 +18,7 @@ const Admincalendar = () => {
             <AdminSideNavBar />
           </div>
           <div className="col-lg-9 col-md-12">
+            <div><TutorNavbar/></div>
             <div className="row">
               <div className="col-6">
                 <Calendar />
@@ -28,6 +31,28 @@ const Admincalendar = () => {
         </div>
       </div>
     </>
+  );
+};
+
+const TutorNavbar = () => {
+  return (
+    <div className="container my-5">
+      <div className="row d-flex justify-content-center AdmintTutorNav">
+        <div className="d-flex justify-content-between px-5 pt-2">
+          {" "}
+          <div className="d-flex">
+            <p className="navFontColor">Calender</p>
+          </div>
+          <div className="d-flex navFontColor">
+            {" "}
+            <Link to="" className="text-decoration-none">
+              <p className="navFontColor">Home</p>
+            </Link>
+            <ArrowRightAltOutlinedIcon />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 const Calendar = () => {

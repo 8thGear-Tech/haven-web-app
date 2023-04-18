@@ -27,7 +27,7 @@ const AdminDashboardPg = () => {
               <Timestamp />
             </div>
             <Container>
-              <div className="row">
+              <div className="row mt-5 mb-5">
                 <div className="col">
                   <TutorList />
                 </div>
@@ -180,15 +180,15 @@ const TutorList = () => {
           </small>
         </Col>
       </Row>
-
-      <ViewAllBtn />
+      <div className="mt-2 text-center mb-3">
+        <ViewAllBtn />
+      </div>
     </Card>
   );
 };
 
 const SalaryStatus = () => {
-    return (
-      
+  return (
     <Card className="shadow-lg p-3 mb-5 bg-white rounded">
       <Card.Body>
         <Card.Title className="text-center">Salary Status</Card.Title>
