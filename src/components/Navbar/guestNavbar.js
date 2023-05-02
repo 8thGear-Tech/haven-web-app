@@ -34,38 +34,21 @@ export const GuestNavbar = () => {
           />{" "}
           <Navbar.Collapse
             id="navbarScroll"
-            className="justifyNavItemsEnd my-4 "
+            className="justifyNavItemsEnd my-4"
           >
             <Nav className="justify-content-end" navbarScroll>
-              <Nav.Link href="/" className="navTextColor mx-3">
+              <Link
+                to="/"
+                className="navTextColor mx-3 my-auto text-decoration-none"
+              >
                 HOME
-              </Nav.Link>
+              </Link>
+              {/* <Nav.Link href="/" className="navTextColor mx-3">
+                HOME
+              </Nav.Link> */}
               {/* <Nav.Link href="/about" className="navTextColor mx-3">
                 ABOUT
               </Nav.Link> */}
-              <NavDropdown
-                title="ABOUT US"
-                id="navbarScrollingDropdown"
-                className="navTextColor mx-3"
-              >
-                <NavDropdown.Item href="/about" className="navTextColor">
-                  ABOUT HAVEN
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/gallery" className="navTextColor">
-                  GALLERY
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                {/* <NavDropdown.Item href="/blog" className="navTextColor">
-                  BLOG
-                </NavDropdown.Item> */}
-              </NavDropdown>
-              <Nav.Link href="/blog" className="navTextColor mx-3">
-                BLOG
-              </Nav.Link>
-              <Nav.Link href="/UpcomingEvents" className="navTextColor mx-3">
-                UPCOMING EVENTS
-              </Nav.Link>
               {/* <NavDropdown
                 title="SERVICES"
                 id="navbarScrollingDropdown"
@@ -107,14 +90,55 @@ export const GuestNavbar = () => {
                   BECOME AN INSTRUCTOR
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5" className="navTextColor">
-                  PRODUCT
+                <NavDropdown.Item>
+                  <Link to="/" className="navTextColor text-decoration-none">
+                    {" "}
+                    PRODUCT
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/ourOfferings" className="navTextColor">
-                  OUR OFFERINGS
+                <NavDropdown.Item>
+                  <Link
+                    to="/ourOfferings"
+                    className="navTextColor text-decoration-none"
+                  >
+                    {" "}
+                    OUR OFFERINGS
+                  </Link>
                 </NavDropdown.Item>
               </NavDropdown>
+              <NavDropdown
+                title="ABOUT US"
+                id="navbarScrollingDropdown"
+                className="navTextColor mx-3"
+              >
+                <NavDropdown.Item>
+                  <Link to="/about" className="navTextColor">
+                    ABOUT HAVEN
+                  </Link>
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item>
+                  <Link to="/gallery" className="navTextColor"></Link>
+                  GALLERY
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                {/* <NavDropdown.Item href="/blog" className="navTextColor">
+                  BLOG
+                </NavDropdown.Item> */}
+              </NavDropdown>
+              <Link
+                to="/UpComingEvent"
+                className="navTextColor mx-3 text-decoration-none my-auto"
+              >
+                UPCOMING EVENTS
+              </Link>{" "}
+              <Link
+                to="/blog"
+                className="navTextColor mx-3 text-decoration-none my-auto"
+              >
+                BLOG
+              </Link>
               {/* <div className="mx-3">
                 <LoginButton />
               </div> */}
