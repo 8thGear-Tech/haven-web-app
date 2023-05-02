@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 //pages
 import Home from "./pages/websitePages/home";
-import UpComingEvent from "./pages/websitePages/upComingEvent"
+import UpComingEvent from "./pages/websitePages/upComingEvent";
 import About from "./pages/websitePages/about";
 import AfterSchool from "./pages/websitePages/otherActivities/afterSchool";
 import CreativeSummer from "./pages/websitePages/otherActivities/creativeSummer";
@@ -103,6 +103,7 @@ import RegisterNowForm from "./components/forms/website/registerNowForm";
 
 import { Footer } from "./components/footer";
 import { FooterItemToTop } from "./components/footer";
+import { ScrollButton } from "./components/Buttons/website/scrollToTop";
 
 import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
 import Admincalendar from "./pages/dashboardPages/admin/adminCalenderEventPage";
@@ -116,143 +117,154 @@ function App() {
     <div>
       <BrowserRouter>
         {" "}
-        <FooterItemToTop />
-        <Routes>
-          {/* payment packages */}
-          {/* <Route path="/DashboardSidebar" element={<DashboardSidebar />} /> */}
+        <FooterItemToTop>
+          <Routes>
+            {/* payment packages */}
+            {/* <Route path="/DashboardSidebar" element={<DashboardSidebar />} /> */}
 
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="afterSchool" element={<AfterSchool />} />
-          <Route path="ourOfferings" element={<CreativeSummer />} />
-          <Route path="weekendClub" element={<WeekendActivities />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="UpComingEvent" element={<UpComingEvent />} />
-          <Route path=" " element={<BlogReadMore />} />
-          {/* Error page */}
-          <Route path="*" element={<ErrorPage />} />
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="afterSchool" element={<AfterSchool />} />
+            <Route path="ourOfferings" element={<CreativeSummer />} />
+            <Route path="weekendClub" element={<WeekendActivities />} />
+            <Route path="gallery" element={<Gallery />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="UpComingEvent" element={<UpComingEvent />} />
+            <Route path=" " element={<BlogReadMore />} />
+            {/* Error page */}
+            <Route path="*" element={<ErrorPage />} />
 
-          {/* payment packages */}
-          <Route path="PaymentPackages" element={<PaymentPackages />} />
-          <Route path="BasicPackage" element={<BasicPackage />} />
-          <Route path="BasicForm" element={<BasicForm />} />
+            {/* payment packages */}
+            <Route path="PaymentPackages" element={<PaymentPackages />} />
+            <Route path="BasicPackage" element={<BasicPackage />} />
+            <Route path="BasicForm" element={<BasicForm />} />
 
-          {/*school authentication pages */}
-          <Route path="ChampsNeeds" element={<ChampsNeeds />} />
-          <Route path="SchoolLocation" element={<SchoolLocation />} />
-          <Route path="SchoolInformation" element={<SchoolInformation />} />
-          <Route path="ActivitySchedule" element={<ActivitySchedule />} />
-          <Route path="ResourcePage" element={<ResourcePage />} />
-          {/* champjourney */}
-          <Route path="ChampDashboard" element={<ChampDashboard />} />
-          <Route path="ChampMaterialPg" element={<ChampMaterialPage />} />
-          <Route path="AssignmentText" element={<AssignmentText />} />
-          <Route path="ChampVirtualClass" element={<ChampVirtualClass />} />
-          <Route path="Champcalendar" element={<Champcalendar />} />
-          <Route path="ProfileIdCard" element={<ProfileIdCard />} />
-          <Route path="ProfileEditCard" element={<ProfileEditCard />} />
+            {/*school authentication pages */}
+            <Route path="ChampsNeeds" element={<ChampsNeeds />} />
+            <Route path="SchoolLocation" element={<SchoolLocation />} />
+            <Route path="SchoolInformation" element={<SchoolInformation />} />
+            <Route path="ActivitySchedule" element={<ActivitySchedule />} />
+            <Route path="ResourcePage" element={<ResourcePage />} />
+            {/* champjourney */}
+            <Route path="ChampDashboard" element={<ChampDashboard />} />
+            <Route path="ChampMaterialPg" element={<ChampMaterialPage />} />
+            <Route path="AssignmentText" element={<AssignmentText />} />
+            <Route path="ChampVirtualClass" element={<ChampVirtualClass />} />
+            <Route path="Champcalendar" element={<Champcalendar />} />
+            <Route path="ProfileIdCard" element={<ProfileIdCard />} />
+            <Route path="ProfileEditCard" element={<ProfileEditCard />} />
 
-          {/* Admin dashboard pages */}
-          <Route path="AdminDashboardPg" element={<AdminDashboardPg />} />
-          <Route path="Admincalendar" element={<Admincalendar />} />
-          <Route path="allTutorPage" element={<AllTutorPage />} />
-          <Route path="allChampPage" element={<AllChampPage />} />
-          <Route path="addChampsPage" element={<AddChampsPage />} />
-          {/*school activities pages */}
-          <Route path="Technology" element={<Technology />} />
-          <Route path="Arts" element={<Arts />} />
-          <Route path="Languages" element={<Languages />} />
+            {/* Admin dashboard pages */}
+            <Route path="AdminDashboardPg" element={<AdminDashboardPg />} />
+            <Route path="Admincalendar" element={<Admincalendar />} />
+            <Route path="allTutorPage" element={<AllTutorPage />} />
+            <Route path="allChampPage" element={<AllChampPage />} />
+            <Route path="addChampsPage" element={<AddChampsPage />} />
+            {/*school activities pages */}
+            <Route path="Technology" element={<Technology />} />
+            <Route path="Arts" element={<Arts />} />
+            <Route path="Languages" element={<Languages />} />
 
-          {/* parent authentication pages */}
-          <Route path="AllActivities" element={<AllActivities />} />
-          <Route path="RegisterNowForm" element={<RegisterNowForm />} />
+            {/* parent authentication pages */}
+            <Route path="AllActivities" element={<AllActivities />} />
+            <Route path="RegisterNowForm" element={<RegisterNowForm />} />
 
-          {/* instructor authentication pages */}
-          <Route
-            path="InstructorProfileInfo"
-            element={<InstructorProfileInfo />}
-          />
-          <Route path="AboutInstructor" element={<AboutInstructor />} />
-          <Route path="EducationHistory" element={<EducationHistory />} />
-          <Route path="WorkHistory" element={<WorkHistory />} />
-          <Route path="InstructorLocation" element={<InstructorLocation />} />
-          <Route path="AddYourActivity" element={<AddYourActivity />} />
-          <Route path="AddActivity" element={<AddActivity />} />
-          <Route
-            path="InstructorActivitiesDetails"
-            element={<InstructorActivitiesDetails />}
-          />
-          <Route path="SelectTest" element={<SelectTest />} />
-          <Route path="ScreeningQuestions" element={<ScreeningQuestions />} />
-          <Route path="ProfileUpload" element={<ProfileUpload />} />
-          <Route path="EditProfilePhoto" element={<EditProfilePhoto />} />
-          <Route path="IdUpload" element={<IdUpload />} />
-          <Route path="VideoUpload" element={<VideoUpload />} />
-          <Route path="SpecialNeeds" element={<SpecialNeeds />} />
-          <Route path="PaymentInfo" element={<PaymentInfo />} />
-          <Route path="Referees" element={<Referee />} />
-          <Route path="InstructorAgreement" element={<InstructorAgreement />} />
-          <Route path="CongratsMessage" element={<CongratsMessage />} />
+            {/* instructor authentication pages */}
+            <Route
+              path="InstructorProfileInfo"
+              element={<InstructorProfileInfo />}
+            />
+            <Route path="AboutInstructor" element={<AboutInstructor />} />
+            <Route path="EducationHistory" element={<EducationHistory />} />
+            <Route path="WorkHistory" element={<WorkHistory />} />
+            <Route path="InstructorLocation" element={<InstructorLocation />} />
+            <Route path="AddYourActivity" element={<AddYourActivity />} />
+            <Route path="AddActivity" element={<AddActivity />} />
+            <Route
+              path="InstructorActivitiesDetails"
+              element={<InstructorActivitiesDetails />}
+            />
+            <Route path="SelectTest" element={<SelectTest />} />
+            <Route path="ScreeningQuestions" element={<ScreeningQuestions />} />
+            <Route path="ProfileUpload" element={<ProfileUpload />} />
+            <Route path="EditProfilePhoto" element={<EditProfilePhoto />} />
+            <Route path="IdUpload" element={<IdUpload />} />
+            <Route path="VideoUpload" element={<VideoUpload />} />
+            <Route path="SpecialNeeds" element={<SpecialNeeds />} />
+            <Route path="PaymentInfo" element={<PaymentInfo />} />
+            <Route path="Referees" element={<Referee />} />
+            <Route
+              path="InstructorAgreement"
+              element={<InstructorAgreement />}
+            />
+            <Route path="CongratsMessage" element={<CongratsMessage />} />
 
-          {/* instructor dashboard pages */}
-          <Route path="InstructorDashboard" element={<InstructorDashboard />} />
-          <Route path="ViewMaterials" element={<ViewMaterials />} />
-          <Route path="UploadMaterial" element={<UploadMaterial />} />
-          <Route path="CreateAssignment" element={<CreateAssignment />} />
-          <Route path="AssignmentCreated" element={<AssignmentCreated />} />
-          <Route
-            path="InstructorVirtualClass"
-            element={<InstructorVirtualClass />}
-          />
-          <Route path="InstructorProfile" element={<InstructorProfile />} />
-          <Route
-            path="InstructorUpdateProfile"
-            element={<InstructorUpdateProfile />}
-          />
-          <Route path="InstructorGrading" element={<InstructorGrading />} />
-          <Route
-            path="InstructorNotification"
-            element={<InstructorNotification />}
-          />
-          <Route path="ViewSubmissions" element={<ViewSubmissions />} />
-          <Route
-            path="InstructorChampsFeedback"
-            element={<InstructorChampsFeedback />}
-          />
-          <Route path="ReportIssueBtn" element={<ReportIssueBtn />} />
-          <Route path="RateChampBtn" element={<RateChampBtn />} />
-          <Route path="RateAppBtn" element={<RateAppBtn />} />
+            {/* instructor dashboard pages */}
+            <Route
+              path="InstructorDashboard"
+              element={<InstructorDashboard />}
+            />
+            <Route path="ViewMaterials" element={<ViewMaterials />} />
+            <Route path="UploadMaterial" element={<UploadMaterial />} />
+            <Route path="CreateAssignment" element={<CreateAssignment />} />
+            <Route path="AssignmentCreated" element={<AssignmentCreated />} />
+            <Route
+              path="InstructorVirtualClass"
+              element={<InstructorVirtualClass />}
+            />
+            <Route path="InstructorProfile" element={<InstructorProfile />} />
+            <Route
+              path="InstructorUpdateProfile"
+              element={<InstructorUpdateProfile />}
+            />
+            <Route path="InstructorGrading" element={<InstructorGrading />} />
+            <Route
+              path="InstructorNotification"
+              element={<InstructorNotification />}
+            />
+            <Route path="ViewSubmissions" element={<ViewSubmissions />} />
+            <Route
+              path="InstructorChampsFeedback"
+              element={<InstructorChampsFeedback />}
+            />
+            <Route path="ReportIssueBtn" element={<ReportIssueBtn />} />
+            <Route path="RateChampBtn" element={<RateChampBtn />} />
+            <Route path="RateAppBtn" element={<RateAppBtn />} />
 
-          {/* school dashboard pages */}
-          <Route path="SchoolDashboard" element={<SchoolDashboard />} />
-          <Route
-            path="AllActivitiesDashboard"
-            element={<AllActivitiesDashboard />}
-          />
-          <Route path="ActivitiesDetails" element={<ActivitiesDetails />} />
-          <Route path="AllChamps" element={<AllChamps />} />
-          <Route path="AllInstructors" element={<AllInstructors />} />
-          <Route path="SchoolProfile" element={<SchoolProfile />} />
-          <Route path="SchoolUpdateProfile" element={<SchoolUpdateProfile />} />
-          <Route
-            path="AllActivitiesPerformance"
-            element={<AllActivitiesPerformance />}
-          />
-          <Route
-            path="SchoolInstructorFeedback"
-            element={<SchoolInstructorFeedback />}
-          />
+            {/* school dashboard pages */}
+            <Route path="SchoolDashboard" element={<SchoolDashboard />} />
+            <Route
+              path="AllActivitiesDashboard"
+              element={<AllActivitiesDashboard />}
+            />
+            <Route path="ActivitiesDetails" element={<ActivitiesDetails />} />
+            <Route path="AllChamps" element={<AllChamps />} />
+            <Route path="AllInstructors" element={<AllInstructors />} />
+            <Route path="SchoolProfile" element={<SchoolProfile />} />
+            <Route
+              path="SchoolUpdateProfile"
+              element={<SchoolUpdateProfile />}
+            />
+            <Route
+              path="AllActivitiesPerformance"
+              element={<AllActivitiesPerformance />}
+            />
+            <Route
+              path="SchoolInstructorFeedback"
+              element={<SchoolInstructorFeedback />}
+            />
 
-          {/* authentication forms */}
-          <Route path="signup" element={<CreateAccountForm />} />
-          <Route path="school-signup" element={<SchoolCreateAccountForm />} />
-          <Route path="parent-signup" element={<ParentCreateAccountForm />} />
-        </Routes>
+            {/* authentication forms */}
+            <Route path="signup" element={<CreateAccountForm />} />
+            <Route path="school-signup" element={<SchoolCreateAccountForm />} />
+            <Route path="parent-signup" element={<ParentCreateAccountForm />} />
+          </Routes>{" "}
+          <footer>
+            <Footer />
+            <ScrollButton />
+          </footer>
+        </FooterItemToTop>
       </BrowserRouter>
-      <footer>
-        <Footer />
-      </footer>
     </div>
   );
 }

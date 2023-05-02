@@ -1071,7 +1071,11 @@ export const Footer = () => {
                 </div>
                 <div className="col-6 col-lg-2 col-md-2">
                   <h4>Connect with us</h4>
-                  <a href="https://maps.app.goo.gl/DFurq3id3D9i5TrE7">
+                  <p>Magodo, Lagos</p>
+                  <a
+                    href="https://maps.app.goo.gl/DFurq3id3D9i5TrE7"
+                    target="_blank"
+                  >
                     <img
                       alt=""
                       src={googlemaps}
