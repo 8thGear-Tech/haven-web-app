@@ -74,7 +74,6 @@ const WhatWeDo = () => {
         // }}
       >
         <h3 className="text-center mt-lg-3 mb-4">WHAT WE DO</h3>
-        <h3 className="text-center mt-lg-3 mb-4">WHAT WE DO</h3>
         <div className="row text-center justify-content-around mt-3 mx-2">
           {/* <div className="CardWork row text-center justify-content-around mt-5"> */}
           {whatwedo.whatwedo.map((data) => {
