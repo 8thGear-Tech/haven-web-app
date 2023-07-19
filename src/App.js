@@ -15,6 +15,7 @@ import WeekendActivities from "./pages/websitePages/otherActivities/weekendActiv
 import Gallery from "./pages/websitePages/gallery";
 import Blog from "./pages/websitePages/blog/blogPage";
 import BlogReadMore from "./pages/websitePages/blog/blogReadMorePage";
+import { PrivacyPolicy } from "./pages/websitePages/privacyPolicy";
 
 //payment packages
 import PaymentPackages from "./pages/websitePages/paymentPackages/paymentPackages";
@@ -22,7 +23,7 @@ import BasicPackage from "./pages/websitePages/paymentPackages/basicPackage";
 import BasicForm from "./components/forms/website/schools/packageForm";
 
 //school authentication pages
-import ResourcePage from "./pages/dashboardPages/champ/CampAllReaourcePage";
+import ResourcePage from "./pages/dashboardPages/champ/champAllResourcePage";
 import ChampDashboard from "./pages/dashboardPages/champ/champDashboardPage";
 import ChampMaterialPage from "./pages/dashboardPages/champ/champMaterialBoard";
 import AssignmentText from "./pages/dashboardPages/champ/champAssignmentBoard";
@@ -131,6 +132,7 @@ function App() {
             <Route path="blog" element={<Blog />} />
             <Route path="UpComingEvent" element={<UpComingEvent />} />
             <Route path=" " element={<BlogReadMore />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
             {/* Error page */}
             <Route path="*" element={<ErrorPage />} />
 

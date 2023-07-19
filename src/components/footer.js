@@ -1148,10 +1148,19 @@ export const Footer = () => {
           </div>
         </footer>{" "}
       </div>{" "}
-      <div className="container-fluid footerTwoBgColor py-2">
+      <div className="container-fluid footerTwoBgColor d-flex justify-content-center py-2">
         {" "}
-        <p class="text-center text-light p-0 m-0">
-          &copy; 2022 Haven-Edu Services
+        <p class="text-center text-light p-0 m-0 mx-2">
+          &copy; 2023 Haven-Edu Services
+        </p>
+        <p className="text-center m-0 p-0 mx-2" style={{ fontSize: "0.8rem" }}>
+          <Link
+            to="/privacy-policy"
+            style={{ color: "#ffffff", textDecoration: "none" }}
+          >
+            {" "}
+            Privacy Policy
+          </Link>
         </p>
       </div>
     </>
