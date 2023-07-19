@@ -4,14 +4,16 @@ export const PrivacyPolicy = () => {
       <div className="container-fluid PrivacyAndPolicyHero pt-5 px-lg-5 px-md-5">
         <div className="row my-lg-3 mx-lg-3">
           <div className="d-none d-lg-block d-md-block d-sm-none">
-            <h3 className="container">Haven-Edu Services Privacy Policy</h3>
+            <h3 className="container ps-4">
+              Haven-Edu Services Privacy Policy
+            </h3>
           </div>
           <div className="container-fluid d-lg-none d-md-none d-sm-block d-xs-block">
             <h3 className="text-center">Haven-Edu Services Privacy Policy</h3>
           </div>
         </div>
       </div>
-      <div className="container mt-4">
+      <div className="container mt-4 px-4">
         <h4>INTRODUCTION</h4> <br />
         <p className="">
           Haven-Edu Services (“we” or “us” or “our”) respects the privacy of our
