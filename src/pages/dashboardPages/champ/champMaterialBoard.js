@@ -1,4 +1,3 @@
-import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
 import { ChampNavbar } from "../../../components/Navbar/champNavbar";
 import { ActivitiesPerformance } from "../../../components/allCards/Dashboard/activitiesCards";
 import Container from "react-bootstrap/Container";
@@ -11,7 +10,7 @@ const ChampMaterialPage = () => {
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-3">
-            <ChampSideNavBar />
+           
           </div>
           <div className="col-lg-9 col-md-12">
             <div>

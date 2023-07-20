@@ -1,6 +1,6 @@
 import {
   ChampNavbar,
-  ChampSideNavBar,
+  // ChampSideNavBar,
 } from "../../../components/Navbar/champNavbar";
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Modal } from "react-bootstrap";
@@ -14,7 +14,7 @@ const Champcalendar = () => {
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-3">
-            <ChampSideNavBar />
+            {/* <ChampSideNavBar /> */}
           </div>
           <div className="col-lg-9 col-md-12">
             <div className="row">

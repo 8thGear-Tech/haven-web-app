@@ -2,7 +2,7 @@ import Row from "react-bootstrap/Row";
 import { Col } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
-import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
+// import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
 import { ChampNavbar } from "../../../components/Navbar/champNavbar";
 import havenlogo from "../../../assets/icons/havenlogo.png";
 const ProfileIdCard = () => {
@@ -11,7 +11,7 @@ const ProfileIdCard = () => {
       <ChampNavbar />
       <div className="row d-flex justify-content-center">
         <div className="col-lg-3">
-          <ChampSideNavBar />
+          {/* <ChampSideNavBar /> */}
         </div>
         <div className="col-lg-9 col-md-12">
           <div className="row">

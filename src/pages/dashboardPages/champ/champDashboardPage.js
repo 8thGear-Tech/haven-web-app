@@ -1,4 +1,4 @@
-import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
+// import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
 import { ChampNavbar } from "../../../components/Navbar/champNavbar";
 import { ChampsResource } from "../../../components/allCards/Dashboard/dashboardCards";
 import { ChampDashboardCoCards } from "../../../components/allCards/Dashboard/dashboardCards";
@@ -15,7 +15,7 @@ const ChampDashboard = () => {
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-3">
-            <ChampSideNavBar />
+            {/* <ChampSideNavBar /> */}
           </div>
           <div className="col-lg-9 col-md-12">
             <div>

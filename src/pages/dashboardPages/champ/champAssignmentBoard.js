@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { useState } from "react";
 import { ChampNavbar } from "../../../components/Navbar/champNavbar";
-import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
+// import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
 import { Title } from "@mui/icons-material";
 // import FileUploadForm from "../../../components/forms/dashboard/champs/assignmentUpload";
 
@@ -17,7 +17,7 @@ const AssignmentText = () => {
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-3">
-            <ChampSideNavBar />
+            {/* <ChampSideNavBar /> */}
           </div>
           <div className="col-lg-9 col-md-12">
             <div>

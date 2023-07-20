@@ -1,5 +1,5 @@
 import { ChampNavbar } from "../../../components/Navbar/champNavbar";
-import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
+// import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
 import VideoChatIcon from '@mui/icons-material/VideoChat';
 import Button from "react-bootstrap/Button";
 
@@ -12,7 +12,7 @@ const ChampVirtualClass = () =>{
         <div className="container-fluid">
           <div className="row d-flex justify-content-center">
             <div className="col-lg-3">
-              <ChampSideNavBar />
+              {/* <ChampSideNavBar /> */}
             </div>
             <div className="col-lg-9 col-md-12">
               <div>
