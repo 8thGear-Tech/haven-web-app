@@ -131,7 +131,7 @@ export const GuestNavbar = () => {
                 to="/summer-camp"
                 className="navTextColor mx-3 text-decoration-none my-auto"
               >
-                UPCOMING EVENTS
+                SUMMER CAMP
               </Link>{" "}
               <Link
                 to="/blog"
