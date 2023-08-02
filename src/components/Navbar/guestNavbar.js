@@ -128,7 +128,7 @@ export const GuestNavbar = () => {
                 </NavDropdown.Item> */}
               </NavDropdown>
               <Link
-                to="/UpComingEvent"
+                to="/summer-camp"
                 className="navTextColor mx-3 text-decoration-none my-auto"
               >
                 UPCOMING EVENTS

@@ -130,7 +130,7 @@ function App() {
             <Route path="weekendClub" element={<WeekendActivities />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="blog" element={<Blog />} />
-            <Route path="UpComingEvent" element={<UpComingEvent />} />
+            <Route path="summer-camp" element={<UpComingEvent />} />
             <Route path=" " element={<BlogReadMore />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             {/* Error page */}
