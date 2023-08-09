@@ -29,7 +29,7 @@ const Sidebar = ({ showSidebar, onHide }) => {
           <Nav.Link href="/ChampMaterialPg" >Materials</Nav.Link>
           <Nav.Link href="/AssignmentText">Assignments</Nav.Link>
           <Nav.Link href="/VirtualClass">Virtual Class</Nav.Link>
-          <Nav.Link href="#/Champcalendar">Calendar</Nav.Link>
+          <Nav.Link href="/Champcalendar">Calendar</Nav.Link>
           <Nav.Link href="/ProfileIdCard">My Profile</Nav.Link>
           <Nav.Link href="/">Report Issues</Nav.Link>
           <Nav.Link href="/">Submission</Nav.Link>

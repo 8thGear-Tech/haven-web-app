@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { useState } from "react";
 import { ChampNavbar } from "../../../components/Navbar/champNavbar";
-// import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
+
 import { Title } from "@mui/icons-material";
 // import FileUploadForm from "../../../components/forms/dashboard/champs/assignmentUpload";
 
@@ -16,8 +16,8 @@ const AssignmentText = () => {
       <ChampNavbar />
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
-          <div className="col-lg-3">
-            {/* <ChampSideNavBar /> */}
+          <div className="col-lg-4">
+         
           </div>
           <div className="col-lg-9 col-md-12">
             <div>
@@ -75,17 +75,21 @@ const FileUploadForm = () => {
 
   return (
     <div className="shadow-lg p-3 mb-5 bg-white rounded">
-      <Form className="submitFile" onSubmit={handleSubmit}>
+      <Form className="submitFile  m-0" onSubmit={handleSubmit} style={{ height: "500px" }}>
         <Form.Group>
           {/* <Form.Label>Upload a file</Form.Label> */}
           <Form.Control
             placeholder="Drop Your Assignmnet Here"
             type="file"
             onChange={handleFileChange}
-            style={{ height: "500px" }}
+            style={{ height: "450px", width:"100%" }}
           />
+
+         <div className="text-center mt-2 ">
+                  <Button className="SubmitBtn" type="submit">Submit</Button>
+         </div>
         </Form.Group>
-        <Button type="submit">Submit</Button>
+       
       </Form>
     </div>
   );

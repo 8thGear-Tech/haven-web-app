@@ -71,6 +71,11 @@
   @include BtnStyle;
   width: 8rem;
 }
+
+.SubmitBtn {
+  @include BtnStyle;
+  width: 12rem;
+}
 // @mixin BtnStyle {
 //   background-color: $buttoncolor;
 //   color: $tertextcolor;
