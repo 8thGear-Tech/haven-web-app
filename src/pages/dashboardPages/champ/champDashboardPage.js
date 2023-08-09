@@ -14,8 +14,7 @@ const ChampDashboard = () => {
 
       <div className="container-fluid">
         <div className="row d-flex justify-content-center">
-          <div className="col-lg-3">
-            {/* <ChampSideNavBar /> */}
+          <div className="col-lg-3">      
           </div>
           <div className="col-lg-9 col-md-12">
             <div>

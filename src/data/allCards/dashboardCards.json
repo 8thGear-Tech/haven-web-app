@@ -48,21 +48,24 @@
       "id": 1,
       "image": "../assets/images/materials.png",
       "title": "Materials",
-      "text": "12"
+      "text": "12",
+      "link": ""
     },
 
     {
       "id": 2,
       "image": "../assets/images/assignments.png",
       "title": "Assignments",
-      "text": "5"
+      "text": "5",
+      "link": ""
     },
 
     {
       "id": 3,
       "image": "../assets/images/virtualclass.png",
       "title": "Virtual Class",
-      "text": "View"
+      "text": "View",
+      "link": ""
     }
   ],
   "infoData": [

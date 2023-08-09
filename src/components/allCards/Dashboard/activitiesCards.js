@@ -68,7 +68,7 @@ export const ActivitiesPerfomanceCard = (props) => {
         {" "}
         <div className="col">
           {" "}
-          <Card.Img variant="top" src={image} />
+          <Card.Img variant="top " style={{ width: "17.8rem", height: "16rem" }} src={image} />
         </div>
         <div className="col">
           {" "}
@@ -88,7 +88,7 @@ export const ActivitiesPerformance = () => {
       <div className="row d-flex justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
         {performanceData.performanceData.map((card) => {
           return (
-            <div className="col-sm-12 col-md-6 col-lg-6" key={card.id}>
+            <div className="col-sm-12 col-md-6 col-lg-4" key={card.id}>
               <ActivitiesPerfomanceCard {...card}></ActivitiesPerfomanceCard>
             </div>
           );

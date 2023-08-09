@@ -6,6 +6,8 @@ import havenlogo from "../../assets/icons/havenlogo.png";
 import { Offcanvas } from "react-bootstrap";
 import "../../sassfiles/styles.css";
 
+import ChampMaterialPage from "../../pages/dashboardPages/champ/champMaterialBoard";
+
 // Sidebar component
 const Sidebar = ({ showSidebar, onHide }) => {
   return (
@@ -23,16 +25,16 @@ const Sidebar = ({ showSidebar, onHide }) => {
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Nav className="flex-column">
-          <Nav.Link href="#dashboard">Dashboard</Nav.Link>
-          <Nav.Link href="#materials">Materials</Nav.Link>
-          <Nav.Link href="#assignments">Assignments</Nav.Link>
-          <Nav.Link href="#virtual-class">Virtual Class</Nav.Link>
-          <Nav.Link href="#calendar">Calendar</Nav.Link>
-          <Nav.Link href="#profile">My Profile</Nav.Link>
-          <Nav.Link href="#report-issues">Report Issues</Nav.Link>
-          <Nav.Link href="#submission">Submission</Nav.Link>
-          <Nav.Link href="#ratings">Ratings</Nav.Link>
-          <Nav.Link href="#logout">Logout</Nav.Link>
+          <Nav.Link href="/ChampDashboard">Dashboard</Nav.Link>
+          <Nav.Link href="/ChampMaterialPg" >Materials</Nav.Link>
+          <Nav.Link href="/AssignmentText">Assignments</Nav.Link>
+          <Nav.Link href="/VirtualClass">Virtual Class</Nav.Link>
+          <Nav.Link href="#/Champcalendar">Calendar</Nav.Link>
+          <Nav.Link href="/ProfileIdCard">My Profile</Nav.Link>
+          <Nav.Link href="/">Report Issues</Nav.Link>
+          <Nav.Link href="/">Submission</Nav.Link>
+          <Nav.Link href="/">Ratings</Nav.Link>
+          <Nav.Link href="/">Logout</Nav.Link>
         </Nav>
       </Offcanvas.Body>
     </Offcanvas>
