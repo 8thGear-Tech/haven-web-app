@@ -2,6 +2,7 @@ import { ChampNavbar } from "../../../components/Navbar/champNavbar";
 import { ActivitiesPerformance } from "../../../components/allCards/Dashboard/activitiesCards";
 import Container from "react-bootstrap/Container";
 
+
 const ChampMaterialPage = () => {
   return (
     <>
@@ -27,6 +28,8 @@ const ChampMaterialPage = () => {
                   </div>
                 </Container>
               </div>
+
+
       {/* welcome user */}
       <div style={{ marginTop: '70px' }}>
                 <Container>
@@ -45,7 +48,7 @@ const ChampMaterialPage = () => {
           <div className="col-lg-9 col-md-12">
             <div>
               
-                <Container className="d-flex justify-content-center materialBg">
+                <Container className="d-flex justify-content-center reterialBg">
                   <ActivitiesPerformance />
                 </Container>
               </div>
