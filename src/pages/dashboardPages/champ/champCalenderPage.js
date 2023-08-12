@@ -32,22 +32,27 @@ const Champcalendar = () => {
         </Container>
       </div>
 
-      <div className="container-fluid">
-        <div className="row d-flex justify-content-center"> 
-          <div className="col-lg-12 col-md-12">
-          
-            <div className="row">
-              <div className="col-12 col-md-6">
-              
-                <Calendar />
-              </div>
-              <div className="col-12 col-md-6">
-                <Timestamp />
-              </div>
-            </div>
-          </div>
+<div className="container-fluid" style={{ marginTop: '150px' }}>
+  <div className="row d-flex justify-content-center"> 
+    <div className="col-lg-12 col-md-12">
+      <div className="row">
+        <div className="col-12 col-md-8"> {/* Adjusted width to 2/3 */}
+          <Calendar />
+        </div>
+        <div className="col-12 col-md-4"> {/* Adjusted width to 1/3 */}
+          <Timestamp />
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
     </>
   );
 };
@@ -74,24 +79,29 @@ const Calendar = () => {
 
   return (
     <Container className="shadow-lg p-3 mb-5 bg-white rounded">
-      <h2 className=" text-center">Calender</h2>
-      <Row className="m-5 ">
-        <Col className="m-5 ">
-          <Button onClick={handlePrevMonth}>Prev</Button>
-        </Col>
-        <Col className="m-5 ">{selectedDate.format("MMMM YYYY")}</Col>
-        <Col className="m-5 ">
-          <Button onClick={handleNextMonth}>Next</Button>
-        </Col>
-      </Row>
-      <Row className="m-5 ">
-        {[0, 1, 2, 3, 4, 5, 6].map((day) => (
-          <Col key={day}>{moment().day(day).format("ddd")}</Col>
-        ))}
-      </Row>
+    <h2 className="text-center">Calendar</h2>
+    <Row className="mx-0 mb-3">
+      <Col xs={4} md={2} className="text-center">
+        <Button onClick={handlePrevMonth}>Prev</Button>
+      </Col>
+      <Col xs={4} md={8} className="text-center">
+        {selectedDate.format("MMMM YYYY")}
+      </Col>
+      <Col xs={4} md={2} className="text-center">
+        <Button onClick={handleNextMonth}>Next</Button>
+      </Col>
+    </Row>
+    <Row xs={3} className="m-0 m-md-5">
+  {[0, 1, 2, 3, 4, 5, 6].map((day) => (
+    <Col key={day} className="text-center">
+      {moment().day(day).format("ddd")}
+    </Col>
+  ))}
+</Row>
+
       {[...Array(Math.ceil((daysInMonth + firstDayOfMonth) / 7)).keys()].map(
         (week) => (
-          <Row className="m-5 " key={week}>
+          <Row xs={3} className="m-0 m-md-5" key={week}>
             {[...Array(7).keys()].map((day) => {
               const dayNumber = week * 7 + day + 1 - firstDayOfMonth;
               if (dayNumber <= 0 || dayNumber > daysInMonth) {
@@ -110,21 +120,22 @@ const Calendar = () => {
           </Row>
         )
       )}
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedDate.format("MMMM Do YYYY")}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          This is where you could show more information about the selected day.
-        </Modal.Body>
-      </Modal>
-    </Container>
+    <Modal show={showModal} onHide={() => setShowModal(false)}>
+      <Modal.Header closeButton>
+        <Modal.Title>{selectedDate.format("MMMM Do YYYY")}</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        This is where you could show more information about the selected day.
+      </Modal.Body>
+    </Modal>
+  </Container>
+  
   );
 };
 const Timestamp = () => {
   return (
     <>
-      <Card style={{ width: "18rem", height: "100%" }}>
+      <Card style={{ width: "20rem", height: "100%" }}>
         <Card.Img variant="top" src={havenlogo} />
         <Card.Body style={{ fill: "Solid #e2e9f0 " }}>
           <Card.Link href="#">About </Card.Link>
