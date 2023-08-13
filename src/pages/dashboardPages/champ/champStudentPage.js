@@ -11,7 +11,7 @@ const ProfileIdCard = () => {
       <ChampNavbar />
       <div className="row d-flex justify-content-center">
         <div className="col-lg-3">
-          {/* <ChampSideNavBar /> */}
+        
         </div>
         <div className="col-lg-9 col-md-12">
           <div className="row">
@@ -54,8 +54,9 @@ const StudentProfile = () => {
           </Col>
           <Col>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Ut velit eu erat duis quaLorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Ut velit eu erat duis quam.m.
             </Card.Text>
           </Col>
         </Row>

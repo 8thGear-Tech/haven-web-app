@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 // import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
 import { ChampNavbar } from "../../../components/Navbar/champNavbar";
-import havenlogo from "../../../assets/icons/havenlogo.png";
+import studentProfile from "../../../assets/images/dashboard/champ/studentProfile.png";
 const ProfileEditCard = () => {
   return (
     <>
@@ -50,7 +50,7 @@ const StudentProfile = () => {
         <Row>
           <Col>
             {" "}
-            <Card.Img variant="top" className="roundedCircle" src={havenlogo} />
+            <Card.Img variant="top" className="roundedCircle" src={studentProfile} />
           </Col>
           <Col>
             <Card.Text>
