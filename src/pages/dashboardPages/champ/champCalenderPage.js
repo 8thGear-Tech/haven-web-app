@@ -91,35 +91,30 @@ const Calendar = () => {
         <Button onClick={handleNextMonth}>Next</Button>
       </Col>
     </Row>
-    <Row xs={3} className="m-0 m-md-5">
-  {[0, 1, 2, 3, 4, 5, 6].map((day) => (
-    <Col key={day} className="text-center">
-      {moment().day(day).format("ddd")}
-    </Col>
-  ))}
-</Row>
-
-      {[...Array(Math.ceil((daysInMonth + firstDayOfMonth) / 7)).keys()].map(
-        (week) => (
-          <Row xs={3} className="m-0 m-md-5" key={week}>
-            {[...Array(7).keys()].map((day) => {
-              const dayNumber = week * 7 + day + 1 - firstDayOfMonth;
-              if (dayNumber <= 0 || dayNumber > daysInMonth) {
-                return <Col key={day}></Col>;
-              }
-              return (
-                <Col className="day "
-                  key={day}
-                  
-                  onClick={() => handleDayClick(dayNumber)}
-                >
-                  {dayNumber}
-                </Col>
-              );
-            })}
-          </Row>
-        )
-      )}
+    <Row className="m-md-5">
+      {[0, 1, 2, 3, 4, 5, 6].map((day) => (
+        <Col key={day} className="text-center">
+          {moment().day(day).format("ddd")}
+        </Col>
+      ))}
+    </Row>
+    {[...Array(Math.ceil((daysInMonth + firstDayOfMonth) / 7)).keys()].map(
+      (week) => (
+        <Row className="m-md-5" key={week}>
+          {[...Array(7).keys()].map((day) => {
+            const dayNumber = week * 7 + day + 1 - firstDayOfMonth;
+            if (dayNumber <= 0 || dayNumber > daysInMonth) {
+              return <Col key={day}></Col>;
+            }
+            return (
+              <Col className="day" key={day} onClick={() => handleDayClick(dayNumber)}>
+                {dayNumber}
+              </Col>
+            );
+          })}
+        </Row>
+      )
+    )}
     <Modal show={showModal} onHide={() => setShowModal(false)}>
       <Modal.Header closeButton>
         <Modal.Title>{selectedDate.format("MMMM Do YYYY")}</Modal.Title>
@@ -129,6 +124,7 @@ const Calendar = () => {
       </Modal.Body>
     </Modal>
   </Container>
+  
   
   );
 };
