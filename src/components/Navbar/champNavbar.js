@@ -6,7 +6,6 @@ import havenlogo from "../../assets/icons/havenlogo.png";
 import { Offcanvas } from "react-bootstrap";
 import "../../sassfiles/styles.css";
 
-import ChampMaterialPage from "../../pages/dashboardPages/champ/champMaterialBoard";
 
 // Sidebar component
 const Sidebar = ({ showSidebar, onHide }) => {
@@ -30,7 +29,7 @@ const Sidebar = ({ showSidebar, onHide }) => {
           <Nav.Link href="/AssignmentText">Assignments</Nav.Link>
           <Nav.Link href="/ChampVirtualClass">Virtual Class</Nav.Link>
           <Nav.Link href="/Champcalendar">Calendar</Nav.Link>
-          <Nav.Link href="/ProfileIdCard">My Profile</Nav.Link>
+          <Nav.Link href="/ChampProfilePg">My Profile</Nav.Link>
           <Nav.Link href="/">Report Issues</Nav.Link>
           <Nav.Link href="/">Submission</Nav.Link>
           <Nav.Link href="/">Ratings</Nav.Link>

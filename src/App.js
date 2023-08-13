@@ -1,6 +1,6 @@
 import * as React from "react";
 // import { Component } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //sidebar
 // import { DashboardSidebar } from "./components/Navbar/dashboardNavbar";
@@ -30,7 +30,7 @@ import AssignmentText from "./pages/dashboardPages/champ/champAssignmentBoard";
 import ChampVirtualClass from "./pages/dashboardPages/champ/champVirtualClass";
 import Champcalendar from "./pages/dashboardPages/champ/champCalenderPage";
 import ProfileIdCard from "./pages/dashboardPages/champ/champStudentPage";
-// import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
+import ChampProfilePage from "./pages/dashboardPages/champ/champsProfilePage";
 import AdminDashboardPg from "./pages/dashboardPages/admin/adminDashboardPage";
 //authentication pages
 // import BasicForm from "./components/forms/website/schools/packageForm";
@@ -155,6 +155,7 @@ function App() {
             <Route path="Champcalendar" element={<Champcalendar />} />
             <Route path="ProfileIdCard" element={<ProfileIdCard />} />
             <Route path="ProfileEditCard" element={<ProfileEditCard />} />
+            <Route path="ChampProfilePg" element={<ChampProfilePage />} />
 
             {/* Admin dashboard pages */}
             <Route path="AdminDashboardPg" element={<AdminDashboardPg />} />

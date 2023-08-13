@@ -165,5 +165,25 @@ export const PersonalDetailsCard = () => {
     </>
   );
 };
-
+export const ClassDetailsCard = () => {
+  return (
+    <>
+      <Card className="" style={{ width: "23rem" }}>
+        <Card.Body className="">
+          <div className="text-center"></div>
+          <Card.Title className="text-center">Personal Details</Card.Title>
+          
+          <Card.Text>Student ID :  111747747</Card.Text>
+          <Card.Text>Grade level : 2</Card.Text>
+          <Card.Text>Number of classes : 6</Card.Text>
+          <Card.Text>Home address : </Card.Text>
+          <Card.Text>Home address : </Card.Text>
+        </Card.Body>
+        <div className="mb-4 text-center">
+          <Link to=""> {/* <ProfileReadMoreBtn /> */}</Link>
+        </div>
+      </Card>
+    </>
+  );
+};
 export default ProfileReadMoreCard;
