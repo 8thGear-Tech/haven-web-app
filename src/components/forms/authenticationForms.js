@@ -1,129 +1,8 @@
-// // createAccountForm
-// // loginForm
-// // forgetPasswordForm
-// //external import
-// import { useState } from "react";
-// import Card from "react-bootstrap/Card";
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
+import { useEffect,useState } from "react";
+import { toast } from "react-toastify";
 
-// import Container from "react-bootstrap/Container";
-// import Button from "react-bootstrap/Button";
-// import Form from "react-bootstrap/Form";
-
-// //images
-// import havenlogo from "../../assets/icons/havenlogo.png";
-// import havenfavico from "../../assets/icons/havenfavico.png";
-// import createaccountimg from "../../assets/images/createaccountimg.png";
-
-// export const CreateAccountForm = () => {
-//   const [firstName, setFirstName] = useState("");
-//   const [lastName, setLastName] = useState("");
-//   const [password, setPassword] = useState("");
-//   const [confirmPassword, setConfirmPassword] = useState("");
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     // console.log("hello world");
-//     console.log(firstName, lastName, password, confirmPassword);
-//   };
-//   return (
-//     <>
-//       <Container fluid>
-//         <div className="row d-flex align-items-center">
-//           <div
-//             className="col-lg-6 col-md-4 col-sm-12 createAccountBgOne d-flex justify-content-center"
-//             style={{ height: "660px" }}
-//           >
-//             <div style={{ width: "18rem" }}>
-//               <Card.Img
-//                 variant="top"
-//                 src={havenfavico}
-//                 maxwidth="10%"
-//                 maxheight="10%"
-//               />
-//               <Card.Img variant="top" src={createaccountimg} className="" />
-//               <Card.Body className="text-center">
-//                 <Card.Title>
-//                   <b>Welcome To Haven</b>
-//                 </Card.Title>
-//                 <div className="my-4">
-//                   {" "}
-//                   <Button variant="primary">Go somewhere</Button>
-//                 </div>
-//               </Card.Body>
-//             </div>
-//           </div>
-//           <div
-//             className="col-lg-6 col-md-8 col-sm-12 createAccountBgTwo d-flex align-items-center justify-content-center"
-//             style={{ height: "660px" }}
-//           >
-//             <Form onSubmit={handleSubmit}>
-//               <h3 className="text-center my-4">CREATE ACCOUNT </h3>
-//               <Form.Group
-//                 className="mb-3 formFieldWidth"
-//                 // controlId="formBasicFirstName"
-//                 id="firstName"
-//                 onChange={(e) => setFirstName(e.target.value)}
-//               >
-//                 <Form.Control
-//                   type="name"
-//                   placeholder="First Name"
-//                   value={firstName}
-//                 />
-//               </Form.Group>
-//               {/* <Form.Group
-//                 className="mb-3 formFieldWidth"
-//                 // controlId="formBasicLastName"
-//                 id="lastName"
-//                 onChange={(e) => setLastName(e.target.value)}
-//               >
-//                 <Form.Control
-//                   type="name"
-//                   placeholder="Last Name"
-//                   value={lastName}
-//                 />
-//               </Form.Group>
-//               <Form.Group
-//                 className="mb-3 formFieldWidth"
-//                 // controlId="formBasicPassword"
-//                 id="password"
-//                 onChange={(e) => setPassword(e.target.value)}
-//               >
-//                 <Form.Control
-//                   type="password"
-//                   placeholder="Password"
-//                   value={password}
-//                 />
-//               </Form.Group>
-//               <Form.Group
-//                 className="mb-3 formFieldWidth"
-//                 // controlId="formBasicConfirmPassword"
-//                 id="confirmPassword"
-//                 onChange={(e) => setConfirmPassword(e.target.value)}
-//               >
-//                 <Form.Control
-//                   type="password"
-//                   placeholder="Confirm Password"
-//                   value={confirmPassword}
-//                 />
-//               </Form.Group> */}
-//               <div className="text-center">
-//                 <Button variant="primary" type="submit">
-//                   Create Account
-//                 </Button>
-//               </div>
-//             </Form>
-//           </div>
-//         </div>
-//       </Container>
-//     </>
-//   );
-// };
-
-// createAccountForm
-// loginForm
-// forgetPasswordForm
-//external import
-import { useState } from "react";
 import Card from "react-bootstrap/Card";
 
 import Container from "react-bootstrap/Container";
@@ -142,6 +21,160 @@ import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspace
 import havenlogo from "../../assets/icons/havenlogo.png";
 import havenfavico from "../../assets/icons/havenfavico.png";
 import createaccountimg from "../../assets/images/createaccountimg.png";
+
+// validating function
+export function validateInput( password, cpassword) {
+  if (password !== cpassword) {
+    return Promise.reject("passwords don't match")
+  }
+  if (password.length < 8) {
+    return Promise.reject("password must be at least 8 characters long")
+   
+  }
+  if (password.search(/[0-9]/) == -1) {
+    return Promise.reject("password must contain digit")
+    
+  }
+  if (password.search(/[A-Z]/) == -1) {
+    return Promise.reject("password must contain uppercase letters")
+    
+  }
+  if (password.search(/[a-z]/) == -1) {
+    return Promise.reject("password must contain lowercase letters")
+    
+  }
+  if (password.search(/[!"#$%&\\'()*+,-.\/:;<=>?@\[\]^_`\{\|\}~]/) == -1) {
+    return Promise.reject("password must contain symbols")
+    
+  }
+  return Promise.resolve();
+};
+
+export const AxiosInstance = axios.create({
+  baseURL: "/", // Replace with your backend API URL
+});
+
+AxiosInstance.interceptors.request.use((config) => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    config.headers["Authorization"] = `${token}`;
+  }
+  return config;
+}, (error) => {
+  return Promise.reject(error);
+});
+
+export const ParentCreateAccountForm = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [password, setPassword] = useState("");
+  const [cpassword, setCPassword] = useState("");
+  const navigate = useNavigate();
+
+
+const handleSubmit = async (e) => {
+   e.preventDefault();
+
+  try {
+      await validateInput(firstName, lastName, password, cpassword);
+      // Validation passed, make the API request
+      const response = await axios.post('/auth/parent-signup', {
+        firstName: firstName,
+        lastName: lastName,
+        password: password,
+      });
+      console.log(response.data);
+      toast.success("Account created successfully");
+ // Redirect to the dashboard or another protected page
+ navigate("/ChampDashboard"); // default protected page
+} catch (error) {
+  toast.error(error);
+}
+};
+return (
+  <>
+    <Container fluid>
+      <div className="row d-flex align-items-center">
+        <div
+          className="col-lg-6 col-md-4 col-sm-12 createAccountBgOne d-flex justify-content-center"
+          style={{ height: "660px" }}
+        >
+          <div style={{ width: "18rem" }}>
+            <Card.Img
+              variant="top"
+              src={havenfavico}
+              maxwidth="10%"
+              maxheight="10%"
+            />
+            <Card.Img variant="top" src={createaccountimg} className="" />
+            <Card.Body className="text-center">
+              <Card.Title>
+                <b>Welcome To Haven</b>
+              </Card.Title>
+            </Card.Body>
+          </div>
+        </div>
+        <div
+          className="col-lg-6 col-md-8 col-sm-12 createAccountBgTwo d-flex align-items-center justify-content-center"
+          style={{ height: "660px" }}
+        >
+           <Form onSubmit={handleSubmit}>
+            <h3 className="text-center my-4">CREATE ACCOUNT</h3>
+            <Form.Group className="mb-3 formFieldWidth">
+              <Form.Control
+                required
+                type="name"
+                placeholder="First Name"
+                name="firstName"
+                id="firstName"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3 formFieldWidth">
+              <Form.Control
+                required
+                type="name"
+                placeholder="Last Name"
+                name="lastName"
+                id="lastName"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3 formFieldWidth" id="password">
+              <Form.Control
+                required
+                type="password"
+                placeholder="Password"
+                name="password"
+                id="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3 formFieldWidth" id="cpassword">
+              <Form.Control
+                required
+                type="password"
+                placeholder="Confirm Password"
+                name="cpassword"
+                id="cpassword"
+                value={cpassword}
+                onChange={(e) => setCPassword(e.target.value)}
+              />
+            </Form.Group>
+            <div className="text-center">
+              <ParentCreateAccountBtn />
+            </div>
+          </Form>
+        </div>
+      </div>
+    </Container>
+  </>
+);
+};
+
 
 export const CreateAccountForm = () => {
   // const [firstName, setFirstName] = useState("");
@@ -176,28 +209,7 @@ export const CreateAccountForm = () => {
     // setUser({ firstName: "", lastName: "", password: "", confirmPassword: "" });
   };
 
-  //validation
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (firstName && lastName && password && confirmPassword) {
-  //     const userdetails = {
-  //       firstName,
-  //       lastName,
-  //       password,
-  //       confirmPassword,
-  //     };
-  //     setUser((user) => {
-  //       return [...user, userdetails];
-  //     });
-  //     setFirstName("");
-  //     setLastName("");
-  //     setPassword("");
-  //     setConfirmPassword("");
-  //   } else {
-  //     console.log("empty values");
-  //   }
-  // };
+  
   return (
     <>
       <Container fluid>
@@ -307,69 +319,7 @@ export const CreateAccountForm = () => {
                 <CreateAccountBtn />
               </div>
             </Form>
-            {/* <Form onSubmit={handleSubmit}>
-              <h3 className="text-center my-4">CREATE ACCOUNT </h3>
-              <Form.Group
-                className="mb-3 formFieldWidth"
-                controlId="firstName"
-                // id="firstName"
-              >
-                <Form.Control
-                  type="name"
-                  placeholder="First Name"
-                  name="firstName"
-                  value={user.firstName}
-                  onChange={handleChange}
-                />
-              </Form.Group>
-              <Form.Group
-                className="mb-3 formFieldWidth"
-                controlId="lastName"
-                // id="lastName"
-              >
-                <Form.Control
-                  type="name"
-                  placeholder="Last Name"
-                  name="lastName"
-                  value={user.lastName}
-                  // onChange={(e) => setLastName(e.target.value)}
-                  onChange={handleChange}
-                />
-              </Form.Group>
-              <Form.Group
-                className="mb-3 formFieldWidth"
-                controlId="password"
-                // id="password"
-              >
-                <Form.Control
-                  type="password"
-                  placeholder="Password"
-                  name="password"
-                  value={user.password}
-                  // onChange={(e) => setPassword(e.target.value)}
-                  onChange={handleChange}
-                />
-              </Form.Group>
-              <Form.Group
-                className="mb-3 formFieldWidth"
-                controlId="confirmPassword"
-                // id="confirmPassword"
-              >
-                <Form.Control
-                  type="password"
-                  placeholder="Confirm Password"
-                  name="confirmPassword"
-                  value={user.confirmPassword}
-                  // onChange={(e) => setConfirmPassword(e.target.value)}
-                  onChange={handleChange}
-                />
-              </Form.Group>
-              <div className="text-center">
-                <Button variant="primary" type="submit">
-                  Create Account
-                </Button>
-              </div>
-            </Form> */}
+           
           </div>
         </div>
       </Container>
@@ -511,141 +461,7 @@ export const SchoolCreateAccountForm = () => {
     </>
   );
 };
-export const ParentCreateAccountForm = () => {
-  const [user, setUser] = useState({
-    firstName: "",
-    lastName: "",
-    password: "",
-    confirmPassword: "",
-  });
-  const [userdetails, setUserDetails] = useState([]);
 
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setUser({ ...user, [name]: value });
-    console.log(name, value);
-  };
-  const [validated, setValidated] = useState(false);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    if (form.checkValidity() === false) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-
-    setValidated(true);
-  };
-
-  return (
-    <>
-      <Container fluid>
-        <div className="row d-flex align-items-center">
-          <div
-            className="col-lg-6 col-md-4 col-sm-12 createAccountBgOne d-flex justify-content-center"
-            style={{ height: "660px" }}
-          >
-            <div style={{ width: "18rem" }}>
-              <Card.Img
-                variant="top"
-                src={havenfavico}
-                maxwidth="10%"
-                maxheight="10%"
-              />
-              <Card.Img variant="top" src={createaccountimg} className="" />
-              <Card.Body className="text-center">
-                <Card.Title>
-                  <b>Welcome To Haven</b>
-                </Card.Title>
-              </Card.Body>
-            </div>
-          </div>
-          <div
-            className="col-lg-6 col-md-8 col-sm-12 createAccountBgTwo d-flex align-items-center justify-content-center"
-            style={{ height: "660px" }}
-          >
-            <Form onSubmit={handleSubmit} noValidate validated={validated}>
-              <h3 className="text-center my-4">CREATE ACCOUNT</h3>
-              <Form.Group
-                className="mb-3 formFieldWidth"
-                controlId="firstName"
-                // id="firstName"
-              >
-                <Form.Control
-                  required
-                  type="name"
-                  placeholder="First Name"
-                  name="firstName"
-                  value={user.firstName}
-                  onChange={handleChange}
-                />
-                <Form.Control.Feedback type="invalid">
-                  Please provide a valid first name
-                </Form.Control.Feedback>
-              </Form.Group>
-              <Form.Group
-                className="mb-3 formFieldWidth"
-                controlId="lastName"
-                // id="lastName"
-              >
-                <Form.Control
-                  required
-                  type="name"
-                  placeholder="Last Name"
-                  name="lastName"
-                  value={user.lastName}
-                  // onChange={(e) => setLastName(e.target.value)}
-                  onChange={handleChange}
-                />
-                <Form.Control.Feedback type="invalid">
-                  Please provide a valid last name
-                </Form.Control.Feedback>
-              </Form.Group>
-              <Form.Group
-                className="mb-3 formFieldWidth"
-                controlId="password"
-                // id="password"
-              >
-                <Form.Control
-                  required
-                  type="password"
-                  placeholder="Password"
-                  name="password"
-                  value={user.password}
-                  onChange={handleChange}
-                />
-                <Form.Control.Feedback type="invalid">
-                  Password must be at least 8 char long, consisting of at least
-                  one upper case, numbers, and special characters
-                </Form.Control.Feedback>
-              </Form.Group>
-              <Form.Group
-                className="mb-3 formFieldWidth"
-                controlId="confirmPassword"
-              >
-                <Form.Control
-                  required
-                  type="password"
-                  placeholder="Confirm Password"
-                  name="confirmPassword"
-                  value={user.confirmPassword}
-                  onChange={handleChange}
-                />
-                <Form.Control.Feedback type="invalid">
-                  Password does not match
-                </Form.Control.Feedback>
-              </Form.Group>
-              <div className="text-center">
-                <ParentCreateAccountBtn />
-              </div>
-            </Form>
-          </div>
-        </div>
-      </Container>
-    </>
-  );
-};
 
 export const LoginForm = () => {
   return (

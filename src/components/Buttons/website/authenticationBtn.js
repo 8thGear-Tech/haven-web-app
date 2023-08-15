@@ -8,6 +8,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import havenlogo from "../../../assets/icons/havenlogo.png";
+import { validateInput } from "../../forms/authenticationForms.js"; 
 
 //internal import
 import { LoginForm } from "../../forms/authenticationForms";
@@ -93,16 +94,27 @@ export const SchoolCreateAccountBtn = () => {
     </>
   );
 };
-export const ParentCreateAccountBtn = () => {
+export const ParentCreateAccountBtn = ({ firstName, lastName, password, cpassword }) => {
+  const handleClick = async () => {
+    try {
+      await validateInput(firstName, lastName,password, cpassword); // Validate the form inputs
+      // Redirect to the protected page if validation passes
+      window.location.href = "/ChampDashboard";
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <>
-      <Link to="/AllActivities">
-        {" "}
-        <button className="CreateAccountBtn">Create Account</button>
-      </Link>
+      <button className="CreateAccountBtn" onClick={handleClick}>
+        Create Account
+      </button>
     </>
   );
 };
+
+
 export const SignUpBtn = () => {
   return (
     <>
