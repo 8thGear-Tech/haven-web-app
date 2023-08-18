@@ -1,4 +1,4 @@
-// Michael
+// Michael & Ibinabo
 // PersonalDetailsCard
 // ProfileCard
 
@@ -148,14 +148,19 @@ export const InstructorProfileCard = () => {
 export const PersonalDetailsCard = () => {
   return (
     <>
-      <Card className="" style={{ width: "23rem" }}>
+      <Card className="" style={{ width: "23rem" ,  marginLeft: "4rem" , marginRight:"4rem", marginTop: "3rem" }}>
         <Card.Body className="">
           <div className="text-center"></div>
+          <br />
           <Card.Title className="text-center">Personal Details</Card.Title>
+          <br />
           {/* <Card.Text className="text-center">M.COM., P.H.D.</Card.Text> */}
           <Card.Text>Email : adekolaokesanya@gmail.com</Card.Text>
+           <br />
           <Card.Text>Phone : +2348023672339</Card.Text>
+          <br />
           <Card.Text>Home Address : Number 55, albert street</Card.Text>
+          <br />
           <Card.Text>Gender : Male</Card.Text>
         </Card.Body>
         <div className="mb-4 text-center">
@@ -168,15 +173,20 @@ export const PersonalDetailsCard = () => {
 export const ClassDetailsCard = () => {
   return (
     <>
-      <Card className="" style={{ width: "23rem" }}>
+      <Card className="" style={{ width: "23rem", height: "30rem", marginLeft:"4rem",  marginTop: "3rem"  }}>
         <Card.Body className="">
           <div className="text-center"></div>
+          <br />
           <Card.Title className="text-center">Personal Details</Card.Title>
-          
+          <br />
           <Card.Text>Student ID :  111747747</Card.Text>
+          <br />
           <Card.Text>Grade level : 2</Card.Text>
+          <br />
           <Card.Text>Number of classes : 6</Card.Text>
+          <br />
           <Card.Text>Home address : </Card.Text>
+          <br />
           <Card.Text>Home address : </Card.Text>
         </Card.Body>
         <div className="mb-4 text-center">

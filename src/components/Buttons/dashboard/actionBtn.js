@@ -31,10 +31,9 @@ export const SubmitBtn = () => {
 export const UpdateBtn = () => {
   return (
     <>
-      <a href="" target="_blank">
-        {" "}
+      <Link to="/ProfileUpdatePg">
         <button className="UpdateBtn">UPDATE</button>
-      </a>
+      </Link>
     </>
   );
 };

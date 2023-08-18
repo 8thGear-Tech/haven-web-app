@@ -112,6 +112,7 @@ import AllTutorPage from "./pages/dashboardPages/admin/allInstructorPage";
 import AllChampPage from "./pages/dashboardPages/admin/allChampsPage";
 import AddChampsPage from "./pages/dashboardPages/admin/adminAddChamps";
 import ErrorPage from "./pages/ErrorPage";
+import ChampUpdateProfilePage from "./pages/dashboardPages/champ/champUpdateProfilePage";
 
 function App() {
   return (
@@ -153,8 +154,7 @@ function App() {
             <Route path="AssignmentText" element={<AssignmentText />} />
             <Route path="ChampVirtualClass" element={<ChampVirtualClass />} />
             <Route path="Champcalendar" element={<Champcalendar />} />
-            <Route path="ProfileIdCard" element={<ProfileIdCard />} />
-            <Route path="ProfileEditCard" element={<ProfileEditCard />} />
+            <Route path="ProfileUpdatePg" element={<ChampUpdateProfilePage />} />
             <Route path="ChampProfilePg" element={<ChampProfilePage />} />
 
             {/* Admin dashboard pages */}

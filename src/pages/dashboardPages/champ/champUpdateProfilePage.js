@@ -1,3 +1,4 @@
+//Ibinabo
 import Row from "react-bootstrap/Row";
 import { Col, Form } from "react-bootstrap";
 import { Card } from "react-bootstrap";
@@ -5,7 +6,10 @@ import Container from "react-bootstrap/Container";
 // import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
 import { ChampNavbar } from "../../../components/Navbar/champNavbar";
 import studentProfile from "../../../assets/images/dashboard/champ/studentProfile.png";
-const ChampProfilePage = () => {
+import { SaveBtn, CancelBtn} from "../../../components/Buttons/dashboard/actionBtn"
+
+
+const ChampUpdateProfilePage = () => {
   return (
     <>
       <ChampNavbar />
@@ -31,10 +35,10 @@ const ChampProfilePage = () => {
       <div className="row d-flex justify-content-center">     
         <div className="col-lg-9 col-md-12">
           <div className="row">
-            <div className="col-6">
+            <div className="col-12">
               <StudentProfile />
             </div>
-            <div className="row">
+            <div className="mb-5">
               <DetailsForm />
             </div>
           </div>
@@ -43,12 +47,12 @@ const ChampProfilePage = () => {
     </>
   );
 };
-export default ChampProfilePage;
+export default ChampUpdateProfilePage;
 
 const StudentProfile = () => {
   return (
     <>
-      <Card style={{ width: "23rem", marginTop: "50px"}} className="group-flush">
+      <div style={{ width: "23rem", marginTop: "50px"}} className="group-flush">
         <Row>
           <Col>
             {" "}
@@ -57,28 +61,22 @@ const StudentProfile = () => {
           <Col>
             <Card.Text>
               Some quick example text to build on the card title and make up the
-              bulk of the card's contentssss.
+              bulk of the card's contents.
             </Card.Text>
           </Col>
         </Row>
-
-        <Card.Body>
-          {/* <Card.Title>Card Title</Card.Title>
-            
-            <Button variant="primary">Go somewhere</Button> */}
-        </Card.Body>
-      </Card>
+      </div>
     </>
   );
 };
-
+// md={6} lg={4} className=" mt-5 mb-4"
 const DetailsForm = () => {
   return (
     <>
       <Container>
         <Row>
-          <Col md={6} lg={4} className=" mt-5 mb-4">
-            <Card>
+          <Col >
+            <div className="" style={{ width: "23rem" ,  marginLeft: "4rem" , marginRight:"4rem", marginTop: "3rem" }}>
               <Form>
                 <Form.Group className="mb-3" controlId="formBasicName">
                   {/* <Form.Label>Email address</Form.Label> */}
@@ -109,46 +107,65 @@ const DetailsForm = () => {
                   />
                 </Form.Group>
               </Form>
-            </Card>
+              
+            </div>
+           
           </Col>
-          <Col md={6} lg={4} className="mt-5 mb-4">
-                      <Card>
-                            <Card.Body></Card.Body>
+
+          <Col>
+             <div className="" style={{ width: "23rem",  marginLeft:"4rem",  marginTop: "3rem"  }}>     
               <Form>
                 <Form.Group className="mb-3" controlId="formBasicName">
-                  {/* <Form.Label>Email address</Form.Label> */}
+                 
                   <Form.Control type="Name" placeholder="Student ID" />
                 </Form.Group>
+                <br />
+                <br />
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  {/* <Form.Label>Email address</Form.Label> */}
+                 
                   <Form.Control type="Email" placeholder="Grade Level" />
                 </Form.Group>
+                <br />
+                <br />
                 <Form.Group className="mb-3" controlId="formBasicPhoneNumber">
-                  {/* <Form.Label>Email address</Form.Label> */}
+                 
                   <Form.Control
                     type="PhoneNumber"
                     placeholder="Number Of Classes"
                   />
                 </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formBasicHomeAddress">
-                  {/* <Form.Label>Password</Form.Label> */}
+                <br />
+                <br />
+                {/* <Form.Group className="mb-3" controlId="formBasicHomeAddress">
+               
                   <Form.Control type="HomeAddress" placeholder="HomeAddress" />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formBasicDateOfBirth">
-                  {/* <Form.Label>Password</Form.Label> */}
+                </Form.Group> */}
+                <br />
+                {/* <Form.Group className="mb-3" controlId="formBasicDateOfBirth">
+                  
                   <Form.Control
                     type="DateOfBirth"
                     placeholder="Date of Birth"
                   />
-                </Form.Group>
+                </Form.Group> */}
               </Form>
-            </Card>
+            </div>
           </Col>
-        </Row>
-      </Container>
-    </>
+
+          <Col>
+            <Row>
+              <Col className="d-flex justify-content-end">
+                <SaveBtn />
+              </Col>
+              <Col className="d-flex justify-content-start">
+                <CancelBtn />
+              </Col>
+            </Row>
+          </Col>
+
+    </Row>
+  </Container>
+</>
   );
 };
 
