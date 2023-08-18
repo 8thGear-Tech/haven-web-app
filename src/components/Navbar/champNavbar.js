@@ -5,6 +5,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import havenlogo from "../../assets/icons/havenlogo.png";
 import { Offcanvas } from "react-bootstrap";
 import "../../sassfiles/styles.css";
+// import {ChampNotificationPage} from "../../pages/dashboardPages/champ/champAllNotificationPage"
 
 
 // Sidebar component
@@ -30,7 +31,7 @@ const Sidebar = ({ showSidebar, onHide }) => {
           <Nav.Link href="/ChampVirtualClass">Virtual Class</Nav.Link>
           <Nav.Link href="/Champcalendar">Calendar</Nav.Link>
           <Nav.Link href="/ChampProfilePg">My Profile</Nav.Link>
-          <Nav.Link href="/">Report Issues</Nav.Link>
+          <Nav.Link href="/ChampReportIssue">Report Issues</Nav.Link>
           <Nav.Link href="/">Submission</Nav.Link>
           <Nav.Link href="/">Ratings</Nav.Link>
           <Nav.Link href="/">Logout</Nav.Link>
@@ -128,7 +129,7 @@ export const ChampNavbar = () => {
         {isMidOrSmallerScreen ? null : (
           <Navbar.Collapse className="justify-content-end d-flex">
             <Nav>
-              <Nav.Link href="#">
+              <Nav.Link href="/ChampNotification">
                 <NotificationsNoneIcon
                   style={{ maxWidth: "3rem", maxHeight: "3rem" }}
                   className=""

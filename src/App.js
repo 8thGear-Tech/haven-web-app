@@ -106,13 +106,14 @@ import { Footer } from "./components/footer";
 import { FooterItemToTop } from "./components/footer";
 import { ScrollButton } from "./components/Buttons/website/scrollToTop";
 
-import ProfileEditCard from "./pages/dashboardPages/champ/champsProfilePage";
 import Admincalendar from "./pages/dashboardPages/admin/adminCalenderEventPage";
 import AllTutorPage from "./pages/dashboardPages/admin/allInstructorPage";
 import AllChampPage from "./pages/dashboardPages/admin/allChampsPage";
 import AddChampsPage from "./pages/dashboardPages/admin/adminAddChamps";
 import ErrorPage from "./pages/ErrorPage";
-import ChampUpdateProfilePage from "./pages/dashboardPages/champ/champUpdateProfilePage";
+import ChampUpdateProfilePage from "./components/forms/dashboard/champs/champUpdateProfilePage";
+import ChampNotificationPage from "./pages/dashboardPages/champ/champAllNotificationPage";
+import ChampReportIssuesForm from "./components/forms/dashboard/champs/champsReportIssuesForm";
 
 function App() {
   return (
@@ -156,6 +157,8 @@ function App() {
             <Route path="Champcalendar" element={<Champcalendar />} />
             <Route path="ProfileUpdatePg" element={<ChampUpdateProfilePage />} />
             <Route path="ChampProfilePg" element={<ChampProfilePage />} />
+            <Route path="ChampNotification" element={<ChampNotificationPage />}  />
+            <Route path="ChampReportIssue" element={<ChampReportIssuesForm />}  />
 
             {/* Admin dashboard pages */}
             <Route path="AdminDashboardPg" element={<AdminDashboardPg />} />

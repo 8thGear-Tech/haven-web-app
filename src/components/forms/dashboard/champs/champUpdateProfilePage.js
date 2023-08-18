@@ -4,9 +4,9 @@ import { Col, Form } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 // import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
-import { ChampNavbar } from "../../../components/Navbar/champNavbar";
-import studentProfile from "../../../assets/images/dashboard/champ/studentProfile.png";
-import { SaveBtn, CancelBtn} from "../../../components/Buttons/dashboard/actionBtn"
+import { ChampNavbar } from "../../../Navbar/champNavbar";
+import studentProfile from "../../../../assets/images/dashboard/champ/studentProfile.png";
+import { SaveBtn, CancelBtn} from "../../../Buttons/dashboard/actionBtn"
 
 
 const ChampUpdateProfilePage = () => {
