@@ -13,7 +13,7 @@ import Modal from "react-bootstrap/Modal";
 import ProfileReadMoreCard from "../../allCards/Dashboard/profileCards";
 import { InstructorProfileReadMoreCard } from "../../allCards/Dashboard/profileCards";
 
-import profilepic from "../../../assets/images/dashboard/profilepic.png";
+// import profilepic from "../../../assets/images/dashboard/profilepic.png";
 
 import Button from "react-bootstrap/Button";
 
@@ -38,13 +38,27 @@ export const UpdateBtn = () => {
   );
 };
 
-export const SaveBtn = () => {
+export const SaveBtn = ({ handleSubmit, errors }) => {
+  const handleSaveClick = (e) => {
+    e.preventDefault();
+    
+    // Call the handleSubmit function from the props to perform form validation
+    handleSubmit(e);
+    
+    // Additional logic or actions after form submission can be added here
+    if (Object.keys(errors).length === 0) {
+      // Form has no validation errors, perform your save action here
+      console.log("Form submitted successfully");
+    } else {
+      console.log("Form has validation errors, please correct them");
+    }
+  };
+  
   return (
     <>
-      <a href="" target="_blank">
-        {" "}
-        <button className="SaveBtn">SAVE</button>
-      </a>
+      <button className="SaveBtn" onClick={handleSaveClick}>
+        SAVE
+      </button>
     </>
   );
 };

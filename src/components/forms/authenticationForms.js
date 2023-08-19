@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect,useState } from "react";
 import { toast } from "react-toastify";
 import { Modal, Form, Button } from "react-bootstrap";
-import { useForm } from "react-hook-form";
+
 
 import Card from "react-bootstrap/Card";
 
@@ -141,6 +141,7 @@ export const LoginForm = () => {
     </>
   );
 };
+
 // validating function for signup forms
 export function validateInput( password, cpassword) {
   if (password !== cpassword) {
@@ -169,6 +170,7 @@ export function validateInput( password, cpassword) {
   return Promise.resolve();
 };
 
+//Axios
 export const AxiosInstance = axios.create({
   baseURL: "/", // Replace with your backend API URL
 });
