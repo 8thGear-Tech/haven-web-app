@@ -2,12 +2,12 @@ import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import { useEffect,useState } from "react";
 import { toast } from "react-toastify";
+import { Modal, Form, Button } from "react-bootstrap";
+import { useForm } from "react-hook-form";
 
 import Card from "react-bootstrap/Card";
 
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import { LoginBtnTwo } from "../Buttons/website/authenticationBtn";
 import { CreateAccountBtn } from "../Buttons/website/authenticationBtn";
@@ -22,7 +22,126 @@ import havenlogo from "../../assets/icons/havenlogo.png";
 import havenfavico from "../../assets/icons/havenfavico.png";
 import createaccountimg from "../../assets/images/createaccountimg.png";
 
-// validating function
+// for forms
+export const useFormValidation = (initialFormState, validateForm) => {
+  const [form, setForm] = useState(initialFormState);
+  const [errors, setErrors] = useState({});
+
+  const setField = (field, value) => {
+    setForm({
+      ...form,
+      [field]: value,
+    });
+    if (!!errors[field]) {
+      setErrors({
+        ...errors,
+        [field]: null,
+      });
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formErrors = validateForm(form);
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+    } else {
+      console.log("form submitted");
+      console.log(form);
+    }
+  };
+
+  return { form, setField, errors, handleSubmit };
+};
+
+//login form
+export const LoginForm = () => {
+  const initialFormState = {
+    email: "",
+    password: "",
+  };
+
+  const validateForm = (form) => {
+    const { email, password } = form;
+    const newErrors = {};
+
+    if (!email || email === "") newErrors.email = "Please enter your email";
+    if (!password || password === "")
+      newErrors.password = "Please enter your password";
+
+    return newErrors;
+  };
+
+  const { form, setField, errors, handleSubmit } = useFormValidation(
+    initialFormState,
+    validateForm
+  );
+  const [showJoinUsModal, setShowJoinUsModal] = useState(false);
+
+  const openJoinUsModal = () => {
+    setShowJoinUsModal(true);
+  };
+
+  const closeJoinUsModal = () => {
+    setShowJoinUsModal(false);
+  };
+  return (
+    <>
+     {showJoinUsModal && <JoinUsModal onClose={closeJoinUsModal} />}
+      <Form onSubmit={handleSubmit} className="p-4">
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Control
+            type="email"
+            placeholder="Email"
+            className="placeHolderBorder"
+            value={form.email}
+            onChange={(e) => setField("email", e.target.value)}
+            isInvalid={!!errors.email}
+          />
+          
+          <Form.Control.Feedback type="invalid">
+          {errors.email}
+        </Form.Control.Feedback>
+      </Form.Group>
+
+         <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Control
+          type="password"
+          placeholder="Password"
+          className="placeHolderBorder"
+          value={form.password}
+          onChange={(e) => setField("password", e.target.value)}
+          isInvalid={!!errors.password}
+        />
+        <Form.Control.Feedback type="invalid">
+          {errors.password}
+        </Form.Control.Feedback>
+      </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Remember me" />
+        </Form.Group>
+
+        <div className="text-center">
+          <LoginBtnTwo />
+        </div>
+        <h6 className="text-muted text-center pt-3">
+          Don't have an account?
+          <Link onClick={openJoinUsModal} className="px-1 mutedTextFontColor">
+            SignUp
+          </Link>
+        </h6>
+
+        <h6 className="text-center">
+          <Link to="/" className="mutedTextFontColor">
+            Forgot Password?
+          </Link>
+        </h6>
+      </Form>
+     
+    </>
+  );
+};
+// validating function for signup forms
 export function validateInput( password, cpassword) {
   if (password !== cpassword) {
     return Promise.reject("passwords don't match")
@@ -463,48 +582,7 @@ export const SchoolCreateAccountForm = () => {
 };
 
 
-export const LoginForm = () => {
-  return (
-    <>
-      <Form className="p-4">
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control
-            type="email"
-            placeholder="Email"
-            className="placeHolderBorder"
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control
-            type="password"
-            placeholder="Password"
-            className="placeHolderBorder"
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Remember me" />
-        </Form.Group>
 
-        <div className="text-center">
-          {" "}
-          <LoginBtnTwo />
-        </div>
-        <h6 className="text-muted text-center pt-3">
-          Don't have an account?
-          <Link to="/signup" className="px-1 mutedTextFontColor">
-            SignUp
-          </Link>
-        </h6>
-
-        <h6 className="text-center">
-          <Link to="/" className="mutedTextFontColor">
-            Forgot Password?
-          </Link>
-        </h6>
-      </Form>
-    </>
-  );
-};
 export const JoinUsModal = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
@@ -528,7 +606,7 @@ export const JoinUsModal = () => {
         </h6>
         <h6 className="text-center pt-3">
           Continue as a parent
-          <Link to="/AllActivities" className="px-1 mutedTextFontColor">
+          <Link to="/parent-signup" className="px-1 mutedTextFontColor">
             Click here
           </Link>
         </h6>

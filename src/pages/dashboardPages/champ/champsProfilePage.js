@@ -33,7 +33,7 @@ const ChampProfilePage = () => {
             </div>
             <Row className=" mb-5">
               <PersonalDetailsCard />
-              {/* <div style={{ margin: "10px 0" }}></div> */}
+             
               <ClassDetailsCard />
             </Row>
             <UpdateBtn />  {/* Use the UpdateBtn component */}

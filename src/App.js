@@ -43,6 +43,7 @@ import ChampsNeeds from "./pages/websitePages/authenticationPages/school/champsN
 import SchoolLocation from "./pages/websitePages/authenticationPages/school/schoolLocation";
 import SchoolInformation from "./pages/websitePages/authenticationPages/school/schoolInformation";
 import ActivitySchedule from "./pages/websitePages/authenticationPages/school/activitySchedule";
+import {LoginForm} from "./components/forms/authenticationForms";
 
 //school activities
 import Technology from "./pages/websitePages/allActivities/technology";
@@ -174,6 +175,8 @@ function App() {
             {/* parent authentication pages */}
             <Route path="AllActivities" element={<AllActivities />} />
             <Route path="RegisterNowForm" element={<RegisterNowForm />} />
+            <Route path="LoginForm" element={<LoginForm />} />
+
 
             {/* instructor authentication pages */}
             <Route

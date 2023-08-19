@@ -73,13 +73,21 @@ export const LoginBtn = () => {
   );
 };
 
-export const LoginBtnTwo = () => {
+export const LoginBtnTwo = ({ email, password }) => {
+    const handleClick = async () => {
+      try {
+        await validateInput(email,password); // Validate the form inputs
+        // Redirect to the protected page if validation passes
+        window.location.href = "/ChampDashboard";
+      } catch (error) {
+        console.error(error);
+      }
+    };
   return (
     <>
-      <a href="">
-        {" "}
-        <button className="LoginBtn">LOGIN</button>
-      </a>
+       <button className="LoginBtn" onClick={handleClick}>
+        Login
+      </button>
     </>
   );
 };

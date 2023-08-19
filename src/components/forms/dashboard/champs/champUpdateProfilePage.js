@@ -3,13 +3,38 @@ import Row from "react-bootstrap/Row";
 import { Col, Form } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
-// import { ChampSideNavBar } from "../../../components/Navbar/champNavbar";
 import { ChampNavbar } from "../../../Navbar/champNavbar";
 import studentProfile from "../../../../assets/images/dashboard/champ/studentProfile.png";
 import { SaveBtn, CancelBtn} from "../../../Buttons/dashboard/actionBtn"
-
+import { useFormValidation } from "../../authenticationForms";
 
 const ChampUpdateProfilePage = () => {
+  const initialFormState = {
+    name: "",
+    email: "",
+    phoneNumber: "",
+    homeAddress: "",
+    gender: "",
+    dateOfBirth: "",
+    studentId: "",
+    gradeLevel: "",
+    numberOfClasses: "",
+  };
+
+  const validateForm = (form) => {
+    const { name, email, phoneNumber, homeAddress, gender, dateOfBirth, studentId, gradeLevel, numberOfClasses } = form;
+    const newErrors = {};
+
+    // Add your validation rules here
+
+    return newErrors;
+  };
+
+  const { form, setField, errors, handleSubmit } = useFormValidation(
+    initialFormState,
+    validateForm
+  );
+
   return (
     <>
       <ChampNavbar />
@@ -69,38 +94,47 @@ const StudentProfile = () => {
     </>
   );
 };
-// md={6} lg={4} className=" mt-5 mb-4"
-const DetailsForm = () => {
+
+const DetailsForm = ({form, errors, setField, handleSubmit}) => {
   return (
     <>
       <Container>
         <Row>
           <Col >
             <div className="" style={{ width: "23rem" ,  marginLeft: "4rem" , marginRight:"4rem", marginTop: "3rem" }}>
-              <Form>
+              <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicName">
-                  {/* <Form.Label>Email address</Form.Label> */}
-                  <Form.Control type="Name" placeholder="Name" />
+                  
+                  <Form.Control 
+                  type="text" 
+                  placeholder="Name"
+                  value={form.name}
+                  onChange={(e) => setField("name", e.target.value)}
+                  isInvalid={!!errors.name}
+                />
+                  <Form.Control.Feedback type="invalid">
+                    {errors.name}
+                  </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  {/* <Form.Label>Email address</Form.Label> */}
+                 
                   <Form.Control type="Email" placeholder="Email" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPhoneNumber">
-                  {/* <Form.Label>Email address</Form.Label> */}
+               
                   <Form.Control type="PhoneNumber" placeholder="Phone Number" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicHomeAddress">
-                  {/* <Form.Label>Password</Form.Label> */}
+                
                   <Form.Control type="HomeAddress" placeholder="HomeAddress" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicGender">
-                  {/* <Form.Label>Password</Form.Label> */}
+               
                   <Form.Control type="Gender" placeholder="Gender" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicDateOfBirth">
-                  {/* <Form.Label>Password</Form.Label> */}
+              
                   <Form.Control
                     type="DateOfBirth"
                     placeholder="Date of Birth"
@@ -136,18 +170,7 @@ const DetailsForm = () => {
                 </Form.Group>
                 <br />
                 <br />
-                {/* <Form.Group className="mb-3" controlId="formBasicHomeAddress">
-               
-                  <Form.Control type="HomeAddress" placeholder="HomeAddress" />
-                </Form.Group> */}
-                <br />
-                {/* <Form.Group className="mb-3" controlId="formBasicDateOfBirth">
-                  
-                  <Form.Control
-                    type="DateOfBirth"
-                    placeholder="Date of Birth"
-                  />
-                </Form.Group> */}
+                
               </Form>
             </div>
           </Col>
