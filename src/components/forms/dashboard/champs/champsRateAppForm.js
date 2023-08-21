@@ -1,22 +1,25 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import image1 from "../../../../assets/images/Ratings/image1.png"
+import image2 from "../../../../assets/images/Ratings/image2.png"
+import image3 from "../../../../assets/images/Ratings/image3.png"
 
 const RatingsPage = () => {
   const instructors = [
     {
       id: 1,
       name: "Instructor 1",
-      image: "",
+      image: image1,
     },
     {
       id: 2,
       name: "Instructor 2",
-      image: "",
+      image: image2,
     },
     {
       id: 3,
       name: "Instructor 3",
-      image: "",
+      image: image3,
     },
   ];
 
