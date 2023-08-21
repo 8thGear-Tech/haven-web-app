@@ -178,8 +178,8 @@ const DetailsForm = () => {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPhoneNumber">
                 <Form.Control 
-                 type="phoneNumber" 
-                 placeholder="phoneNumber"
+                 type="PhoneNumber" 
+                 placeholder="PhoneNumber"
                  value={form.phoneNumber} 
                  onChange={(e)=> setField("phoneNumber", e.target.value)} 
                  isValid={!!errors.phoneNumber}
@@ -190,7 +190,6 @@ const DetailsForm = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicHomeAddress">
-                
                   <Form.Control type="HomeAddress" placeholder="HomeAddress"
                   value={form.HomeAddress} 
                   onChange={(e)=> setField("HomeAddress", e.target.value)} 
@@ -200,8 +199,8 @@ const DetailsForm = () => {
                      {errors.HomeAddress}
                    </Form.Control.Feedback> 
                 </Form.Group>
+
                 <Form.Group className="mb-3" controlId="formBasicGender">
-               
                   <Form.Control type="Gender" placeholder="Gender"
                   value={form.Gender} 
                   onChange={(e)=> setField("Gender", e.target.value)} 
@@ -211,8 +210,8 @@ const DetailsForm = () => {
                      {errors.Gender}
                    </Form.Control.Feedback> 
                 </Form.Group>
+
                 <Form.Group className="mb-3" controlId="formBasicDateOfBirth">
-              
                 <Form.Control
                     type="date"
                     placeholder="Date of Birth"

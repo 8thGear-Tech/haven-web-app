@@ -16,6 +16,7 @@ import Gallery from "./pages/websitePages/gallery";
 import Blog from "./pages/websitePages/blog/blogPage";
 import BlogReadMore from "./pages/websitePages/blog/blogReadMorePage";
 import { PrivacyPolicy } from "./pages/websitePages/privacyPolicy";
+import  Contact  from "./pages/websitePages/contact";
 
 //payment packages
 import PaymentPackages from "./pages/websitePages/paymentPackages/paymentPackages";
@@ -32,6 +33,7 @@ import Champcalendar from "./pages/dashboardPages/champ/champCalenderPage";
 import ProfileIdCard from "./pages/dashboardPages/champ/champStudentPage";
 import ChampProfilePage from "./pages/dashboardPages/champ/champsProfilePage";
 import AdminDashboardPg from "./pages/dashboardPages/admin/adminDashboardPage";
+import ChampRateAppForm from "./components/forms/dashboard/champs/champsRateAppForm";
 //authentication pages
 // import BasicForm from "./components/forms/website/schools/packageForm";
 
@@ -136,6 +138,7 @@ function App() {
             <Route path="UpComingEvent" element={<UpComingEvent />} />
             <Route path=" " element={<BlogReadMore />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="contact-us" element={<Contact />} />
             {/* Error page */}
             <Route path="*" element={<ErrorPage />} />
 
@@ -160,6 +163,7 @@ function App() {
             <Route path="ChampProfilePg" element={<ChampProfilePage />} />
             <Route path="ChampNotification" element={<ChampNotificationPage />}  />
             <Route path="ChampReportIssue" element={<ChampReportIssuesForm />}  />
+            <Route path="ChampRateApp" element={<ChampRateAppForm />}  />
 
             {/* Admin dashboard pages */}
             <Route path="AdminDashboardPg" element={<AdminDashboardPg />} />

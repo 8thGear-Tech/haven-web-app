@@ -16,8 +16,12 @@ import { InstructorProfileReadMoreCard } from "../../allCards/Dashboard/profileC
 // import profilepic from "../../../assets/images/dashboard/profilepic.png";
 
 import Button from "react-bootstrap/Button";
+import { toast } from "react-toastify";
 
 export const SubmitBtn = () => {
+  const handleSubmit = async () => {
+    toast.success("Submitted")
+  };
   return (
     <>
       <a href="" target="_blank">

@@ -92,6 +92,8 @@ export const LoginBtnTwo = ({ email, password }) => {
   );
 };
 
+
+
 export const SchoolCreateAccountBtn = () => {
   return (
     <>
