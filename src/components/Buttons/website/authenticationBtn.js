@@ -22,14 +22,12 @@ export const LoginButton = () => {
 
   return (
     <>
-      {/* <Link
-        to=""
-        type="button"
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop1"
-      > */}{" "}
-      <button className="LoginBtn">LOGIN</button>
-      {/* </Link> */}
+ 
+  <Link to="/LoginForm">
+  <button className="LoginBtn">Login</button> 
+    </Link>
+ 
+    
     </>
   );
 };

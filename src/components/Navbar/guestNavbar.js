@@ -139,9 +139,9 @@ export const GuestNavbar = () => {
               >
                 BLOG
               </Link>
-              {/* <div className="mx-3">
+              <div className="mx-3">
                 <LoginButton />
-              </div> */}
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>
