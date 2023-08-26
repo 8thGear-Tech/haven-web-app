@@ -31,7 +31,7 @@ const Sidebar = () => {
            <Nav.Link href="/ChampProfilePg">My Profile</Nav.Link>
           <Nav.Link href="/ChampReportIssue">Report Issues</Nav.Link>
           <Nav.Link href="/">Submission</Nav.Link>
-          <Nav.Link href=" ">Ratings</Nav.Link>
+          <Nav.Link href="/ChampRatingsPg">Ratings</Nav.Link>
           <Nav.Link href="/">Logout</Nav.Link>
         
       </Nav>

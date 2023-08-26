@@ -1062,6 +1062,13 @@ export const Footer = () => {
                         Other services
                       </a>
                     </li>
+                    <li>
+                      <a
+                      href="/contact-us"
+                      class="nav-link p-0 footerParagraph"
+                      >Contact us
+                      </a>
+                    </li>
                     <li class="nav-item mb-2">
                       <a href="/gallery" class="nav-link p-0 footerParagraph">
                         Gallery

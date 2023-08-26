@@ -88,8 +88,10 @@ export const LoginForm = () => {
   return (
     <>
      {showJoinUsModal && <JoinUsModal onClose={closeJoinUsModal} />}
-      <Form onSubmit={handleSubmit} className="p-4">
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+     
+<div className="LoginPopup" style={{ width: '100%', height: '100%', background: '#D9D9D9'}}>
+     <Form onSubmit={handleSubmit} className="p-4">
+        <Form.Group className="m-5" controlId="formBasicEmail">
           <Form.Control
             type="email"
             placeholder="Email"
@@ -104,7 +106,7 @@ export const LoginForm = () => {
         </Form.Control.Feedback>
       </Form.Group>
 
-         <Form.Group className="mb-3" controlId="formBasicPassword">
+         <Form.Group className="m-5" controlId="formBasicPassword">
         <Form.Control
           type="password"
           placeholder="Password"
@@ -117,7 +119,7 @@ export const LoginForm = () => {
           {errors.password}
         </Form.Control.Feedback>
       </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Group className="m-5" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Remember me" />
         </Form.Group>
 
@@ -137,6 +139,8 @@ export const LoginForm = () => {
           </Link>
         </h6>
       </Form>
+     </div>
+      
      
     </>
   );

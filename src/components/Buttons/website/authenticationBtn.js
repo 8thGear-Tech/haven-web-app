@@ -16,21 +16,15 @@ import { JoinUsModal } from "../../forms/authenticationForms";
 import { SchoolParentSignUpModal } from "../../forms/authenticationForms";
 
 export const LoginButton = () => {
-  // const [show, setShow] = useState(false);
-  // const handleShow = () => setShow(true);
-  // const handleClose = () => setShow(false);
-
   return (
     <>
- 
   <Link to="/LoginForm">
   <button className="LoginBtn">Login</button> 
     </Link>
- 
-    
     </>
   );
 };
+
 export const LoginBtn = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);

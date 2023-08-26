@@ -26,8 +26,9 @@ import {  Form } from "react-bootstrap";
 
     return (
       <>
+        <div className="LoginPopup" style={{ width: '100%', height: '100%', background: '#D9D9D9'}}>
         <Form onSubmit={handleSubmit} className="p-4">
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="m-5" controlId="formBasicEmail">
           <h3>Email</h3>
             <Form.Control
               type="email"
@@ -43,7 +44,7 @@ import {  Form } from "react-bootstrap";
           </Form.Control.Feedback>
         </Form.Group>
   
-  <Form.Group className="mb-3">
+  <Form.Group className="m-5">
                 <h3>Message</h3>
                 <Form.Control
                   as="textarea"
@@ -62,7 +63,7 @@ import {  Form } from "react-bootstrap";
                 <SubmitBtn handleSubmit={handleSubmit} errors={errors} />
               </div>
         </Form>
-       
+        </div>
       </>
     );
   };

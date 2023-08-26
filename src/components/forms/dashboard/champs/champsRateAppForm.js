@@ -50,8 +50,8 @@ const RatingsPage = () => {
     alert(`Rating for ${instructors.find(instructor => instructor.id === instructorId).name} saved.`);
   };
   return (
-    <Container fluid className="text-center">
-      <h1>Ratings Page</h1>
+    <Container fluid className="text-left">
+      <h1>Rating Board</h1>
       <Row>
         {instructors.map((instructor) => (
           <Col key={instructor.id}>
@@ -59,30 +59,38 @@ const RatingsPage = () => {
               <Card.Img variant="top" src={instructor.image} />
               <Card.Body>
                 <Card.Title>{instructor.name}</Card.Title>
+                <Col>
                 <Button
-                  variant="primary"
+                  variant="outline-primary"
                   onClick={() => handleRatingChange(instructor.id, "good")}
                 >
                   Good
                 </Button>{" "}
-                <Button
-                  variant="success"
+                </Col>
+               <Col>
+               <Button
+                  variant="outline-success"
                   onClick={() => handleRatingChange(instructor.id, "very good")}
                 >
                   Very Good
                 </Button>{" "}
-                <Button
-                  variant="info"
+               </Col>
+               <Col>
+               <Button
+                  variant="outline-info"
                   onClick={() => handleRatingChange(instructor.id, "excellent")}
                 >
                   Excellent
                 </Button>{" "}
+               </Col>
+                
                 <div style={{ marginTop: "20px" }}>
                   <Button
-                    variant="outline-primary"
+                  className="SaveBtn"
+                    
                     onClick={() => handleSaveRating(instructor.id)}
                   >
-                    Save Rating
+                    Save 
                   </Button>
                 </div>
               </Card.Body>
