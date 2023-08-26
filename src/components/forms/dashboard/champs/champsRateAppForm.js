@@ -52,9 +52,9 @@ const RatingsPage = () => {
   return (
     <Container fluid className="text-left">
       <h1>Rating Board</h1>
-      <Row>
+      <Row  className="justify-content-center">
         {instructors.map((instructor) => (
-          <Col key={instructor.id}>
+          <Col key={instructor.id} md={4}>
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={instructor.image} />
               <Card.Body>
