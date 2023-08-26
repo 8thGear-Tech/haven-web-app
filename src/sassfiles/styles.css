@@ -232,6 +232,31 @@ p {
   color: #75117a !important;
 }
 
+.sidebar {
+  width: 209px;
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  left: -209px; /* Start hidden on the left */
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.visible {
+  left: 0; /* Show the sidebar */
+}
+
+.sidebar-toggle {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+/* Style adjustments for larger screens */
+@media (min-width: 992px) {
+  .sidebar {
+    left: 0;
+  }
+}
+
 .justifyNavItemsEnd {
   justify-content: end !important;
 }

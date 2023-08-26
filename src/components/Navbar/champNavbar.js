@@ -1,69 +1,45 @@
 import React, { useState, useEffect } from "react";
-import { Button, Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import havenlogo from "../../assets/icons/havenlogo.png";
-import { Offcanvas } from "react-bootstrap";
 import "../../sassfiles/styles.css";
 // import {ChampNotificationPage} from "../../pages/dashboardPages/champ/champAllNotificationPage"
 
 
+
+
+
 // Sidebar component
-const Sidebar = ({ showSidebar, onHide }) => {
+const Sidebar = () => {
+  const [sidebarVisible] = useState(true);
+
+
   return (
-    <Offcanvas
-      show={showSidebar}
-      onHide={onHide}
-      placement="start"
-      id="sidebar"
-      style={{
-        backgroundColor: "#BC4C92",
-      }}
-    >
-      <Offcanvas.Header closeButton>
-        <Offcanvas.Title>Menu</Offcanvas.Title>
-      </Offcanvas.Header>
-      <Offcanvas.Body>
-        <Nav className="flex-column">
-          <Nav.Link href="/ChampDashboard">Dashboard</Nav.Link>
-          <Nav.Link href="/ChampMaterialPg" >Materials</Nav.Link>
+      <div className={`sidebar ${sidebarVisible ? "visible" : ""}`} 
+      style={{position: "start",
+       background: "linear-gradient(180deg, #64348d, #d15ddb 54.69%, rgba(139, 41, 164, 0.94))", 
+     }} 
+      >
+      
+      <Nav id="sidebar-nav" className={` flex-column ${sidebarVisible ? "visible" : ""}`}>
+      <Nav.Link href="/ChampDashboard">Dashboard</Nav.Link>
+         <Nav.Link href="/ChampMaterialPg" >Materials</Nav.Link>
           <Nav.Link href="/AssignmentText">Assignments</Nav.Link>
           <Nav.Link href="/ChampVirtualClass">Virtual Class</Nav.Link>
           <Nav.Link href="/Champcalendar">Calendar</Nav.Link>
-          <Nav.Link href="/ChampProfilePg">My Profile</Nav.Link>
+           <Nav.Link href="/ChampProfilePg">My Profile</Nav.Link>
           <Nav.Link href="/ChampReportIssue">Report Issues</Nav.Link>
           <Nav.Link href="/">Submission</Nav.Link>
-          <Nav.Link href="/ChampRatingsPg">Ratings</Nav.Link>
+          <Nav.Link href=" ">Ratings</Nav.Link>
           <Nav.Link href="/">Logout</Nav.Link>
-        </Nav>
-      </Offcanvas.Body>
-    </Offcanvas>
-  );
+        
+      </Nav>
+    </div>
+  )
 };
 
-export const ToggleButton = ({ onClick }) => {
-  return (
-    <>
-    <Button
-      onClick={onClick}
-      className="justify-content-end d-flex"
-    >
-      <svg
-        width="30"
-        height="20"
-        viewBox="0 0 30 20"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 8.33333H22.5V11.6667H0V8.33333ZM0 0H30V3.33333H0V0ZM0 20H13.5656V16.6667H0V20Z"
-          fill="#006747"
-        />
-      </svg>
-    </Button>
-    </>
-  );
-};
+
 
 export const ChampNavbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -117,13 +93,11 @@ export const ChampNavbar = () => {
 
         {/* Toggle button */}
         {isMidOrSmallerScreen ? (
-          <ToggleButton onClick={toggleSidebar} />
+          <Navbar.Toggle onClick={toggleSidebar} />
         ) : (
-          <Navbar.Toggle
-            onClick={toggleSidebar}
-            aria-controls="sidebar"
-            className="justify-content-end d-flex"
-          />
+          <Navbar bg="light" expand="lg" className="sidebar-toggle">
+        <Navbar.Toggle aria-controls="sidebar-nav" onClick={toggleSidebar} />
+      </Navbar>
         )}
 
         {isMidOrSmallerScreen ? null : (
@@ -147,7 +121,7 @@ export const ChampNavbar = () => {
       </Navbar>
 
       {/* Sidebar component */}
-      <div className={`mt-0 ${showSidebar ? "d-block" : "d-none"}`}>
+      <div className={`mt-1 ${showSidebar ? "d-block" : "d-none"}`}>
         <Sidebar showSidebar={showSidebar} onHide={toggleSidebar} />
       </div>
     </div>
