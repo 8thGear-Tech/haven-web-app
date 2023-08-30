@@ -38,22 +38,23 @@ const ActivitiesSectionOne = () => {
           <div className="card-group">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto">
               <div className="row d-lg-flex d-md-flex ">
+                {" "}
+                <div className="col-lg-4 col-md-6 d-flex  py-2">
+                  <VerifiedUserOutlinedIcon />
+
+                  <p className="ms-3">
+                    Partner Schools Summer powered by Haven
+                  </p>
+                </div>
                 <div className="col-lg-4 col-md-6 d-flex py-2">
                   <VerifiedUserOutlinedIcon />
-                  <p className="ms-3">Haven Summer for Children aged 4 to 12</p>
+                  <p className="ms-3">Haven Summer for Children aged 6 to 12</p>
                 </div>
                 <div className="col-lg-4 col-md-6 d-flex py-2">
                   <VerifiedUserOutlinedIcon />
 
                   <p className="ms-3">
                     Haven Summer for Teenagers aged 13 to 16
-                  </p>
-                </div>
-                <div className="col-lg-4 col-md-6 d-flex  py-2">
-                  <VerifiedUserOutlinedIcon />
-
-                  <p className="ms-3">
-                    Partner Schools Summer powered by Haven
                   </p>
                 </div>
                 {/* <div className="col-lg-4 col-md-6 d-flex  py-2">
@@ -135,7 +136,7 @@ const ActivitiesSectionThree = () => {
                 Build confidence, fitness and self defence
                 <ul>
                   <li className="activitiesListFont">
-                    For Champs of ages 4 to 16
+                    For Champs of ages 6 to 16
                   </li>
                   <li className="activitiesListFont">
                     8am to 10am every saturday{" "}
@@ -153,7 +154,7 @@ const ActivitiesSectionThree = () => {
                 Robotics
                 <ul>
                   <li className="activitiesListFont">
-                    For Champs of ages 4 to 16
+                    For Champs of ages 6 to 16
                   </li>
                   <li className="activitiesListFont">
                     10am to 12 noon every saturday
@@ -171,7 +172,7 @@ const ActivitiesSectionThree = () => {
                 instruments
                 <ul>
                   <li className="activitiesListFont">
-                    For Champs of ages 4 to 16
+                    For Champs of ages 6 to 16
                   </li>
                   <li className="activitiesListFont">
                     10am to 12 noon every saturday
@@ -189,7 +190,7 @@ const ActivitiesSectionThree = () => {
                 Hands, join our Creative club to explore
                 <ul>
                   <li className="activitiesListFont">
-                    For Champs of ages 4 to 16
+                    For Champs of ages 6 to 16
                   </li>
                   <li className="activitiesListFont">
                     10am to 12 noon every saturday

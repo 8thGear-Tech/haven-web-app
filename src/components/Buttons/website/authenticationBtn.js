@@ -193,20 +193,19 @@ export const SchoolParentSignUpBtn = () => {
 
   return (
     <>
-      <a
+      {/* <a
         href=""
         type="button"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop1"
-      >
-        {" "}
-        <Button variant="" onClick={handleShow} className="CreateAccountBtn">
-          REGISTER NOW
-        </Button>
-        {/* <Button variant="" onClick={handleShow} className="CreateAccountBtn">
+      > */}{" "}
+      <Button variant="" onClick={handleShow} className="CreateAccountBtn">
+        REGISTER NOW
+      </Button>
+      {/* <Button variant="" onClick={handleShow} className="CreateAccountBtn">
           SIGN UP
         </Button> */}
-      </a>
+      {/* </a> */}
       <Modal show={show} onHide={handleClose}>
         {/* <Modal.Header closeButton>
           <Modal.Title>

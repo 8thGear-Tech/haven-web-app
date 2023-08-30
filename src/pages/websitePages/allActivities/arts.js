@@ -10,6 +10,7 @@ import {
   RegisterNowBtn,
 } from "../../../components/Buttons/website/actionBtn/schoolBtn";
 import { GetAnInstructorBtn } from "../../../components/Buttons/website/actionBtn/homeandAboutBtn";
+import { SchoolParentSignUpBtn } from "../../../components/Buttons/website/authenticationBtn";
 
 const Arts = () => {
   return (
@@ -39,9 +40,10 @@ const ArtsInfo = () => {
           {/* <Link to="/">
             <BackBtn />
           </Link> */}
-          <Link to="/signup">
+          <SchoolParentSignUpBtn />
+          {/* <Link to="/signup">
             <GetAnInstructorBtn />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>
