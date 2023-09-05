@@ -1075,5 +1075,42 @@ a {
 }
 /*# sourceMappingURL=styles.css.map */
 
+/* dashboard header styling */
+.margin-left-lg {
+  @media(min-width: 992px) {
+    margin-left: 200px;
+    margin-right: 160px;
+  }
+  }
 
+.calender-left-lg{
+  @media(min-width: 992px) {
+    margin-left:200px;
+    margin-right:0px;  }
+}
 
+.timestamp-center{
+  @media(max-width:576px) {
+   margin-left: 50px;
+  }
+}
+.assignment-header {
+  margin-left: 20px;
+}
+.report-issues-lg{
+  @media(min-width: 992px) {
+    margin-left:100px;
+ 
+  } 
+}
+.profile-lg{
+  @media(min-width: 992px) {
+    margin-left:70px;
+  } 
+}
+.ratings-sm{
+  @media(max-width:576px) {
+    margin-left: 75px;
+    margin-bottom: 15px;
+   }
+ }

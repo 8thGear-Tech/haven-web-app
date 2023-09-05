@@ -14,7 +14,7 @@ const AssignmentText = () => {
   return (
     <>
       <ChampNavbar />
-      <div className="container-fluid">
+      <div className="container-fluid margin-left-lg"  style={{ marginTop: '150px' }}>
         <div className="row d-flex justify-content-center">
           <div className="col-lg-4">
          
@@ -38,19 +38,19 @@ const AssignmentText = () => {
 const ChampText = () => {
   return (
     <>
-      <div className="container-fluid">
-        <h2>ASSIGNMENT</h2>
-        <div className="assignmenttext">
+      <div className="container-fluid ">
+        <h2 className="assignment-header">ASSIGNMENT</h2>
+        <div className="assignment-header">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim labore
           praesentium ipsam cum officia cupiditate unde est harum
           explicabolaboriosam ad culpa,
         </div>
-        <div className="assignmenttext">
+        <div className="assignment-header">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim labore
           praesentium ipsam cum officia cupiditate unde est harum
           explicabolaboriosam ad culpa,
         </div>
-        <div className="assignmenttext">
+        <div className="assignment-header">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim labore
           praesentium ipsam cum officia cupiditate unde est harum
           explicabolaboriosam ad culpa,
@@ -74,7 +74,7 @@ const FileUploadForm = () => {
   };
 
   return (
-    <div className="shadow-lg p-3 mb-5 bg-white rounded">
+    <div className="shadow-lg p-3 mb-5 bg-white rounded assignment-header">
       <Form className="submitFile  m-0" onSubmit={handleSubmit} style={{ height: "500px" }}>
         <Form.Group>
           {/* <Form.Label>Upload a file</Form.Label> */}

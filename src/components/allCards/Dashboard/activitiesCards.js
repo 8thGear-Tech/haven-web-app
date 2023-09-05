@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import activitiesData from "../../../data/allCards/activitiesCard.json";
 import performanceData from "../../../data/allCards/activitiesCard.json";
 import { ReadMoreBtn } from "../../Buttons/dashboard/actionBtn";
+import { useMediaQuery } from 'react-responsive';
 
 
 import Button from "react-bootstrap/Button";
@@ -26,19 +27,7 @@ export const MaterialsandActivitiesCard = (props) => {
   );
 };
 
-//  <div style={{ width: "14rem" }} className="mx-auto my-3">
-//    <img variant="top" src={image} />
-//    <Card.Body className="text-center">
-//      <h3 class="card-title">{title}</h3>
-//      <p class="card-text">{text} </p>
-//      <Link to={link}>
-//        {" "}
-//        <ReadMoreBtn />
-//      </Link>
 
-//      {/* <Card.Link href="#">Go to Resource</Card.Link> */}
-//    </Card.Body>
-//  </div>;
 
 export const MaterialsandActivities = () => {
   return (
@@ -60,22 +49,24 @@ export const MaterialsandActivities = () => {
 
 // ActivitiesPerfomanceCard
 
+// Original styling for larger screens (d-flex)
 export const ActivitiesPerfomanceCard = (props) => {
   const { image, title, text, id } = props;
   return (
-    // <Card style={{ width: "18rem" }} className="d-flex">
     <Card className="d-flex">
       <div className="row d-flex">
-        {" "}
         <div className="col">
-          {" "}
-          <Card.Img variant="top " style={{ width: "17.8rem", height: "16rem" }} src={image} />
+          <Card.Img
+            variant="top"
+            style={{ width: "17.8rem", height: "16rem" }}
+            src={image}
+          />
         </div>
         <div className="col">
-          {" "}
           <Card.Body className="text-center">
-            <h3 class="card-title">{title}</h3>
-            <p class="card-text">{text}</p> <ReadMoreBtn />
+            <h3 className="card-title">{title}</h3>
+            <p className="card-text">{text}</p>
+            <ReadMoreBtn />
           </Card.Body>
         </div>
       </div>
@@ -83,14 +74,50 @@ export const ActivitiesPerfomanceCard = (props) => {
   );
 };
 
+// Modified styling for small screens (d-md-flex)
+export const ActivitiesPerfomanceCardSmallScreen = (props) => {
+  const { image, title, text, id } = props;
+  return (
+    <Card className="d-md-flex mb-5">
+      <div className="row">
+        <div className="col-md-6">
+          <Card.Img
+            variant="top"
+            src={image}
+            className="img-fluid" // Ensure the image fills the card body
+          />
+        </div>
+        <div className="col-md-6">
+          <Card.Body className="text-center">
+            <h3 className="card-title">{title}</h3>
+            <p className="card-text">{text}</p>
+            <ReadMoreBtn />
+          </Card.Body>
+        </div>
+      </div>
+     
+      
+    </Card>
+  );
+};
+
+
+
+
 export const ActivitiesPerformance = () => {
+  const isSmallScreen = useMediaQuery({ maxWidth: 767 }); // Define your breakpoint
   return (
     <div className="container-fluid mt-5">
       <div className="row d-flex justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
         {performanceData.performanceData.map((card) => {
           return (
             <div className="col-sm-12 col-md-6 col-lg-4" key={card.id}>
-              <ActivitiesPerfomanceCard {...card}></ActivitiesPerfomanceCard>
+               {isSmallScreen ? (
+                    <ActivitiesPerfomanceCardSmallScreen {...card}/>
+                  ) : (
+                    <ActivitiesPerfomanceCard {...card}></ActivitiesPerfomanceCard>
+                  )}
+             
             </div>
           );
         })}

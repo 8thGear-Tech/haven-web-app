@@ -17,7 +17,8 @@ const Sidebar = () => {
 
   return (
       <div className={`sidebar ${sidebarVisible ? "visible" : ""}`} 
-      style={{position: "start",
+      style={{position: "fixed",
+      zIndex: 9999,
        background: "linear-gradient(180deg, #64348d, #d15ddb 54.69%, rgba(139, 41, 164, 0.94))", 
      }} 
       >
@@ -109,7 +110,7 @@ export const ChampNavbar = () => {
                   className=""
                 />
               </Nav.Link>
-              <Nav.Link href="#">
+              <Nav.Link href="/ChampProfilePg">
                 <AccountCircleIcon
                   style={{ maxWidth: "3rem", maxHeight: "3rem" }}
                   className=""

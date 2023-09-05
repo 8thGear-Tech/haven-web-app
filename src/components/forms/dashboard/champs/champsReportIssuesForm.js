@@ -1,12 +1,12 @@
 import React from "react";
-import { Col, Form, Row } from "react-bootstrap";
+import { Modal, Col, Form, Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import { ChampNavbar } from "../../../Navbar/champNavbar";
 import { SubmitBtn } from "../../../Buttons/dashboard/actionBtn";
 import { useFormValidation } from "../../authenticationForms";
 
 
-const ChampReportIssuesForm = () => {
+const ChampReportIssuesModal = () => {
   const initialFormState = {
     fullName: "",
     email: "",
@@ -39,12 +39,12 @@ const ChampReportIssuesForm = () => {
 
   return (
     <>
-         <ChampNavbar />
-      <div style={{ marginTop: "150px" }}></div>
+        
+      <div style={{ marginTop: "50px" }}></div>
 
-      <Container>
-        <Row>
-          <Col className="col-12">
+      <Container >
+        <Row >
+          <Col className="col-12 ">
             <h2 className="text-center">Report Issues</h2>
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicName">
@@ -101,4 +101,4 @@ const ChampReportIssuesForm = () => {
   );
 };
 
-export default ChampReportIssuesForm;
+export default ChampReportIssuesModal;

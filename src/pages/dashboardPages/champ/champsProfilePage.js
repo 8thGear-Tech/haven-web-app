@@ -9,7 +9,7 @@ const ChampProfilePage = () => {
   return (
     <>
       <ChampNavbar />
-      <div style={{ marginTop: '150px' }}>
+      <div className="margin-left-lg" style={{ marginTop: '150px' }}>
         <Container>
           <div className="materialRectangle"
             style={{ width: '100%', height: '100%', 
@@ -28,7 +28,7 @@ const ChampProfilePage = () => {
       <div className="row d-flex justify-content-center">
         <div className="col-lg-9 col-md-12">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 profile-lg">
               <StudentProfile />
             </div>
             <Row className=" mb-5">

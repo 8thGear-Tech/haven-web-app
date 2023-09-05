@@ -61,8 +61,8 @@ const ChampNotificationPage = () => {
 
   return (
     <>
-      <ChampNavbar />
-      <div style={{ marginTop: "70px" }}></div>
+     
+     
       <Container
         fluid
         className="text-center bg-light"

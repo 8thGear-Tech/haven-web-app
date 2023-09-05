@@ -116,7 +116,7 @@ import AddChampsPage from "./pages/dashboardPages/admin/adminAddChamps";
 import ErrorPage from "./pages/ErrorPage";
 import ChampUpdateProfilePage from "./components/forms/dashboard/champs/champUpdateProfilePage";
 import ChampNotificationPage from "./pages/dashboardPages/champ/champAllNotificationPage";
-import ChampReportIssuesForm from "./components/forms/dashboard/champs/champsReportIssuesForm";
+import ChampReportIssuesModal from "./components/forms/dashboard/champs/champsReportIssuesForm";
 
 function App() {
   return (
@@ -162,7 +162,7 @@ function App() {
             <Route path="ProfileUpdatePg" element={<ChampUpdateProfilePage />} />
             <Route path="ChampProfilePg" element={<ChampProfilePage />} />
             <Route path="ChampNotification" element={<ChampNotificationPage />}  />
-            <Route path="ChampReportIssue" element={<ChampReportIssuesForm />}  />
+            <Route path="ChampReportIssue" element={<ChampReportIssuesModal />}  />
             <Route path="ChampRatingsPg" element={<RatingsPage />}  />
 
             {/* Admin dashboard pages */}

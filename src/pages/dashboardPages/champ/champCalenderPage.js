@@ -11,7 +11,7 @@ const Champcalendar = () => {
       <ChampNavbar />
 
       {/* Material rectangle */}
-      <div style={{ marginTop: '150px' }}>
+      <div className="margin-left-lg" style={{ marginTop: '150px' }}>
         <Container>
           <div className="materialRectangle"
             style={{ width: '100%', height: '100%', 
@@ -36,10 +36,10 @@ const Champcalendar = () => {
   <div className="row d-flex justify-content-center"> 
     <div className="col-lg-12 col-md-12">
       <div className="row">
-        <div className="col-12 col-md-8"> {/* Adjusted width to 2/3 */}
+        <div className="col-12 col-md-6 calender-left-lg"> 
           <Calendar />
         </div>
-        <div className="col-12 col-md-4"> {/* Adjusted width to 1/3 */}
+        <div className="col-12 col-md-2 timestamp-center"> 
           <Timestamp />
         </div>
       </div>

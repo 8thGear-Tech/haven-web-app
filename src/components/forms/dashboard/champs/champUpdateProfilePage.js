@@ -15,7 +15,7 @@ const ChampUpdateProfilePage = () => {
   return (
     <>
       <ChampNavbar />
-      <div style={{ marginTop: '150px' }}>
+      <div className="margin-left-lg" style={{ marginTop: '150px' }}>
         <Container>
           <div className="materialRectangle"
             style={{ width: '100%', height: '100%', 
@@ -54,7 +54,7 @@ export default ChampUpdateProfilePage;
 const StudentProfile = () => {
   return (
     <>
-      <div style={{ width: "23rem", marginTop: "50px"}} className="group-flush">
+      <div  style={{ width: "23rem", marginTop: "50px"}} className="group-flush profile-lg ">
         <Row>
           <Col>
             {" "}

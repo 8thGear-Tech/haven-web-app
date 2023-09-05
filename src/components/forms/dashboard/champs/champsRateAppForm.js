@@ -50,12 +50,12 @@ const RatingsPage = () => {
     alert(`Rating for ${instructors.find(instructor => instructor.id === instructorId).name} saved.`);
   };
   return (
-    <Container fluid className="text-left">
+    <Container fluid className="text-left ">
       <h1>Rating Board</h1>
-      <Row  className="justify-content-center">
+      <Row  className="justify-content-center ">
         {instructors.map((instructor) => (
           <Col key={instructor.id} md={4}>
-            <Card style={{ width: "18rem" }}>
+            <Card className= "ratings-sm" style={{ width: "18rem" }}>
               <Card.Img variant="top" src={instructor.image} />
               <Card.Body>
                 <Card.Title>{instructor.name}</Card.Title>

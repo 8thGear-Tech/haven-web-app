@@ -8,7 +8,7 @@ const ChampVirtualClass = () => {
     <>
       <ChampNavbar />
 
-      <div style={{ marginTop: '150px' }}>
+      <div className="margin-left-lg" style={{ marginTop: '150px' }}>
         <Container>
           <div className="materialRectangle"
             style={{ width: '100%', height: '100%', 
@@ -30,8 +30,8 @@ const ChampVirtualClass = () => {
       </div>  
 
       <div className="text-right m-5" >
-        <h2 className="font-weight-bold" style={{ fontSize: "28px", color: "black" }}>Username: Michael</h2>
-        <h2 className="font-weight-bold" style={{ fontSize: "28px", color: "black" }}>Profile ID: 647276545</h2>
+        <h2 className="font-weight-bold  margin-left-lg" style={{ fontSize: "28px", color: "black" }}>Username: Michael</h2>
+        <h2 className="font-weight-bold  margin-left-lg" style={{ fontSize: "28px", color: "black" }}>Profile ID: 647276545</h2>
       </div>
 
       <div className="container-fluid">
@@ -39,7 +39,7 @@ const ChampVirtualClass = () => {
           <div className="col-lg-4">
           </div>
           
-          <div className="col-lg-9 col-md-12">
+          <div className="col-lg-9 col-md-12 margin-left-lg">
             <div>
               <div>
                 <VirtualContent/>
