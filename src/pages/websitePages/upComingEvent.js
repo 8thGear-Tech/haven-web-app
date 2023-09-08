@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="row">
             <div className="text-center">
               <h1 className="heading ">
-                <strong>SUMMER CAMP</strong>
+                <strong>HOLIDAY PROGRAMS</strong>
               </h1>
             </div>
           </div>

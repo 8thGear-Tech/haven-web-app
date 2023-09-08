@@ -59,7 +59,7 @@ const Statistics = () => {
         <div className="card-body text-center">
           <div className="align-items-center">
             {" "}
-            <h1 className="card-title ">7</h1>
+            <h1 className="card-title ">10</h1>
           </div>
           <p className="card-text">Summer Camps</p>
         </div>

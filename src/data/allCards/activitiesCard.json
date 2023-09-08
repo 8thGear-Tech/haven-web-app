@@ -77,24 +77,21 @@
       "id": 1,
       "image": "../assets/images/otheractivities/afterschool.png",
       "link": "/otherActivities",
-      "title": "After School",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "After School"
     },
 
     {
       "id": 2,
       "image": "../assets/images/otheractivities/weekendclub.png",
       "link": "/otherActivities",
-      "title": "Weekend Club",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "Weekend Club"
     },
 
     {
       "id": 3,
       "image": "../assets/images/otheractivities/havensummer.png",
       "link": "/otherActivities",
-      "title": "Haven Summer",
-      "text": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+      "title": "Haven Summer"
     }
   ],
   "codingData": [

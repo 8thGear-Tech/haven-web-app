@@ -183,24 +183,24 @@ const OurActivities = () => {
                     Tech Instructors Matching
                   </p>
                 </Link>
-                <Link to="/" style={{ color: "#75117A" }}>
+                <Link to="/ourOfferings" style={{ color: "#75117A" }}>
                   <p className="text-decoration-underline fontStyle m-2">
                     Holiday Sessions
                   </p>
                 </Link>
-                <Link to="/" style={{ color: "#75117A" }}>
+                <Link to="/ourOfferings" style={{ color: "#75117A" }}>
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
                     After School Clubs
                   </p>
                 </Link>
-                <Link to="/" style={{ color: "#75117A" }}>
+                <Link to="/ourOfferings" style={{ color: "#75117A" }}>
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
                     Weekend Clubs
                   </p>
                 </Link>
-                <Link to="/" style={{ color: "#75117A" }}>
+                <Link to="/ourOfferings" style={{ color: "#75117A" }}>
                   {" "}
                   <p className="text-decoration-underline fontStyle m-2">
                     Physical/Virtual Tech Sessions

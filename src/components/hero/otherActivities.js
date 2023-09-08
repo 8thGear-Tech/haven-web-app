@@ -60,8 +60,8 @@ export const CreativeSummerHero = () => {
                 HOLIDAY SESSIONS
               </h3>
               <p className="d-flex">
-                Haven holiday sessions holds every August. We also facilitate
-                holiday sessions in partner schools.
+                Haven holiday sessions comprises of Easter and Summer programs.
+                We also facilitate holiday sessions in partner schools.
               </p>
               <div className="">
                 {" "}
@@ -101,7 +101,7 @@ export const AfterSchoolHero = () => {
             </h3>
             <p className="text-center ">
               Activities include Tech and Music every School days for Champs of
-              ages 4 to 16
+              ages 6 to 16
             </p>
             <div className="text-center">
               {" "}

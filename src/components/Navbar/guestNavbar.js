@@ -119,8 +119,10 @@ export const GuestNavbar = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
-                  <Link to="/gallery" className="navTextColor"></Link>
-                  GALLERY
+                  <Link to="/gallery" className="navTextColor">
+                    {" "}
+                    GALLERY
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 {/* <NavDropdown.Item href="/blog" className="navTextColor">
@@ -128,10 +130,10 @@ export const GuestNavbar = () => {
                 </NavDropdown.Item> */}
               </NavDropdown>
               <Link
-                to="/summer-camp"
+                to="/holiday-programs"
                 className="navTextColor mx-3 text-decoration-none my-auto"
               >
-                SUMMER CAMP
+                HOLIDAY PROGRAMS
               </Link>{" "}
               <Link
                 to="/blog"

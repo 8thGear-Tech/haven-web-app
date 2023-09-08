@@ -1020,7 +1020,7 @@ export const Footer = () => {
                         class="nav-link p-0 footerParagraph"
                         target="_blank"
                       >
-                        Become an instructor
+                        Become an Instructor
                       </a>
                       {/* <a href="/signup" class="nav-link p-0 footerParagraph">
                         Become an instructor
@@ -1033,7 +1033,7 @@ export const Footer = () => {
                   <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                       <a href="/" class="nav-link p-0 footerParagraph">
-                        School services
+                        School Services
                       </a>
                     </li>
                     <li class="nav-item mb-2">
@@ -1054,14 +1054,14 @@ export const Footer = () => {
                         About Haven
                       </a>
                     </li>
-                    <li class="nav-item mb-2">
+                    {/* <li class="nav-item mb-2">
                       <a
                         href="/otherActivities"
                         class="nav-link p-0 footerParagraph"
                       >
                         Other services
                       </a>
-                    </li>
+                    </li> */}
                     <li class="nav-item mb-2">
                       <a href="/gallery" class="nav-link p-0 footerParagraph">
                         Gallery
