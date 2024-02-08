@@ -13,6 +13,8 @@ import teamMemberTwoInfo from "../../../data/allCards/team.json";
 import teamMemberThreeInfo from "../../../data/allCards/team.json";
 import teamMemberFourInfo from "../../../data/allCards/team.json";
 import teamMemberFiveInfo from "../../../data/allCards/team.json";
+import teamMemberSixInfo from "../../../data/allCards/team.json";
+import teamMemberSevenInfo from "../../../data/allCards/team.json"
 import { MemberOneViewBioBtn } from "../../Buttons/website/teamModalBtn";
 import { TeamOneViewBioBtn } from "../../Buttons/website/actionBtn/homeandAboutBtn";
 
@@ -117,7 +119,7 @@ export const TeamCardTwo = (props) => {
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
             <a
-              href="https://www.linkedin.com/in/omotola-adaramaja-a8240621a/"
+              href="https://www.linkedin.com/in/oluwatobiloba-adebola-38759123a"
               target="_blank"
             >
               {" "}
@@ -186,13 +188,14 @@ export const TeamCardThree = (props) => {
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/owoyele-femi-793a70224/"
               target="_blank"
             >
               {" "}
               <LinkedIn />
-            </a>
+            </a> */}
+            <p>LinkedIn link</p>
             {/* <a
               // variant="primary"
               onClick={handleShow}
@@ -326,8 +329,152 @@ export const TeamCardFive = (props) => {
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/olamide-ogunbanjo-927637b2/"
+              target="_blank"
+            >
+              {" "}
+              <LinkedIn />
+            </a> */}
+            <p>No Link to LinkedIn</p>
+            {/* <a
+              // variant="primary"
+              onClick={handleShow}
+              href=""
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop1"
+              style={{ color: "#75117A" }}
+              className="text-decoration-none"
+            >
+              View Bio
+            </a> */}
+
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton></Modal.Header>
+              <div className="text-center">
+                <Card.Img
+                  variant="top"
+                  src={modalimage}
+                  className="teamCard my-3"
+                  style={{ width: "10rem" }}
+                />
+              </div>
+              <div className="text-center">
+                <h3>{modalname}</h3>
+                <Card.Text>{modaltitle}</Card.Text>
+                <a href="" src={modallink}>
+                  {" "}
+                  <LinkedIn />
+                </a>
+                <Card.Text className="mx-3 my-2">{modaltext}</Card.Text>
+              </div>
+            </Modal>
+            {/* <EastIcon style={{ color: "#75117a" }} /> */}
+          </div>
+        </Card.Body>
+      </div>
+    </>
+  );
+};
+
+export const TeamCardSix = (props) => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
+  const {
+    image,
+    name,
+    role,
+    modalimage,
+    modalname,
+    modaltitle,
+    modallink,
+    modaltext,
+  } = props;
+  return (
+    <>
+      <div style={{ width: "18rem" }} className="my-3 mx-auto">
+        <Card.Img variant="top" src={image} className="teamCard" />
+        <Card.Body>
+          <h4 className="mt-3">{name}</h4>
+          <Card.Text className="m-0">{role}</Card.Text>
+          <div className="d-flex">
+            <a
+              href="https://www.linkedin.com/in/aruna-afeez-76a204102?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app 
+"
+              target="_blank"
+            >
+              {" "}
+              <LinkedIn />
+            </a>
+            {/* <a
+              // variant="primary"
+              onClick={handleShow}
+              href=""
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop1"
+              style={{ color: "#75117A" }}
+              className="text-decoration-none"
+            >
+              View Bio
+            </a> */}
+
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton></Modal.Header>
+              <div className="text-center">
+                <Card.Img
+                  variant="top"
+                  src={modalimage}
+                  className="teamCard my-3"
+                  style={{ width: "10rem" }}
+                />
+              </div>
+              <div className="text-center">
+                <h3>{modalname}</h3>
+                <Card.Text>{modaltitle}</Card.Text>
+                <a href="" src={modallink}>
+                  {" "}
+                  <LinkedIn />
+                </a>
+                <Card.Text className="mx-3 my-2">{modaltext}</Card.Text>
+              </div>
+            </Modal>
+            {/* <EastIcon style={{ color: "#75117a" }} /> */}
+          </div>
+        </Card.Body>
+      </div>
+    </>
+  );
+};
+
+export const TeamCardSeven = (props) => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
+  const {
+    image,
+    name,
+    role,
+    modalimage,
+    modalname,
+    modaltitle,
+    modallink,
+    modaltext,
+  } = props;
+  return (
+    <>
+      <div style={{ width: "18rem" }} className="my-3 mx-auto">
+        <Card.Img variant="top" src={image} className="teamCard" />
+        <Card.Body>
+          <h4 className="mt-3">{name}</h4>
+          <Card.Text className="m-0">{role}</Card.Text>
+          <div className="d-flex">
+            <a
+              href=" https://www.linkedin.com/in/opeyemi-bioku"
               target="_blank"
             >
               {" "}
@@ -430,6 +577,18 @@ export const Team = () => {
           {" "}
           {teamMemberFiveInfo.teamMemberFiveInfo.map((card) => {
             return <TeamCardFive {...card}></TeamCardFive>;
+          })}
+        </div>
+        <div className="col-lg-4 col-md-6 mb-5">
+          {" "}
+          {teamMemberSixInfo.teamMemberSixInfo.map((card) => {
+            return <TeamCardSix {...card}></TeamCardSix>;
+          })}
+        </div>
+        <div className="col-lg-4 col-md-6 mb-5">
+          {" "}
+          {teamMemberSevenInfo.teamMemberSevenInfo.map((card) => {
+            return <TeamCardSeven {...card}></TeamCardSeven>;
           })}
         </div>
       </div>
