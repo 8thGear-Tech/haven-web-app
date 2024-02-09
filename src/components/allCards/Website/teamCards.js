@@ -14,7 +14,7 @@ import teamMemberThreeInfo from "../../../data/allCards/team.json";
 import teamMemberFourInfo from "../../../data/allCards/team.json";
 import teamMemberFiveInfo from "../../../data/allCards/team.json";
 import teamMemberSixInfo from "../../../data/allCards/team.json";
-import teamMemberSevenInfo from "../../../data/allCards/team.json"
+import teamMemberSevenInfo from "../../../data/allCards/team.json";
 import { MemberOneViewBioBtn } from "../../Buttons/website/teamModalBtn";
 import { TeamOneViewBioBtn } from "../../Buttons/website/actionBtn/homeandAboutBtn";
 
@@ -195,7 +195,7 @@ export const TeamCardThree = (props) => {
               {" "}
               <LinkedIn />
             </a> */}
-            <p>LinkedIn link</p>
+            {/* <p>LinkedIn link</p> */}
             {/* <a
               // variant="primary"
               onClick={handleShow}
@@ -336,7 +336,7 @@ export const TeamCardFive = (props) => {
               {" "}
               <LinkedIn />
             </a> */}
-            <p>No Link to LinkedIn</p>
+            {/* <p>No Link to LinkedIn</p> */}
             {/* <a
               // variant="primary"
               onClick={handleShow}

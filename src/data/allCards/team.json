@@ -14,22 +14,22 @@
   "teamMemberTwoInfo": [
     {
       "id": "2",
-      "image": "../../assets/images/team/tobi.jpg",
+      "image": "../../assets/images/team/tobi.png",
       "name": "Oluwatobiloba Adebola",
       "role": "Programs and Operations Officer",
-      "modalimage": "../../assets/images/team/tobi.jpg",
+      "modalimage": "../../assets/images/team/tobi.png",
       "modalname": "Oluwatobiloba Adebola",
-      "modaltitle": "Prpograms and Operations Officer",
+      "modaltitle": "Programs and Operations Officer",
       "modallink": ""
     }
   ],
   "teamMemberThreeInfo": [
     {
       "id": 3,
-      "image": "../../assets/images/team/Afolayan.JPG",
+      "image": "../../assets/images/team/josiah.png",
       "name": "Lalude Olabanji Josiah",
       "role": "Coding and Robotics Instructor",
-      "modalimage": "../../assets/images/team/Afolayan.JPG",
+      "modalimage": "../../assets/images/team/josiah.png",
       "modalname": "Lalude Olabanji Josiah",
       "modaltitle": "Coding and Robotics Instructor",
       "modallink": ""
@@ -50,22 +50,22 @@
   "teamMemberFiveInfo": [
     {
       "id": 5,
-      "image": "../../assets/images/team/jan.jpeg",
-      "name": "Mattew Jane",
-      "role": " Tech-savvy M&E officer",
-      "modalimage": "../../assets/images/team/jan.jpeg",
-      "modalname": "Mattew Jane",
-      "modaltitle": " Tech-savvy M&E officer",
+      "image": "../../assets/images/team/jane.png",
+      "name": "Matthew Jane",
+      "role": "M & E Officer",
+      "modalimage": "../../assets/images/team/jane.png",
+      "modalname": "Matthew Jane",
+      "modaltitle": "M & E Officer",
       "modallink": ""
     }
   ],
   "teamMemberSixInfo": [
     {
       "id": 6,
-      "image": "../../assets/images/team/Azeez.jpg",
+      "image": "../../assets/images/team/afeez.png",
       "name": "Aruna Afeez Abayomi",
       "role": " Tech Facilitation Lead",
-      "modalimage": "../../assets/images/team/Azeez.jpg",
+      "modalimage": "../../assets/images/team/afeez.png",
       "modalname": "Aruna Afeez Abayomi",
       "modaltitle": " Tech Facilitation Lead",
       "modallink": ""
@@ -74,11 +74,11 @@
   "teamMemberSevenInfo": [
     {
       "id": 7,
-      "image": "../../assets/images/team/opeyemibioku.png",
-      "name": "Opeyemi Biokun",
+      "image": "../../assets/images/team/opeyemi.png",
+      "name": "Opeyemi Bioku",
       "role": " CTO",
-      "modalimage": "../../assets/images/team/opeyemibioku.png",
-      "modalname": "Opeyemi Biokun",
+      "modalimage": "../../assets/images/team/opeyemi.png",
+      "modalname": "Opeyemi Bioku",
       "modaltitle": " CTO",
       "modallink": ""
     }
