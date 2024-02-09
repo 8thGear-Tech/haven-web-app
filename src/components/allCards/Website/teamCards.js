@@ -43,7 +43,7 @@ export const TeamCardOne = (props) => {
   return (
     <>
       <div style={{ width: "18rem" }} className="my-3 mx-auto">
-        <Card.Img variant="top" src={image} className="teamCard" />
+        <Card.Img variant="top" src={image} style={{height:"300px"}} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
@@ -113,7 +113,7 @@ export const TeamCardTwo = (props) => {
   return (
     <>
       <div style={{ width: "18rem" }} className="my-3 mx-auto">
-        <Card.Img variant="top" src={image} className="teamCard" />
+        <Card.Img variant="top" src={image} style={{height:"300px"}} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
@@ -183,7 +183,7 @@ export const TeamCardThree = (props) => {
   return (
     <>
       <div style={{ width: "18rem" }} className="my-3 mx-auto">
-        <Card.Img variant="top" src={image} className="teamCard" />
+        <Card.Img variant="top" src={image} style={{height:"300px"}} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
@@ -254,7 +254,7 @@ export const TeamCardFour = (props) => {
   return (
     <>
       <div style={{ width: "18rem" }} className="my-3 mx-auto">
-        <Card.Img variant="top" src={image} className="teamCard" />
+        <Card.Img variant="top" src={image} style={{height:"300px"}} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
@@ -324,7 +324,7 @@ export const TeamCardFive = (props) => {
   return (
     <>
       <div style={{ width: "18rem" }} className="my-3 mx-auto">
-        <Card.Img variant="top" src={image} className="teamCard" />
+        <Card.Img variant="top" src={image} style={{height:"300px"}} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
@@ -396,7 +396,7 @@ export const TeamCardSix = (props) => {
   return (
     <>
       <div style={{ width: "18rem" }} className="my-3 mx-auto">
-        <Card.Img variant="top" src={image} className="teamCard" />
+        <Card.Img variant="top" src={image} style={{height:"300px"}} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
@@ -468,7 +468,7 @@ export const TeamCardSeven = (props) => {
   return (
     <>
       <div style={{ width: "18rem" }} className="my-3 mx-auto">
-        <Card.Img variant="top" src={image} className="teamCard" />
+        <Card.Img variant="top" src={image} style={{height:"300px"}} className="teamCard" />
         <Card.Body>
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
@@ -659,7 +659,7 @@ export const TeamPopUpCard = (props) => {
             </div>
 
             <div className="cards" key={id}>
-              <img src={image} className="w-25 mb-4" alt="..." />
+              <img src={image} style={{height:"300px"}} className="w-25 mb-4" alt="..." />
               <h4>{name}</h4>
               <h6 className="">{position}</h6>{" "}
               <a href={link}>
