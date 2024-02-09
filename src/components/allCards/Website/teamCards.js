@@ -195,7 +195,7 @@ export const TeamCardThree = (props) => {
               {" "}
               <LinkedIn />
             </a> */}
-            <p>LinkedIn link</p>
+            <p>No LinkedIn link</p>
             {/* <a
               // variant="primary"
               onClick={handleShow}
