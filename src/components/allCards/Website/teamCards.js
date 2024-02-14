@@ -188,14 +188,13 @@ export const TeamCardThree = (props) => {
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
-            {/* <a
-              href="https://www.linkedin.com/in/owoyele-femi-793a70224/"
+            <a
+              href="www.linkedin.com/in/olabanji-lalude-5338812a4"
               target="_blank"
             >
               {" "}
               <LinkedIn />
-            </a> */}
-            <p>No LinkedIn link</p>
+            </a>
             {/* <a
               // variant="primary"
               onClick={handleShow}
@@ -329,14 +328,13 @@ export const TeamCardFive = (props) => {
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
-            {/* <a
-              href="https://www.linkedin.com/in/olamide-ogunbanjo-927637b2/"
+            <a
+              href="https://www.linkedin.com/in/jane-matthew-55a5362b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
               target="_blank"
             >
               {" "}
               <LinkedIn />
-            </a> */}
-            <p>No Link to LinkedIn</p>
+            </a>
             {/* <a
               // variant="primary"
               onClick={handleShow}
