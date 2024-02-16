@@ -19,19 +19,19 @@
       "role": "Programs and Operations Officer",
       "modalimage": "../../assets/images/team/tobi.png",
       "modalname": "Oluwatobiloba Adebola",
-      "modaltitle": "Programs and Operations Officer",
+      "modaltitle": "COO",
       "modallink": ""
     }
   ],
   "teamMemberThreeInfo": [
     {
       "id": 3,
-      "image": "../../assets/images/team/josiah.png",
-      "name": "Josiah Lalude",
-      "role": "Coding and Robotics Instructor",
-      "modalimage": "../../assets/images/team/josiah.png",
-      "modalname": "Lalude Olabanji Josiah",
-      "modaltitle": "Coding and Robotics Instructor",
+      "image": "../../assets/images/team/opeyemi.png",
+      "name": "Opeyemi Bioku",
+      "role": " CTO",
+      "modalimage": "../../assets/images/team/opeyemi.png",
+      "modalname": "Opeyemi Bioku",
+      "modaltitle": " CTO",
       "modallink": ""
     }
   ],
@@ -50,18 +50,6 @@
   "teamMemberFiveInfo": [
     {
       "id": 5,
-      "image": "../../assets/images/team/jane.png",
-      "name": "Jane Matthew",
-      "role": "M & E Officer",
-      "modalimage": "../../assets/images/team/jane.png",
-      "modalname": "Matthew Jane",
-      "modaltitle": "M & E Officer",
-      "modallink": ""
-    }
-  ],
-  "teamMemberSixInfo": [
-    {
-      "id": 6,
       "image": "../../assets/images/team/afeez.png",
       "name": "Afeez Aruna",
       "role": " Tech Facilitation Lead",
@@ -71,15 +59,27 @@
       "modallink": ""
     }
   ],
+  "teamMemberSixInfo": [
+    {
+      "id": 6,
+      "image": "../../assets/images/team/jane.png",
+      "name": "Jane Matthew",
+      "role": "M & E Officer",
+      "modalimage": "../../assets/images/team/jane.png",
+      "modalname": "Matthew Jane",
+      "modaltitle": "M & E Officer",
+      "modallink": ""
+    }
+  ],
   "teamMemberSevenInfo": [
     {
       "id": 7,
-      "image": "../../assets/images/team/opeyemi.png",
-      "name": "Opeyemi Bioku",
-      "role": " CTO",
-      "modalimage": "../../assets/images/team/opeyemi.png",
-      "modalname": "Opeyemi Bioku",
-      "modaltitle": " CTO",
+      "image": "../../assets/images/team/josiah.png",
+      "name": "Josiah Lalude",
+      "role": "Coding and Robotics Instructor",
+      "modalimage": "../../assets/images/team/josiah.png",
+      "modalname": "Lalude Olabanji Josiah",
+      "modaltitle": "Coding and Robotics Instructor",
       "modallink": ""
     }
   ]

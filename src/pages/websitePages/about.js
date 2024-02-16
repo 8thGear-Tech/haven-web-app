@@ -40,13 +40,25 @@ const Statistics = () => {
         >
           <div className="align-items-center">
             {" "}
+            <h1 className="card-title ">1000+</h1>
+          </div>
+          <p className="card-text">Outsourced Sessions</p>
+        </div>
+      </div>
+      <div className="col-lg-4 col-md-6 col-sm-12 my-2">
+        <div
+          className="card-body text-center
+        "
+        >
+          <div className="align-items-center">
+            {" "}
             <h1 className="card-title ">5</h1>
           </div>
           <p className="card-text">Partner Schools</p>
         </div>
       </div>
 
-      <div className="col-lg-4 col-md-6 col-sm-12 my-2">
+      {/* <div className="col-lg-4 col-md-6 col-sm-12 my-2">
         <div className="card-body text-center">
           <div className="align-items-center">
             {" "}
@@ -54,12 +66,21 @@ const Statistics = () => {
           </div>
           <p className="card-text">Languages Taught</p>
         </div>
+      </div> */}
+      <div className="col-lg-4 col-md-6 col-sm-12 my-2">
+        <div className="card-body text-center">
+          <div className="align-items-center">
+            {" "}
+            <h1 className="card-title ">10+</h1>
+          </div>
+          <p className="card-text">Summer Camps</p>
+        </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12 my-2">
         <div className="card-body text-center">
           <div className="align-items-center">
             {" "}
-            <h1 className="card-title ">10</h1>
+            <h1 className="card-title ">10+</h1>
           </div>
           <p className="card-text">Summer Camps</p>
         </div>
@@ -160,7 +181,9 @@ const AboutCEO = () => {
         </div>
         <div className="responsive-iframe d-flex justify-content-center mt-4">
           <iframe
-            src={"https://www.youtube.com/embed/CZMm9epJviQ"}
+            src={
+              "https://www.youtube.com/embed/S97xDx41Mvc?si=oqTN3V8O4uJBJf3D"
+            }
             width="600"
             height="400"
             allow="autoplay; fullscreen; picture-in-picture"
