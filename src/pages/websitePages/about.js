@@ -73,16 +73,7 @@ const Statistics = () => {
             {" "}
             <h1 className="card-title ">10+</h1>
           </div>
-          <p className="card-text">Summer Camps</p>
-        </div>
-      </div>
-      <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-        <div className="card-body text-center">
-          <div className="align-items-center">
-            {" "}
-            <h1 className="card-title ">10+</h1>
-          </div>
-          <p className="card-text">Summer Camps</p>
+          <p className="card-text">Summer Programs Facilitated</p>
         </div>
       </div>
     </div>
