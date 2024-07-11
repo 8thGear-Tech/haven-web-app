@@ -4,6 +4,7 @@ import Upcomingevent from "../../assets/images/hero/upcoming1.png";
 // import flier from "../../assets/images/hero/flier.png";
 import onsitesummercamp from "../../assets/images/events/onsitesummercamp.jpeg";
 import onlinesummercamp from "../../assets/images/events/onlinesummercamp.jpeg";
+import summercamp from "../../assets/images/events/summercamp.png";
 // import Card from "react-bootstrap/Card";
 // import CardGroup from "react-bootstrap/CardGroup";
 import Button from "react-bootstrap/Button";
@@ -50,7 +51,7 @@ const CardUpcoming = () => {
       <div class="row g-5 justify-content-center">
         <div class="col-lg-4 col-md-6">
           <div class="card h-100">
-            <img src={onsitesummercamp} class="card-img-top" alt="..." />
+            <img src={summercamp} class="card-img-top" alt="..." />
             <div
               // style={{
               //   backgroundColor: "#FFE7FF",
@@ -58,30 +59,57 @@ const CardUpcoming = () => {
               class="card-body"
             >
               <h5 class="card-title" style={{ fontSize: "1.05rem" }}>
-                <strong>Creative Summer Camp (Physical)</strong>
+                <strong>Summer Tech Bootcamp (Physical & Virtual)</strong>
               </h5>
               <h6 class="card-title m-0 p-0" style={{ fontSize: "0.9rem" }}>
-                <strong>Batch 1</strong>
+                <strong>Camp Opens:</strong>
               </h6>
               <p
                 class="card-text text-black p-0 m-0"
                 style={{ fontSize: "0.8rem" }}
               >
-                24th July - 11th August, 2023
+                Monday, 15th July, 2024
               </p>
+              <div className="d-flex">
+                <div>
+                  {" "}
+                  <h6 class="card-title m-0 p-0" style={{ fontSize: "0.9rem" }}>
+                    <strong>Duration:</strong>
+                  </h6>
+                  <p
+                    class="card-text text-black p-0 m-0"
+                    style={{ fontSize: "0.8rem" }}
+                  >
+                    2 weeks per Cohort
+                  </p>
+                </div>
+                <div className="ms-4">
+                  {" "}
+                  <h6 class="card-title m-0 p-0" style={{ fontSize: "0.9rem" }}>
+                    <strong>Time:</strong>
+                  </h6>
+                  <p
+                    class="card-text text-black p-0 m-0"
+                    style={{ fontSize: "0.8rem" }}
+                  >
+                    10am - 1pm
+                  </p>
+                </div>
+              </div>
+
               <h6 class="card-title m-0 p-0" style={{ fontSize: "0.9rem" }}>
-                <strong>Batch 2</strong>
+                <strong>Venue:</strong>
               </h6>
               <p
                 class="card-text text-black p-0 m-0"
                 style={{ fontSize: "0.8rem" }}
               >
-                14th August - 1st September, 2023
+                8thGear Hub, 41 CMD Road, Magodo/Secretariat, Lagos.
               </p>
               {/* <p>Physical</p> */}
             </div>
             <div>
-              <a href="http://bit.ly/havensummer2023" target="_blank">
+              <a href="https://forms.gle/nnowN1Gg4ddN6pym8" target="_blank">
                 {" "}
                 <Button
                   style={{ backgroundColor: "#75117A", width: "100%" }}
@@ -93,57 +121,7 @@ const CardUpcoming = () => {
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card">
-            <img src={onlinesummercamp} class="card-img-top" alt="..." />
-            <div
-              // style={{
-              //   backgroundColor: "#FFE7FF",
-              // }}
-              class="card-body"
-            >
-              <h5 class="card-title" style={{ fontSize: "1.05rem" }}>
-                <strong>Online Summer Camp</strong>
-              </h5>
-              <h6 class="card-title m-0 p-0" style={{ fontSize: "0.9rem" }}>
-                <strong>Batch 1</strong>
-              </h6>
-              <p
-                class="card-text text-black p-0 m-0"
-                style={{ fontSize: "0.8rem" }}
-              >
-                24th July - 4th August, 2023
-              </p>
-              <h6 class="card-title m-0 p-0" style={{ fontSize: "0.9rem" }}>
-                <strong>Batch 2</strong>
-              </h6>
-              <p
-                class="card-text text-black p-0 m-0"
-                style={{ fontSize: "0.8rem" }}
-              >
-                7th August - 18th August, 2023
-              </p>
-              <h6 class="card-title m-0 p-0" style={{ fontSize: "0.9rem" }}>
-                <strong>Batch 3</strong>
-              </h6>
-              <p
-                class="card-text text-black p-0 m-0"
-                style={{ fontSize: "0.8rem" }}
-              >
-                21st August - 1st September, 2023
-              </p>
-              {/* <p>Physical</p> */}
-            </div>
-            <div>
-              <a href="http://bit.ly/havensummer2023" target="_blank">
-                {" "}
-                <Button style={{ backgroundColor: "#75117A", width: "100%" }}>
-                  <strong>Register</strong>
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
+
         {/* <div class="col">
           <div class="card  h-100">
             <img src={flier} class="card-img-top" alt="..." />
