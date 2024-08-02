@@ -409,6 +409,71 @@ p {
   font-weight: 300;
 }
 
+.physicalVirtual {
+  background-color: #000;
+  color: #fff;
+  width: 10.5rem;
+}
+
+.virtual {
+  background-color: #d88d2a;
+  color: #fff;
+  width: 8rem;
+}
+
+.promoParagraph {
+  color: #ed8b09;
+}
+
+.price-button {
+  background-color: white;
+  color: #75117a;
+  border: 1px solid #75117a;
+  border-radius: 0.2rem; /* Adjust border radius as needed */
+  margin-right: 5px;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  height: 2.7rem;
+  width: 10.5rem;
+  font-weight: 600;
+  box-shadow: none !important;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.price-button:hover {
+  background-color: #75117a;
+  color: white;
+  border: 1px solid #75117a;
+}
+
+.price-button.active {
+  background-color: #75117a;
+  color: white;
+  border: 1px solid #75117a;
+}
+
+@media (min-width: 1024px) {
+  .d-flex-modified h6:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    border-left: 1px solid black;
+    height: 1.1em;
+    margin: 0 15px;
+  }
+}
+@media (min-width: 768px) {
+  .d-lg-flex .promoParagraph:not(:last-child)::after,
+.d-md-flex .promoParagraph:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    border-left: 1px solid black;
+    height: 1.1em;
+    margin: 0 15px;
+  }
+}
 .aboutHeroBg {
   background: conic-gradient(from 180deg at 50% 50%, rgba(209, 93, 219, 0.14) -60.79deg, rgba(28, 150, 233, 0.06) 89.87deg, rgba(209, 93, 219, 0.14) 299.21deg, rgba(28, 150, 233, 0.06) 449.87deg);
   border-radius: 0px 0px 200px 0px;
