@@ -25,6 +25,7 @@ import GraciaDavina from "../../assets/images/home/GraciaDavins.png";
 import Hauk from "../../assets/images/home/hauk.PNG";
 import Smallville from "../../assets/images/home/Smallville.png";
 import holidayprogram from "../../assets/images/home/holidayprogram.png";
+import havenanniversary from "../../assets/images/home/havenanniversary.png";
 
 const Home = () => {
   return (
@@ -36,7 +37,8 @@ const Home = () => {
     >
       <GuestNavbar />
       <HomeHero />
-      <HolidayPromo />
+      <HavenAnniv />
+      {/* <HolidayPromo /> */}
       {/* <HomeMobileHero /> */}
       <WhatWeDo />
       <WhyTrustUs />
@@ -66,6 +68,41 @@ const Home = () => {
 //     </>
 //   );
 // };
+
+const HavenAnniv = () => {
+  return (
+    <>
+      <div className="px-4 container-fluid bg-white py-5">
+        <div className="d-flex flex-column align-items-center justify-content-center">
+          <div className="col-lg-12 col-md-12 col-sm-12 text-center">
+            <h3 className="">JOIN US FOR AN INSIGHTFUL EVENT</h3>
+            <p style={{ fontSize: "1.2rem" }}>
+              <em>
+                {" "}
+                <span style={{ color: "#DE5E44" }}>
+                  Shaping the Future:
+                </span>{" "}
+                The Role of AI in Children's Education & Development
+              </em>
+            </p>
+          </div>
+          <div className="col-lg-5 col-md-12 col-sm-10 mb-5">
+            <img
+              src={havenanniversary}
+              className="mx-auto img-fluid"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <a href="https://bit.ly/3zh1BvY" target="_blank">
+            <button className="GetAnInstructorBtn">BOOK A SEAT NOW</button>
+          </a>
+        </div>
+      </div>
+    </>
+  );
+};
+
 const HolidayPromo = () => {
   const [activeContent, setActiveContent] = useState("nigeria");
 
@@ -76,7 +113,7 @@ const HolidayPromo = () => {
   return (
     <>
       <div className="px-3">
-        <div className="px-4 container pb-3 pt-3 mb-5">
+        <div className="px-4 container pb-3 pt-5 mb-5">
           <h3 className="text-center mb-4">HOLIDAY PROGRAMS</h3>
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-6 col-md-6 col-sm-12">
@@ -633,8 +670,8 @@ const WhatWeDo = () => {
         //     "radial-gradient(50.66% 50.66% at 50% 49.34%, #DFEFE1 0.01%, #FFFFFF 100%)",
         // }}
       >
-        <h3 className="text-center mt-lg-3 mb-4">WHAT WE DO</h3>
-        <div className="row text-center justify-content-around mt-3 mx-2">
+        <h3 className="text-center mt-lg-3 mb-4 mt-5">WHAT WE DO</h3>
+        <div className="row text-center justify-content-around mt-4 mx-2">
           {/* <div className="CardWork row text-center justify-content-around mt-5"> */}
           {whatwedo.whatwedo.map((data) => {
             return (
