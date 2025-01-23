@@ -37,7 +37,7 @@ const Home = () => {
     >
       <GuestNavbar />
       <HomeHero />
-      <HavenAnniv />
+      {/* <HavenAnniv /> */}
       {/* <HolidayPromo /> */}
       {/* <HomeMobileHero /> */}
       <WhatWeDo />

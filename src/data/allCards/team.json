@@ -14,12 +14,12 @@
   "teamMemberTwoInfo": [
     {
       "id": "2",
-      "image": "../../assets/images/team/tobi.png",
-      "name": "Oluwatobiloba Adebola",
-      "role": "COO",
-      "modalimage": "../../assets/images/team/tobi.png",
-      "modalname": "Oluwatobiloba Adebola",
-      "modaltitle": "COO",
+      "image": "../../assets/images/team/ayodotun.png",
+      "name": "Ayodotun Abifarin",
+      "role": "Coding and Robotics Instructor",
+      "modalimage": "../../assets/images/team/ayodotun.png",
+      "modalname": "Ayodotun Abifarin",
+      "modaltitle": "Coding and Robotics Instructor",
       "modallink": ""
     }
   ],
@@ -38,48 +38,48 @@
   "teamMemberFourInfo": [
     {
       "id": 4,
-      "image": "../../assets/images/team/samuel.png",
-      "name": "Samuel Afolayan",
-      "role": "Creative Lead",
-      "modalimage": "../../assets/images/team/samuel.png",
-      "modalname": "Samuel Afolayan",
-      "modaltitle": "Creative Lead",
+      "image": "../../assets/images/team/daniel.png",
+      "name": "Daniel Dairo",
+      "role": "Comms Lead",
+      "modalimage": "../../assets/images/team/daniel.png",
+      "modalname": "Daniel Dairo",
+      "modaltitle": "Comms Lead",
       "modallink": ""
     }
   ],
   "teamMemberFiveInfo": [
     {
       "id": 5,
-      "image": "../../assets/images/team/afeez.png",
-      "name": "Afeez Aruna",
-      "role": " Tech Facilitation Lead",
-      "modalimage": "../../assets/images/team/afeez.png",
-      "modalname": "Aruna Afeez Abayomi",
-      "modaltitle": " Tech Facilitation Lead",
+      "image": "../../assets/images/team/adedamola.png",
+      "name": "Adedamola Adewoye",
+      "role": "Operations Manager",
+      "modalimage": "../../assets/images/team/adedamola.png",
+      "modalname": "Adedamola Adewoye",
+      "modaltitle": "Operations Manager",
       "modallink": ""
     }
   ],
   "teamMemberSixInfo": [
     {
       "id": 6,
-      "image": "../../assets/images/team/jane.png",
-      "name": "Jane Matthew",
-      "role": "M & E Officer",
-      "modalimage": "../../assets/images/team/jane.png",
-      "modalname": "Matthew Jane",
-      "modaltitle": "M & E Officer",
-      "modallink": ""
-    }
-  ],
-  "teamMemberSevenInfo": [
-    {
-      "id": 7,
       "image": "../../assets/images/team/josiah.png",
       "name": "Josiah Lalude",
       "role": "Coding and Robotics Instructor",
       "modalimage": "../../assets/images/team/josiah.png",
       "modalname": "Lalude Olabanji Josiah",
       "modaltitle": "Coding and Robotics Instructor",
+      "modallink": ""
+    }
+  ],
+  "teamMemberSevenInfo": [
+    {
+      "id": 7,
+      "image": "../../assets/images/team/ifeoluwa.png",
+      "name": "Ifeoluwa Akinleye",
+      "role": "Comms",
+      "modalimage": "../../assets/images/team/ifeoluwa.png",
+      "modalname": "Ife",
+      "modaltitle": "Comms",
       "modallink": ""
     }
   ]

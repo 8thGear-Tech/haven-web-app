@@ -119,7 +119,7 @@ export const TeamCardTwo = (props) => {
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
             <a
-              href="https://www.linkedin.com/in/oluwatobiloba-adebola-38759123a"
+              href="https://www.linkedin.com/in/ayodotun-abifarin/"
               target="_blank"
             >
               {" "}
@@ -260,7 +260,7 @@ export const TeamCardFour = (props) => {
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
             <a
-              href="https://www.linkedin.com/in/samuel-afolayan-1a528b134/"
+              href="https://www.linkedin.com/in/dairo-eniola-133545178/"
               target="_blank"
             >
               {" "}
@@ -330,7 +330,7 @@ export const TeamCardFive = (props) => {
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
             <a
-              href="https://www.linkedin.com/in/aruna-afeez-76a204102"
+              href="https://www.linkedin.com/in/adewoye-adedamola-312572b6/"
               target="_blank"
             >
               {" "}
@@ -401,13 +401,13 @@ export const TeamCardSix = (props) => {
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
-            {/* <a
-              href="https://www.linkedin.com/in/jane-matthew-55a5362b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            <a
+              href="https://www.linkedin.com/in/olabanji-lalude-5338812a4/"
               target="_blank"
             >
               {" "}
               <LinkedIn />
-            </a> */}
+            </a>
             {/* <a
               // variant="primary"
               onClick={handleShow}
@@ -472,13 +472,13 @@ export const TeamCardSeven = (props) => {
           <h4 className="mt-3">{name}</h4>
           <Card.Text className="m-0">{role}</Card.Text>
           <div className="d-flex">
-            {/* <a
-              href=""
+          <a
+              href="https://www.linkedin.com/in/akinleye-i-9031962b1/"
               target="_blank"
             >
               {" "}
               <LinkedIn />
-            </a> */}
+            </a>
             {/* <a
               // variant="primary"
               onClick={handleShow}
