@@ -14,18 +14,6 @@
   "teamMemberTwoInfo": [
     {
       "id": "2",
-      "image": "../../assets/images/team/ayodotun.png",
-      "name": "Ayodotun Abifarin",
-      "role": "Coding and Robotics Instructor",
-      "modalimage": "../../assets/images/team/ayodotun.png",
-      "modalname": "Ayodotun Abifarin",
-      "modaltitle": "Coding and Robotics Instructor",
-      "modallink": ""
-    }
-  ],
-  "teamMemberThreeInfo": [
-    {
-      "id": 3,
       "image": "../../assets/images/team/opeyemi.png",
       "name": "Opeyemi Bioku",
       "role": " CTO",
@@ -35,21 +23,9 @@
       "modallink": ""
     }
   ],
-  "teamMemberFourInfo": [
+  "teamMemberThreeInfo": [
     {
-      "id": 4,
-      "image": "../../assets/images/team/daniel.png",
-      "name": "Daniel Dairo",
-      "role": "Comms Lead",
-      "modalimage": "../../assets/images/team/daniel.png",
-      "modalname": "Daniel Dairo",
-      "modaltitle": "Comms Lead",
-      "modallink": ""
-    }
-  ],
-  "teamMemberFiveInfo": [
-    {
-      "id": 5,
+      "id": 3,
       "image": "../../assets/images/team/adedamola.png",
       "name": "Adedamola Adewoye",
       "role": "Operations Manager",
@@ -59,9 +35,9 @@
       "modallink": ""
     }
   ],
-  "teamMemberSixInfo": [
+  "teamMemberFourInfo": [
     {
-      "id": 6,
+      "id": 4,
       "image": "../../assets/images/team/josiah.png",
       "name": "Josiah Lalude",
       "role": "Coding and Robotics Instructor",
@@ -69,17 +45,43 @@
       "modalname": "Lalude Olabanji Josiah",
       "modaltitle": "Coding and Robotics Instructor",
       "modallink": ""
+     
     }
   ],
-  "teamMemberSevenInfo": [
+  "teamMemberFiveInfo": [
     {
-      "id": 7,
+      "id": 5,
+      "image": "../../assets/images/team/ayodotun.png",
+      "name": "Ayodotun Abifarin",
+      "role": "Coding and Robotics Instructor",
+      "modalimage": "../../assets/images/team/ayodotun.png",
+      "modalname": "Ayodotun Abifarin",
+      "modaltitle": "Coding and Robotics Instructor",
+      "modallink": ""
+    }
+  ],
+  "teamMemberSixInfo": [
+    {
+      "id": 6,
       "image": "../../assets/images/team/ifeoluwa.png",
       "name": "Ifeoluwa Akinleye",
       "role": "Comms",
       "modalimage": "../../assets/images/team/ifeoluwa.png",
       "modalname": "Ife",
       "modaltitle": "Comms",
+      "modallink": ""
+  
+    }
+  ],
+  "teamMemberSevenInfo": [
+    {
+      "id": 7,
+      "image": "../../assets/images/team/daniel.png",
+      "name": "Daniel Dairo",
+      "role": "Comms Lead",
+      "modalimage": "../../assets/images/team/daniel.png",
+      "modalname": "Daniel Dairo",
+      "modaltitle": "Comms Lead",
       "modallink": ""
     }
   ]
