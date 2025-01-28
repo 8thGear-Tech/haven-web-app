@@ -15,7 +15,7 @@ export const AboutHero = () => {
               WHO WE ARE
             </h3>
             <p className="d-flex">
-              Haven Edu-Services is an extra-curricular childhood educational
+              Haven Edu-Services is an extra-curricular childhood Ed-Tech
               organisation focused on providing training contents related to
               Technology, Arts and Multi-languages for children (ages 6-12) and
               Teenagers (ages 13-16)
